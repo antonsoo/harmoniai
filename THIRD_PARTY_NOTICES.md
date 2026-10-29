@@ -17,7 +17,9 @@
   Press, 1894), public domain. Read from the Internet Archive scan
   `natyasastrakasinathpandurangparabpanditsivadattanirnayasagarpresskm42mula`; its PDF had
   SHA-256 `d05c869a28d6595c079702a820bfc2e84f87bfec47bf970d7d2688fb4f20f070` when consulted.
-  Two words of M. Ghosh's 1961 translation are quoted for comment.
+  Its chapter 28 is taken over from J. Grosset, *Contribution à l'étude de la musique hindoue*
+  (Paris, 1888), public domain, whose pp. 21, 28–29 and 86 were also consulted. Two words of
+  M. Ghosh's 1961 translation are quoted for comment.
 - **Sanskrit glosses.** Short quotations from M. Monier-Williams, *A Sanskrit-English
   Dictionary* (Oxford, 1899), public domain, through the Cologne Digital Sanskrit
   Dictionaries (Universität zu Köln).

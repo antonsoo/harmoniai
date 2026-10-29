@@ -2,6 +2,7 @@ import { Lyre } from "../audio/pluck";
 import {
   CONSONANCE,
   DEMONSTRATION,
+  EARLIER_SETTING,
   EDITION,
   EDITION_URL,
   FINGERS,
@@ -107,7 +108,7 @@ export function mountVina(root: HTMLElement): void {
 <section class="hero" id="demo">
   <div class="hero-text">
     <h1>Twenty-two śrutis, by ear</h1>
-    <p>The <i>Nāṭyaśāstra</i>, a Sanskrit treatise on theatre whose date is disputed, divides the octave into twenty-two śrutis. It does not ask you to take the number on trust. Tune two vīṇās alike, it says, then keep lowering one of them by a śruti and listen for the strings that meet.</p>
+    <p>The <i>Nāṭyaśāstra</i>, a Sanskrit treatise on theatre whose date is disputed, divides the octave into twenty-two śrutis. It does not ask you to take the number on trust. Tune two vīṇās alike, it says, then keep lowering one of them by a śruti and listen for the strings that meet. The passage is obscure and its text insecure; the dial plays it as its 1888 editor printed it, and the last section shows where the witnesses disagree.</p>
   </div>
   <div class="bench">
     <figure class="dial-wrap"><div id="dial">${dialSvg()}</div>
@@ -132,7 +133,7 @@ export function mountVina(root: HTMLElement): void {
   <h2>Adding up to twenty-two</h2>
   <div class="two">
     <div>
-      <p>Each note meets the note below it at the lowering equal to its own size. Gāndhāra and niṣāda hold two śrutis, so they meet first; ṛṣabha and dhaivata hold three; ṣaḍja, madhyama and pañcama four. That is the whole demonstration: seven gaps, each found by ear, adding up to twenty-two.</p>
+      <p>Each note meets the note below it at the lowering equal to its own size. Gāndhāra and niṣāda hold two śrutis, so they meet first; ṛṣabha and dhaivata hold three; ṣaḍja, madhyama and pañcama four. Seven gaps, each found by ear, add up to twenty-two. Joanny Grosset, who edited the chapter in 1888, made this sum in his note 36 while calling the passage obscure; the dial makes his observation playable.</p>
       <table class="count"><thead><tr><th scope="col">Lowered by</th><th scope="col">Strings that meet</th><th scope="col">Śrutis</th></tr></thead><tbody>${tally
         .map(
           (t) =>
@@ -188,16 +189,17 @@ export function mountVina(root: HTMLElement): void {
   ).join("")}</div>
 </section>
 <section class="section" id="reading">
-  <h2>Reading the 1894 page</h2>
+  <h2>Whose text this is</h2>
   <div class="two">
     <div>
-      <p>The Sanskrit here is the Kāvyamālā edition, checked line by line against the scanned pages, not its OCR. Three places matter for the demonstration.</p>
-      <p><b>A missing three.</b> The third lowering reads <i lang="sa-Latn">śrutyadhikatvāt</i>, 'since they stood a śruti higher'. The count needs three: ṛṣabha and dhaivata hold three śrutis each. Manomohan Ghosh's translation (1961) supplies '[three]' in brackets.</p>
-      <p><b>A crossed pair.</b> In the second lowering, <i lang="sa-Latn">gāndhāra-niṣāda</i> enter <i lang="sa-Latn">dhaivata-ṛṣabha</i>. Taken in order, gāndhāra would land on dhaivata, eleven śrutis away. The count requires gāndhāra on ṛṣabha and niṣāda on dhaivata, which is what the dial shows. Ghosh's 'respectively' pairs them the other way.</p>
-      <p><b>Seven strings.</b> In Ghosh's translation, 29.120 gives the citrā vīṇā seven strings and the vipañcī nine. The Kāvyamālā garbles that half-line (its 29.124a) but keeps the second half, below. The dial draws no instrument. Monier-Williams's 'Indian lute', with its 'two large gourds', describes a later vīṇā, not necessarily Bharata's.</p>
-      <p class="muted">Verse numbers are the Kāvyamālā's; Ghosh's run one lower for the śruti verses. <a href="${EDITION_URL}">${esc(EDITION)}</a>, pp. 303–305 and 328.</p>
+      <p>The Sanskrit above is the 1894 Kāvyamālā text, transcribed from the scanned pages rather than their OCR. A footnote on its p. 301 says the chapter 'is taken over from the book <i>La Musique Hindoue</i>' by J. Grosset of Paris. Grosset (1888) worked from two manuscripts, A and G. He printed the whole two-vīṇā demonstration in square brackets, his sign for a doubtful passage (p. 21), and in note 36 called it obscure, his translation approximate.</p>
+      <p><b>A stage only one manuscript has.</b> Grosset's apparatus records a lacuna in G that swallows the third lowering. The scan of the 1894 volume also holds an earlier setting of the same pages, without the footnote, and its demonstration jumps from the second lowering to the fourth (beside). Without the third stage the meetings account for 16 of the 22 śrutis: ṛṣabha and dhaivata are never measured. The count needs the stage that, of Grosset's two manuscripts, only A preserves.</p>
+      <p><b>A missing three.</b> In Grosset's text the third lowering reads <i lang="sa-Latn">śrutyadhikatvāt</i>, 'since they stood a śruti higher'. The count needs three: ṛṣabha and dhaivata hold three śrutis each. Manomohan Ghosh's translation (1961) supplies '[three]'.</p>
+      <p><b>A crossed pair.</b> Grosset's second lowering sends <i lang="sa-Latn">gāndhāra-niṣāda</i> into <i lang="sa-Latn">dhaivata-ṛṣabha</i>. Taken in order, gāndhāra would land on dhaivata, eleven śrutis away; Ghosh's 'respectively' reads it that way. The earlier 1894 setting has <i lang="sa-Latn">ṛṣabha-dhaivata</i>, the order the count requires and the dial shows.</p>
+      <p><b>Seven strings.</b> In Ghosh's translation, 29.120 gives the citrā vīṇā seven strings and the vipañcī nine. The Kāvyamālā garbles that half-line (its 29.124a) but keeps the second half, beside. The dial draws no instrument. Monier-Williams's 'Indian lute', with its 'two large gourds', describes a later vīṇā, not necessarily Bharata's.</p>
+      <p class="muted">Verse numbers are the Kāvyamālā's and Grosset's; Ghosh's run one lower for the śruti verses. <a href="${EDITION_URL}">${esc(EDITION)}</a>, pp. 301–305 and 328, with the earlier setting at physical PDF pages 300–307. J. Grosset, <i>Contribution à l'étude de la musique hindoue</i> (Paris: Leroux, 1888), pp. 21, 28–29, 86. <a href="https://github.com/antonsoo/grama">Grāma</a>, a sibling project, reads the single pañcama-lowering and the count verses from Grosset's pages and leaves this demonstration aside for the same reason.</p>
     </div>
-    <div>${passage(FINGERS)}</div>
+    <div>${passage(EARLIER_SETTING)}${passage(FINGERS)}</div>
   </div>
 </section>`;
 

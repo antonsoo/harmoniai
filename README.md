@@ -74,7 +74,8 @@ of them now carry a different octave's name.
 ![Two rings of strings on a 22-śruti dial, the inner one lowered three śrutis, with the Sanskrit sentence for that step](docs/assets/vina-dial.png)
 
 The *Nāṭyaśāstra*, a Sanskrit treatise on theatre whose date is disputed, says the octave
-holds twenty-two śrutis, and it says how to hear that. Tune two vīṇās alike. Lower one
+holds twenty-two śrutis, and in an obscure, textually insecure passage it says how to hear
+that. Tune two vīṇās alike. Lower one
 pañcama a śruti, which makes the madhyama-grāma, then retune the rest of that vīṇā to it.
 Keep lowering it the same way: after two śrutis its gāndhāra and niṣāda meet the other
 vīṇā's ṛṣabha and dhaivata; after three, ṛṣabha and dhaivata meet ṣaḍja and pañcama; after
@@ -89,7 +90,8 @@ What the model shows:
 
 - **The count is exact.** The meetings computed from the two grāmas (NS 28.25–29) are the
   ones the prose names, at the lowerings it names, and nothing else meets. The lowerings
-  at which the seven notes meet add up to 2+2+3+3+4+4+4 = 22.
+  at which the seven notes meet add up to 2+2+3+3+4+4+4 = 22. Joanny Grosset made this
+  sum in 1888 (note 36), while calling the passage obscure; the dial makes it playable.
 - **It forces equal śrutis.** If every lowering is the same standard śruti and every
   meeting is exact, the śruti is 1200/22 = 54.5 cents. Then Bharata's consonances, nine
   and thirteen śrutis, are 490.9 and 709.1 cents, against 498.0 and 702.0 for a pure 4:3
@@ -103,11 +105,17 @@ What the model shows:
 
   ![The fourteen mūrcchanās with their steps in śrutis and the Greek octave with the same steps](docs/assets/vina-murcchanas.png)
 
-- **The 1894 text has two slips the arithmetic catches.** The third lowering reads
-  *śrutyadhikatvāt*, "a śruti higher", where the count needs three (Ghosh's 1961
-  translation supplies "[three]"). The second lowering names its pairs crosswise,
-  *gāndhāra-niṣāda* into *dhaivata-ṛṣabha*; Ghosh's "respectively" would put gāndhāra on
-  dhaivata, eleven śrutis away.
+- **The witnesses disagree exactly where the arithmetic bites.** The 1894 Kāvyamālā
+  chapter is taken over from Grosset's 1888 edition (its footnote on p. 301 says so), and
+  Grosset printed the whole demonstration in brackets as doubtful. The same 1894 scan also
+  holds an earlier setting of those pages, without the footnote: its demonstration has
+  no three-śruti lowering, as Grosset's manuscript G has a lacuna there. Without that
+  stage the meetings measure only 16 of the 22 śrutis, so the count needs the stage that,
+  of Grosset's two manuscripts, only A keeps. In Grosset's text that stage reads *śrutyadhikatvāt*, "a śruti
+  higher", where the count needs three (Ghosh's 1961 translation supplies "[three]"), and
+  the second lowering names its pairs crosswise, *gāndhāra-niṣāda* into
+  *dhaivata-ṛṣabha*. The earlier 1894 setting has *ṛṣabha-dhaivata*, the order the count
+  needs.
 
 Fifteen Sanskrit words with Monier-Williams senses sit below: a note (gāndhāra) and two
 mūrcchanās (sauvīrī, pauravī) share their names with peoples, as the Greek harmoniai do, and
@@ -123,10 +131,13 @@ madhyama is "middle", like μέση.
 - Senses from LSJ through Logeion. Two note names, παραμέση and τρίτη, have no separate
   LSJ entry; their glosses are readings of the compounds and say so.
 - Bharata, *Nāṭyaśāstra* 28 and 29, ed. Śivadatta and K. P. Parab, Kāvyamālā 42
-  (Bombay: Nirṇaya Sāgara Press, 1894), pp. 303–305 and 328, transcribed from the page
+  (Bombay: Nirṇaya Sāgara Press, 1894), pp. 301–305 and 328, transcribed from the page
   images of the Internet Archive scan
   `natyasastrakasinathpandurangparabpanditsivadattanirnayasagarpresskm42mula`, not from
-  its OCR. Manomohan Ghosh's translation (Calcutta: Asiatic Society, 1961) was consulted
+  its OCR. Chapter 28 there follows Grosset's edition; the scan's earlier setting of
+  pp. 297–304 is at physical PDF pages 300–307.
+- J. Grosset, *Contribution à l'étude de la musique hindoue* (Paris: Leroux, 1888),
+  pp. 21, 28–29 and 86, read from the page images that the sibling project Grāma bundles. Manomohan Ghosh's translation (Calcutta: Asiatic Society, 1961) was consulted
   for comparison and is cited only for two bracketed or translated words.
 - Sanskrit senses from Monier-Williams, *A Sanskrit-English Dictionary* (1899), through
   the Cologne Digital Sanskrit Dictionaries.
@@ -154,7 +165,7 @@ Tests (`npm test`, 19):
 - the synthesized string sounds within 15 cents of its target and dies away;
 - the Leitner schedule weights missed strings sixteen times over known ones;
 - both grāmas hold 22 śrutis, and the two-vīṇā model meets exactly the strings the
-  Sanskrit names at each lowering;
+  Sanskrit names at each lowering; without the three-śruti stage it measures only 16;
 - Bharata's consonant and dissonant examples are nine, thirteen or twenty śrutis apart;
 - the ṣaḍja-grāma mūrcchanās match the seven Greek species in the order above.
 
@@ -190,7 +201,10 @@ npm run dev        # http://127.0.0.1:4413/harmoniai/
 ## Related
 
 [Pyknon](https://github.com/antonsoo/pyknon) hears the enharmonic tetrachord and reads
-Greek notation. [Embater](https://github.com/antonsoo/embater) does for ancient
+Greek notation. [Grāma](https://github.com/antonsoo/grama) works through the single
+pañcama-lowering and the count verses from Grosset's pages, and leaves the two-vīṇā
+demonstration aside as doubtful. [Sammû](https://github.com/antonsoo/sammu) follows a
+Babylonian retuning procedure through seven named tunings. [Embater](https://github.com/antonsoo/embater) does for ancient
 buildings what this does for scales.
 
 ## License

@@ -4,12 +4,12 @@ export type Page = "greek" | "india";
 
 const NAV: Record<Page, string> = {
   greek: `<a href="#strings">Strings</a><a href="#places">Places</a><a href="#names">Names</a><a href="#highest">Highest, lowest</a><a href="#ethos">Ethos</a><a href="#words">Words</a>`,
-  india: `<a href="#demo">Two vīṇās</a><a href="#count">The count</a><a href="#murcchanas">Mūrcchanās</a><a href="#sa-words">Words</a><a href="#reading">The 1894 page</a>`,
+  india: `<a href="#demo">Two vīṇās</a><a href="#count">The count</a><a href="#murcchanas">Mūrcchanās</a><a href="#sa-words">Words</a><a href="#reading">Whose text</a>`,
 };
 
 const FOOT: Record<Page, string> = {
   greek: `Greek from Jan's <i>Musici scriptores Graeci</i> (1895) for Cleonides, and Burnet and Ross through the Perseus Digital Library for Plato and Aristotle; senses from LSJ via Logeion. Translations are new. Sounds are synthetic plucked strings, not reconstructions of an ancient instrument.`,
-  india: `Sanskrit from the Kāvyamālā <i>Nāṭyaśāstra</i> (Bombay, 1894), read against the page images; senses from Monier-Williams (1899) via the Cologne Digital Sanskrit Dictionaries. Translations are new. Sounds are synthetic plucked strings on twenty-two equal śrutis, a modern model.`,
+  india: `Sanskrit from the Kāvyamālā <i>Nāṭyaśāstra</i> (Bombay, 1894), which follows Grosset's 1888 edition for this chapter, read against the page images; senses from Monier-Williams (1899) via the Cologne Digital Sanskrit Dictionaries. Translations are new. Sounds are synthetic plucked strings on twenty-two equal śrutis, a modern model.`,
 };
 
 /** Masthead, page switch, footer and theme button shared by both pages; returns the main element. */

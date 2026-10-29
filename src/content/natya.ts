@@ -1,8 +1,11 @@
 /**
  * Nāṭyaśāstra 28, as printed in Kāvyamālā 42 (ed. Śivadatta and K. P. Parab, Nirṇaya Sāgara
- * Press, Bombay 1894; public domain), read against the page images. Transliteration is
- * IAST; translations are new. Verse numbers are the Kāvyamālā's; Ghosh's 1961
- * translation numbers the same verses one lower (28.24–26 for 25–27).
+ * Press, Bombay 1894; public domain), read against the page images. A footnote on its p. 301
+ * says the chapter was taken over from J. Grosset's 1888 edition, which brackets the
+ * two-vīṇā demonstration as doubtful. The same scan holds an earlier setting of pp. 297–304
+ * without that footnote (physical PDF pages 300–307); EARLIER_SETTING quotes it.
+ * Transliteration is IAST; translations are new. Verse numbers are the Kāvyamālā's (and
+ * Grosset's); Ghosh's 1961 translation numbers the śruti verses one lower.
  */
 import type { Stage, Svara } from "../core/sruti";
 
@@ -96,6 +99,15 @@ export const DEMONSTRATION: Record<Stage, Line & { title: string }> = {
       "When it is lowered once more in the same way, its pañcama, madhyama and ṣaḍja will enter the madhyama, gāndhāra and niṣāda of the other, since they stood four śrutis higher. By this showing of the śrutis, then, the twenty-two śrutis of the two grāmas are to be understood.",
     cite: "p. 304",
   },
+};
+
+/** The demonstration in the earlier setting of p. 301: no three-śruti lowering. */
+export const EARLIER_SETTING: Line = {
+  deva: "पुनरपि तद्वदेवापकर्षयेत् । यथा — गान्धारनिषादवन्तावितरस्यामृषभधैवतौ प्रवेक्ष्यतो द्विश्रुत्यभ्यधिकत्वात् । तद्वत्पुनरपकृष्टायां तस्यां पञ्चममध्यमषड्जा इतरस्यां मध्यमगान्धारनिषादवन्तः प्रवेक्ष्यन्ति चतुःश्रुत्यभ्यधिकत्वात् ।",
+  iast: "punar api tadvad evāpakarṣayet | yathā — gāndhāraniṣādavantāv itarasyām ṛṣabhadhaivatau pravekṣyato dviśrutyabhyadhikatvāt | tadvat punar apakṛṣṭāyāṃ tasyāṃ pañcamamadhyamaṣaḍjā itarasyāṃ madhyamagāndhāraniṣādavantaḥ pravekṣyanti catuḥśrutyabhyadhikatvāt |",
+  english:
+    "Let him lower it again in the same way. Thus its gāndhāra and niṣāda will enter the ṛṣabha and dhaivata of the other, since they stand two śrutis higher. When it is lowered again in the same way, its pañcama, madhyama and ṣaḍja will enter the madhyama, gāndhāra and niṣāda of the other, since they stand four śrutis higher.",
+  cite: "28, earlier setting of p. 301 (physical PDF page 304 of the scan)",
 };
 
 export const CONSONANCE: Line = {

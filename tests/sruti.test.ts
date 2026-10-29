@@ -55,6 +55,11 @@ test("the demonstration meets exactly the strings the prose names", () => {
   // Each note meets at the lowering equal to its span, so the lowerings add up to 22.
   const total = firstMeetings().reduce((n, f) => n + f.lowered * f.meetings.length, 0);
   assert.equal(total, OCTAVE);
+  // The earlier 1894 setting has no three-śruti lowering: then only 16 śrutis are measured.
+  const withoutThird = firstMeetings()
+    .filter((f) => f.lowered !== 3)
+    .reduce((n, f) => n + f.lowered * f.meetings.length, 0);
+  assert.equal(withoutThird, 16);
 });
 
 test("consonance and dissonance follow the examples in the text", () => {
