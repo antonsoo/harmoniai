@@ -1,0 +1,310 @@
+{
+  "schemaVersion": 1,
+  "node": "v26.7.0",
+  "requestTimeoutMs": 10000,
+  "retryWindowMs": 180000,
+  "pollIntervalMs": 5000,
+  "concurrency": 6,
+  "baseURL": "https://antonsoo.github.io/harmoniai/",
+  "state": "verified",
+  "attempts": 1,
+  "startedAtUtc": "2026-10-29T20:04:03.773Z",
+  "checkedAtUtc": "2026-10-29T20:04:04.978Z",
+  "buildManifestSha256": "d7c6252758ec0c5d9e180ac6a93f0facec99477a45729f3857b2b3b02fae6f96",
+  "expectedFileCount": 27,
+  "checkedFileCount": 27,
+  "verifiedFileCount": 27,
+  "rootBefore": {
+    "path": "index.html",
+    "bytes": 1206,
+    "sha256": "908c09201d11c0b93d17abae01fe58d7a7ec5a82fd2771be34ee634cf2c2bd07",
+    "url": "https://antonsoo.github.io/harmoniai/",
+    "httpStatus": 200,
+    "observedBytes": 1206,
+    "observedSha256": "908c09201d11c0b93d17abae01fe58d7a7ec5a82fd2771be34ee634cf2c2bd07",
+    "state": "verified"
+  },
+  "rootAfter": {
+    "path": "index.html",
+    "bytes": 1206,
+    "sha256": "908c09201d11c0b93d17abae01fe58d7a7ec5a82fd2771be34ee634cf2c2bd07",
+    "url": "https://antonsoo.github.io/harmoniai/",
+    "httpStatus": 200,
+    "observedBytes": 1206,
+    "observedSha256": "908c09201d11c0b93d17abae01fe58d7a7ec5a82fd2771be34ee634cf2c2bd07",
+    "state": "verified"
+  },
+  "files": [
+    {
+      "path": "FONT-LICENSE.txt",
+      "bytes": 14204,
+      "sha256": "21675d953c0ac998c715f200b106198ec59952b6a05d06988c72524020be1c86",
+      "url": "https://antonsoo.github.io/harmoniai/FONT-LICENSE.txt",
+      "httpStatus": 200,
+      "observedBytes": 14204,
+      "observedSha256": "21675d953c0ac998c715f200b106198ec59952b6a05d06988c72524020be1c86",
+      "state": "verified"
+    },
+    {
+      "path": "LICENSE.txt",
+      "bytes": 1071,
+      "sha256": "f4cec46403514e2601f3b917ad36bfc8cd9a6d97359ac2f9bb554d2062a251eb",
+      "url": "https://antonsoo.github.io/harmoniai/LICENSE.txt",
+      "httpStatus": 200,
+      "observedBytes": 1071,
+      "observedSha256": "f4cec46403514e2601f3b917ad36bfc8cd9a6d97359ac2f9bb554d2062a251eb",
+      "state": "verified"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.txt",
+      "bytes": 1911,
+      "sha256": "39d8629083f6baf02a6ee8b1a70b718e05dff321b14ec56cb88ab12806a0c360",
+      "url": "https://antonsoo.github.io/harmoniai/THIRD_PARTY_NOTICES.txt",
+      "httpStatus": 200,
+      "observedBytes": 1911,
+      "observedSha256": "39d8629083f6baf02a6ee8b1a70b718e05dff321b14ec56cb88ab12806a0c360",
+      "state": "verified"
+    },
+    {
+      "path": "assets/gentium-book-plus-400-greek-CLs1HoaC.woff2",
+      "bytes": 18168,
+      "sha256": "cba273ba7a0fbe810e3531f5cc62fd4e963da7c5d32b4981c3f30fe562aea343",
+      "url": "https://antonsoo.github.io/harmoniai/assets/gentium-book-plus-400-greek-CLs1HoaC.woff2",
+      "httpStatus": 200,
+      "observedBytes": 18168,
+      "observedSha256": "cba273ba7a0fbe810e3531f5cc62fd4e963da7c5d32b4981c3f30fe562aea343",
+      "state": "verified"
+    },
+    {
+      "path": "assets/gentium-book-plus-400-greek-ext-DWWGNQKb.woff2",
+      "bytes": 9356,
+      "sha256": "f4cbbee8404f7275cdece60d170d787d693df853452ef43a7b504d73eca2d658",
+      "url": "https://antonsoo.github.io/harmoniai/assets/gentium-book-plus-400-greek-ext-DWWGNQKb.woff2",
+      "httpStatus": 200,
+      "observedBytes": 9356,
+      "observedSha256": "f4cbbee8404f7275cdece60d170d787d693df853452ef43a7b504d73eca2d658",
+      "state": "verified"
+    },
+    {
+      "path": "assets/gentium-book-plus-400-latin-CN5vb1Vx.woff2",
+      "bytes": 21564,
+      "sha256": "dd5d2902dac9c11d3acc42b0e54a74b4f2db9bd4a7d6872c23338f70df29ca7e",
+      "url": "https://antonsoo.github.io/harmoniai/assets/gentium-book-plus-400-latin-CN5vb1Vx.woff2",
+      "httpStatus": 200,
+      "observedBytes": 21564,
+      "observedSha256": "dd5d2902dac9c11d3acc42b0e54a74b4f2db9bd4a7d6872c23338f70df29ca7e",
+      "state": "verified"
+    },
+    {
+      "path": "assets/gentium-book-plus-400-latin-ext-BiRsxpCX.woff2",
+      "bytes": 57824,
+      "sha256": "46b8923c77eceb874e1b6a28ce08d56293641382ea0382f7043139bfff8f2383",
+      "url": "https://antonsoo.github.io/harmoniai/assets/gentium-book-plus-400-latin-ext-BiRsxpCX.woff2",
+      "httpStatus": 200,
+      "observedBytes": 57824,
+      "observedSha256": "46b8923c77eceb874e1b6a28ce08d56293641382ea0382f7043139bfff8f2383",
+      "state": "verified"
+    },
+    {
+      "path": "assets/gentium-book-plus-700-greek-D13hw162.woff2",
+      "bytes": 18520,
+      "sha256": "724dc67b98be2894401d21df2b8bf578d78187ca3f90f60ec95861e7059d441a",
+      "url": "https://antonsoo.github.io/harmoniai/assets/gentium-book-plus-700-greek-D13hw162.woff2",
+      "httpStatus": 200,
+      "observedBytes": 18520,
+      "observedSha256": "724dc67b98be2894401d21df2b8bf578d78187ca3f90f60ec95861e7059d441a",
+      "state": "verified"
+    },
+    {
+      "path": "assets/gentium-book-plus-700-greek-ext-BE1cELiy.woff2",
+      "bytes": 9376,
+      "sha256": "d104ae417e075f91963b872de09eb31123ca0b96900f6b66e7e71344d9336d4b",
+      "url": "https://antonsoo.github.io/harmoniai/assets/gentium-book-plus-700-greek-ext-BE1cELiy.woff2",
+      "httpStatus": 200,
+      "observedBytes": 9376,
+      "observedSha256": "d104ae417e075f91963b872de09eb31123ca0b96900f6b66e7e71344d9336d4b",
+      "state": "verified"
+    },
+    {
+      "path": "assets/gentium-book-plus-700-latin-BymqVBkR.woff2",
+      "bytes": 21536,
+      "sha256": "b151cf211e3c03b3eac0ef3a4e94c44aa67096f9e7148cabfb9e9f8a0017eb33",
+      "url": "https://antonsoo.github.io/harmoniai/assets/gentium-book-plus-700-latin-BymqVBkR.woff2",
+      "httpStatus": 200,
+      "observedBytes": 21536,
+      "observedSha256": "b151cf211e3c03b3eac0ef3a4e94c44aa67096f9e7148cabfb9e9f8a0017eb33",
+      "state": "verified"
+    },
+    {
+      "path": "assets/gentium-book-plus-700-latin-ext-D1SMMCt_.woff2",
+      "bytes": 57264,
+      "sha256": "001e63c267c9884f95d7783bf1674eae74799d269240e13139a6b4cdf9f2924d",
+      "url": "https://antonsoo.github.io/harmoniai/assets/gentium-book-plus-700-latin-ext-D1SMMCt_.woff2",
+      "httpStatus": 200,
+      "observedBytes": 57264,
+      "observedSha256": "001e63c267c9884f95d7783bf1674eae74799d269240e13139a6b4cdf9f2924d",
+      "state": "verified"
+    },
+    {
+      "path": "assets/gentium-book-plus-italic-greek-BfV1x5aq.woff2",
+      "bytes": 18168,
+      "sha256": "da8564415fbeac7e39ae174810f3fe5139373b9624b6f7008c0315737afe9614",
+      "url": "https://antonsoo.github.io/harmoniai/assets/gentium-book-plus-italic-greek-BfV1x5aq.woff2",
+      "httpStatus": 200,
+      "observedBytes": 18168,
+      "observedSha256": "da8564415fbeac7e39ae174810f3fe5139373b9624b6f7008c0315737afe9614",
+      "state": "verified"
+    },
+    {
+      "path": "assets/gentium-book-plus-italic-greek-ext-cZLoWG0Y.woff2",
+      "bytes": 9416,
+      "sha256": "fd831d285c3d0da6891a7ec460d4a9b05791cda2cf91beae0d1362b9029a6c32",
+      "url": "https://antonsoo.github.io/harmoniai/assets/gentium-book-plus-italic-greek-ext-cZLoWG0Y.woff2",
+      "httpStatus": 200,
+      "observedBytes": 9416,
+      "observedSha256": "fd831d285c3d0da6891a7ec460d4a9b05791cda2cf91beae0d1362b9029a6c32",
+      "state": "verified"
+    },
+    {
+      "path": "assets/gentium-book-plus-italic-latin-c-m4ooFh.woff2",
+      "bytes": 24588,
+      "sha256": "daa214002d1aa0ce6fbe72c495542a2d321b51172565e2e9508a3b5e064fcf6c",
+      "url": "https://antonsoo.github.io/harmoniai/assets/gentium-book-plus-italic-latin-c-m4ooFh.woff2",
+      "httpStatus": 200,
+      "observedBytes": 24588,
+      "observedSha256": "daa214002d1aa0ce6fbe72c495542a2d321b51172565e2e9508a3b5e064fcf6c",
+      "state": "verified"
+    },
+    {
+      "path": "assets/gentium-book-plus-italic-latin-ext-SxHammME.woff2",
+      "bytes": 65080,
+      "sha256": "eddfadc54270eb9bee9ca8a1c879e9352748a38c1ecf46513b03bf16b377f532",
+      "url": "https://antonsoo.github.io/harmoniai/assets/gentium-book-plus-italic-latin-ext-SxHammME.woff2",
+      "httpStatus": 200,
+      "observedBytes": 65080,
+      "observedSha256": "eddfadc54270eb9bee9ca8a1c879e9352748a38c1ecf46513b03bf16b377f532",
+      "state": "verified"
+    },
+    {
+      "path": "assets/gfs-neohellenic-greek-DLuqQA6u.woff2",
+      "bytes": 10716,
+      "sha256": "d489ded5ec6c74f9ec76437364fd28a50d885cbbeab68fbc6983abba2333b939",
+      "url": "https://antonsoo.github.io/harmoniai/assets/gfs-neohellenic-greek-DLuqQA6u.woff2",
+      "httpStatus": 200,
+      "observedBytes": 10716,
+      "observedSha256": "d489ded5ec6c74f9ec76437364fd28a50d885cbbeab68fbc6983abba2333b939",
+      "state": "verified"
+    },
+    {
+      "path": "assets/gfs-neohellenic-greek-ext-DZAcqUeX.woff2",
+      "bytes": 17016,
+      "sha256": "1708e72d62d20026235d6a0ad03154a8376e9bee0227d0a1ed1a522ced327766",
+      "url": "https://antonsoo.github.io/harmoniai/assets/gfs-neohellenic-greek-ext-DZAcqUeX.woff2",
+      "httpStatus": 200,
+      "observedBytes": 17016,
+      "observedSha256": "1708e72d62d20026235d6a0ad03154a8376e9bee0227d0a1ed1a522ced327766",
+      "state": "verified"
+    },
+    {
+      "path": "assets/gfs-neohellenic-latin-CdUOFP9L.woff2",
+      "bytes": 24168,
+      "sha256": "0900be9bc421a3c769457c0596609a49755be366cec54b8e6492e3a7a47c756f",
+      "url": "https://antonsoo.github.io/harmoniai/assets/gfs-neohellenic-latin-CdUOFP9L.woff2",
+      "httpStatus": 200,
+      "observedBytes": 24168,
+      "observedSha256": "0900be9bc421a3c769457c0596609a49755be366cec54b8e6492e3a7a47c756f",
+      "state": "verified"
+    },
+    {
+      "path": "assets/index-CNZJz7Au.js",
+      "bytes": 34781,
+      "sha256": "b885e50458f4d612eef7a8ee1188658919398c5eee0198bcbee4847cc135726f",
+      "url": "https://antonsoo.github.io/harmoniai/assets/index-CNZJz7Au.js",
+      "httpStatus": 200,
+      "observedBytes": 34781,
+      "observedSha256": "b885e50458f4d612eef7a8ee1188658919398c5eee0198bcbee4847cc135726f",
+      "state": "verified"
+    },
+    {
+      "path": "assets/shell-BOfQD8oP.js",
+      "bytes": 12447,
+      "sha256": "08f1b088745b96ea1f2845ceeafc6763c54d91d489919c216ef53e45ab15e8fe",
+      "url": "https://antonsoo.github.io/harmoniai/assets/shell-BOfQD8oP.js",
+      "httpStatus": 200,
+      "observedBytes": 12447,
+      "observedSha256": "08f1b088745b96ea1f2845ceeafc6763c54d91d489919c216ef53e45ab15e8fe",
+      "state": "verified"
+    },
+    {
+      "path": "assets/shell-CYbVA2QV.css",
+      "bytes": 16914,
+      "sha256": "87a1fee0be4713897ffe24331d1f73bee18527a7a9cef9a741eacda7e8fa79e3",
+      "url": "https://antonsoo.github.io/harmoniai/assets/shell-CYbVA2QV.css",
+      "httpStatus": 200,
+      "observedBytes": 16914,
+      "observedSha256": "87a1fee0be4713897ffe24331d1f73bee18527a7a9cef9a741eacda7e8fa79e3",
+      "state": "verified"
+    },
+    {
+      "path": "assets/tiro-devanagari-sanskrit-400-devanagari-Djl2bf-7.woff2",
+      "bytes": 183900,
+      "sha256": "b1c4699168ebfeb6c92fadfcdd379ded22eb94de9537234a2ef0f93e12cd9d69",
+      "url": "https://antonsoo.github.io/harmoniai/assets/tiro-devanagari-sanskrit-400-devanagari-Djl2bf-7.woff2",
+      "httpStatus": 200,
+      "observedBytes": 183900,
+      "observedSha256": "b1c4699168ebfeb6c92fadfcdd379ded22eb94de9537234a2ef0f93e12cd9d69",
+      "state": "verified"
+    },
+    {
+      "path": "assets/vina-CDpGNL0h.js",
+      "bytes": 33855,
+      "sha256": "36267ca83cdd5c429907e0d5e9e1f958de9585175fcc717783d692ebdc357116",
+      "url": "https://antonsoo.github.io/harmoniai/assets/vina-CDpGNL0h.js",
+      "httpStatus": 200,
+      "observedBytes": 33855,
+      "observedSha256": "36267ca83cdd5c429907e0d5e9e1f958de9585175fcc717783d692ebdc357116",
+      "state": "verified"
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 327,
+      "sha256": "677e97172eaee779a5e9780bb5616f6941e025d44ad4353426ee6c5f30c486c4",
+      "url": "https://antonsoo.github.io/harmoniai/favicon.svg",
+      "httpStatus": 200,
+      "observedBytes": 327,
+      "observedSha256": "677e97172eaee779a5e9780bb5616f6941e025d44ad4353426ee6c5f30c486c4",
+      "state": "verified"
+    },
+    {
+      "path": "index.html",
+      "bytes": 1206,
+      "sha256": "908c09201d11c0b93d17abae01fe58d7a7ec5a82fd2771be34ee634cf2c2bd07",
+      "url": "https://antonsoo.github.io/harmoniai/index.html",
+      "httpStatus": 200,
+      "observedBytes": 1206,
+      "observedSha256": "908c09201d11c0b93d17abae01fe58d7a7ec5a82fd2771be34ee634cf2c2bd07",
+      "state": "verified"
+    },
+    {
+      "path": "sw.js",
+      "bytes": 6905,
+      "sha256": "4ad8a59c718b1b9215b9815cdcb3eb81af2d930665ce8a9c9e5a3d35cd0367be",
+      "url": "https://antonsoo.github.io/harmoniai/sw.js",
+      "httpStatus": 200,
+      "observedBytes": 6905,
+      "observedSha256": "4ad8a59c718b1b9215b9815cdcb3eb81af2d930665ce8a9c9e5a3d35cd0367be",
+      "state": "verified"
+    },
+    {
+      "path": "vina.html",
+      "bytes": 1329,
+      "sha256": "73e47c825e6b9ca68d3bab2a77c0f51c198b4aec856dd38b9177b855ba71d43d",
+      "url": "https://antonsoo.github.io/harmoniai/vina.html",
+      "httpStatus": 200,
+      "observedBytes": 1329,
+      "observedSha256": "73e47c825e6b9ca68d3bab2a77c0f51c198b4aec856dd38b9177b855ba71d43d",
+      "state": "verified"
+    }
+  ],
+  "scope": "Compares canonical responses with this captured build inventory during the recorded pass. Extra hosted files, browser behavior, public source, registry releases and deployment provenance are not established."
+}

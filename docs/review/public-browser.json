@@ -1,0 +1,85 @@
+{
+  "base": "https://antonsoo.github.io/harmoniai/",
+  "receipts": [
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "colorScheme": "light",
+      "afterStopMutations": 0,
+      "greekScheduledSources": 16,
+      "offlinePages": 2,
+      "errors": [],
+      "audibleOutput": "Not measured; Web Audio buffer sources were scheduled."
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "colorScheme": "dark",
+      "afterStopMutations": 0,
+      "greekScheduledSources": 16,
+      "offlinePages": 2,
+      "errors": [],
+      "audibleOutput": "Not measured; Web Audio buffer sources were scheduled."
+    },
+    {
+      "engine": "chromium",
+      "width": 375,
+      "colorScheme": "light",
+      "afterStopMutations": 0,
+      "greekScheduledSources": 16,
+      "offlinePages": 2,
+      "errors": [],
+      "audibleOutput": "Not measured; Web Audio buffer sources were scheduled."
+    },
+    {
+      "engine": "chromium",
+      "width": 375,
+      "colorScheme": "dark",
+      "afterStopMutations": 0,
+      "greekScheduledSources": 16,
+      "offlinePages": 2,
+      "errors": [],
+      "audibleOutput": "Not measured; Web Audio buffer sources were scheduled."
+    },
+    {
+      "engine": "firefox",
+      "width": 1440,
+      "colorScheme": "light",
+      "afterStopMutations": 0,
+      "greekScheduledSources": 16,
+      "offlinePages": 2,
+      "errors": [],
+      "audibleOutput": "Not measured; Web Audio buffer sources were scheduled."
+    },
+    {
+      "engine": "firefox",
+      "width": 1440,
+      "colorScheme": "dark",
+      "afterStopMutations": 0,
+      "greekScheduledSources": 16,
+      "offlinePages": 2,
+      "errors": [],
+      "audibleOutput": "Not measured; Web Audio buffer sources were scheduled."
+    },
+    {
+      "engine": "firefox",
+      "width": 375,
+      "colorScheme": "light",
+      "afterStopMutations": 0,
+      "greekScheduledSources": 16,
+      "offlinePages": 2,
+      "errors": [],
+      "audibleOutput": "Not measured; Web Audio buffer sources were scheduled."
+    },
+    {
+      "engine": "firefox",
+      "width": 375,
+      "colorScheme": "dark",
+      "afterStopMutations": 0,
+      "greekScheduledSources": 16,
+      "offlinePages": 2,
+      "errors": [],
+      "audibleOutput": "Not measured; Web Audio buffer sources were scheduled."
+    }
+  ]
+}

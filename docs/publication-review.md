@@ -75,3 +75,20 @@ did not activate the substituted edition. [Fault results](review/offline.json).
 `npm ci && npm run check` runs lint, strict TypeScript, 20 tests and a build into
 `dist/`. Hosted-file comparisons and public operation receipts are separate records
 in `docs/review/` after publication.
+
+## Public edition: 29 October 2026
+
+[Open the site](https://antonsoo.github.io/harmoniai/). Source revision
+`1a59ffde9daff9f3e3215e9ec182df9c4116a087` was installed and checked in a new
+Node 24.22.1 clone. Its 27 build files matched the working build exactly;
+all 27 canonical public files, including fonts, licenses and service worker,
+then matched that clean build. [Clean-build inventory](review/clean-build.json)
+and [hosted hashes](review/hosted.json).
+
+The same eight browser contexts were replayed against the public site, including
+audio scheduling, Stop, named meetings and both pages offline.
+[Public browser receipt](review/public-browser.json). The legacy Pages deployment
+[succeeded](https://github.com/antonsoo/harmoniai/actions/runs/40945560438).
+The source [CI run](https://github.com/antonsoo/harmoniai/actions/runs/40945458756)
+returned failure with an empty steps list: it executed no checks. The clean local
+checks and public results above are independent of that unavailable CI result.
