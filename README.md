@@ -1,6 +1,6 @@
 # Harmoniai
 
-**Hear the seven Greek octave species, read Cleonides' Greek for each, and see how their regional names moved.**
+**Hear the seven Greek octave species, read Cleonides' Greek for each, and see how their regional names moved. A second page runs Bharata's two-vīṇā demonstration of the twenty-two śrutis from the Sanskrit.**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-6b2a62)](LICENSE)
 [![Live site](https://img.shields.io/badge/live-antonsoo.github.io%2Fharmoniai-8a6418)](https://antonsoo.github.io/harmoniai/)
@@ -69,6 +69,50 @@ of them now carry a different octave's name.
 | Hypophrygian, ὑποφρύγιον | lichanos mesōn – paranētē hyperbolaiōn | G–g | Mixolydian |
 | Hypodorian, ὑποδώριον (also "common" and Locrian) | mesē – nētē hyperbolaiōn | A–a | Aeolian (natural minor) |
 
+## Bharata's two vīṇās
+
+![Two rings of strings on a 22-śruti dial, the inner one lowered three śrutis, with the Sanskrit sentence for that step](docs/assets/vina-dial.png)
+
+The *Nāṭyaśāstra*, a Sanskrit treatise on theatre whose date is disputed, says the octave
+holds twenty-two śrutis, and it says how to hear that. Tune two vīṇās alike. Lower one
+pañcama a śruti, which makes the madhyama-grāma, then retune the rest of that vīṇā to it.
+Keep lowering it the same way: after two śrutis its gāndhāra and niṣāda meet the other
+vīṇā's ṛṣabha and dhaivata; after three, ṛṣabha and dhaivata meet ṣaḍja and pañcama; after
+four, pañcama, madhyama and ṣaḍja meet madhyama, gāndhāra and niṣāda.
+
+`vina.html` turns that paragraph into a dial: the fixed vīṇā on the outer ring, the
+lowered one on the inner ring, each step with its Sanskrit (Devanagari and IAST) and a
+new translation. Select a string to hear it; an inner string sounds together with the
+nearest outer one, so meetings are unisons.
+
+What the model shows:
+
+- **The count is exact.** The meetings computed from the two grāmas (NS 28.25–29) are the
+  ones the prose names, at the lowerings it names, and nothing else meets. The lowerings
+  at which the seven notes meet add up to 2+2+3+3+4+4+4 = 22.
+- **It forces equal śrutis.** If every lowering is the same standard śruti and every
+  meeting is exact, the śruti is 1200/22 = 54.5 cents. Then Bharata's consonances, nine
+  and thirteen śrutis, are 490.9 and 709.1 cents, against 498.0 and 702.0 for a pure 4:3
+  and 3:2. Pure consonances and exact meetings cannot both hold. The page plays equal
+  śrutis and says so.
+- **The seven ṣaḍja-grāma mūrcchanās are Cleonides' seven octave species.** Counting
+  only tones and half-tones, Bharata's list (from ṣaḍja, niṣāda, dhaivata, … down to
+  ṛṣabha) gives Phrygian, Lydian, Mixolydian, Hypodorian, Hypophrygian, Hypolydian and
+  Dorian in that order. The madhyama-grāma's seven repeat the same orders with the
+  three- and four-śruti tones in different places.
+
+  ![The fourteen mūrcchanās with their steps in śrutis and the Greek octave with the same steps](docs/assets/vina-murcchanas.png)
+
+- **The 1894 text has two slips the arithmetic catches.** The third lowering reads
+  *śrutyadhikatvāt*, "a śruti higher", where the count needs three (Ghosh's 1961
+  translation supplies "[three]"). The second lowering names its pairs crosswise,
+  *gāndhāra-niṣāda* into *dhaivata-ṛṣabha*; Ghosh's "respectively" would put gāndhāra on
+  dhaivata, eleven śrutis away.
+
+Fifteen Sanskrit words with Monier-Williams senses sit below: a note (gāndhāra) and two
+mūrcchanās (sauvīrī, pauravī) share their names with peoples, as the Greek harmoniai do, and
+madhyama is "middle", like μέση.
+
 ## Sources
 
 - Cleonides, *Harmonic Introduction*, in K. von Jan, *Musici scriptores Graeci*
@@ -78,6 +122,14 @@ of them now carry a different octave's name.
   published by the Perseus Digital Library.
 - Senses from LSJ through Logeion. Two note names, παραμέση and τρίτη, have no separate
   LSJ entry; their glosses are readings of the compounds and say so.
+- Bharata, *Nāṭyaśāstra* 28 and 29, ed. Śivadatta and K. P. Parab, Kāvyamālā 42
+  (Bombay: Nirṇaya Sāgara Press, 1894), pp. 303–305 and 328, transcribed from the page
+  images of the Internet Archive scan
+  `natyasastrakasinathpandurangparabpanditsivadattanirnayasagarpresskm42mula`, not from
+  its OCR. Manomohan Ghosh's translation (Calcutta: Asiatic Society, 1961) was consulted
+  for comparison and is cited only for two bracketed or translated words.
+- Sanskrit senses from Monier-Williams, *A Sanskrit-English Dictionary* (1899), through
+  the Cologne Digital Sanskrit Dictionaries.
 - Glarean's *Dodecachordon* (1547) is mentioned only for what is uncontroversial: it
   extended the church modes to twelve and added Aeolian and Ionian.
 
@@ -89,17 +141,22 @@ hand-written SVG. Sound is a Karplus–Strong plucked string synthesized in the 
 a burst of noise in a delay line one period long, smoothed on each pass. It sounds like a
 plucked string, not like any particular ancient instrument. There are no network requests
 after load and no tracking. Coastlines are cut from Natural Earth (public domain) by
-`scripts/aegean.py`. The fonts (GFS Neohellenic, Gentium Book Plus) are
-self-hosted.
+`scripts/aegean.py`. The fonts (GFS Neohellenic, Gentium Book Plus, Tiro Devanagari
+Sanskrit) are self-hosted. `src/core/sruti.ts` holds the two grāmas, the stages of the
+demonstration and the fourteen mūrcchanās; `src/content/natya.ts` the Sanskrit.
 
-Tests (`npm test`, 14):
+Tests (`npm test`, 19):
 
 - Cleonides' two descriptions agree;
 - the system spans exactly two octaves, with a 4:3 fourth under the mesē, a 3:2 fifth
   above it and a 9:8 tone of disjunction;
 - the four shared names land on different octaves;
 - the synthesized string sounds within 15 cents of its target and dies away;
-- the Leitner schedule weights missed strings sixteen times over known ones.
+- the Leitner schedule weights missed strings sixteen times over known ones;
+- both grāmas hold 22 śrutis, and the two-vīṇā model meets exactly the strings the
+  Sanskrit names at each lowering;
+- Bharata's consonant and dissonant examples are nine, thirteen or twenty śrutis apart;
+- the ṣaḍja-grāma mūrcchanās match the seven Greek species in the order above.
 
 ## Run it
 
@@ -122,7 +179,13 @@ npm run dev        # http://127.0.0.1:4413/harmoniai/
 - **Neither tuning is a recovered performance.** Pythagorean ratios are one ancient
   theory of tuning, and Aristoxenus measured intervals in tones and parts. Absolute
   pitch (mesē at 220 Hz) is a modern choice.
-- **The English translations are new.** They have not been checked by a second reader.
+- **Equal śrutis are a modern model.** The text gives a count of śrutis, not their sizes.
+  The page uses twenty-two equal ones because only they make every meeting exact.
+- **The mūrcchanā match counts tones, not their sizes.** Bharata distinguishes three-
+  and four-śruti tones; Cleonides' diatonic does not. The page does not claim either
+  tradition learned the scheme from the other.
+- **The English translations are new.** They have not been checked by a second reader,
+  and the Sanskrit transcription has not been checked by a Sanskritist.
 
 ## Related
 
@@ -133,5 +196,5 @@ buildings what this does for scales.
 ## License
 
 Code: [MIT](LICENSE). Fonts: SIL Open Font License (`src/fonts/LICENSE.txt`). Quoted
-Greek texts are from public-domain editions or Perseus (CC BY-SA 3.0 US); see
+Greek and Sanskrit texts are from public-domain editions or Perseus (CC BY-SA 3.0 US); see
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

@@ -1,7 +1,7 @@
 # Third-party material
 
-- **Fonts.** GFS Neohellenic (Greek Font Society) and Gentium Book Plus (SIL
-  International), served from `src/fonts/` under the SIL Open Font License 1.1; full
+- **Fonts.** GFS Neohellenic (Greek Font Society), Gentium Book Plus (SIL
+  International) and Tiro Devanagari Sanskrit (Tiro Typeworks, the Indigo Project), served from `src/fonts/` under the SIL Open Font License 1.1; full
   notices in `src/fonts/LICENSE.txt`.
 - **Cleonides.** K. von Jan, *Musici scriptores Graeci* (Leipzig: Teubner, 1895), public
   domain. Read from the Internet Archive scan `musiciscriptoresjank`; its PDF had SHA-256
@@ -13,3 +13,11 @@
   Greek–English Lexicon* (9th ed.), through Logeion (University of Chicago).
 - **Coastlines.** Natural Earth 1:50m land (naturalearthdata.com), public domain, clipped
   and simplified by `scripts/aegean.py` into `src/content/aegean.ts`.
+- **Nāṭyaśāstra.** Ed. Śivadatta and K. P. Parab, Kāvyamālā 42 (Bombay: Nirṇaya Sāgara
+  Press, 1894), public domain. Read from the Internet Archive scan
+  `natyasastrakasinathpandurangparabpanditsivadattanirnayasagarpresskm42mula`; its PDF had
+  SHA-256 `d05c869a28d6595c079702a820bfc2e84f87bfec47bf970d7d2688fb4f20f070` when consulted.
+  Two words of M. Ghosh's 1961 translation are quoted for comment.
+- **Sanskrit glosses.** Short quotations from M. Monier-Williams, *A Sanskrit-English
+  Dictionary* (Oxford, 1899), public domain, through the Cologne Digital Sanskrit
+  Dictionaries (Universität zu Köln).

@@ -2,7 +2,7 @@
   "name": "harmoniai",
   "version": "0.1.0",
   "private": true,
-  "description": "Hear the seven Greek octave species, read Cleonides' Greek for each, and see how their regional names moved.",
+  "description": "Hear the seven Greek octave species with Cleonides' Greek, and run Bharata's two-vīṇā demonstration of the twenty-two śrutis from the Sanskrit.",
   "type": "module",
   "author": "Anthony Mercer <anthony@praviel.com>",
   "license": "MIT",
@@ -18,7 +18,10 @@
     "harmonia",
     "web-audio",
     "education",
-    "vocabulary"
+    "vocabulary",
+    "sanskrit",
+    "natyashastra",
+    "sruti"
   ],
   "engines": {
     "node": ">=24"

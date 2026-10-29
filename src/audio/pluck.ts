@@ -38,8 +38,11 @@ export class Lyre {
     return this.context;
   }
 
-  /** Play notes one after another, `gap` seconds apart; returns the start offset of each. */
-  play(frequencies: number[], gap = 0.42, onNote?: (index: number) => void): number[] {
+  /**
+   * Play notes one after another, `gap` seconds apart; a step given as several frequencies
+   * sounds them together. Returns the start offset of each step.
+   */
+  play(frequencies: (number | number[])[], gap = 0.42, onNote?: (index: number) => void): number[] {
     this.stop();
     const ctx = this.ctx();
     void ctx.resume();
@@ -47,15 +50,17 @@ export class Lyre {
     const gain = ctx.createGain();
     gain.gain.value = 0.32;
     gain.connect(ctx.destination);
-    return frequencies.map((f, i) => {
-      const samples = pluckSamples(f, ctx.sampleRate, 1.6);
-      const buffer = ctx.createBuffer(1, samples.length, ctx.sampleRate);
-      buffer.copyToChannel(samples, 0);
-      const source = ctx.createBufferSource();
-      source.buffer = buffer;
-      source.connect(gain);
-      source.start(t0 + i * gap);
-      this.voices.push(source);
+    return frequencies.map((step, i) => {
+      for (const f of Array.isArray(step) ? step : [step]) {
+        const samples = pluckSamples(f, ctx.sampleRate, 1.6);
+        const buffer = ctx.createBuffer(1, samples.length, ctx.sampleRate);
+        buffer.copyToChannel(samples, 0);
+        const source = ctx.createBufferSource();
+        source.buffer = buffer;
+        source.connect(gain);
+        source.start(t0 + i * gap);
+        this.voices.push(source);
+      }
       if (onNote) window.setTimeout(() => onNote(i), (0.05 + i * gap) * 1000);
       return i * gap;
     });
