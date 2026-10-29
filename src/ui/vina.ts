@@ -194,7 +194,7 @@ export function mountVina(root: HTMLElement): void {
       <p>The Sanskrit here is the Kāvyamālā edition, checked line by line against the scanned pages, not its OCR. Three places matter for the demonstration.</p>
       <p><b>A missing three.</b> The third lowering reads <i lang="sa-Latn">śrutyadhikatvāt</i>, 'since they stood a śruti higher'. The count needs three: ṛṣabha and dhaivata hold three śrutis each. Manomohan Ghosh's translation (1961) supplies '[three]' in brackets.</p>
       <p><b>A crossed pair.</b> In the second lowering, <i lang="sa-Latn">gāndhāra-niṣāda</i> enter <i lang="sa-Latn">dhaivata-ṛṣabha</i>. Taken in order, gāndhāra would land on dhaivata, eleven śrutis away. The count requires gāndhāra on ṛṣabha and niṣāda on dhaivata, which is what the dial shows. Ghosh's 'respectively' pairs them the other way.</p>
-      <p><b>Seven strings.</b> Ghosh's text of 29.120 gives the citrā vīṇā seven strings and the vipañcī nine. The Kāvyamālā garbles that half-line (its 29.124a) but keeps the second half, below. The dial draws no instrument: Monier-Williams's 'Indian lute … with two large gourds' is a much later vīṇā.</p>
+      <p><b>Seven strings.</b> In Ghosh's translation, 29.120 gives the citrā vīṇā seven strings and the vipañcī nine. The Kāvyamālā garbles that half-line (its 29.124a) but keeps the second half, below. The dial draws no instrument. Monier-Williams's 'Indian lute', with its 'two large gourds', describes a later vīṇā, not necessarily Bharata's.</p>
       <p class="muted">Verse numbers are the Kāvyamālā's; Ghosh's run one lower for the śruti verses. <a href="${EDITION_URL}">${esc(EDITION)}</a>, pp. 303–305 and 328.</p>
     </div>
     <div>${passage(FINGERS)}</div>
