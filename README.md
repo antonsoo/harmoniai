@@ -42,8 +42,8 @@ called now.
   Dorian and Phrygian, and Socrates answers "I don't know the harmoniai".
 - **Words of the strings.** ἁρμονία first means a carpenter's joint (Odysseus's raft),
   then the stringing of a lyre. τόνος, "tone", is a stretched cord. ἡμιτόνιον, "semitone",
-  also names half the sinew spring of a catapult, and Vitruvius tells architects to learn
-  music to tune them (I.1.8).
+  also names half the twisted spring of a torsion catapult, and Vitruvius tells architects
+  to learn music so they can tune those springs by ear (I.1.8).
 - **Find the string.** Names disappear from the strings; pluck the one asked for. Missed
   strings come back sooner.
 
