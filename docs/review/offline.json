@@ -1,0 +1,25 @@
+{
+  "project": "harmoniai",
+  "receipts": [
+    {
+      "engine": "chromium",
+      "cached503": true,
+      "network404Preserved": true,
+      "partialBodyFallbackMs": 2036,
+      "evictedPageNotRestored": true,
+      "missingFileReadiness": false,
+      "corruptInstallActivated": false,
+      "badStatus": "Offline saving did not finish. Reload online to try again."
+    },
+    {
+      "engine": "firefox",
+      "cached503": true,
+      "network404Preserved": true,
+      "partialBodyFallbackMs": 2050,
+      "evictedPageNotRestored": true,
+      "missingFileReadiness": false,
+      "corruptInstallActivated": false,
+      "badStatus": "Offline saving did not finish. Reload online to try again."
+    }
+  ]
+}

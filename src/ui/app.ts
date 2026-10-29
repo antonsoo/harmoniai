@@ -248,6 +248,7 @@ ${quote ? passage(quote) : ""}
     if (s && !drill) {
       const found = SPECIES.find((x) => x.ordinal === Number(s.dataset.species));
       if (found) {
+        lyre.stop();
         species = found;
         render();
       }
@@ -277,16 +278,23 @@ ${quote ? passage(quote) : ""}
       },
     );
   });
-  root.querySelector("#stop")?.addEventListener("click", () => lyre.stop());
+  root.querySelector("#stop")?.addEventListener("click", () => {
+    lyre.stop();
+    drawInstrument();
+  });
   root.querySelector<HTMLSelectElement>("#tuning")?.addEventListener("change", (e) => {
+    lyre.stop();
+    drawInstrument();
     tuning =
       (e.target as HTMLSelectElement).value === "aristoxenian" ? "aristoxenian" : "pythagorean";
   });
   root.querySelector<HTMLInputElement>("#orient")?.addEventListener("change", (e) => {
+    lyre.stop();
     orientation = (e.target as HTMLInputElement).checked ? "pitch" : "named";
     drawInstrument();
   });
   root.querySelector<HTMLInputElement>("#drill")?.addEventListener("change", (e) => {
+    lyre.stop();
     drill = (e.target as HTMLInputElement).checked;
     render();
   });

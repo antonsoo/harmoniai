@@ -1,0 +1,3 @@
+
+# Preserve redistributed license text byte-for-byte, including its original whitespace.
+public/FONT-LICENSE.txt -whitespace

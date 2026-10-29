@@ -13,6 +13,7 @@ import {
   SRUTI_VERSE,
   SVARA_NAMES,
 } from "../content/natya";
+import { PURE_LOWERINGS, ratioCents } from "../core/counterexample";
 import {
   firstMeetings,
   greekTwin,
@@ -108,7 +109,7 @@ export function mountVina(root: HTMLElement): void {
 <section class="hero" id="demo">
   <div class="hero-text">
     <h1>Twenty-two śrutis, by ear</h1>
-    <p>The <i>Nāṭyaśāstra</i>, a Sanskrit treatise on theatre whose date is disputed, divides the octave into twenty-two śrutis. It does not ask you to take the number on trust. Tune two vīṇās alike, it says, then keep lowering one of them by a śruti and listen for the strings that meet. The passage is obscure and its text insecure; the dial plays it as its 1888 editor printed it, and the last section shows where the witnesses disagree.</p>
+    <p>The <i>Nāṭyaśāstra</i>, a Sanskrit treatise on theatre whose date is disputed, divides the octave into twenty-two śrutis. It does not ask you to take the number on trust. Tune two vīṇās alike, it says, then keep lowering one of them by a śruti and listen for the strings that meet. The passage is obscure and its text insecure; this dial illustrates its named meetings with twenty-two equal steps, a modern choice. Equal steps are not the only interpretation. The last section shows where the witnesses disagree.</p>
   </div>
   <div class="bench">
     <figure class="dial-wrap"><div id="dial">${dialSvg()}</div>
@@ -123,6 +124,7 @@ export function mountVina(root: HTMLElement): void {
         <button type="button" class="primary" id="lower">Lower it a step</button>
         <button type="button" id="reset">Tune both alike</button>
         <button type="button" id="hear">Play string by string</button>
+        <button type="button" id="vina-stop">Stop</button>
       </div>
       <p class="sum" id="sum" aria-live="polite"></p>
       <div class="card" id="stage-card"></div>
@@ -149,13 +151,29 @@ export function mountVina(root: HTMLElement): void {
     </div>
     <div>${passage(SRUTI_VERSE)}${passage(PRAMANA)}</div>
   </div>
-  <h3>What the count forces</h3>
+  <h3 id="assumptions">What equal steps assume</h3>
   <div class="two">
     <div>
-      <p>Every lowering is the same standard śruti, and the text says the strings meet. If they meet exactly, the seven gaps are 2, 2, 3, 3, 4, 4 and 4 of one unit, and the unit is a twenty-second of an octave: ${srutiCents(1).toFixed(1)} cents. This page plays them that way.</p>
-      <p>Bharata also calls notes nine or thirteen śrutis apart consonant. On equal śrutis those intervals are ${srutiCents(9).toFixed(1)} and ${srutiCents(13).toFixed(1)} cents; a pure fourth (4:3) and fifth (3:2) are ${(1200 * Math.log2(4 / 3)).toFixed(1)} and ${(1200 * Math.log2(3 / 2)).toFixed(1)}. With pure fourths and fifths the śrutis cannot all be equal, and then the meetings cannot all be exact. The text gives a count, not string lengths, and says nothing about the size of a śruti in any other terms.</p>
+      <p>This dial makes every successive lowering the same size. Under that extra assumption, the exact meetings make the seven gaps 2, 2, 3, 3, 4, 4 and 4 of one unit, and the unit is a twenty-second of an octave: ${srutiCents(1).toFixed(1)} cents. This page plays them that way.</p>
+      <p>Bharata also calls notes nine or thirteen śrutis apart consonant. On equal śrutis those intervals are ${srutiCents(9).toFixed(1)} and ${srutiCents(13).toFixed(1)} cents; a pure fourth (4:3) and fifth (3:2) are ${(1200 * Math.log2(4 / 3)).toFixed(1)} and ${(1200 * Math.log2(3 / 2)).toFixed(1)}. These equal divisions do not make pure fourths and fifths. That is a limitation of this model, not a contradiction in the text: unequal successive lowerings can preserve the same named meetings with pure consonances.</p>
     </div>
     <div>${passage(CONSONANCE)}</div>
+  </div>
+  <div class="two counterexample">
+    <div><h3>The same meetings, unequal moves</h3>
+      <p>Bernard Bel distinguishes repeating a retuning procedure from repeating one interval size. A preparation with a pure fourth and fifth and a chosen first lowering of 81:80 gives the same seven meetings. Its successive moves are 21.506, 90.225, 70.672 and 21.506 cents. The table shows the cumulative lowering, not four equal units.</p>
+      <p><a href="https://bolprocessor.org/wp-content/uploads/Bharata-paper.pdf#page=7">Bel’s analysis, printed p. 6</a>. This is one modern tuning example; it does not recover ancient performance or determine all twenty-two individual pitches. <a href="https://antonsoo.github.io/pyknon/vina.html">Change the preparation and operate the unequal-lowering model in Pyknon ↗</a>.</p>
+      <div class="controls"><button type="button" id="equal-fifth">Hear the equal-step fifth</button><button type="button" id="pure-fifth">Hear a pure 3:2 fifth</button><button type="button" id="comparison-stop">Stop comparison</button></div>
+      <p id="fifth-status" class="muted" aria-live="polite">Two sine tones, Sa at 220 Hz. The dial above keeps its equal steps.</p>
+    </div>
+    <div class="table-scroll"><table id="lowering-comparison" class="count"><caption>Total lowering in cents</caption><thead><tr><th scope="col">Stage</th><th scope="col">Equal-step dial</th><th scope="col">Pure-ratio example</th><th scope="col">Ratio of total lowering</th></tr></thead><tbody>${PURE_LOWERINGS.slice(
+      1,
+    )
+      .map(
+        (r, i) =>
+          `<tr><th scope="row">${i + 1}</th><td>${srutiCents(i + 1).toFixed(3)}</td><td>${ratioCents(r).toFixed(3)}</td><td>${r[0]}:${r[1]}</td></tr>`,
+      )
+      .join("")}</tbody></table></div>
   </div>
 </section>
 <section class="section" id="murcchanas">
@@ -195,7 +213,7 @@ export function mountVina(root: HTMLElement): void {
       <p>The Sanskrit above is the 1894 Kāvyamālā text, transcribed from the scanned pages rather than their OCR. A footnote on its p. 301 says the chapter 'is taken over from the book <i>La Musique Hindoue</i>' by J. Grosset of Paris. Grosset (1888) worked from two manuscripts, A and G. He printed the whole two-vīṇā demonstration in square brackets, his sign for a doubtful passage (p. 21), and in note 36 called it obscure, his translation approximate.</p>
       <p><b>A stage only one manuscript has.</b> Grosset's apparatus records a lacuna in G that swallows the third lowering. The scan of the 1894 volume also holds an earlier setting of the same pages, without the footnote, and its demonstration jumps from the second lowering to the fourth (beside). Without the third stage the meetings account for 16 of the 22 śrutis: ṛṣabha and dhaivata are never measured. The count needs the stage that, of Grosset's two manuscripts, only A preserves.</p>
       <p><b>A missing three.</b> In Grosset's text the third lowering reads <i lang="sa-Latn">śrutyadhikatvāt</i>, 'since they stood a śruti higher'. The count needs three: ṛṣabha and dhaivata hold three śrutis each. Manomohan Ghosh's translation (1961) supplies '[three]'.</p>
-      <p><b>A crossed pair.</b> Grosset's second lowering sends <i lang="sa-Latn">gāndhāra-niṣāda</i> into <i lang="sa-Latn">dhaivata-ṛṣabha</i>. Taken in order, gāndhāra would land on dhaivata, eleven śrutis away; Ghosh's 'respectively' reads it that way. The earlier 1894 setting has <i lang="sa-Latn">ṛṣabha-dhaivata</i>, the order the count requires and the dial shows.</p>
+      <p><b>A crossed pair.</b> Grosset's second lowering sends <i lang="sa-Latn">gāndhāra-niṣāda</i> into <i lang="sa-Latn">dhaivata-ṛṣabha</i>. Taken in order, gāndhāra would land on dhaivata, eleven śrutis away; Ghosh's 'respectively' reads it that way. The earlier 1894 setting has <i lang="sa-Latn">ṛṣabha-dhaivata</i>, the pitch ordering the dial shows. The Sanskrit list does not itself say ‘respectively’, so a crossed written order alone does not prove a corrupt text.</p>
       <p><b>Seven strings.</b> In Ghosh's translation, 29.120 gives the citrā vīṇā seven strings and the vipañcī nine. The Kāvyamālā garbles that half-line (its 29.124a) but keeps the second half, beside. The dial draws no instrument. Monier-Williams's 'Indian lute', with its 'two large gourds', describes a later vīṇā, not necessarily Bharata's.</p>
       <p class="muted">Verse numbers are the Kāvyamālā's and Grosset's; Ghosh's run one lower for the śruti verses. <a href="${EDITION_URL}">${esc(EDITION)}</a>, pp. 301–305 and 328, with the earlier setting at physical PDF pages 300–307. J. Grosset, <i>Contribution à l'étude de la musique hindoue</i> (Paris: Leroux, 1888), pp. 21, 28–29, 86. <a href="https://github.com/antonsoo/grama">Grāma</a>, a sibling project, reads the single pañcama-lowering and the count verses from Grosset's pages and leaves this demonstration aside for the same reason.</p>
     </div>
@@ -281,6 +299,7 @@ export function mountVina(root: HTMLElement): void {
   }
 
   function render(animate: boolean): void {
+    if (animate) lyre.stop();
     const s = stage();
     const target = movable(s);
     if (animate) animateTo(target);
@@ -347,6 +366,23 @@ export function mountVina(root: HTMLElement): void {
     }
   }
 
+  root.querySelector("#equal-fifth")?.addEventListener("click", () => {
+    lyre.playSines([220, srutiHz(13)]);
+    const status = root.querySelector("#fifth-status");
+    if (status)
+      status.textContent = `Equal-step fifth: ${srutiCents(13).toFixed(3)} cents; 220 and ${srutiHz(13).toFixed(3)} Hz.`;
+  });
+  root.querySelector("#pure-fifth")?.addEventListener("click", () => {
+    lyre.playSines([220, 330]);
+    const status = root.querySelector("#fifth-status");
+    if (status)
+      status.textContent = `Pure 3:2 fifth: ${(1200 * Math.log2(3 / 2)).toFixed(3)} cents; 220 and 330 Hz.`;
+  });
+  root.querySelector("#comparison-stop")?.addEventListener("click", () => {
+    lyre.stop();
+    const status = root.querySelector("#fifth-status");
+    if (status) status.textContent = "Comparison stopped. The dial keeps its equal steps.";
+  });
   render(false);
 
   root.addEventListener("click", (e) => {
@@ -387,6 +423,7 @@ export function mountVina(root: HTMLElement): void {
     index = 0;
     render(true);
   });
+  root.querySelector("#vina-stop")?.addEventListener("click", () => lyre.stop());
   root.querySelector("#hear")?.addEventListener("click", () => {
     // Each lowered string with the nearest string of the other vīṇā: unisons where they meet.
     const moved = movable(stage());

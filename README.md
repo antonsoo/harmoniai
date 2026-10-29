@@ -92,11 +92,13 @@ What the model shows:
   ones the prose names, at the lowerings it names, and nothing else meets. The lowerings
   at which the seven notes meet add up to 2+2+3+3+4+4+4 = 22. Joanny Grosset made this
   sum in 1888 (note 36), while calling the passage obscure; the dial makes it playable.
-- **It forces equal śrutis.** If every lowering is the same standard śruti and every
-  meeting is exact, the śruti is 1200/22 = 54.5 cents. Then Bharata's consonances, nine
-  and thirteen śrutis, are 490.9 and 709.1 cents, against 498.0 and 702.0 for a pure 4:3
-  and 3:2. Pure consonances and exact meetings cannot both hold. The page plays equal
-  śrutis and says so.
+- **Equal lowerings are an extra assumption.** This dial uses one equal interval at
+  every successive lowering. Under that assumption the unit is 1200/22 = 54.5 cents,
+  with fourth and fifth at 490.9 and 709.1 cents. The text's meetings alone do not force
+  this: Bel's analysis allows unequal lowerings. One pure-fourth/fifth preparation
+  uses successive moves of 21.506, 90.225, 70.672 and 21.506 cents, preserving the same
+  meetings. The page compares both cumulative sequences, plays their fifths with
+  sine tones, and links to [Pyknon's operable alternative](https://antonsoo.github.io/pyknon/vina.html).
 - **The seven ṣaḍja-grāma mūrcchanās are Cleonides' seven octave species.** Counting
   only tones and half-tones, Bharata's list (from ṣaḍja, niṣāda, dhaivata, … down to
   ṛṣabha) gives Phrygian, Lydian, Mixolydian, Hypodorian, Hypophrygian, Hypolydian and
@@ -141,6 +143,9 @@ madhyama is "middle", like μέση.
   for comparison and is cited only for two bracketed or translated words.
 - Sanskrit senses from Monier-Williams, *A Sanskrit-English Dictionary* (1899), through
   the Cologne Digital Sanskrit Dictionaries.
+- Bernard Bel, *A Mathematical Discussion of the Ancient Theory of Scales According
+  to Natyashastra* (1984; revised 1988 and 2020), printed pp. 4–7 and 16–17.
+  [Author-hosted paper](https://bolprocessor.org/wp-content/uploads/Bharata-paper.pdf).
 - Glarean's *Dodecachordon* (1547) is mentioned only for what is uncontroversial: it
   extended the church modes to twelve and added Aeolian and Ionian.
 
@@ -156,7 +161,7 @@ after load and no tracking. Coastlines are cut from Natural Earth (public domain
 Sanskrit) are self-hosted. `src/core/sruti.ts` holds the two grāmas, the stages of the
 demonstration and the fourteen mūrcchanās; `src/content/natya.ts` the Sanskrit.
 
-Tests (`npm test`, 19):
+Tests (`npm test`, 20):
 
 - Cleonides' two descriptions agree;
 - the system spans exactly two octaves, with a 4:3 fourth under the mesē, a 3:2 fifth
@@ -167,7 +172,9 @@ Tests (`npm test`, 19):
 - both grāmas hold 22 śrutis, and the two-vīṇā model meets exactly the strings the
   Sanskrit names at each lowering; without the three-śruti stage it measures only 16;
 - Bharata's consonant and dissonant examples are nine, thirteen or twenty śrutis apart;
-- the ṣaḍja-grāma mūrcchanās match the seven Greek species in the order above.
+- the ṣaḍja-grāma mūrcchanās match the seven Greek species in the order above;
+- exact integer cross-products verify that a pure-ratio counterexample has the same
+  seven meetings under unequal lowerings, with no extra principal-note meetings.
 
 ## Run it
 
@@ -178,6 +185,10 @@ npm run dev        # http://127.0.0.1:4413/harmoniai/
 ```
 
 `npm run check` runs Biome, strict TypeScript, the tests and the production build.
+The footer reports offline readiness only when a controlling worker has the
+complete edition. Both pages, fonts and local models then reload without a
+connection; external scans and scholarly links remain online resources.
+[Publication review and model correction](docs/publication-review.md).
 
 ## Accuracy and limitations
 
@@ -191,7 +202,8 @@ npm run dev        # http://127.0.0.1:4413/harmoniai/
   theory of tuning, and Aristoxenus measured intervals in tones and parts. Absolute
   pitch (mesē at 220 Hz) is a modern choice.
 - **Equal śrutis are a modern model.** The text gives a count of śrutis, not their sizes.
-  The page uses twenty-two equal ones because only they make every meeting exact.
+  The page chooses twenty-two equal ones to illustrate the count. Unequal successive
+  lowerings can give the same named meetings; equality is not forced by the passage.
 - **The mūrcchanā match counts tones, not their sizes.** Bharata distinguishes three-
   and four-śruti tones; Cleonides' diatonic does not. The page does not claim either
   tradition learned the scheme from the other.

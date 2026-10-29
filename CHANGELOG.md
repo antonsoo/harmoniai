@@ -1,6 +1,17 @@
 # Changelog
 
-## Unreleased
+## Publication review (2026-10-29)
+
+- Correct the claim that the named two-vīṇā meetings force equal śrutis. Equal
+  successive moves are an additional model assumption; an exact rational
+  counterexample preserves the meetings with pure fourths and fifths.
+- Compare the two fifths using sine oscillators, with explicit model labels
+  and a link to Pyknon's unequal-lowering experiment.
+- Stop now cancels future string cues as well as audio. Changing a species,
+  tuning or lowering also stops the previous sequence; the vīṇā page has Stop.
+- Save both pages and fonts for offline reading after a complete edition installs.
+
+## Initial vīṇā page
 
 - `vina.html`: Bharata's two-vīṇā demonstration of the twenty-two śrutis on a dial, with
   the Sanskrit of Nāṭyaśāstra 28 from the 1894 Kāvyamālā edition, the fourteen

@@ -1,3 +1,5 @@
+import { setupOffline } from "../offline";
+
 const THEME_KEY = "harmoniai-theme";
 
 export type Page = "greek" | "india";
@@ -22,7 +24,8 @@ export function shell(app: HTMLElement, page: Page): HTMLElement | null {
 <nav aria-label="Sections">${NAV[page]}${other}</nav>
 <button type="button" class="theme" aria-label="Switch between the purple codex and the silver page">◐</button></header>
 <main id="main"></main>
-<footer class="foot"><p>${FOOT[page]} <a href="https://github.com/antonsoo/harmoniai">Source and notes</a>.</p></footer>`;
+<footer class="foot"><p>${FOOT[page]} <a href="https://github.com/antonsoo/harmoniai">Source and notes</a>.</p><p><a href="./LICENSE.txt">Code license</a> · <a href="./FONT-LICENSE.txt">Font licenses</a> · <a href="./THIRD_PARTY_NOTICES.txt">Text credits</a></p><p id="offline-status" class="muted"></p></footer>`;
+  setupOffline();
   const root = document.documentElement;
   try {
     const saved = localStorage.getItem(THEME_KEY);

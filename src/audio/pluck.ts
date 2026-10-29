@@ -31,7 +31,9 @@ export function pluckSamples(
 
 export class Lyre {
   private context: AudioContext | null = null;
-  private voices: AudioBufferSourceNode[] = [];
+  private voices: (AudioBufferSourceNode | OscillatorNode)[] = [];
+  private callbacks = new Set<number>();
+  private gain: GainNode | null = null;
 
   private ctx(): AudioContext {
     this.context ??= new AudioContext();
@@ -50,6 +52,7 @@ export class Lyre {
     const gain = ctx.createGain();
     gain.gain.value = 0.32;
     gain.connect(ctx.destination);
+    this.gain = gain;
     return frequencies.map((step, i) => {
       for (const f of Array.isArray(step) ? step : [step]) {
         const samples = pluckSamples(f, ctx.sampleRate, 1.6);
@@ -60,13 +63,67 @@ export class Lyre {
         source.connect(gain);
         source.start(t0 + i * gap);
         this.voices.push(source);
+        source.onended = () => {
+          source.disconnect();
+          this.voices = this.voices.filter((voice) => voice !== source);
+          if (this.voices.length === 0 && this.gain === gain) {
+            gain.disconnect();
+            this.gain = null;
+          }
+        };
       }
-      if (onNote) window.setTimeout(() => onNote(i), (0.05 + i * gap) * 1000);
+      if (onNote) {
+        const timer = window.setTimeout(
+          () => {
+            this.callbacks.delete(timer);
+            onNote(i);
+          },
+          (0.05 + i * gap) * 1000,
+        );
+        this.callbacks.add(timer);
+      }
       return i * gap;
     });
   }
 
+  /** Exact oscillator frequencies for the small fifth difference; the integer-delay
+   * plucked-string synthesis can round two nearby targets to the same delay. */
+  playSines(frequencies: number[]): void {
+    this.stop();
+    const ctx = this.ctx();
+    void ctx.resume();
+    const gain = ctx.createGain();
+    this.gain = gain;
+    gain.connect(ctx.destination);
+    const start = ctx.currentTime + 0.03;
+    gain.gain.setValueAtTime(0, start);
+    gain.gain.linearRampToValueAtTime(0.15, start + 0.05);
+    gain.gain.setValueAtTime(0.15, start + 1.8);
+    gain.gain.linearRampToValueAtTime(0, start + 2);
+    for (const hz of frequencies) {
+      const source = ctx.createOscillator();
+      source.type = "sine";
+      source.frequency.value = hz;
+      source.connect(gain);
+      source.start(start);
+      source.stop(start + 2.02);
+      this.voices.push(source);
+      source.onended = () => {
+        source.disconnect();
+        this.voices = this.voices.filter((v) => v !== source);
+        if (this.voices.length === 0 && this.gain === gain) {
+          gain.disconnect();
+          this.gain = null;
+        }
+      };
+    }
+  }
+
   stop(): void {
+    for (const timer of this.callbacks) window.clearTimeout(timer);
+    this.callbacks.clear();
+    this.gain?.disconnect();
+    this.gain = null;
     for (const v of this.voices) {
       try {
         v.stop();

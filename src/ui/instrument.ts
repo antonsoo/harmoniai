@@ -83,6 +83,7 @@ export function vibrate(svg: SVGSVGElement, index: number, orientation: Orientat
   const start = performance.now();
   const cycles = 3 + (14 - index) * 0.15;
   const frame = (now: number) => {
+    if (!wire.isConnected) return;
     const t = (now - start) / 900;
     if (t >= 1) {
       wire.setAttribute("d", `M${X0} ${y} L${X1} ${y}`);
