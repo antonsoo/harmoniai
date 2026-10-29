@@ -1,0 +1,46 @@
+{
+  "name": "harmoniai",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Hear the seven Greek octave species, read Cleonides' Greek for each, and see how their regional names moved.",
+  "type": "module",
+  "author": "Anthony Mercer <anthony@praviel.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antonsoo/harmoniai.git"
+  },
+  "homepage": "https://antonsoo.github.io/harmoniai/",
+  "keywords": [
+    "ancient-greek",
+    "music-theory",
+    "modes",
+    "harmonia",
+    "web-audio",
+    "education",
+    "vocabulary"
+  ],
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 4413 --strictPort",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4413 --strictPort",
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "check": "npm run lint && npm run typecheck && npm test && npm run build"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.2",
+    "@types/node": "24.19.2",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vite": "8.3.5"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}
