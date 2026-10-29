@@ -1,4 +1,5 @@
 import { Lyre } from "../audio/pluck";
+import { AEGEAN, project } from "../content/aegean";
 import {
   ARISTOTLE,
   CLEONIDES_DIATONIC,
@@ -58,6 +59,41 @@ function namesDiagram(selected: Species): string {
 <text class="head" x="${lx - 14}" y="18">Cleonides</text><text class="head" x="${rx + 14}" y="18">Today</text>${friends.join("")}${rows.join("")}</svg>`;
 }
 
+/** Approximate homes of the peoples the harmoniai are named after, with the adverb LSJ records. */
+const PLACES: {
+  label: string;
+  greek: string;
+  place: string;
+  lon: number;
+  lat: number;
+  dx: number;
+  dy: number;
+}[] = [
+  { label: "Dorians", greek: "Δωριστί", place: "Sparta", lon: 22.43, lat: 37.07, dx: -10, dy: 26 },
+  { label: "Locrians", greek: "Λοκριστί", place: "Opous", lon: 23.0, lat: 38.65, dx: -12, dy: -14 },
+  { label: "Ionians", greek: "Ἰαστί", place: "Miletus", lon: 27.28, lat: 37.53, dx: 12, dy: 24 },
+  { label: "Lydians", greek: "Λυδιστί", place: "Sardis", lon: 28.04, lat: 38.49, dx: 12, dy: -14 },
+  {
+    label: "Phrygians",
+    greek: "Φρυγιστί",
+    place: "Gordion",
+    lon: 31.99,
+    lat: 39.65,
+    dx: -10,
+    dy: -16,
+  },
+];
+
+function mapSvg(): string {
+  const land = AEGEAN.land.map((d) => `<path class="land" d="${d}"/>`).join("");
+  const marks = PLACES.map((p) => {
+    const [x, y] = project(p.lon, p.lat);
+    const anchor = p.dx < 0 ? "end" : "start";
+    return `<g class="place"><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="4.5"/><text class="pl" x="${(x + p.dx).toFixed(1)}" y="${(y + p.dy).toFixed(1)}" text-anchor="${anchor}">${p.label} <tspan lang="grc">${p.greek}</tspan></text><text class="pp" x="${(x + p.dx).toFixed(1)}" y="${(y + p.dy + 15).toFixed(1)}" text-anchor="${anchor}">${p.place}</text></g>`;
+  }).join("");
+  return `<svg class="map" viewBox="0 0 ${AEGEAN.width} ${AEGEAN.height}" role="img" aria-label="Map of the Aegean with the homes of the Dorians, Locrians, Ionians, Lydians and Phrygians"><rect class="sea" width="${AEGEAN.width}" height="${AEGEAN.height}"/>${land}${marks}<text class="sea-label" x="${(AEGEAN.width * 0.47).toFixed(0)}" y="${(AEGEAN.height * 0.55).toFixed(0)}">Aegean Sea</text></svg>`;
+}
+
 export function mount(root: HTMLElement): void {
   const lyre = new Lyre();
   let species: Species = SPECIES[3] as Species;
@@ -91,6 +127,16 @@ export function mount(root: HTMLElement): void {
       </div>
       <div class="card" id="card" aria-live="polite"></div>
     </div>
+  </div>
+</section>
+<section class="section" id="places">
+  <h2>Where the names come from</h2>
+  <div class="two">
+    <div>
+      <p>Each name is an adverb of a people: Δωριστί, 'in the Dorian way', is also how Greek says 'in the Dorian dialect', and Ἰαστί means both the Ionian harmonia and the Ionic dialect. The Dorians held much of the Peloponnese; the Ionians the coast of Anatolia; the Lydians, Croesus's kingdom inland from them, with its capital at Sardis; the Phrygians the high plateau beyond. Locris lay in central Greece.</p>
+      <p class="muted">The dots mark one city for each people, for orientation. Whether a harmonia really came from the people it is named after is a separate question, which this page does not try to settle. Coastlines from Natural Earth.</p>
+    </div>
+    <figure class="map-wrap">${mapSvg()}</figure>
   </div>
 </section>
 <section class="section" id="names">

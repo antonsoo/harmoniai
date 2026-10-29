@@ -32,6 +32,8 @@ called now.
   by its first and last string ("from hypatē mesōn to nētē diezeugmenōn") and adds what
   "the ancients" called it. Play it in Pythagorean tuning (9:8 tones, 256:243 half-tones)
   or Aristoxenus's equal tones and half-tones.
+- **Where the names come from.** A map of the Aegean marks the homes of the Dorians,
+  Locrians, Ionians, Lydians and Phrygians, with the Greek adverb for each.
 - **The names moved.** A diagram joins each of Cleonides' names to the modern name of
   the same white-key octave, and each shared word to its new octave.
 
@@ -86,7 +88,8 @@ step pattern and Cleonides' species with both of his descriptions. The instrumen
 hand-written SVG. Sound is a Karplus–Strong plucked string synthesized in the browser:
 a burst of noise in a delay line one period long, smoothed on each pass. It sounds like a
 plucked string, not like any particular ancient instrument. There are no network requests
-after load and no tracking, and the fonts (GFS Neohellenic, Gentium Book Plus) are
+after load and no tracking. Coastlines are cut from Natural Earth (public domain) by
+`scripts/aegean.py`. The fonts (GFS Neohellenic, Gentium Book Plus) are
 self-hosted.
 
 Tests (`npm test`, 14):

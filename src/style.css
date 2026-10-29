@@ -547,6 +547,61 @@ h1 {
   stroke-width: 2;
 }
 
+.map-wrap {
+  margin: 0;
+  padding: 0.6rem;
+  background: var(--leaf);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+}
+
+.map {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-family: var(--text);
+}
+
+.map .sea {
+  fill: color-mix(in srgb, var(--murex) 9%, var(--leaf));
+}
+
+.map .land {
+  fill: color-mix(in srgb, var(--gold) 14%, var(--leaf));
+  stroke: var(--ink-soft);
+  stroke-width: 0.7;
+  stroke-linejoin: round;
+}
+
+.map .place circle {
+  fill: var(--murex);
+  stroke: var(--leaf);
+  stroke-width: 1.5;
+}
+
+.map .pl {
+  font-size: 15px;
+  fill: var(--ink);
+}
+
+.map .pl tspan {
+  fill: var(--murex);
+}
+
+.map .pp {
+  font-size: 12px;
+  font-style: italic;
+  fill: var(--ink-soft);
+}
+
+.map .sea-label {
+  font-size: 14px;
+  font-style: italic;
+  letter-spacing: 0.08em;
+  fill: var(--ink-soft);
+  opacity: 0.8;
+}
+
 .ethos {
   width: 100%;
   max-width: 52rem;

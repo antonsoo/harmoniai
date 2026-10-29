@@ -11,3 +11,5 @@
   The short quotations are shared under the same license.
 - **Dictionary glosses.** Short quotations from Liddell, Scott and Jones, *A
   Greek–English Lexicon* (9th ed.), through Logeion (University of Chicago).
+- **Coastlines.** Natural Earth 1:50m land (naturalearthdata.com), public domain, clipped
+  and simplified by `scripts/aegean.py` into `src/content/aegean.ts`.
