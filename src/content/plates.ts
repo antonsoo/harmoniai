@@ -1,0 +1,27 @@
+/** Retained complete pages, checked visually against their printed page numbers. */
+export const PLATES = [
+  {
+    page: 197,
+    imageIndex: 298,
+    path: "sources/jan-1895-p197.jpg",
+    url: "https://archive.org/download/musiciscriptoresjank/page/n298_w1800.jpg",
+    bytes: 824025,
+    sha256: "fa0b41c521fad3a0bacdc811bade71b3a2922cbc947e46e411656d7c3a5ece17",
+  },
+  {
+    page: 198,
+    imageIndex: 299,
+    path: "sources/jan-1895-p198.jpg",
+    url: "https://archive.org/download/musiciscriptoresjank/page/n299_w1800.jpg",
+    bytes: 845651,
+    sha256: "e07ac24e749ae55c35a67573e2a1e873be467ca4f27fde6ee2cb80f35e29082e",
+  },
+  {
+    page: 199,
+    imageIndex: 300,
+    path: "sources/jan-1895-p199.jpg",
+    url: "https://archive.org/download/musiciscriptoresjank/page/n300_w1800.jpg",
+    bytes: 798067,
+    sha256: "8660edda63de3ed5b557a95367d8ba2b7d62edb13e1868f27d24dd08c6f97724",
+  },
+] as const;

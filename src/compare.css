@@ -1,0 +1,231 @@
+.eyebrow,
+.lane-label {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+}
+.comparison-bench {
+  border-block: 1px solid var(--rule);
+  padding-block: 1.4rem;
+  margin-top: 1.5rem;
+}
+.comparison-controls,
+.comparison-play {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem 1.5rem;
+  align-items: end;
+}
+.comparison-controls label,
+#save > label {
+  display: grid;
+  gap: 0.3rem;
+  font-size: 1rem;
+}
+.comparison-controls select {
+  max-width: 100%;
+}
+.comparison-controls select,
+.comparison-play button,
+.source-reader select,
+.source-reader button,
+.degree-table button {
+  font: inherit;
+  color: var(--ink);
+  background: var(--leaf);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 0.4rem 0.7rem;
+  min-height: 44px;
+}
+.comparison-play button,
+.source-reader button,
+.degree-table button {
+  cursor: pointer;
+}
+.comparison-play .primary {
+  color: var(--leaf);
+  background: var(--murex);
+  border-color: var(--murex);
+}
+.listening-lanes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-block: 1.6rem 0.5rem;
+}
+.lane {
+  margin: 0;
+  min-width: 0;
+}
+.lane h2 {
+  margin: 0.2rem 0 0;
+  font-size: 1.8rem;
+}
+.lane h2 [lang="grc"] {
+  font-size: 0.9em;
+  margin-right: 0.4rem;
+}
+.lane svg {
+  display: block;
+  width: 100%;
+  fill: var(--murex);
+  color: var(--murex);
+}
+.lane.modern svg {
+  fill: var(--verdigris);
+  color: var(--verdigris);
+}
+.lane svg text {
+  font: 18px var(--text);
+}
+.pitch-base {
+  stroke: var(--rule);
+  stroke-dasharray: 3 4;
+}
+.pitch-line {
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+}
+.lane > p {
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.comparison-finding {
+  font-size: 1.25rem;
+  color: var(--murex);
+  max-width: 55rem;
+}
+.comparison-play {
+  margin-block: 1rem;
+}
+#comparison-audio {
+  display: block;
+  max-width: 32rem;
+  width: 100%;
+}
+#audio-label,
+#save-status,
+#source-status {
+  min-height: 1.6em;
+  font-size: 1rem;
+  color: var(--ink-soft);
+}
+.model-note {
+  max-width: 55rem;
+}
+summary {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.degree-table-wrap {
+  max-width: 55rem;
+  overflow: auto;
+}
+.degree-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+.degree-table caption {
+  text-align: left;
+  color: var(--ink-soft);
+  margin-bottom: 0.6rem;
+}
+.degree-table th,
+.degree-table td {
+  text-align: right;
+  padding: 0.55rem;
+  border-bottom: 1px solid var(--rule);
+}
+.degree-table th:first-child {
+  text-align: left;
+}
+.degree-table .changed {
+  background: var(--murex-wash);
+}
+.comparison-reading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 2.5rem;
+}
+.comparison-reading blockquote {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 2px solid var(--murex);
+}
+.comparison-reading blockquote [lang="grc"] {
+  font-size: 1.2rem;
+}
+.comparison-reading cite {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+.source-reader {
+  min-width: 0;
+}
+.source-reader button {
+  margin: 0.4rem 0 0.4rem 0.3rem;
+}
+.source-viewport {
+  max-height: 42rem;
+  overflow: auto;
+  background: var(--leaf);
+}
+.source-viewport img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.source-viewport img[hidden] {
+  display: none;
+}
+.source-viewport img.enlarged {
+  max-width: none;
+}
+#comparison-link {
+  font: inherit;
+  padding: 0.5rem;
+  width: 100%;
+  color: var(--ink);
+  background: var(--leaf);
+  border: 1px solid var(--rule);
+}
+button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+@media (max-width: 650px) {
+  .listening-lanes,
+  .comparison-reading {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .comparison-controls {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .comparison-controls select {
+    width: 100%;
+  }
+  .degree-table {
+    font-size: 0.9rem;
+  }
+  .degree-table th,
+  .degree-table td {
+    padding: 0.3rem 0.2rem;
+  }
+  .degree-table button {
+    padding: 0.3rem;
+    font-size: 0.9rem;
+  }
+  .lane h2 {
+    font-size: 1.6rem;
+  }
+  .source-viewport {
+    max-height: 30rem;
+  }
+}

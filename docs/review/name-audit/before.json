@@ -1,0 +1,18 @@
+[
+  {
+    "engine": "chromium",
+    "prompt": "Find the string\n\nνήτη διεζευγμένων\n\nnētē diezeugmenōn: lowest of the disjoined. Names are hidden on the strings; pluck the one you mean.\n\n0 of 0 right so far.",
+    "first": "Not that one\n\nνήτη διεζευγμένων\n\nYou plucked προσλαμβανόμενος. νήτη, contracted from νεάτη: 'the lowest of the three strings … but the highest in pitch'\n\nLSJ s.v. νεάτη\n\nNext string",
+    "second": "Not that one\n\nνήτη διεζευγμένων\n\nYou plucked ὑπάτη ὑπάτων. νήτη, contracted from νεάτη: 'the lowest of the three strings … but the highest in pitch'\n\nLSJ s.v. νεάτη\n\nNext string",
+    "next": "Find the string\n\nλιχανὸς μέσων\n\nlichanos mesōn: forefinger string, of the middle ones. Names are hidden on the strings; pluck the one you mean.\n\n0 of 2 right so far.",
+    "unnamed": null
+  },
+  {
+    "engine": "firefox",
+    "prompt": "Find the string\n\nπροσλαμβανόμενος\n\nproslambanomenos: the added note. Names are hidden on the strings; pluck the one you mean.\n\n0 of 0 right so far.",
+    "first": "Right\n\nπροσλαμβανόμενος\n\ntaken in addition: 'the added note at the bottom of the scale'\n\nLSJ s.v. προσλαμβάνω\n\nNext string",
+    "second": "Not that one\n\nπροσλαμβανόμενος\n\nYou plucked ὑπάτη ὑπάτων. taken in addition: 'the added note at the bottom of the scale'\n\nLSJ s.v. προσλαμβάνω\n\nNext string",
+    "next": "Find the string\n\nπαραμέση\n\nparamesē: next to the middle. Names are hidden on the strings; pluck the one you mean.\n\n1 of 2 right so far.",
+    "unnamed": null
+  }
+]

@@ -2,14 +2,16 @@ import { setupOffline } from "../offline";
 
 const THEME_KEY = "harmoniai-theme";
 
-export type Page = "greek" | "india";
+export type Page = "greek" | "india" | "comparison";
 
 const NAV: Record<Page, string> = {
-  greek: `<a href="#strings">Strings</a><a href="#places">Places</a><a href="#names">Names</a><a href="#highest">Highest, lowest</a><a href="#ethos">Ethos</a><a href="#words">Words</a>`,
+  comparison: `<a href="#listen">Listen</a><a href="#degrees">Compare degrees</a><a href="#reading">Read Cleonides</a><a href="#save">Save</a>`,
+  greek: `<a href="#strings">Strings</a><a href="#places">Places</a><a href="#names">Names</a><a href="./compare.html">Which Dorian?</a><a href="#highest">Highest, lowest</a><a href="#ethos">Ethos</a><a href="#words">Words</a>`,
   india: `<a href="#demo">Two vīṇās</a><a href="#count">The count</a><a href="#murcchanas">Mūrcchanās</a><a href="#sa-words">Words</a><a href="#reading">Whose text</a>`,
 };
 
 const FOOT: Record<Page, string> = {
+  comparison: `Cleonides in Jan (1895), printed pp. 197–199. New literal English. The shared starting pitch, sine tones and comparison are modern teaching choices.`,
   greek: `Greek from Jan's <i>Musici scriptores Graeci</i> (1895) for Cleonides, and Burnet and Ross through the Perseus Digital Library for Plato and Aristotle; senses from LSJ via Logeion. Translations are new. Sounds are synthetic plucked strings, not reconstructions of an ancient instrument.`,
   india: `Sanskrit from the Kāvyamālā <i>Nāṭyaśāstra</i> (Bombay, 1894), which follows Grosset's 1888 edition for this chapter, read against the page images; senses from Monier-Williams (1899) via the Cologne Digital Sanskrit Dictionaries. Translations are new. Sounds are synthetic plucked strings on twenty-two equal śrutis, a modern model.`,
 };

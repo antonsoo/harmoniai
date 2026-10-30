@@ -1,5 +1,17 @@
 # Changelog
 
+## Names and listening audit (2026-10-29)
+
+- Compare Greek and modern names from one starting pitch; isolate changed degrees
+  or choose the same interval order as a control. Four names, two tunings.
+- Read the named span, diatonic description and complete Jan 1895 pages 197–199.
+- Save actual WAV audio, CSV pitches or an illustrated offline reading with audio,
+  source images and fonts. Reopen a comparison through an explicit share link.
+- Count each string-practice question once. Further plucks remain available for
+  exploration; they no longer overwrite an answer or alter its score.
+- Give hidden strings neutral accessible pitch-position labels; support arrow-key
+  selection of octave species and return keyboard focus after Next string.
+
 ## Publication review (2026-10-29)
 
 - Correct the claim that the named two-vīṇā meetings force equal śrutis. Equal

@@ -21,6 +21,30 @@ called now.
 
 **[Open it](https://antonsoo.github.io/harmoniai/)**
 
+## Which Dorian?
+
+[Compare the two meanings from one starting pitch](https://antonsoo.github.io/harmoniai/compare.html).
+Greek Dorian and modern Dorian differ at degrees 2 and 6. Play each degree alone,
+then switch to the same interval order: Greek Dorian and modern Phrygian agree.
+The experiment also covers Phrygian, Lydian and Mixolydian, with the starting pitch
+and tuning held constant across both lanes.
+
+![The two Dorians from the same starting pitch](docs/review/name-audit/local/chromium-1440-light-compare.png)
+
+The Greek named span, the separate diatonic half-step description and the printed
+pages sit together. The complete pages 197–199 of Jan's 1895 edition are retained
+locally and included in the offline edition. Each page is checked against its
+reviewed bytes before display or export.
+
+Save the experiment as WAV, a CSV pitch table, or an illustrated HTML reading with
+its own audio, Greek, English, diagrams, fonts and all three source pages. The
+reading needs no scripts or connection and can be printed. A comparison link
+reopens the chosen name, relation, starting pitch and tuning.
+
+This is a modern listening experiment, not recovered ancient music. Both lanes
+use either 200/100-cent steps or 9:8 and 256:243 steps; the modern label describes
+an interval order, not a historical tuning. [Audit, sources and an actual exercise](docs/name-audit.md).
+
 ## What is on the page
 
 - **The strings, as named.** ὑπάτη means "highest", and LSJ defines the string as "the
@@ -155,13 +179,13 @@ Vite and TypeScript, no framework. `src/core/system.ts` holds the fifteen string
 step pattern and Cleonides' species with both of his descriptions. The instrument is
 hand-written SVG. Sound is a Karplus–Strong plucked string synthesized in the browser:
 a burst of noise in a delay line one period long, smoothed on each pass. It sounds like a
-plucked string, not like any particular ancient instrument. There are no network requests
-after load and no tracking. Coastlines are cut from Natural Earth (public domain) by
+plucked string, not like any particular ancient instrument. The comparison loads retained source pages on request; all three pages work offline
+after a complete edition is saved. There is no tracking. Coastlines are cut from Natural Earth (public domain) by
 `scripts/aegean.py`. The fonts (GFS Neohellenic, Gentium Book Plus, Tiro Devanagari
 Sanskrit) are self-hosted. `src/core/sruti.ts` holds the two grāmas, the stages of the
 demonstration and the fourteen mūrcchanās; `src/content/natya.ts` the Sanskrit.
 
-Tests (`npm test`, 20):
+Tests (`npm test`, 23):
 
 - Cleonides' two descriptions agree;
 - the system spans exactly two octaves, with a 4:3 fourth under the mesē, a 3:2 fifth
@@ -186,8 +210,8 @@ npm run dev        # http://127.0.0.1:4413/harmoniai/
 
 `npm run check` runs Biome, strict TypeScript, the tests and the production build.
 The footer reports offline readiness only when a controlling worker has the
-complete edition. Both pages, fonts and local models then reload without a
-connection; external scans and scholarly links remain online resources.
+complete edition. All three pages, the retained Cleonides scans, fonts and local models then reload without a
+connection; external Sanskrit scans and scholarly links remain online resources.
 [Publication review and model correction](docs/publication-review.md).
 
 ## Accuracy and limitations

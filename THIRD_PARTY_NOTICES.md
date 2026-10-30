@@ -6,6 +6,16 @@
 - **Cleonides.** K. von Jan, *Musici scriptores Graeci* (Leipzig: Teubner, 1895), public
   domain. Read from the Internet Archive scan `musiciscriptoresjank`; its PDF had SHA-256
   `a442b3d4bbcf3ab6a8a0872f68ebc8a90e891985bf3fa40f4716767c02fb58e8` when consulted.
+  Complete page images 197–199 are retained unchanged in `public/sources/` with
+  their original URLs, byte counts and SHA-256 hashes in `manifest.json`. Image
+  indices 298–300 were verified by reading the printed page numbers; the scan's
+  metadata leaf numbering is offset from the image endpoint. The short new
+  diatonic transcriptions normalize initial capitalization and apostrophes, and
+  mark omissions. English translations are new.
+- **Modern mode names.** Interval orders referenced to *Steps to Music Theory*,
+  chapter 11.1, Texas A&M University Libraries Open Digital Publishing:
+  https://odp.library.tamu.edu/stepstomusictheory/chapter/modes/ . No score images
+  or recordings are copied.
 - **Plato and Aristotle.** Greek text of Burnet's *Republic* (1903) and Ross's *Politics*
   (1957) as published by the Perseus Digital Library, © Tufts University, CC BY-SA 3.0 US.
   The short quotations are shared under the same license.

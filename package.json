@@ -34,7 +34,8 @@
     "format": "biome check --write .",
     "typecheck": "tsc --noEmit",
     "test": "node --import tsx --test tests/*.test.ts",
-    "check": "npm run lint && npm run typecheck && npm test && npm run build"
+    "check": "npm run lint && npm run typecheck && npm test && npm run build",
+    "test:comparison": "node scripts/comparison-review.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.13.0",

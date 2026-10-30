@@ -63,7 +63,7 @@ export function instrumentSvg(
       ? note.index >= species.from && note.index <= species.from + 7
       : false;
     const weight = 2.6 - (note.index / 14) * 1.7;
-    parts.push(`<g class="string${inSpecies ? " in" : ""}" data-note="${note.index}" tabindex="0" role="button">
+    parts.push(`<g class="string${inSpecies ? " in" : ""}" data-note="${note.index}" tabindex="0" role="button" aria-label="${labelled ? esc(note.romanized) : `String ${note.index + 1} of 15, ${note.index === 0 ? "lowest pitch" : note.index === 14 ? "highest pitch" : `pitch position ${note.index + 1} from the bottom`}`}">
 <rect class="hit" x="${X0 - 300}" y="${y - ROW / 2}" width="${X1 - X0 + 300}" height="${ROW}"/>
 <path class="wire" d="M${X0} ${y} L${X1} ${y}" style="stroke-width:${weight.toFixed(2)}px"/>
 <circle class="peg" cx="${X0}" cy="${y}" r="3.2"/><circle class="peg" cx="${X1}" cy="${y}" r="3.2"/>

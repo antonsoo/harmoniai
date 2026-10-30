@@ -101,6 +101,7 @@ export function mount(root: HTMLElement): void {
   let tuning: Tuning = "pythagorean";
   let drill = false;
   let target: number | null = null;
+  let answered = false;
   let last: string | null = null;
   let boxes: Boxes = {};
   let score: [number, number] = [0, 0];
@@ -141,6 +142,7 @@ export function mount(root: HTMLElement): void {
 </section>
 <section class="section" id="names">
   <h2>The names moved</h2>
+  <p><a href="./compare.html">Hear Greek Dorian and modern Dorian from the same starting pitch</a>, then isolate the degrees that changed. Save the sound, Greek reading and printed pages together.</p>
   <div class="names-layout">
     <div class="names-text">
       <p>Cleonides, a follower of Aristoxenus whose dates are uncertain, gives each octave by its first and last string and adds what "the ancients" called it. Lay his seven octaves on a modern keyboard's white keys and each starts on a different letter. Four of the seven names now belong to a different octave: the Greek Dorian, E to e, is today's Phrygian, and the Greek Phrygian is today's Dorian.</p>
@@ -209,6 +211,7 @@ ${quote ? passage(quote) : ""}
     const id = pickNext(ids, boxes, last, Math.random);
     last = id;
     target = Number(id);
+    answered = false;
     const note = NOTES[target];
     card.innerHTML = `<p class="card-kicker">Find the string</p><h2 lang="grc">${esc(note?.greek ?? "")}</h2><p class="small">${esc(note?.romanized ?? "")}: ${esc(note?.english ?? "")}. Names are hidden on the strings; pluck the one you mean.</p><p class="small">${score[0]} of ${score[1]} right so far.</p>`;
   }
@@ -217,7 +220,11 @@ ${quote ? passage(quote) : ""}
     drawInstrument();
     for (const b of root.querySelectorAll<HTMLButtonElement>(".species-picker button")) {
       b.setAttribute("aria-checked", String(Number(b.dataset.species) === species.ordinal));
+      b.disabled = drill;
+      b.tabIndex = Number(b.dataset.species) === species.ordinal ? 0 : -1;
     }
+    const octavePlay = root.querySelector<HTMLButtonElement>("#play");
+    if (octavePlay) octavePlay.disabled = drill;
     if (names) names.innerHTML = namesDiagram(species);
     if (drill) ask();
     else if (card) card.innerHTML = speciesCard();
@@ -229,14 +236,18 @@ ${quote ? passage(quote) : ""}
     lyre.play([f]);
     const s = svg();
     if (s) vibrate(s, index, orientation);
-    if (drill && target !== null && card) {
+    if (drill && target !== null && !answered && card) {
+      answered = true;
       const ok = index === target;
       boxes = grade(boxes, String(target), ok);
       score = [score[0] + (ok ? 1 : 0), score[1] + 1];
       const want = NOTES[target];
       const got = NOTES[index];
       card.innerHTML = `<p class="card-kicker">${ok ? "Right" : "Not that one"}</p><h2 lang="grc">${esc(want?.greek ?? "")}</h2><p>${ok ? "" : `You plucked <span lang="grc">${esc(got?.greek ?? "")}</span>. `}${esc(want?.literal ?? "")}</p><p class="small">${esc(want?.source ?? "")}</p><button type="button" class="primary" id="next">Next string</button>`;
-      card.querySelector<HTMLButtonElement>("#next")?.addEventListener("click", ask);
+      card.querySelector<HTMLButtonElement>("#next")?.addEventListener("click", () => {
+        ask();
+        instrument?.querySelector<SVGElement>("[data-note]")?.focus();
+      });
     }
   }
 
@@ -258,6 +269,29 @@ ${quote ? passage(quote) : ""}
     if (string) pluck(Number(string.getAttribute("data-note")));
   });
   root.addEventListener("keydown", (e) => {
+    const picker = (e.target as Element).closest<HTMLButtonElement>(
+      ".species-picker [data-species]",
+    );
+    if (
+      picker &&
+      !drill &&
+      ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Home", "End"].includes(e.key)
+    ) {
+      e.preventDefault();
+      const current = Number(picker.dataset.species) - 1;
+      const next =
+        e.key === "Home"
+          ? 0
+          : e.key === "End"
+            ? 6
+            : (current + (["ArrowRight", "ArrowDown"].includes(e.key) ? 1 : 6)) % 7;
+      const button = root.querySelector<HTMLButtonElement>(
+        `.species-picker [data-species="${next + 1}"]`,
+      );
+      button?.click();
+      button?.focus();
+      return;
+    }
     const string = (e.target as Element).closest?.("[data-note]");
     if (string && (e.key === "Enter" || e.key === " ")) {
       e.preventDefault();
