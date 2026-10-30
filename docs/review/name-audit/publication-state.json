@@ -1,0 +1,68 @@
+{
+  "observedAt": "2026-10-30T02:10:23.937917+00:00",
+  "source": "542b7898cb59b354ede6f9295ab30b6c7f428e40",
+  "buildSource": "ea7d7170c0aa0e2199f7f7f6b8b5d9a2a1c2ab23",
+  "deployment": "a22d3264db966a615bb61de79a72593feeb98252",
+  "pages": {
+    "build_type": "legacy",
+    "source": {
+      "branch": "gh-pages",
+      "path": "/"
+    },
+    "status": "built"
+  },
+  "runs": [
+    {
+      "conclusion": "success",
+      "databaseId": 40989705017,
+      "headSha": "a22d3264db966a615bb61de79a72593feeb98252",
+      "status": "completed",
+      "workflowName": "pages-build-deployment",
+      "jobs": [
+        {
+          "name": "build",
+          "conclusion": "success",
+          "steps": 5
+        },
+        {
+          "name": "deploy",
+          "conclusion": "success",
+          "steps": 3
+        },
+        {
+          "name": "report-build-status",
+          "conclusion": "success",
+          "steps": 3
+        }
+      ]
+    },
+    {
+      "conclusion": "failure",
+      "databaseId": 40989619661,
+      "headSha": "542b7898cb59b354ede6f9295ab30b6c7f428e40",
+      "status": "completed",
+      "workflowName": "Pages",
+      "jobs": [
+        {
+          "name": "deploy",
+          "conclusion": "failure",
+          "steps": 0
+        }
+      ]
+    },
+    {
+      "conclusion": "failure",
+      "databaseId": 40989619652,
+      "headSha": "542b7898cb59b354ede6f9295ab30b6c7f428e40",
+      "status": "completed",
+      "workflowName": "CI",
+      "jobs": [
+        {
+          "name": "check",
+          "conclusion": "failure",
+          "steps": 0
+        }
+      ]
+    }
+  ]
+}

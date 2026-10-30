@@ -1,0 +1,309 @@
+{
+  "base": "https://antonsoo.github.io/harmoniai/",
+  "receipts": [
+    {
+      "engine": "chromium",
+      "version": "153.0.8010.12",
+      "width": 1440,
+      "colorScheme": "light",
+      "practiceAnswers": 1,
+      "comparisons": 8,
+      "played": {
+        "time": 0.138072,
+        "duration": 8.050023,
+        "paused": false
+      },
+      "decodedPitchErrorCents": 0.00035719157788201755,
+      "wav": {
+        "bytes": 710056,
+        "sha256": "8290ac5d8a433e2837918109d788fa19368ab86502049fb7a52b62d225498aad"
+      },
+      "html": {
+        "bytes": 4406291,
+        "sha256": "5dce98c03a5bd43d7c6b0b096805f6090c13e216f2fcdaf63c73873d25fdeed4"
+      },
+      "sourcePages": [
+        "fa0b41c521fad3a0bacdc811bade71b3a2922cbc947e46e411656d7c3a5ece17",
+        "e07ac24e749ae55c35a67573e2a1e873be467ca4f27fde6ee2cb80f35e29082e",
+        "8660edda63de3ed5b557a95367d8ba2b7d62edb13e1868f27d24dd08c6f97724"
+      ],
+      "embeddedFonts": [
+        "dd5d2902dac9c11d3acc42b0e54a74b4f2db9bd4a7d6872c23338f70df29ca7e",
+        "46b8923c77eceb874e1b6a28ce08d56293641382ea0382f7043139bfff8f2383",
+        "cba273ba7a0fbe810e3531f5cc62fd4e963da7c5d32b4981c3f30fe562aea343",
+        "f4cbbee8404f7275cdece60d170d787d693df853452ef43a7b504d73eca2d658"
+      ],
+      "offlineIdentical": true,
+      "physicalAudio": "Not measured; decoded signal and native playback were verified.",
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "version": "153.0.8010.12",
+      "width": 1440,
+      "colorScheme": "dark",
+      "practiceAnswers": 1,
+      "comparisons": 8,
+      "played": {
+        "time": 0.137772,
+        "duration": 8.050023,
+        "paused": false
+      },
+      "decodedPitchErrorCents": 0.00035719157788201755,
+      "wav": {
+        "bytes": 710056,
+        "sha256": "8290ac5d8a433e2837918109d788fa19368ab86502049fb7a52b62d225498aad"
+      },
+      "html": {
+        "bytes": 4406291,
+        "sha256": "5dce98c03a5bd43d7c6b0b096805f6090c13e216f2fcdaf63c73873d25fdeed4"
+      },
+      "sourcePages": [
+        "fa0b41c521fad3a0bacdc811bade71b3a2922cbc947e46e411656d7c3a5ece17",
+        "e07ac24e749ae55c35a67573e2a1e873be467ca4f27fde6ee2cb80f35e29082e",
+        "8660edda63de3ed5b557a95367d8ba2b7d62edb13e1868f27d24dd08c6f97724"
+      ],
+      "embeddedFonts": [
+        "dd5d2902dac9c11d3acc42b0e54a74b4f2db9bd4a7d6872c23338f70df29ca7e",
+        "46b8923c77eceb874e1b6a28ce08d56293641382ea0382f7043139bfff8f2383",
+        "cba273ba7a0fbe810e3531f5cc62fd4e963da7c5d32b4981c3f30fe562aea343",
+        "f4cbbee8404f7275cdece60d170d787d693df853452ef43a7b504d73eca2d658"
+      ],
+      "offlineIdentical": true,
+      "physicalAudio": "Not measured; decoded signal and native playback were verified.",
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "version": "153.0.8010.12",
+      "width": 375,
+      "colorScheme": "light",
+      "practiceAnswers": 1,
+      "comparisons": 8,
+      "played": {
+        "time": 0.136348,
+        "duration": 8.050023,
+        "paused": false
+      },
+      "decodedPitchErrorCents": 0.00035719157788201755,
+      "wav": {
+        "bytes": 710056,
+        "sha256": "8290ac5d8a433e2837918109d788fa19368ab86502049fb7a52b62d225498aad"
+      },
+      "html": {
+        "bytes": 4406291,
+        "sha256": "5dce98c03a5bd43d7c6b0b096805f6090c13e216f2fcdaf63c73873d25fdeed4"
+      },
+      "sourcePages": [
+        "fa0b41c521fad3a0bacdc811bade71b3a2922cbc947e46e411656d7c3a5ece17",
+        "e07ac24e749ae55c35a67573e2a1e873be467ca4f27fde6ee2cb80f35e29082e",
+        "8660edda63de3ed5b557a95367d8ba2b7d62edb13e1868f27d24dd08c6f97724"
+      ],
+      "embeddedFonts": [
+        "dd5d2902dac9c11d3acc42b0e54a74b4f2db9bd4a7d6872c23338f70df29ca7e",
+        "46b8923c77eceb874e1b6a28ce08d56293641382ea0382f7043139bfff8f2383",
+        "cba273ba7a0fbe810e3531f5cc62fd4e963da7c5d32b4981c3f30fe562aea343",
+        "f4cbbee8404f7275cdece60d170d787d693df853452ef43a7b504d73eca2d658"
+      ],
+      "offlineIdentical": true,
+      "physicalAudio": "Not measured; decoded signal and native playback were verified.",
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "version": "153.0.8010.12",
+      "width": 375,
+      "colorScheme": "dark",
+      "practiceAnswers": 1,
+      "comparisons": 8,
+      "played": {
+        "time": 0.127984,
+        "duration": 8.050023,
+        "paused": false
+      },
+      "decodedPitchErrorCents": 0.00035719157788201755,
+      "wav": {
+        "bytes": 710056,
+        "sha256": "8290ac5d8a433e2837918109d788fa19368ab86502049fb7a52b62d225498aad"
+      },
+      "html": {
+        "bytes": 4406291,
+        "sha256": "5dce98c03a5bd43d7c6b0b096805f6090c13e216f2fcdaf63c73873d25fdeed4"
+      },
+      "sourcePages": [
+        "fa0b41c521fad3a0bacdc811bade71b3a2922cbc947e46e411656d7c3a5ece17",
+        "e07ac24e749ae55c35a67573e2a1e873be467ca4f27fde6ee2cb80f35e29082e",
+        "8660edda63de3ed5b557a95367d8ba2b7d62edb13e1868f27d24dd08c6f97724"
+      ],
+      "embeddedFonts": [
+        "dd5d2902dac9c11d3acc42b0e54a74b4f2db9bd4a7d6872c23338f70df29ca7e",
+        "46b8923c77eceb874e1b6a28ce08d56293641382ea0382f7043139bfff8f2383",
+        "cba273ba7a0fbe810e3531f5cc62fd4e963da7c5d32b4981c3f30fe562aea343",
+        "f4cbbee8404f7275cdece60d170d787d693df853452ef43a7b504d73eca2d658"
+      ],
+      "offlineIdentical": true,
+      "physicalAudio": "Not measured; decoded signal and native playback were verified.",
+      "errors": []
+    },
+    {
+      "engine": "firefox",
+      "version": "155.0",
+      "width": 1440,
+      "colorScheme": "light",
+      "practiceAnswers": 1,
+      "comparisons": 8,
+      "played": {
+        "time": 0.160136,
+        "duration": 8.050022,
+        "paused": false
+      },
+      "decodedPitchErrorCents": 0.00035719157788201755,
+      "wav": {
+        "bytes": 710056,
+        "sha256": "8290ac5d8a433e2837918109d788fa19368ab86502049fb7a52b62d225498aad"
+      },
+      "html": {
+        "bytes": 4406291,
+        "sha256": "5dce98c03a5bd43d7c6b0b096805f6090c13e216f2fcdaf63c73873d25fdeed4"
+      },
+      "sourcePages": [
+        "fa0b41c521fad3a0bacdc811bade71b3a2922cbc947e46e411656d7c3a5ece17",
+        "e07ac24e749ae55c35a67573e2a1e873be467ca4f27fde6ee2cb80f35e29082e",
+        "8660edda63de3ed5b557a95367d8ba2b7d62edb13e1868f27d24dd08c6f97724"
+      ],
+      "embeddedFonts": [
+        "dd5d2902dac9c11d3acc42b0e54a74b4f2db9bd4a7d6872c23338f70df29ca7e",
+        "46b8923c77eceb874e1b6a28ce08d56293641382ea0382f7043139bfff8f2383",
+        "cba273ba7a0fbe810e3531f5cc62fd4e963da7c5d32b4981c3f30fe562aea343",
+        "f4cbbee8404f7275cdece60d170d787d693df853452ef43a7b504d73eca2d658"
+      ],
+      "offlineIdentical": true,
+      "physicalAudio": "Not measured; decoded signal and native playback were verified.",
+      "errors": []
+    },
+    {
+      "engine": "firefox",
+      "version": "155.0",
+      "width": 1440,
+      "colorScheme": "dark",
+      "practiceAnswers": 1,
+      "comparisons": 8,
+      "played": {
+        "time": 0.154263,
+        "duration": 8.050022,
+        "paused": false
+      },
+      "decodedPitchErrorCents": 0.00035719157788201755,
+      "wav": {
+        "bytes": 710056,
+        "sha256": "8290ac5d8a433e2837918109d788fa19368ab86502049fb7a52b62d225498aad"
+      },
+      "html": {
+        "bytes": 4406291,
+        "sha256": "5dce98c03a5bd43d7c6b0b096805f6090c13e216f2fcdaf63c73873d25fdeed4"
+      },
+      "sourcePages": [
+        "fa0b41c521fad3a0bacdc811bade71b3a2922cbc947e46e411656d7c3a5ece17",
+        "e07ac24e749ae55c35a67573e2a1e873be467ca4f27fde6ee2cb80f35e29082e",
+        "8660edda63de3ed5b557a95367d8ba2b7d62edb13e1868f27d24dd08c6f97724"
+      ],
+      "embeddedFonts": [
+        "dd5d2902dac9c11d3acc42b0e54a74b4f2db9bd4a7d6872c23338f70df29ca7e",
+        "46b8923c77eceb874e1b6a28ce08d56293641382ea0382f7043139bfff8f2383",
+        "cba273ba7a0fbe810e3531f5cc62fd4e963da7c5d32b4981c3f30fe562aea343",
+        "f4cbbee8404f7275cdece60d170d787d693df853452ef43a7b504d73eca2d658"
+      ],
+      "offlineIdentical": true,
+      "physicalAudio": "Not measured; decoded signal and native playback were verified.",
+      "errors": []
+    },
+    {
+      "engine": "firefox",
+      "version": "155.0",
+      "width": 375,
+      "colorScheme": "light",
+      "practiceAnswers": 1,
+      "comparisons": 8,
+      "played": {
+        "time": 0.165056,
+        "duration": 8.050022,
+        "paused": false
+      },
+      "decodedPitchErrorCents": 0.00035719157788201755,
+      "wav": {
+        "bytes": 710056,
+        "sha256": "8290ac5d8a433e2837918109d788fa19368ab86502049fb7a52b62d225498aad"
+      },
+      "html": {
+        "bytes": 4406291,
+        "sha256": "5dce98c03a5bd43d7c6b0b096805f6090c13e216f2fcdaf63c73873d25fdeed4"
+      },
+      "sourcePages": [
+        "fa0b41c521fad3a0bacdc811bade71b3a2922cbc947e46e411656d7c3a5ece17",
+        "e07ac24e749ae55c35a67573e2a1e873be467ca4f27fde6ee2cb80f35e29082e",
+        "8660edda63de3ed5b557a95367d8ba2b7d62edb13e1868f27d24dd08c6f97724"
+      ],
+      "embeddedFonts": [
+        "dd5d2902dac9c11d3acc42b0e54a74b4f2db9bd4a7d6872c23338f70df29ca7e",
+        "46b8923c77eceb874e1b6a28ce08d56293641382ea0382f7043139bfff8f2383",
+        "cba273ba7a0fbe810e3531f5cc62fd4e963da7c5d32b4981c3f30fe562aea343",
+        "f4cbbee8404f7275cdece60d170d787d693df853452ef43a7b504d73eca2d658"
+      ],
+      "offlineIdentical": true,
+      "physicalAudio": "Not measured; decoded signal and native playback were verified.",
+      "errors": []
+    },
+    {
+      "engine": "firefox",
+      "version": "155.0",
+      "width": 375,
+      "colorScheme": "dark",
+      "practiceAnswers": 1,
+      "comparisons": 8,
+      "played": {
+        "time": 0.15424,
+        "duration": 8.050022,
+        "paused": false
+      },
+      "decodedPitchErrorCents": 0.00035719157788201755,
+      "wav": {
+        "bytes": 710056,
+        "sha256": "8290ac5d8a433e2837918109d788fa19368ab86502049fb7a52b62d225498aad"
+      },
+      "html": {
+        "bytes": 4406291,
+        "sha256": "5dce98c03a5bd43d7c6b0b096805f6090c13e216f2fcdaf63c73873d25fdeed4"
+      },
+      "sourcePages": [
+        "fa0b41c521fad3a0bacdc811bade71b3a2922cbc947e46e411656d7c3a5ece17",
+        "e07ac24e749ae55c35a67573e2a1e873be467ca4f27fde6ee2cb80f35e29082e",
+        "8660edda63de3ed5b557a95367d8ba2b7d62edb13e1868f27d24dd08c6f97724"
+      ],
+      "embeddedFonts": [
+        "dd5d2902dac9c11d3acc42b0e54a74b4f2db9bd4a7d6872c23338f70df29ca7e",
+        "46b8923c77eceb874e1b6a28ce08d56293641382ea0382f7043139bfff8f2383",
+        "cba273ba7a0fbe810e3531f5cc62fd4e963da7c5d32b4981c3f30fe562aea343",
+        "f4cbbee8404f7275cdece60d170d787d693df853452ef43a7b504d73eca2d658"
+      ],
+      "offlineIdentical": true,
+      "physicalAudio": "Not measured; decoded signal and native playback were verified.",
+      "errors": []
+    }
+  ],
+  "faults": [
+    {
+      "engine": "chromium",
+      "lateSourceIgnored": true,
+      "corruptSourceAndExportRefused": true,
+      "exportSelectionFrozen": true,
+      "cancelledExportProducesNoDownload": true
+    },
+    {
+      "engine": "firefox",
+      "lateSourceIgnored": true,
+      "corruptSourceAndExportRefused": true,
+      "exportSelectionFrozen": true,
+      "cancelledExportProducesNoDownload": true
+    }
+  ]
+}

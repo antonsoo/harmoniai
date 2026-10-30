@@ -141,5 +141,38 @@ selection and cancellation. Receipts:
 - [Illustrated HTML, gzip-compressed](review/name-audit/local/dorian-reading.html.gz)
 - [Printed reading](review/name-audit/local/dorian-reading.pdf)
 
-Public build identity and public-browser evidence are recorded separately after
-publication; local success alone does not establish what a hosted visitor receives.
+## Public review, 29 October 2026
+
+The published build comes from source `ea7d7170c0aa0e2199f7f7f6b8b5d9a2a1c2ab23`.
+A fresh archive installed with Node 24.22.1, ran all checks and produced 36 files
+identical to the working build. All 36 canonical hosted files, plus the root/index
+responses, matched that clean build before and after the public browser journeys.
+
+The eight public contexts repeated the complete comparison review, including
+actual playback, decoded WAV pitches, all three displayed source-image hashes,
+embedded font/image/audio bytes, standalone-file opening, native downloads and
+identical offline exports. Both source-failure reviews passed on the hosted app.
+The illustrated HTML is 4,406,291 bytes; the WAV is 710,056 bytes. The printed reading
+has six tagged A4 pages and no JavaScript. Its second page was visually inspected
+and its text checked for the previously omitted explanation across genera.
+
+| Evidence | Record |
+|---|---|
+| Clean archive and build inventory | [clean-build.json](review/name-audit/clean-build.json) |
+| Canonical bytes before public operation | [public-bytes-before.json](review/name-audit/public-bytes-before.json) |
+| Eight public browser journeys and two fault reviews | [public/review.json](review/name-audit/public/review.json) |
+| Canonical bytes after public operation | [public-bytes-after.json](review/name-audit/public-bytes-after.json) |
+| Six pinned public source/artifact files against Git blobs | [public-source.json](review/name-audit/public-source.json) |
+| Captures and download identities | [public/artifact-identities.json](review/name-audit/public/artifact-identities.json) |
+| Observed Pages and workflow state | [publication-state.json](review/name-audit/publication-state.json) |
+
+Exact duplicate public captures/downloads refer to the retained local file in the
+artifact record. Distinct public screenshots were retained and visually inspected;
+they are not claimed to be byte-identical to the local captures.
+
+The legacy `gh-pages` deployment
+[`a22d326`](https://github.com/antonsoo/harmoniai/commit/a22d3264db966a615bb61de79a72593feeb98252)
+completed successfully in [run 40989705017](https://github.com/antonsoo/harmoniai/actions/runs/40989705017).
+The separate source [CI run](https://github.com/antonsoo/harmoniai/actions/runs/40989619652)
+failed with zero executed steps. That unavailable remote check is not a passing CI
+claim; clean local checks, hosted bytes and browser evidence are separate results.

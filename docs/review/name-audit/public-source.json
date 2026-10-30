@@ -1,0 +1,41 @@
+{
+  "commit": "ea7d7170c0aa0e2199f7f7f6b8b5d9a2a1c2ab23",
+  "files": [
+    {
+      "path": "docs/name-audit.md",
+      "url": "https://raw.githubusercontent.com/antonsoo/harmoniai/ea7d7170c0aa0e2199f7f7f6b8b5d9a2a1c2ab23/docs/name-audit.md",
+      "bytes": 8270,
+      "sha256": "a1673653b8080fe453aaff07be97772d9b8258a68aee11465f9af0af35e20edd"
+    },
+    {
+      "path": "src/content/diatonic.ts",
+      "url": "https://raw.githubusercontent.com/antonsoo/harmoniai/ea7d7170c0aa0e2199f7f7f6b8b5d9a2a1c2ab23/src/content/diatonic.ts",
+      "bytes": 1899,
+      "sha256": "cef22d7e4d37e7669bf4e5fba1fa247170d940a18748cb82a2591131e2b242fd"
+    },
+    {
+      "path": "public/sources/manifest.json",
+      "url": "https://raw.githubusercontent.com/antonsoo/harmoniai/ea7d7170c0aa0e2199f7f7f6b8b5d9a2a1c2ab23/public/sources/manifest.json",
+      "bytes": 1004,
+      "sha256": "ed467724f0d9673e8abd0f7214ee9a8f02ccad0db94fc0f88017d9e06b060d6e"
+    },
+    {
+      "path": "docs/review/name-audit/local/dorian-reading.html.gz",
+      "url": "https://raw.githubusercontent.com/antonsoo/harmoniai/ea7d7170c0aa0e2199f7f7f6b8b5d9a2a1c2ab23/docs/review/name-audit/local/dorian-reading.html.gz",
+      "bytes": 2991046,
+      "sha256": "0ee039dc3fe7c537a6d80ab3a36998a7bc89868e402728527f41fb7184cd9bdb"
+    },
+    {
+      "path": "docs/review/name-audit/local/dorian-comparison.wav",
+      "url": "https://raw.githubusercontent.com/antonsoo/harmoniai/ea7d7170c0aa0e2199f7f7f6b8b5d9a2a1c2ab23/docs/review/name-audit/local/dorian-comparison.wav",
+      "bytes": 710056,
+      "sha256": "8290ac5d8a433e2837918109d788fa19368ab86502049fb7a52b62d225498aad"
+    },
+    {
+      "path": "docs/review/name-audit/local/dorian-reading.pdf",
+      "url": "https://raw.githubusercontent.com/antonsoo/harmoniai/ea7d7170c0aa0e2199f7f7f6b8b5d9a2a1c2ab23/docs/review/name-audit/local/dorian-reading.pdf",
+      "bytes": 2599229,
+      "sha256": "0815cddb6f762e3fe8020493210cf70aa4bb324298a35b522dc885dd74b1f0f7"
+    }
+  ]
+}
