@@ -54,7 +54,7 @@ export function instrumentSvg(
     const y = (rowOf(i, orientation) + rowOf(i + 1, orientation)) / 2;
     const inside = species && i >= species.from && i < species.from + 7;
     parts.push(
-      `<text class="step${step === "S" ? " semi" : ""}${inside ? " inside" : ""}" x="${X1 + 26}" y="${y + 5}">${step === "S" ? "½" : "1"}</text>`,
+      `<text class="step${step === "S" ? " semi" : ""}${inside ? " inside" : ""}" x="${X1 + 26}" y="${y + 5}">${step}</text>`,
     );
   });
   for (const note of NOTES) {

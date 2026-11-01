@@ -1,49 +1,23 @@
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
-import { createServer } from "node:http";
-import { extname, resolve } from "node:path";
+import { resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 import { gzipSync } from "node:zlib";
 import AxeBuilder from "@axe-core/playwright";
 import { chromium, firefox } from "playwright";
 
+import { serveSnapshot, snapshotBuild } from "./review-server.mjs";
+
+const build = await snapshotBuild();
 const output = resolve(process.argv[2] ?? "/tmp/harmoniai-octave-review");
 await mkdir(output, { recursive: true });
 const receipts = [],
   signals = [],
   downloads = [],
   faults = [];
-const types = {
-  ".html": "text/html",
-  ".js": "text/javascript",
-  ".css": "text/css",
-  ".jpg": "image/jpeg",
-  ".woff2": "font/woff2",
-  ".json": "application/json",
-};
 async function serve() {
-  const server = createServer(async (req, res) => {
-    const name = decodeURIComponent(new URL(req.url, "http://localhost").pathname);
-    if (!name.startsWith("/harmoniai/") || name.includes("..")) {
-      res.writeHead(404).end();
-      return;
-    }
-    const file = `dist/${name.slice(11) || "index.html"}`;
-    try {
-      const bytes = await readFile(file);
-      res
-        .writeHead(200, {
-          "content-type": types[extname(file)] ?? "application/octet-stream",
-          "cache-control": "no-store",
-        })
-        .end(bytes);
-    } catch {
-      res.writeHead(404).end();
-    }
-  });
-  await new Promise((r) => server.listen(0, "127.0.0.1", r));
-  return { server, base: `http://127.0.0.1:${server.address().port}/harmoniai/` };
+  return serveSnapshot(build);
 }
 function stop(server) {
   server.closeAllConnections();
@@ -213,6 +187,26 @@ for (const [engine, launcher] of Object.entries({ chromium, firefox })) {
         await page.waitForFunction(() =>
           document.querySelector("#offline-status").textContent.startsWith("Ready offline"),
         );
+        assert.match(
+          await page.locator(".step-measure").textContent(),
+          /203\.910.*90\.225.*23\.460/,
+        );
+        await page.locator("#tuning").selectOption("aristoxenian");
+        assert.match(
+          await page.locator(".step-measure").textContent(),
+          /200\.000.*100\.000.*two S steps equal/i,
+        );
+        await page.locator("#tuning").selectOption("pythagorean");
+        if (width === 375) {
+          const target = await page.locator('[data-note="12"] .hit').boundingBox();
+          assert(target.height >= 24, `String target only ${target.height}px high`);
+          await page.locator("#instrument").focus();
+          await page.keyboard.press("ArrowRight");
+          await page.waitForFunction(() => document.querySelector("#instrument").scrollLeft > 0);
+          await page.locator("#instrument").evaluate((e) => {
+            e.scrollLeft = 0;
+          });
+        }
         assert.equal(await page.locator("#tuning").inputValue(), "pythagorean");
         assert.equal(await page.locator("#mese").inputValue(), "330");
         assert.equal(await page.locator("#orient").isChecked(), true);

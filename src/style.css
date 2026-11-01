@@ -162,7 +162,12 @@ h1 {
   margin-top: 1rem;
 }
 
+.instrument-hint {
+  display: none;
+}
+
 .instrument-wrap {
+  overflow-x: auto;
   padding: 0.6rem;
   background: var(--leaf);
   border: 1px solid var(--rule);
@@ -680,6 +685,15 @@ h1 {
 }
 
 @media (max-width: 40rem) {
+  .instrument-wrap .instrument {
+    min-width: 48rem;
+  }
+
+  .instrument-hint {
+    display: block;
+    margin: 0 0 0.5rem;
+  }
+
   .mast {
     flex-wrap: wrap;
     padding: 0.8rem 1rem;

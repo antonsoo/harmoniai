@@ -26,6 +26,7 @@ import {
   SPECIES,
   type Species,
   speciesSteps,
+  stepCents,
   type Tuning,
 } from "../core/system";
 import { octaveCsv, octaveReading, octaveTable } from "../octave-export";
@@ -144,7 +145,7 @@ export function mount(root: HTMLElement): void {
     <p>Greek theorists cut the two-octave scale into seven octaves and named them after the Dorians, Phrygians, Lydians and their neighbours. Medieval theory kept the names and moved them. Pluck the strings, choose an octave, and read Cleonides' Greek for it.</p>
   </div>
   <div class="bench">
-    <div><div class="instrument-wrap" id="instrument"></div><div id="string-readout" class="string-readout" aria-live="polite" aria-atomic="true"></div></div>
+    <div><p class="instrument-hint small" id="instrument-help">Scroll the strings sideways to read the full diagram. Focus this region and use Left / Right, or play the named rows in the <a href="#pitches">pitch table</a>.</p><div class="instrument-wrap" id="instrument" tabindex="0" role="region" aria-label="Scrollable string instrument" aria-describedby="instrument-help"></div><div id="string-readout" class="string-readout" aria-live="polite" aria-atomic="true"></div></div>
     <div class="panel">
       <div class="species-picker" role="radiogroup" aria-label="Octave species">${SPECIES.map(
         (s) =>
@@ -280,7 +281,8 @@ export function mount(root: HTMLElement): void {
     const to = NOTES[species.from + 7];
     return `<p class="card-kicker">The ${ORD[species.ordinal]} octave species</p>
 <h2><span lang="grc">${species.greek}</span> ${species.name}</h2>
-<ol class="steps" aria-label="Steps from the lowest note">${steps.map((s) => `<li class="${s === "S" ? "semi" : ""}">${s === "S" ? "½" : "1"}</li>`).join("")}</ol>
+<ol class="steps" aria-label="Steps from the lowest note">${steps.map((s) => `<li class="${s === "S" ? "semi" : ""}">${s}</li>`).join("")}</ol>
+<p class="small step-measure">T = tone, ${stepCents("T", tuning).toFixed(3)} cents. S = small step, ${stepCents("S", tuning).toFixed(3)} cents. ${tuning === "pythagorean" ? `Two S steps total ${(2 * stepCents("S", tuning)).toFixed(3)} cents: ${(stepCents("T", tuning) - 2 * stepCents("S", tuning)).toFixed(3)} cents short of T. Here “semitone” names the small step; it is not half of T.` : "In this equal-step model, two S steps equal one T."}</p>
 <p class="small">From <span lang="grc">${esc(from?.greek ?? "")}</span> to <span lang="grc">${esc(to?.greek ?? "")}</span>. Cleonides places its half-steps ${ORD[species.semitone.fromLow]} from the bottom and ${ORD[species.semitone.fromHigh]} from the top.</p>
 ${quote ? passage(quote) : ""}
 <p class="today">On white keys this octave runs ${from?.letter}–${to?.letter}. Today it is called <b>${species.modern}</b>.${species.alsoCalled ? ` Cleonides adds: <span lang="grc">${esc(species.alsoCalled.split(":")[0] ?? "")}</span>, ${esc(species.alsoCalled.split(":")[1]?.trim() ?? "")}.` : ""}</p>`;
@@ -416,6 +418,7 @@ ${quote ? passage(quote) : ""}
     drawInstrument();
     tuning =
       (e.target as HTMLSelectElement).value === "aristoxenian" ? "aristoxenian" : "pythagorean";
+    if (!drill && card) card.innerHTML = speciesCard();
     refreshPitches();
   });
   meseControl?.addEventListener("change", () => {

@@ -72,7 +72,7 @@ export class Lyre {
   }
 
   /** The newest action owns playback, even when audio permission resolves later. */
-  private start(run: (ctx: AudioContext, gain: GainNode) => void): void {
+  private start(run: (ctx: AudioContext, gain: GainNode) => void | Promise<void>): void {
     this.stop();
     const request = this.generation;
     const begin = async () => {
@@ -84,7 +84,7 @@ export class Lyre {
       gain.gain.value = PLUCK_GAIN;
       gain.connect(ctx.destination);
       this.gain = gain;
-      run(ctx, gain);
+      await run(ctx, gain);
     };
     void begin().catch(() => {
       if (request !== this.generation) return;
@@ -131,7 +131,7 @@ export class Lyre {
     gap = PLUCK_GAP,
     onNote?: (index: number) => void,
   ): void {
-    this.start((ctx, gain) => {
+    this.start(async (ctx, gain) => {
       // Render before choosing the start time; slow devices must not receive
       // already-past start times while the remaining notes are being prepared.
       const buffers = frequencies.map((step) =>
@@ -142,6 +142,11 @@ export class Lyre {
           return buffer;
         }),
       );
+      // currentTime may remain the main thread’s old snapshot throughout the
+      // synchronous render. Let the browser publish the running audio clock
+      // before scheduling; otherwise Firefox can receive a past first onset.
+      await new Promise<void>((resolve) => window.setTimeout(resolve, 0));
+      if (this.gain !== gain || document.hidden || ctx.state !== "running") return;
       const start = ctx.currentTime + 0.05;
       buffers.forEach((chord, i) => {
         for (const buffer of chord) {
