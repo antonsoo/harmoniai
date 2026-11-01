@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-6b2a62)](LICENSE)
 [![Live site](https://img.shields.io/badge/live-antonsoo.github.io%2Fharmoniai-8a6418)](https://antonsoo.github.io/harmoniai/)
 
-![A named Greek string, its inspected frequency and Cleonides’ Hypophrygian span](docs/assets/inspect-pitch-desktop.png)
+![A named Greek string, its inspected frequency and Cleonides’ Hypophrygian span](docs/review/edition-audit/model-steps.png)
 
 Dorian, Phrygian and Lydian are the names of peoples: the Dorians of the Peloponnese,
 the Phrygians and Lydians of Anatolia. Greek theorists named musical scales after
@@ -99,7 +99,10 @@ In the main Greek instrument, choose **Pitches & files**. Select a string, hold
 mesē at 110, 220 or 330 Hz, and hear that same named position in both models.
 The ratio realization and equal-step realization keep their reference fixed;
 the numbers explain precisely what changes. The fifteen-row pitch table is
-also a playable, full-size alternative to the small string diagram on a phone.
+also playable. On a phone, the instrument scrolls sideways so its Greek names
+and string targets keep their readable size. T and S mark the tone and small
+step; the selected model reports their sizes. In the ratio model, two S steps
+are 23.460 cents smaller than T.
 
 - Save a single pluck or the selected octave ascending and descending as WAV.
 - Keep every Greek name, transliteration, frequency and reference in CSV.
@@ -249,8 +252,13 @@ npm run dev        # http://127.0.0.1:4413/harmoniai/
 
 `npm run check` runs Biome, strict TypeScript, the tests and the production build.
 The footer reports offline readiness only when a controlling worker has the
-complete edition. All three pages, the retained Cleonides scans, fonts and local models then reload without a
+complete edition with the reviewed file lengths and SHA-256 identities. The
+footer can check and repair damaged or evicted files without discarding the
+open instrument. A new edition waits until existing Harmoniai tabs close;
+those tabs keep the source files their studies require. All three pages, the
+retained Cleonides scans, fonts and local models then reload without a
 connection; external Sanskrit scans and scholarly links remain online resources.
+[Independent audit of repair, updates and slow transfers](docs/edition-audit.md).
 [Publication review and model correction](docs/publication-review.md).
 
 ## Accuracy and limitations

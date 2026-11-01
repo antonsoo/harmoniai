@@ -1,0 +1,2251 @@
+{
+  "files": [
+    {
+      "path": "assets/compare-DOHZ2WPn.css",
+      "bytes": 3323,
+      "sha256": "92e7b237905287fd3792c02d2d7d57b42c5bf209d9f2c6af58e3f7c63422e845"
+    },
+    {
+      "path": "assets/compare-KfAUaKhr.js",
+      "bytes": 13870,
+      "sha256": "cb660c60f2dc7c67e9a1e2637cd0d5ee7068df449e832dfdceb8788430c0c61b"
+    },
+    {
+      "path": "assets/comparison-view-VQZphUlT.js",
+      "bytes": 16819,
+      "sha256": "d651d1fec807a93514aafc0bf18a0ed5059190e63e2adf36938755b50a5e0068"
+    },
+    {
+      "path": "assets/gentium-book-plus-400-greek-CLs1HoaC.woff2",
+      "bytes": 18168,
+      "sha256": "cba273ba7a0fbe810e3531f5cc62fd4e963da7c5d32b4981c3f30fe562aea343"
+    },
+    {
+      "path": "assets/gentium-book-plus-400-greek-ext-DWWGNQKb.woff2",
+      "bytes": 9356,
+      "sha256": "f4cbbee8404f7275cdece60d170d787d693df853452ef43a7b504d73eca2d658"
+    },
+    {
+      "path": "assets/gentium-book-plus-400-latin-CN5vb1Vx.woff2",
+      "bytes": 21564,
+      "sha256": "dd5d2902dac9c11d3acc42b0e54a74b4f2db9bd4a7d6872c23338f70df29ca7e"
+    },
+    {
+      "path": "assets/gentium-book-plus-400-latin-ext-BiRsxpCX.woff2",
+      "bytes": 57824,
+      "sha256": "46b8923c77eceb874e1b6a28ce08d56293641382ea0382f7043139bfff8f2383"
+    },
+    {
+      "path": "assets/gentium-book-plus-700-greek-D13hw162.woff2",
+      "bytes": 18520,
+      "sha256": "724dc67b98be2894401d21df2b8bf578d78187ca3f90f60ec95861e7059d441a"
+    },
+    {
+      "path": "assets/gentium-book-plus-700-greek-ext-BE1cELiy.woff2",
+      "bytes": 9376,
+      "sha256": "d104ae417e075f91963b872de09eb31123ca0b96900f6b66e7e71344d9336d4b"
+    },
+    {
+      "path": "assets/gentium-book-plus-700-latin-BymqVBkR.woff2",
+      "bytes": 21536,
+      "sha256": "b151cf211e3c03b3eac0ef3a4e94c44aa67096f9e7148cabfb9e9f8a0017eb33"
+    },
+    {
+      "path": "assets/gentium-book-plus-700-latin-ext-D1SMMCt_.woff2",
+      "bytes": 57264,
+      "sha256": "001e63c267c9884f95d7783bf1674eae74799d269240e13139a6b4cdf9f2924d"
+    },
+    {
+      "path": "assets/gentium-book-plus-italic-greek-BfV1x5aq.woff2",
+      "bytes": 18168,
+      "sha256": "da8564415fbeac7e39ae174810f3fe5139373b9624b6f7008c0315737afe9614"
+    },
+    {
+      "path": "assets/gentium-book-plus-italic-greek-ext-cZLoWG0Y.woff2",
+      "bytes": 9416,
+      "sha256": "fd831d285c3d0da6891a7ec460d4a9b05791cda2cf91beae0d1362b9029a6c32"
+    },
+    {
+      "path": "assets/gentium-book-plus-italic-latin-c-m4ooFh.woff2",
+      "bytes": 24588,
+      "sha256": "daa214002d1aa0ce6fbe72c495542a2d321b51172565e2e9508a3b5e064fcf6c"
+    },
+    {
+      "path": "assets/gentium-book-plus-italic-latin-ext-SxHammME.woff2",
+      "bytes": 65080,
+      "sha256": "eddfadc54270eb9bee9ca8a1c879e9352748a38c1ecf46513b03bf16b377f532"
+    },
+    {
+      "path": "assets/gfs-neohellenic-greek-DLuqQA6u.woff2",
+      "bytes": 10716,
+      "sha256": "d489ded5ec6c74f9ec76437364fd28a50d885cbbeab68fbc6983abba2333b939"
+    },
+    {
+      "path": "assets/gfs-neohellenic-greek-ext-DZAcqUeX.woff2",
+      "bytes": 17016,
+      "sha256": "1708e72d62d20026235d6a0ad03154a8376e9bee0227d0a1ed1a522ced327766"
+    },
+    {
+      "path": "assets/gfs-neohellenic-latin-CdUOFP9L.woff2",
+      "bytes": 24168,
+      "sha256": "0900be9bc421a3c769457c0596609a49755be366cec54b8e6492e3a7a47c756f"
+    },
+    {
+      "path": "assets/index-CB-um4wB.js",
+      "bytes": 45013,
+      "sha256": "f3f87656a6fe9ca087e10250c76149fbd4fae9b1ee0db6faae3da5f156306197"
+    },
+    {
+      "path": "assets/pluck-BFkuXnRH.js",
+      "bytes": 2918,
+      "sha256": "43a75c84aef1097e93b157befa6af9bd3b264e9197064327b0ac1f8b41facbee"
+    },
+    {
+      "path": "assets/shell-C313PPp2.css",
+      "bytes": 19112,
+      "sha256": "9a90115463eca26e085d2925ca681ac3a9c59d3d271a1218ba4d0ad2960b3076"
+    },
+    {
+      "path": "assets/shell-D1bzl6kB.js",
+      "bytes": 14221,
+      "sha256": "78a4c06f0ee790f10043f69b6ee0d64212e55fa5ee3fa9a2aecdbd321e2211e0"
+    },
+    {
+      "path": "assets/tiro-devanagari-sanskrit-400-devanagari-Djl2bf-7.woff2",
+      "bytes": 183900,
+      "sha256": "b1c4699168ebfeb6c92fadfcdd379ded22eb94de9537234a2ef0f93e12cd9d69"
+    },
+    {
+      "path": "assets/vina-BjFNanzW.js",
+      "bytes": 33888,
+      "sha256": "4a05d616853c9c9d0f6f92a43c648531f8258184ac60e0c5a0a87451e54ec77b"
+    },
+    {
+      "path": "compare.html",
+      "bytes": 1359,
+      "sha256": "be3cadb0fb4a995c60a6a197a01e6f1cb279af4744045e5fe067fc29af3d27b7"
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 327,
+      "sha256": "677e97172eaee779a5e9780bb5616f6941e025d44ad4353426ee6c5f30c486c4"
+    },
+    {
+      "path": "FONT-LICENSE.txt",
+      "bytes": 14204,
+      "sha256": "21675d953c0ac998c715f200b106198ec59952b6a05d06988c72524020be1c86"
+    },
+    {
+      "path": "fonts/gentium-book-plus-LICENSE.txt",
+      "bytes": 4574,
+      "sha256": "92ec730eb44ab2b0a1d16651d019cebe7107db39ab487933030fcd2fb96b409a"
+    },
+    {
+      "path": "index.html",
+      "bytes": 1388,
+      "sha256": "03839ac2e341a36761aa2cfebc5c6d75c6a2c05f6002cf5264353cece33ce056"
+    },
+    {
+      "path": "LICENSE.txt",
+      "bytes": 1071,
+      "sha256": "f4cec46403514e2601f3b917ad36bfc8cd9a6d97359ac2f9bb554d2062a251eb"
+    },
+    {
+      "path": "sources/jan-1895-p197.jpg",
+      "bytes": 824025,
+      "sha256": "fa0b41c521fad3a0bacdc811bade71b3a2922cbc947e46e411656d7c3a5ece17"
+    },
+    {
+      "path": "sources/jan-1895-p198.jpg",
+      "bytes": 845651,
+      "sha256": "e07ac24e749ae55c35a67573e2a1e873be467ca4f27fde6ee2cb80f35e29082e"
+    },
+    {
+      "path": "sources/jan-1895-p199.jpg",
+      "bytes": 798067,
+      "sha256": "8660edda63de3ed5b557a95367d8ba2b7d62edb13e1868f27d24dd08c6f97724"
+    },
+    {
+      "path": "sources/manifest.json",
+      "bytes": 1004,
+      "sha256": "ed467724f0d9673e8abd0f7214ee9a8f02ccad0db94fc0f88017d9e06b060d6e"
+    },
+    {
+      "path": "sw.js",
+      "bytes": 15361,
+      "sha256": "5b6c4494b03e3f4adcc51778640bf69c23a9634ebc3d8501bcdfd9da6aa2d4f7"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.txt",
+      "bytes": 2621,
+      "sha256": "cd5656b07c8ac8c1261890519e4e46e54f36db8e36e96f5a296530c735b2b85c"
+    },
+    {
+      "path": "vina.html",
+      "bytes": 1415,
+      "sha256": "0557c08306c44b1d8ae3821561a3bdd3a56dbcbf3c150fb32c930c95856f9e2c"
+    }
+  ],
+  "receipts": [
+    {
+      "file": "chromium-44100-pythagorean.f32",
+      "engine": "chromium",
+      "kind": "octave",
+      "tuning": "pythagorean",
+      "mese": 330,
+      "species": 6,
+      "wav": "chromium-44100-pythagorean.wav",
+      "firstFrame": 0,
+      "clockGaps": [
+        {
+          "expected": 128,
+          "actual": 640
+        }
+      ],
+      "timestampCorrections": [],
+      "rate": 44100,
+      "samples": 357376,
+      "starts": [
+        {
+          "type": "buffer",
+          "at": 0.1428798185941043,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 0.5628798185941043,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 0.9828798185941043,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 1.4028798185941043,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 1.8228798185941042,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 2.2428798185941043,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 2.6628798185941043,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 3.082879818594104,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 3.502879818594104,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 3.922879818594104,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 4.342879818594104,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 4.762879818594104,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 5.182879818594104,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 5.602879818594104,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 6.022879818594104,
+          "frames": 70560
+        }
+      ],
+      "stops": []
+    },
+    {
+      "file": "chromium-44100-aristoxenian.f32",
+      "engine": "chromium",
+      "kind": "octave",
+      "tuning": "aristoxenian",
+      "mese": 330,
+      "species": 6,
+      "wav": "chromium-44100-aristoxenian.wav",
+      "firstFrame": 512,
+      "clockGaps": [],
+      "timestampCorrections": [
+        {
+          "index": 2181,
+          "reportedFrame": 279552,
+          "sequenceFrame": 279680
+        }
+      ],
+      "rate": 44100,
+      "samples": 354816,
+      "starts": [
+        {
+          "type": "buffer",
+          "at": 0.11965986394557823,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 0.5396598639455782,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 0.9596598639455782,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 1.3796598639455782,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 1.799659863945578,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 2.2196598639455782,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 2.639659863945578,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 3.059659863945578,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 3.479659863945578,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 3.899659863945578,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 4.319659863945579,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 4.739659863945579,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 5.159659863945579,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 5.579659863945579,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 5.9996598639455785,
+          "frames": 70560
+        }
+      ],
+      "stops": []
+    },
+    {
+      "file": "chromium-44100-stop.f32",
+      "engine": "chromium",
+      "kind": "stop",
+      "stopTime": 9.334421768707482,
+      "firstFrame": 358400,
+      "clockGaps": [],
+      "timestampCorrections": [
+        {
+          "index": 261,
+          "reportedFrame": 391680,
+          "sequenceFrame": 391808
+        }
+      ],
+      "rate": 44100,
+      "samples": 92160,
+      "starts": [
+        {
+          "type": "buffer",
+          "at": 8.246643990929705,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 8.666643990929705,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 9.086643990929705,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 9.506643990929705,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 9.926643990929705,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 10.346643990929705,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 10.766643990929705,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 11.186643990929705,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 11.606643990929705,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 12.026643990929704,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 12.446643990929704,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 12.866643990929706,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 13.286643990929704,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 13.706643990929706,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 14.126643990929704,
+          "frames": 70560
+        }
+      ],
+      "stops": [
+        {
+          "at": 9.311201814058958
+        },
+        {
+          "at": 9.311201814058958
+        },
+        {
+          "at": 9.311201814058958
+        },
+        {
+          "at": 9.311201814058958
+        },
+        {
+          "at": 9.311201814058958
+        },
+        {
+          "at": 9.311201814058958
+        },
+        {
+          "at": 9.311201814058958
+        },
+        {
+          "at": 9.311201814058958
+        },
+        {
+          "at": 9.311201814058958
+        },
+        {
+          "at": 9.311201814058958
+        },
+        {
+          "at": 9.311201814058958
+        },
+        {
+          "at": 9.311201814058958
+        },
+        {
+          "at": 9.311201814058958
+        },
+        {
+          "at": 9.311201814058958
+        },
+        {
+          "at": 9.311201814058958
+        }
+      ]
+    },
+    {
+      "file": "chromium-44100-change.f32",
+      "engine": "chromium",
+      "kind": "stop",
+      "stopTime": 10.727619047619047,
+      "firstFrame": 452608,
+      "clockGaps": [],
+      "timestampCorrections": [],
+      "rate": 44100,
+      "samples": 60416,
+      "starts": [
+        {
+          "type": "buffer",
+          "at": 10.382879818594105,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 10.802879818594105,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 11.222879818594105,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 11.642879818594105,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 12.062879818594105,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 12.482879818594105,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 12.902879818594105,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 13.322879818594105,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 13.742879818594105,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 14.162879818594105,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 14.582879818594105,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 15.002879818594106,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 15.422879818594105,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 15.842879818594106,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 16.262879818594104,
+          "frames": 70560
+        }
+      ],
+      "stops": [
+        {
+          "at": 10.727619047619047
+        },
+        {
+          "at": 10.727619047619047
+        },
+        {
+          "at": 10.727619047619047
+        },
+        {
+          "at": 10.727619047619047
+        },
+        {
+          "at": 10.727619047619047
+        },
+        {
+          "at": 10.727619047619047
+        },
+        {
+          "at": 10.727619047619047
+        },
+        {
+          "at": 10.727619047619047
+        },
+        {
+          "at": 10.727619047619047
+        },
+        {
+          "at": 10.727619047619047
+        },
+        {
+          "at": 10.727619047619047
+        },
+        {
+          "at": 10.727619047619047
+        },
+        {
+          "at": 10.727619047619047
+        },
+        {
+          "at": 10.727619047619047
+        },
+        {
+          "at": 10.727619047619047
+        }
+      ]
+    },
+    {
+      "file": "chromium-44100-pure-fifth.f32",
+      "engine": "chromium",
+      "kind": "pure-fifth",
+      "firstFrame": 512,
+      "clockGaps": [],
+      "timestampCorrections": [],
+      "rate": 44100,
+      "samples": 116224,
+      "starts": [
+        {
+          "type": "sine",
+          "at": 0.04160997732426304,
+          "hz": 220
+        },
+        {
+          "type": "sine",
+          "at": 0.04160997732426304,
+          "hz": 330
+        }
+      ],
+      "stops": []
+    },
+    {
+      "file": "chromium-44100-equal-fifth.f32",
+      "engine": "chromium",
+      "kind": "equal-fifth",
+      "firstFrame": 117760,
+      "clockGaps": [],
+      "timestampCorrections": [],
+      "rate": 44100,
+      "samples": 114688,
+      "starts": [
+        {
+          "type": "sine",
+          "at": 2.7002947845804988,
+          "hz": 220
+        },
+        {
+          "type": "sine",
+          "at": 2.7002947845804988,
+          "hz": 331.3630065917969
+        }
+      ],
+      "stops": []
+    },
+    {
+      "file": "chromium-48000-pythagorean.f32",
+      "engine": "chromium",
+      "kind": "octave",
+      "tuning": "pythagorean",
+      "mese": 330,
+      "species": 6,
+      "wav": "chromium-48000-pythagorean.wav",
+      "firstFrame": 640,
+      "clockGaps": [
+        {
+          "expected": 768,
+          "actual": 1920
+        }
+      ],
+      "timestampCorrections": [],
+      "rate": 48000,
+      "samples": 389504,
+      "starts": [
+        {
+          "type": "buffer",
+          "at": 0.15666666666666668,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 0.5766666666666667,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 0.9966666666666666,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 1.4166666666666667,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 1.8366666666666667,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 2.256666666666667,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 2.6766666666666667,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 3.0966666666666667,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 3.5166666666666666,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 3.9366666666666665,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 4.3566666666666665,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 4.776666666666666,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 5.196666666666666,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 5.616666666666666,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 6.036666666666666,
+          "frames": 76800
+        }
+      ],
+      "stops": []
+    },
+    {
+      "file": "chromium-48000-aristoxenian.f32",
+      "engine": "chromium",
+      "kind": "octave",
+      "tuning": "aristoxenian",
+      "mese": 330,
+      "species": 6,
+      "wav": "chromium-48000-aristoxenian.wav",
+      "firstFrame": 640,
+      "clockGaps": [],
+      "timestampCorrections": [
+        {
+          "index": 1599,
+          "reportedFrame": 205184,
+          "sequenceFrame": 205312
+        }
+      ],
+      "rate": 48000,
+      "samples": 388352,
+      "starts": [
+        {
+          "type": "buffer",
+          "at": 0.15666666666666668,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 0.5766666666666667,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 0.9966666666666666,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 1.4166666666666667,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 1.8366666666666667,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 2.256666666666667,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 2.6766666666666667,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 3.0966666666666667,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 3.5166666666666666,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 3.9366666666666665,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 4.3566666666666665,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 4.776666666666666,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 5.196666666666666,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 5.616666666666666,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 6.036666666666666,
+          "frames": 76800
+        }
+      ],
+      "stops": []
+    },
+    {
+      "file": "chromium-48000-stop.f32",
+      "engine": "chromium",
+      "kind": "stop",
+      "stopTime": 9.370666666666667,
+      "firstFrame": 392832,
+      "clockGaps": [],
+      "timestampCorrections": [],
+      "rate": 48000,
+      "samples": 100480,
+      "starts": [
+        {
+          "type": "buffer",
+          "at": 8.306000000000001,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 8.726,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 9.146,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 9.566,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 9.986,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 10.406,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 10.826,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 11.246,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 11.666,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 12.086,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 12.506,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 12.926000000000002,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 13.346,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 13.766000000000002,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 14.186,
+          "frames": 76800
+        }
+      ],
+      "stops": [
+        {
+          "at": 9.370666666666667
+        },
+        {
+          "at": 9.370666666666667
+        },
+        {
+          "at": 9.370666666666667
+        },
+        {
+          "at": 9.370666666666667
+        },
+        {
+          "at": 9.370666666666667
+        },
+        {
+          "at": 9.370666666666667
+        },
+        {
+          "at": 9.370666666666667
+        },
+        {
+          "at": 9.370666666666667
+        },
+        {
+          "at": 9.370666666666667
+        },
+        {
+          "at": 9.370666666666667
+        },
+        {
+          "at": 9.370666666666667
+        },
+        {
+          "at": 9.370666666666667
+        },
+        {
+          "at": 9.370666666666667
+        },
+        {
+          "at": 9.370666666666667
+        },
+        {
+          "at": 9.370666666666667
+        }
+      ]
+    },
+    {
+      "file": "chromium-48000-change.f32",
+      "engine": "chromium",
+      "kind": "stop",
+      "stopTime": 10.789333333333333,
+      "firstFrame": 494464,
+      "clockGaps": [],
+      "timestampCorrections": [],
+      "rate": 48000,
+      "samples": 66432,
+      "starts": [
+        {
+          "type": "buffer",
+          "at": 10.423333333333334,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 10.843333333333334,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 11.263333333333334,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 11.683333333333334,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 12.103333333333333,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 12.523333333333333,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 12.943333333333333,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 13.363333333333333,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 13.783333333333333,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 14.203333333333333,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 14.623333333333335,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 15.043333333333333,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 15.463333333333335,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 15.883333333333333,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 16.303333333333335,
+          "frames": 76800
+        }
+      ],
+      "stops": [
+        {
+          "at": 10.789333333333333
+        },
+        {
+          "at": 10.789333333333333
+        },
+        {
+          "at": 10.789333333333333
+        },
+        {
+          "at": 10.789333333333333
+        },
+        {
+          "at": 10.789333333333333
+        },
+        {
+          "at": 10.789333333333333
+        },
+        {
+          "at": 10.789333333333333
+        },
+        {
+          "at": 10.789333333333333
+        },
+        {
+          "at": 10.789333333333333
+        },
+        {
+          "at": 10.789333333333333
+        },
+        {
+          "at": 10.789333333333333
+        },
+        {
+          "at": 10.789333333333333
+        },
+        {
+          "at": 10.789333333333333
+        },
+        {
+          "at": 10.789333333333333
+        },
+        {
+          "at": 10.789333333333333
+        }
+      ]
+    },
+    {
+      "file": "chromium-48000-pure-fifth.f32",
+      "engine": "chromium",
+      "kind": "pure-fifth",
+      "firstFrame": 640,
+      "clockGaps": [],
+      "timestampCorrections": [],
+      "rate": 48000,
+      "samples": 126080,
+      "starts": [
+        {
+          "type": "sine",
+          "at": 0.043333333333333335,
+          "hz": 220
+        },
+        {
+          "type": "sine",
+          "at": 0.043333333333333335,
+          "hz": 330
+        }
+      ],
+      "stops": []
+    },
+    {
+      "file": "chromium-48000-equal-fifth.f32",
+      "engine": "chromium",
+      "kind": "equal-fifth",
+      "firstFrame": 127872,
+      "clockGaps": [],
+      "timestampCorrections": [],
+      "rate": 48000,
+      "samples": 126080,
+      "starts": [
+        {
+          "type": "sine",
+          "at": 2.718,
+          "hz": 220
+        },
+        {
+          "type": "sine",
+          "at": 2.718,
+          "hz": 331.3630065917969
+        }
+      ],
+      "stops": []
+    },
+    {
+      "file": "chromium-media.f32",
+      "engine": "chromium",
+      "kind": "media",
+      "wav": "chromium-media.wav",
+      "firstFrame": 0,
+      "clockGaps": [
+        {
+          "expected": 128,
+          "actual": 640
+        }
+      ],
+      "timestampCorrections": [],
+      "rate": 44100,
+      "samples": 386048,
+      "starts": [],
+      "stops": []
+    },
+    {
+      "file": "firefox-44100-pythagorean.f32",
+      "engine": "firefox",
+      "kind": "octave",
+      "tuning": "pythagorean",
+      "mese": 330,
+      "species": 6,
+      "wav": "firefox-44100-pythagorean.wav",
+      "firstFrame": 0,
+      "clockGaps": [],
+      "timestampCorrections": [],
+      "rate": 44100,
+      "samples": 356736,
+      "starts": [
+        {
+          "type": "buffer",
+          "at": 0.14578231292517008,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 0.56578231292517,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 0.98578231292517,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 1.40578231292517,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 1.82578231292517,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 2.2457823129251704,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 2.6657823129251703,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 3.0857823129251702,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 3.50578231292517,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 3.92578231292517,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 4.34578231292517,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 4.76578231292517,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 5.18578231292517,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 5.60578231292517,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 6.02578231292517,
+          "frames": 70560
+        }
+      ],
+      "stops": []
+    },
+    {
+      "file": "firefox-44100-aristoxenian.f32",
+      "engine": "firefox",
+      "kind": "octave",
+      "tuning": "aristoxenian",
+      "mese": 330,
+      "species": 6,
+      "wav": "firefox-44100-aristoxenian.wav",
+      "firstFrame": 896,
+      "clockGaps": [],
+      "timestampCorrections": [],
+      "rate": 44100,
+      "samples": 355200,
+      "starts": [
+        {
+          "type": "buffer",
+          "at": 0.10224489795918368,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 0.5222448979591836,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 0.9422448979591836,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 1.3622448979591837,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 1.7822448979591836,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 2.2022448979591838,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 2.6222448979591837,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 3.0422448979591836,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 3.4622448979591836,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 3.8822448979591835,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 4.302244897959184,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 4.722244897959184,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 5.142244897959184,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 5.562244897959184,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 5.982244897959184,
+          "frames": 70560
+        }
+      ],
+      "stops": []
+    },
+    {
+      "file": "firefox-44100-stop.f32",
+      "engine": "firefox",
+      "kind": "stop",
+      "stopTime": 9.386666666666667,
+      "firstFrame": 358912,
+      "clockGaps": [],
+      "timestampCorrections": [],
+      "rate": 44100,
+      "samples": 94976,
+      "starts": [
+        {
+          "type": "buffer",
+          "at": 8.281473922902496,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 8.701473922902496,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 9.121473922902496,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 9.541473922902496,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 9.961473922902496,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 10.381473922902495,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 10.801473922902495,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 11.221473922902495,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 11.641473922902495,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 12.061473922902495,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 12.481473922902495,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 12.901473922902497,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 13.321473922902495,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 13.741473922902497,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 14.161473922902495,
+          "frames": 70560
+        }
+      ],
+      "stops": [
+        {
+          "at": 9.386666666666667
+        },
+        {
+          "at": 9.386666666666667
+        },
+        {
+          "at": 9.386666666666667
+        },
+        {
+          "at": 9.386666666666667
+        },
+        {
+          "at": 9.386666666666667
+        },
+        {
+          "at": 9.386666666666667
+        },
+        {
+          "at": 9.386666666666667
+        },
+        {
+          "at": 9.386666666666667
+        },
+        {
+          "at": 9.386666666666667
+        },
+        {
+          "at": 9.386666666666667
+        },
+        {
+          "at": 9.386666666666667
+        },
+        {
+          "at": 9.386666666666667
+        },
+        {
+          "at": 9.386666666666667
+        },
+        {
+          "at": 9.386666666666667
+        },
+        {
+          "at": 9.386666666666667
+        }
+      ]
+    },
+    {
+      "file": "firefox-44100-change.f32",
+      "engine": "firefox",
+      "kind": "stop",
+      "stopTime": 10.791473922902494,
+      "firstFrame": 453888,
+      "clockGaps": [],
+      "timestampCorrections": [],
+      "rate": 44100,
+      "samples": 63360,
+      "starts": [
+        {
+          "type": "buffer",
+          "at": 10.435124716553288,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 10.855124716553288,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 11.275124716553288,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 11.695124716553288,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 12.115124716553288,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 12.535124716553288,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 12.955124716553287,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 13.375124716553287,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 13.795124716553287,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 14.215124716553287,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 14.635124716553289,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 15.055124716553287,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 15.475124716553289,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 15.895124716553287,
+          "frames": 70560
+        },
+        {
+          "type": "buffer",
+          "at": 16.31512471655329,
+          "frames": 70560
+        }
+      ],
+      "stops": [
+        {
+          "at": 10.791473922902494
+        },
+        {
+          "at": 10.791473922902494
+        },
+        {
+          "at": 10.791473922902494
+        },
+        {
+          "at": 10.791473922902494
+        },
+        {
+          "at": 10.791473922902494
+        },
+        {
+          "at": 10.791473922902494
+        },
+        {
+          "at": 10.791473922902494
+        },
+        {
+          "at": 10.791473922902494
+        },
+        {
+          "at": 10.791473922902494
+        },
+        {
+          "at": 10.791473922902494
+        },
+        {
+          "at": 10.791473922902494
+        },
+        {
+          "at": 10.791473922902494
+        },
+        {
+          "at": 10.791473922902494
+        },
+        {
+          "at": 10.791473922902494
+        },
+        {
+          "at": 10.791473922902494
+        }
+      ]
+    },
+    {
+      "file": "firefox-44100-pure-fifth.f32",
+      "engine": "firefox",
+      "kind": "pure-fifth",
+      "firstFrame": 768,
+      "clockGaps": [],
+      "timestampCorrections": [],
+      "rate": 44100,
+      "samples": 114304,
+      "starts": [
+        {
+          "type": "sine",
+          "at": 0.04741496598639455,
+          "hz": 220
+        },
+        {
+          "type": "sine",
+          "at": 0.04741496598639455,
+          "hz": 330
+        }
+      ],
+      "stops": []
+    },
+    {
+      "file": "firefox-44100-equal-fifth.f32",
+      "engine": "firefox",
+      "kind": "equal-fifth",
+      "firstFrame": 116352,
+      "clockGaps": [],
+      "timestampCorrections": [],
+      "rate": 44100,
+      "samples": 117120,
+      "starts": [
+        {
+          "type": "sine",
+          "at": 2.720612244897959,
+          "hz": 220
+        },
+        {
+          "type": "sine",
+          "at": 2.720612244897959,
+          "hz": 331.3630065917969
+        }
+      ],
+      "stops": []
+    },
+    {
+      "file": "firefox-48000-pythagorean.f32",
+      "engine": "firefox",
+      "kind": "octave",
+      "tuning": "pythagorean",
+      "mese": 330,
+      "species": 6,
+      "wav": "firefox-48000-pythagorean.wav",
+      "firstFrame": 0,
+      "clockGaps": [],
+      "timestampCorrections": [],
+      "rate": 48000,
+      "samples": 386560,
+      "starts": [
+        {
+          "type": "buffer",
+          "at": 0.10333333333333333,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 0.5233333333333333,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 0.9433333333333334,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 1.3633333333333333,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 1.7833333333333332,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 2.2033333333333336,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 2.6233333333333335,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 3.0433333333333334,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 3.4633333333333334,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 3.8833333333333333,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 4.303333333333334,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 4.723333333333334,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 5.1433333333333335,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 5.5633333333333335,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 5.983333333333333,
+          "frames": 76800
+        }
+      ],
+      "stops": []
+    },
+    {
+      "file": "firefox-48000-aristoxenian.f32",
+      "engine": "firefox",
+      "kind": "octave",
+      "tuning": "aristoxenian",
+      "mese": 330,
+      "species": 6,
+      "wav": "firefox-48000-aristoxenian.wav",
+      "firstFrame": 0,
+      "clockGaps": [],
+      "timestampCorrections": [],
+      "rate": 48000,
+      "samples": 388608,
+      "starts": [
+        {
+          "type": "buffer",
+          "at": 0.14600000000000002,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 0.5660000000000001,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 0.986,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 1.4060000000000001,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 1.826,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 2.246,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 2.666,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 3.086,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 3.506,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 3.9259999999999997,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 4.346,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 4.766,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 5.186,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 5.606,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 6.026,
+          "frames": 76800
+        }
+      ],
+      "stops": []
+    },
+    {
+      "file": "firefox-48000-stop.f32",
+      "engine": "firefox",
+      "kind": "stop",
+      "stopTime": 9.44,
+      "firstFrame": 393088,
+      "clockGaps": [],
+      "timestampCorrections": [],
+      "rate": 48000,
+      "samples": 103424,
+      "starts": [
+        {
+          "type": "buffer",
+          "at": 8.332666666666668,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 8.752666666666668,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 9.172666666666668,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 9.592666666666668,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 10.012666666666668,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 10.432666666666668,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 10.852666666666668,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 11.272666666666668,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 11.692666666666668,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 12.112666666666668,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 12.532666666666668,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 12.95266666666667,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 13.372666666666667,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 13.792666666666669,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 14.212666666666667,
+          "frames": 76800
+        }
+      ],
+      "stops": [
+        {
+          "at": 9.408
+        },
+        {
+          "at": 9.408
+        },
+        {
+          "at": 9.408
+        },
+        {
+          "at": 9.408
+        },
+        {
+          "at": 9.408
+        },
+        {
+          "at": 9.408
+        },
+        {
+          "at": 9.408
+        },
+        {
+          "at": 9.408
+        },
+        {
+          "at": 9.408
+        },
+        {
+          "at": 9.408
+        },
+        {
+          "at": 9.408
+        },
+        {
+          "at": 9.408
+        },
+        {
+          "at": 9.408
+        },
+        {
+          "at": 9.408
+        },
+        {
+          "at": 9.408
+        }
+      ]
+    },
+    {
+      "file": "firefox-48000-change.f32",
+      "engine": "firefox",
+      "kind": "stop",
+      "stopTime": 10.877333333333333,
+      "firstFrame": 496512,
+      "clockGaps": [],
+      "timestampCorrections": [],
+      "rate": 48000,
+      "samples": 68992,
+      "starts": [
+        {
+          "type": "buffer",
+          "at": 10.49,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 10.91,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 11.33,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 11.75,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 12.17,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 12.59,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 13.01,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 13.43,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 13.85,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 14.27,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 14.690000000000001,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 15.11,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 15.530000000000001,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 15.95,
+          "frames": 76800
+        },
+        {
+          "type": "buffer",
+          "at": 16.37,
+          "frames": 76800
+        }
+      ],
+      "stops": [
+        {
+          "at": 10.877333333333333
+        },
+        {
+          "at": 10.877333333333333
+        },
+        {
+          "at": 10.877333333333333
+        },
+        {
+          "at": 10.877333333333333
+        },
+        {
+          "at": 10.877333333333333
+        },
+        {
+          "at": 10.877333333333333
+        },
+        {
+          "at": 10.877333333333333
+        },
+        {
+          "at": 10.877333333333333
+        },
+        {
+          "at": 10.877333333333333
+        },
+        {
+          "at": 10.877333333333333
+        },
+        {
+          "at": 10.877333333333333
+        },
+        {
+          "at": 10.877333333333333
+        },
+        {
+          "at": 10.877333333333333
+        },
+        {
+          "at": 10.877333333333333
+        },
+        {
+          "at": 10.877333333333333
+        }
+      ]
+    },
+    {
+      "file": "firefox-48000-pure-fifth.f32",
+      "engine": "firefox",
+      "kind": "pure-fifth",
+      "firstFrame": 768,
+      "clockGaps": [],
+      "timestampCorrections": [],
+      "rate": 48000,
+      "samples": 124544,
+      "starts": [
+        {
+          "type": "sine",
+          "at": 0.046,
+          "hz": 220
+        },
+        {
+          "type": "sine",
+          "at": 0.046,
+          "hz": 330
+        }
+      ],
+      "stops": []
+    },
+    {
+      "file": "firefox-48000-equal-fifth.f32",
+      "engine": "firefox",
+      "kind": "equal-fifth",
+      "firstFrame": 126848,
+      "clockGaps": [],
+      "timestampCorrections": [],
+      "rate": 48000,
+      "samples": 127488,
+      "starts": [
+        {
+          "type": "sine",
+          "at": 2.7206666666666663,
+          "hz": 220
+        },
+        {
+          "type": "sine",
+          "at": 2.7206666666666663,
+          "hz": 331.3630065917969
+        }
+      ],
+      "stops": []
+    },
+    {
+      "file": "firefox-media.f32",
+      "engine": "firefox",
+      "kind": "media",
+      "wav": "firefox-media.wav",
+      "firstFrame": 0,
+      "clockGaps": [],
+      "timestampCorrections": [],
+      "rate": 44100,
+      "samples": 388096,
+      "starts": [],
+      "stops": []
+    }
+  ],
+  "claim": "Audio-thread digital output before the physical device; not a microphone or speaker measurement."
+}

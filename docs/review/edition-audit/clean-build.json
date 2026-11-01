@@ -1,0 +1,195 @@
+{
+  "source": "ceac9cc0d762085433ab52b3753b2b585812408d",
+  "node": "24.22.1",
+  "cleanInstall": true,
+  "checkPassed": true,
+  "tests": 27,
+  "canonicalFilesMatch": true,
+  "files": [
+    {
+      "path": "assets/compare-CGFa5ws0.js",
+      "bytes": 13897,
+      "sha256": "8ce3970417e8943265e7c37820311044447bcee46202dc59801ee23aecb96990"
+    },
+    {
+      "path": "assets/compare-DOHZ2WPn.css",
+      "bytes": 3323,
+      "sha256": "92e7b237905287fd3792c02d2d7d57b42c5bf209d9f2c6af58e3f7c63422e845"
+    },
+    {
+      "path": "assets/comparison-view-raHDvhXF.js",
+      "bytes": 16819,
+      "sha256": "e526a2a32c488c335c599d983fceaa0da1702af53d1f0748810f1a13c6ba9450"
+    },
+    {
+      "path": "assets/gentium-book-plus-400-greek-CLs1HoaC.woff2",
+      "bytes": 18168,
+      "sha256": "cba273ba7a0fbe810e3531f5cc62fd4e963da7c5d32b4981c3f30fe562aea343"
+    },
+    {
+      "path": "assets/gentium-book-plus-400-greek-ext-DWWGNQKb.woff2",
+      "bytes": 9356,
+      "sha256": "f4cbbee8404f7275cdece60d170d787d693df853452ef43a7b504d73eca2d658"
+    },
+    {
+      "path": "assets/gentium-book-plus-400-latin-CN5vb1Vx.woff2",
+      "bytes": 21564,
+      "sha256": "dd5d2902dac9c11d3acc42b0e54a74b4f2db9bd4a7d6872c23338f70df29ca7e"
+    },
+    {
+      "path": "assets/gentium-book-plus-400-latin-ext-BiRsxpCX.woff2",
+      "bytes": 57824,
+      "sha256": "46b8923c77eceb874e1b6a28ce08d56293641382ea0382f7043139bfff8f2383"
+    },
+    {
+      "path": "assets/gentium-book-plus-700-greek-D13hw162.woff2",
+      "bytes": 18520,
+      "sha256": "724dc67b98be2894401d21df2b8bf578d78187ca3f90f60ec95861e7059d441a"
+    },
+    {
+      "path": "assets/gentium-book-plus-700-greek-ext-BE1cELiy.woff2",
+      "bytes": 9376,
+      "sha256": "d104ae417e075f91963b872de09eb31123ca0b96900f6b66e7e71344d9336d4b"
+    },
+    {
+      "path": "assets/gentium-book-plus-700-latin-BymqVBkR.woff2",
+      "bytes": 21536,
+      "sha256": "b151cf211e3c03b3eac0ef3a4e94c44aa67096f9e7148cabfb9e9f8a0017eb33"
+    },
+    {
+      "path": "assets/gentium-book-plus-700-latin-ext-D1SMMCt_.woff2",
+      "bytes": 57264,
+      "sha256": "001e63c267c9884f95d7783bf1674eae74799d269240e13139a6b4cdf9f2924d"
+    },
+    {
+      "path": "assets/gentium-book-plus-italic-greek-BfV1x5aq.woff2",
+      "bytes": 18168,
+      "sha256": "da8564415fbeac7e39ae174810f3fe5139373b9624b6f7008c0315737afe9614"
+    },
+    {
+      "path": "assets/gentium-book-plus-italic-greek-ext-cZLoWG0Y.woff2",
+      "bytes": 9416,
+      "sha256": "fd831d285c3d0da6891a7ec460d4a9b05791cda2cf91beae0d1362b9029a6c32"
+    },
+    {
+      "path": "assets/gentium-book-plus-italic-latin-c-m4ooFh.woff2",
+      "bytes": 24588,
+      "sha256": "daa214002d1aa0ce6fbe72c495542a2d321b51172565e2e9508a3b5e064fcf6c"
+    },
+    {
+      "path": "assets/gentium-book-plus-italic-latin-ext-SxHammME.woff2",
+      "bytes": 65080,
+      "sha256": "eddfadc54270eb9bee9ca8a1c879e9352748a38c1ecf46513b03bf16b377f532"
+    },
+    {
+      "path": "assets/gfs-neohellenic-greek-DLuqQA6u.woff2",
+      "bytes": 10716,
+      "sha256": "d489ded5ec6c74f9ec76437364fd28a50d885cbbeab68fbc6983abba2333b939"
+    },
+    {
+      "path": "assets/gfs-neohellenic-greek-ext-DZAcqUeX.woff2",
+      "bytes": 17016,
+      "sha256": "1708e72d62d20026235d6a0ad03154a8376e9bee0227d0a1ed1a522ced327766"
+    },
+    {
+      "path": "assets/gfs-neohellenic-latin-CdUOFP9L.woff2",
+      "bytes": 24168,
+      "sha256": "0900be9bc421a3c769457c0596609a49755be366cec54b8e6492e3a7a47c756f"
+    },
+    {
+      "path": "assets/index-Dc1uJ4_E.js",
+      "bytes": 45040,
+      "sha256": "5f831b19ec9890cef34f1c920015f0de26444f91165e752d19d5f6062e707d17"
+    },
+    {
+      "path": "assets/pluck-BFkuXnRH.js",
+      "bytes": 2918,
+      "sha256": "43a75c84aef1097e93b157befa6af9bd3b264e9197064327b0ac1f8b41facbee"
+    },
+    {
+      "path": "assets/shell-C313PPp2.css",
+      "bytes": 19112,
+      "sha256": "9a90115463eca26e085d2925ca681ac3a9c59d3d271a1218ba4d0ad2960b3076"
+    },
+    {
+      "path": "assets/shell-DzN182Hj.js",
+      "bytes": 14221,
+      "sha256": "872e26cfefad44bd2e8cc39ac67b9437b902789c423ebe718c45a927613ca650"
+    },
+    {
+      "path": "assets/tiro-devanagari-sanskrit-400-devanagari-Djl2bf-7.woff2",
+      "bytes": 183900,
+      "sha256": "b1c4699168ebfeb6c92fadfcdd379ded22eb94de9537234a2ef0f93e12cd9d69"
+    },
+    {
+      "path": "assets/vina-DEUfjFJx.js",
+      "bytes": 33888,
+      "sha256": "6828dd54a7820890e8a0fd84022ec1049888f1d328d57168845793edd5f5c741"
+    },
+    {
+      "path": "compare.html",
+      "bytes": 1359,
+      "sha256": "edd097cc9fd02e36429204820351782104fd1b16ad74f55cd212058d8486ec1e"
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 327,
+      "sha256": "677e97172eaee779a5e9780bb5616f6941e025d44ad4353426ee6c5f30c486c4"
+    },
+    {
+      "path": "FONT-LICENSE.txt",
+      "bytes": 14204,
+      "sha256": "21675d953c0ac998c715f200b106198ec59952b6a05d06988c72524020be1c86"
+    },
+    {
+      "path": "fonts/gentium-book-plus-LICENSE.txt",
+      "bytes": 4574,
+      "sha256": "92ec730eb44ab2b0a1d16651d019cebe7107db39ab487933030fcd2fb96b409a"
+    },
+    {
+      "path": "index.html",
+      "bytes": 1388,
+      "sha256": "5ea99e6bfb1586328032b82979a04314d1cfd26a92f1ccbfe50c976ec085a5a6"
+    },
+    {
+      "path": "LICENSE.txt",
+      "bytes": 1071,
+      "sha256": "f4cec46403514e2601f3b917ad36bfc8cd9a6d97359ac2f9bb554d2062a251eb"
+    },
+    {
+      "path": "sources/jan-1895-p197.jpg",
+      "bytes": 824025,
+      "sha256": "fa0b41c521fad3a0bacdc811bade71b3a2922cbc947e46e411656d7c3a5ece17"
+    },
+    {
+      "path": "sources/jan-1895-p198.jpg",
+      "bytes": 845651,
+      "sha256": "e07ac24e749ae55c35a67573e2a1e873be467ca4f27fde6ee2cb80f35e29082e"
+    },
+    {
+      "path": "sources/jan-1895-p199.jpg",
+      "bytes": 798067,
+      "sha256": "8660edda63de3ed5b557a95367d8ba2b7d62edb13e1868f27d24dd08c6f97724"
+    },
+    {
+      "path": "sources/manifest.json",
+      "bytes": 1004,
+      "sha256": "ed467724f0d9673e8abd0f7214ee9a8f02ccad0db94fc0f88017d9e06b060d6e"
+    },
+    {
+      "path": "sw.js",
+      "bytes": 15361,
+      "sha256": "567dc74f40e3c3924cc0f0f181d84600e7a2c2c4b105dcdbe1914811cd7e0cc1"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.txt",
+      "bytes": 2621,
+      "sha256": "cd5656b07c8ac8c1261890519e4e46e54f36db8e36e96f5a296530c735b2b85c"
+    },
+    {
+      "path": "vina.html",
+      "bytes": 1415,
+      "sha256": "ac22d6c94169b805b497c3099a2da14ad7f9ff3030392c2b97e97ee80cb0907e"
+    }
+  ]
+}

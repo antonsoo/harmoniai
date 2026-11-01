@@ -1,5 +1,10 @@
 # A name does not fix a frequency
 
+The feature-source observations below are retained for revision `49b6ca0`.
+A [subsequent independent audit](edition-audit.md) corrects first-note timing,
+ratio-model step labels, phone target sizes, print layout and offline repair.
+That report identifies the newer artifacts and publication separately.
+
 The main instrument now lets a learner retain a named string, keep mesē fixed,
 and compare two explicitly stated pitch realizations. This also corrects a
 signal problem: the old integer-delay synthesis could shift its requested

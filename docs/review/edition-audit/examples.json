@@ -1,0 +1,32 @@
+[
+  {
+    "path": "examples/dorian-reading.html.gz",
+    "bytes": 2990540,
+    "sha256": "c5e84f18a2230e18b028f12337d2bd596a7dc6518a571a10278f879f9f2e90f4"
+  },
+  {
+    "path": "examples/dorian-reading.pdf",
+    "bytes": 2608565,
+    "sha256": "cfe590696db9c3b7b101bac56a07a637b0b14bcb440c751d2839727f6cbab375"
+  },
+  {
+    "path": "examples/octave-pitches.csv",
+    "bytes": 4050,
+    "sha256": "6d7b855a6b2cbc299c769e9732024358e321a7ef4432c3bab58b5e1e1e56c5a7"
+  },
+  {
+    "path": "examples/octave-reading.html.gz",
+    "bytes": 3797357,
+    "sha256": "ac077ce22b98d76530b20478df6e1c8530d8eed948629a42c88dfcc10969eed7"
+  },
+  {
+    "path": "examples/octave-reading.pdf",
+    "bytes": 2574600,
+    "sha256": "6c365244e91bd293c4bbacad5a0a45501540ece8ae52ed6139f3c3ef9b6895d3"
+  },
+  {
+    "path": "examples/octave.wav",
+    "bytes": 659780,
+    "sha256": "a65179446e613c9502d74e26128cf95176c2eb922cc7a2ab469ff5f4e2d9b8e2"
+  }
+]

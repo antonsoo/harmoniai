@@ -1,0 +1,3032 @@
+{
+  "receipts": [
+    {
+      "engine": "chromium",
+      "rate": 44100,
+      "signals": 90,
+      "stoppedPermission": true,
+      "newestPermission": true,
+      "refusedPermission": true
+    },
+    {
+      "engine": "chromium",
+      "rate": 48000,
+      "signals": 90,
+      "stoppedPermission": true,
+      "newestPermission": true,
+      "refusedPermission": true
+    },
+    {
+      "engine": "firefox",
+      "rate": 44100,
+      "signals": 90,
+      "stoppedPermission": true,
+      "newestPermission": true,
+      "refusedPermission": true
+    },
+    {
+      "engine": "firefox",
+      "rate": 48000,
+      "signals": 90,
+      "stoppedPermission": true,
+      "newestPermission": true,
+      "refusedPermission": true
+    }
+  ],
+  "signals": [
+    {
+      "file": "chromium-44100-110-pythagorean-0.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 0
+    },
+    {
+      "file": "chromium-44100-110-pythagorean-1.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 1
+    },
+    {
+      "file": "chromium-44100-110-pythagorean-2.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 2
+    },
+    {
+      "file": "chromium-44100-110-pythagorean-3.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 3
+    },
+    {
+      "file": "chromium-44100-110-pythagorean-4.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 4
+    },
+    {
+      "file": "chromium-44100-110-pythagorean-5.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 5
+    },
+    {
+      "file": "chromium-44100-110-pythagorean-6.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 6
+    },
+    {
+      "file": "chromium-44100-110-pythagorean-7.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 7
+    },
+    {
+      "file": "chromium-44100-110-pythagorean-8.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 8
+    },
+    {
+      "file": "chromium-44100-110-pythagorean-9.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 9
+    },
+    {
+      "file": "chromium-44100-110-pythagorean-10.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 10
+    },
+    {
+      "file": "chromium-44100-110-pythagorean-11.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 11
+    },
+    {
+      "file": "chromium-44100-110-pythagorean-12.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 12
+    },
+    {
+      "file": "chromium-44100-110-pythagorean-13.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 13
+    },
+    {
+      "file": "chromium-44100-110-pythagorean-14.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 14
+    },
+    {
+      "file": "chromium-44100-110-aristoxenian-0.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 0
+    },
+    {
+      "file": "chromium-44100-110-aristoxenian-1.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 1
+    },
+    {
+      "file": "chromium-44100-110-aristoxenian-2.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 2
+    },
+    {
+      "file": "chromium-44100-110-aristoxenian-3.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 3
+    },
+    {
+      "file": "chromium-44100-110-aristoxenian-4.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 4
+    },
+    {
+      "file": "chromium-44100-110-aristoxenian-5.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 5
+    },
+    {
+      "file": "chromium-44100-110-aristoxenian-6.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 6
+    },
+    {
+      "file": "chromium-44100-110-aristoxenian-7.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 7
+    },
+    {
+      "file": "chromium-44100-110-aristoxenian-8.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 8
+    },
+    {
+      "file": "chromium-44100-110-aristoxenian-9.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 9
+    },
+    {
+      "file": "chromium-44100-110-aristoxenian-10.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 10
+    },
+    {
+      "file": "chromium-44100-110-aristoxenian-11.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 11
+    },
+    {
+      "file": "chromium-44100-110-aristoxenian-12.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 12
+    },
+    {
+      "file": "chromium-44100-110-aristoxenian-13.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 13
+    },
+    {
+      "file": "chromium-44100-110-aristoxenian-14.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 14
+    },
+    {
+      "file": "chromium-44100-220-pythagorean-0.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 0
+    },
+    {
+      "file": "chromium-44100-220-pythagorean-1.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 1
+    },
+    {
+      "file": "chromium-44100-220-pythagorean-2.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 2
+    },
+    {
+      "file": "chromium-44100-220-pythagorean-3.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 3
+    },
+    {
+      "file": "chromium-44100-220-pythagorean-4.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 4
+    },
+    {
+      "file": "chromium-44100-220-pythagorean-5.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 5
+    },
+    {
+      "file": "chromium-44100-220-pythagorean-6.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 6
+    },
+    {
+      "file": "chromium-44100-220-pythagorean-7.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 7
+    },
+    {
+      "file": "chromium-44100-220-pythagorean-8.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 8
+    },
+    {
+      "file": "chromium-44100-220-pythagorean-9.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 9
+    },
+    {
+      "file": "chromium-44100-220-pythagorean-10.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 10
+    },
+    {
+      "file": "chromium-44100-220-pythagorean-11.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 11
+    },
+    {
+      "file": "chromium-44100-220-pythagorean-12.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 12
+    },
+    {
+      "file": "chromium-44100-220-pythagorean-13.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 13
+    },
+    {
+      "file": "chromium-44100-220-pythagorean-14.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 14
+    },
+    {
+      "file": "chromium-44100-220-aristoxenian-0.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 0
+    },
+    {
+      "file": "chromium-44100-220-aristoxenian-1.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 1
+    },
+    {
+      "file": "chromium-44100-220-aristoxenian-2.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 2
+    },
+    {
+      "file": "chromium-44100-220-aristoxenian-3.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 3
+    },
+    {
+      "file": "chromium-44100-220-aristoxenian-4.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 4
+    },
+    {
+      "file": "chromium-44100-220-aristoxenian-5.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 5
+    },
+    {
+      "file": "chromium-44100-220-aristoxenian-6.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 6
+    },
+    {
+      "file": "chromium-44100-220-aristoxenian-7.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 7
+    },
+    {
+      "file": "chromium-44100-220-aristoxenian-8.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 8
+    },
+    {
+      "file": "chromium-44100-220-aristoxenian-9.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 9
+    },
+    {
+      "file": "chromium-44100-220-aristoxenian-10.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 10
+    },
+    {
+      "file": "chromium-44100-220-aristoxenian-11.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 11
+    },
+    {
+      "file": "chromium-44100-220-aristoxenian-12.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 12
+    },
+    {
+      "file": "chromium-44100-220-aristoxenian-13.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 13
+    },
+    {
+      "file": "chromium-44100-220-aristoxenian-14.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 14
+    },
+    {
+      "file": "chromium-44100-330-pythagorean-0.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 0
+    },
+    {
+      "file": "chromium-44100-330-pythagorean-1.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 1
+    },
+    {
+      "file": "chromium-44100-330-pythagorean-2.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 2
+    },
+    {
+      "file": "chromium-44100-330-pythagorean-3.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 3
+    },
+    {
+      "file": "chromium-44100-330-pythagorean-4.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 4
+    },
+    {
+      "file": "chromium-44100-330-pythagorean-5.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 5
+    },
+    {
+      "file": "chromium-44100-330-pythagorean-6.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 6
+    },
+    {
+      "file": "chromium-44100-330-pythagorean-7.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 7
+    },
+    {
+      "file": "chromium-44100-330-pythagorean-8.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 8
+    },
+    {
+      "file": "chromium-44100-330-pythagorean-9.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 9
+    },
+    {
+      "file": "chromium-44100-330-pythagorean-10.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 10
+    },
+    {
+      "file": "chromium-44100-330-pythagorean-11.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 11
+    },
+    {
+      "file": "chromium-44100-330-pythagorean-12.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 12
+    },
+    {
+      "file": "chromium-44100-330-pythagorean-13.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 13
+    },
+    {
+      "file": "chromium-44100-330-pythagorean-14.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 14
+    },
+    {
+      "file": "chromium-44100-330-aristoxenian-0.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 0
+    },
+    {
+      "file": "chromium-44100-330-aristoxenian-1.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 1
+    },
+    {
+      "file": "chromium-44100-330-aristoxenian-2.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 2
+    },
+    {
+      "file": "chromium-44100-330-aristoxenian-3.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 3
+    },
+    {
+      "file": "chromium-44100-330-aristoxenian-4.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 4
+    },
+    {
+      "file": "chromium-44100-330-aristoxenian-5.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 5
+    },
+    {
+      "file": "chromium-44100-330-aristoxenian-6.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 6
+    },
+    {
+      "file": "chromium-44100-330-aristoxenian-7.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 7
+    },
+    {
+      "file": "chromium-44100-330-aristoxenian-8.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 8
+    },
+    {
+      "file": "chromium-44100-330-aristoxenian-9.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 9
+    },
+    {
+      "file": "chromium-44100-330-aristoxenian-10.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 10
+    },
+    {
+      "file": "chromium-44100-330-aristoxenian-11.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 11
+    },
+    {
+      "file": "chromium-44100-330-aristoxenian-12.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 12
+    },
+    {
+      "file": "chromium-44100-330-aristoxenian-13.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 13
+    },
+    {
+      "file": "chromium-44100-330-aristoxenian-14.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 14
+    },
+    {
+      "file": "chromium-48000-110-pythagorean-0.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 0
+    },
+    {
+      "file": "chromium-48000-110-pythagorean-1.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 1
+    },
+    {
+      "file": "chromium-48000-110-pythagorean-2.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 2
+    },
+    {
+      "file": "chromium-48000-110-pythagorean-3.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 3
+    },
+    {
+      "file": "chromium-48000-110-pythagorean-4.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 4
+    },
+    {
+      "file": "chromium-48000-110-pythagorean-5.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 5
+    },
+    {
+      "file": "chromium-48000-110-pythagorean-6.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 6
+    },
+    {
+      "file": "chromium-48000-110-pythagorean-7.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 7
+    },
+    {
+      "file": "chromium-48000-110-pythagorean-8.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 8
+    },
+    {
+      "file": "chromium-48000-110-pythagorean-9.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 9
+    },
+    {
+      "file": "chromium-48000-110-pythagorean-10.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 10
+    },
+    {
+      "file": "chromium-48000-110-pythagorean-11.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 11
+    },
+    {
+      "file": "chromium-48000-110-pythagorean-12.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 12
+    },
+    {
+      "file": "chromium-48000-110-pythagorean-13.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 13
+    },
+    {
+      "file": "chromium-48000-110-pythagorean-14.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 14
+    },
+    {
+      "file": "chromium-48000-110-aristoxenian-0.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 0
+    },
+    {
+      "file": "chromium-48000-110-aristoxenian-1.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 1
+    },
+    {
+      "file": "chromium-48000-110-aristoxenian-2.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 2
+    },
+    {
+      "file": "chromium-48000-110-aristoxenian-3.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 3
+    },
+    {
+      "file": "chromium-48000-110-aristoxenian-4.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 4
+    },
+    {
+      "file": "chromium-48000-110-aristoxenian-5.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 5
+    },
+    {
+      "file": "chromium-48000-110-aristoxenian-6.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 6
+    },
+    {
+      "file": "chromium-48000-110-aristoxenian-7.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 7
+    },
+    {
+      "file": "chromium-48000-110-aristoxenian-8.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 8
+    },
+    {
+      "file": "chromium-48000-110-aristoxenian-9.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 9
+    },
+    {
+      "file": "chromium-48000-110-aristoxenian-10.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 10
+    },
+    {
+      "file": "chromium-48000-110-aristoxenian-11.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 11
+    },
+    {
+      "file": "chromium-48000-110-aristoxenian-12.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 12
+    },
+    {
+      "file": "chromium-48000-110-aristoxenian-13.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 13
+    },
+    {
+      "file": "chromium-48000-110-aristoxenian-14.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 14
+    },
+    {
+      "file": "chromium-48000-220-pythagorean-0.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 0
+    },
+    {
+      "file": "chromium-48000-220-pythagorean-1.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 1
+    },
+    {
+      "file": "chromium-48000-220-pythagorean-2.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 2
+    },
+    {
+      "file": "chromium-48000-220-pythagorean-3.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 3
+    },
+    {
+      "file": "chromium-48000-220-pythagorean-4.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 4
+    },
+    {
+      "file": "chromium-48000-220-pythagorean-5.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 5
+    },
+    {
+      "file": "chromium-48000-220-pythagorean-6.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 6
+    },
+    {
+      "file": "chromium-48000-220-pythagorean-7.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 7
+    },
+    {
+      "file": "chromium-48000-220-pythagorean-8.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 8
+    },
+    {
+      "file": "chromium-48000-220-pythagorean-9.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 9
+    },
+    {
+      "file": "chromium-48000-220-pythagorean-10.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 10
+    },
+    {
+      "file": "chromium-48000-220-pythagorean-11.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 11
+    },
+    {
+      "file": "chromium-48000-220-pythagorean-12.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 12
+    },
+    {
+      "file": "chromium-48000-220-pythagorean-13.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 13
+    },
+    {
+      "file": "chromium-48000-220-pythagorean-14.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 14
+    },
+    {
+      "file": "chromium-48000-220-aristoxenian-0.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 0
+    },
+    {
+      "file": "chromium-48000-220-aristoxenian-1.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 1
+    },
+    {
+      "file": "chromium-48000-220-aristoxenian-2.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 2
+    },
+    {
+      "file": "chromium-48000-220-aristoxenian-3.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 3
+    },
+    {
+      "file": "chromium-48000-220-aristoxenian-4.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 4
+    },
+    {
+      "file": "chromium-48000-220-aristoxenian-5.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 5
+    },
+    {
+      "file": "chromium-48000-220-aristoxenian-6.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 6
+    },
+    {
+      "file": "chromium-48000-220-aristoxenian-7.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 7
+    },
+    {
+      "file": "chromium-48000-220-aristoxenian-8.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 8
+    },
+    {
+      "file": "chromium-48000-220-aristoxenian-9.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 9
+    },
+    {
+      "file": "chromium-48000-220-aristoxenian-10.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 10
+    },
+    {
+      "file": "chromium-48000-220-aristoxenian-11.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 11
+    },
+    {
+      "file": "chromium-48000-220-aristoxenian-12.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 12
+    },
+    {
+      "file": "chromium-48000-220-aristoxenian-13.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 13
+    },
+    {
+      "file": "chromium-48000-220-aristoxenian-14.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 14
+    },
+    {
+      "file": "chromium-48000-330-pythagorean-0.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 0
+    },
+    {
+      "file": "chromium-48000-330-pythagorean-1.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 1
+    },
+    {
+      "file": "chromium-48000-330-pythagorean-2.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 2
+    },
+    {
+      "file": "chromium-48000-330-pythagorean-3.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 3
+    },
+    {
+      "file": "chromium-48000-330-pythagorean-4.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 4
+    },
+    {
+      "file": "chromium-48000-330-pythagorean-5.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 5
+    },
+    {
+      "file": "chromium-48000-330-pythagorean-6.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 6
+    },
+    {
+      "file": "chromium-48000-330-pythagorean-7.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 7
+    },
+    {
+      "file": "chromium-48000-330-pythagorean-8.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 8
+    },
+    {
+      "file": "chromium-48000-330-pythagorean-9.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 9
+    },
+    {
+      "file": "chromium-48000-330-pythagorean-10.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 10
+    },
+    {
+      "file": "chromium-48000-330-pythagorean-11.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 11
+    },
+    {
+      "file": "chromium-48000-330-pythagorean-12.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 12
+    },
+    {
+      "file": "chromium-48000-330-pythagorean-13.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 13
+    },
+    {
+      "file": "chromium-48000-330-pythagorean-14.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 14
+    },
+    {
+      "file": "chromium-48000-330-aristoxenian-0.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 0
+    },
+    {
+      "file": "chromium-48000-330-aristoxenian-1.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 1
+    },
+    {
+      "file": "chromium-48000-330-aristoxenian-2.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 2
+    },
+    {
+      "file": "chromium-48000-330-aristoxenian-3.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 3
+    },
+    {
+      "file": "chromium-48000-330-aristoxenian-4.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 4
+    },
+    {
+      "file": "chromium-48000-330-aristoxenian-5.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 5
+    },
+    {
+      "file": "chromium-48000-330-aristoxenian-6.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 6
+    },
+    {
+      "file": "chromium-48000-330-aristoxenian-7.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 7
+    },
+    {
+      "file": "chromium-48000-330-aristoxenian-8.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 8
+    },
+    {
+      "file": "chromium-48000-330-aristoxenian-9.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 9
+    },
+    {
+      "file": "chromium-48000-330-aristoxenian-10.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 10
+    },
+    {
+      "file": "chromium-48000-330-aristoxenian-11.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 11
+    },
+    {
+      "file": "chromium-48000-330-aristoxenian-12.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 12
+    },
+    {
+      "file": "chromium-48000-330-aristoxenian-13.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 13
+    },
+    {
+      "file": "chromium-48000-330-aristoxenian-14.f32",
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 14
+    },
+    {
+      "file": "chromium-1440-comparison-last.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 12
+    },
+    {
+      "file": "chromium-375-comparison-last.f32",
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 12
+    },
+    {
+      "file": "firefox-44100-110-pythagorean-0.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 0
+    },
+    {
+      "file": "firefox-44100-110-pythagorean-1.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 1
+    },
+    {
+      "file": "firefox-44100-110-pythagorean-2.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 2
+    },
+    {
+      "file": "firefox-44100-110-pythagorean-3.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 3
+    },
+    {
+      "file": "firefox-44100-110-pythagorean-4.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 4
+    },
+    {
+      "file": "firefox-44100-110-pythagorean-5.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 5
+    },
+    {
+      "file": "firefox-44100-110-pythagorean-6.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 6
+    },
+    {
+      "file": "firefox-44100-110-pythagorean-7.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 7
+    },
+    {
+      "file": "firefox-44100-110-pythagorean-8.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 8
+    },
+    {
+      "file": "firefox-44100-110-pythagorean-9.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 9
+    },
+    {
+      "file": "firefox-44100-110-pythagorean-10.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 10
+    },
+    {
+      "file": "firefox-44100-110-pythagorean-11.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 11
+    },
+    {
+      "file": "firefox-44100-110-pythagorean-12.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 12
+    },
+    {
+      "file": "firefox-44100-110-pythagorean-13.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 13
+    },
+    {
+      "file": "firefox-44100-110-pythagorean-14.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 14
+    },
+    {
+      "file": "firefox-44100-110-aristoxenian-0.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 0
+    },
+    {
+      "file": "firefox-44100-110-aristoxenian-1.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 1
+    },
+    {
+      "file": "firefox-44100-110-aristoxenian-2.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 2
+    },
+    {
+      "file": "firefox-44100-110-aristoxenian-3.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 3
+    },
+    {
+      "file": "firefox-44100-110-aristoxenian-4.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 4
+    },
+    {
+      "file": "firefox-44100-110-aristoxenian-5.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 5
+    },
+    {
+      "file": "firefox-44100-110-aristoxenian-6.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 6
+    },
+    {
+      "file": "firefox-44100-110-aristoxenian-7.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 7
+    },
+    {
+      "file": "firefox-44100-110-aristoxenian-8.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 8
+    },
+    {
+      "file": "firefox-44100-110-aristoxenian-9.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 9
+    },
+    {
+      "file": "firefox-44100-110-aristoxenian-10.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 10
+    },
+    {
+      "file": "firefox-44100-110-aristoxenian-11.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 11
+    },
+    {
+      "file": "firefox-44100-110-aristoxenian-12.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 12
+    },
+    {
+      "file": "firefox-44100-110-aristoxenian-13.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 13
+    },
+    {
+      "file": "firefox-44100-110-aristoxenian-14.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 14
+    },
+    {
+      "file": "firefox-44100-220-pythagorean-0.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 0
+    },
+    {
+      "file": "firefox-44100-220-pythagorean-1.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 1
+    },
+    {
+      "file": "firefox-44100-220-pythagorean-2.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 2
+    },
+    {
+      "file": "firefox-44100-220-pythagorean-3.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 3
+    },
+    {
+      "file": "firefox-44100-220-pythagorean-4.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 4
+    },
+    {
+      "file": "firefox-44100-220-pythagorean-5.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 5
+    },
+    {
+      "file": "firefox-44100-220-pythagorean-6.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 6
+    },
+    {
+      "file": "firefox-44100-220-pythagorean-7.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 7
+    },
+    {
+      "file": "firefox-44100-220-pythagorean-8.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 8
+    },
+    {
+      "file": "firefox-44100-220-pythagorean-9.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 9
+    },
+    {
+      "file": "firefox-44100-220-pythagorean-10.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 10
+    },
+    {
+      "file": "firefox-44100-220-pythagorean-11.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 11
+    },
+    {
+      "file": "firefox-44100-220-pythagorean-12.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 12
+    },
+    {
+      "file": "firefox-44100-220-pythagorean-13.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 13
+    },
+    {
+      "file": "firefox-44100-220-pythagorean-14.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 14
+    },
+    {
+      "file": "firefox-44100-220-aristoxenian-0.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 0
+    },
+    {
+      "file": "firefox-44100-220-aristoxenian-1.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 1
+    },
+    {
+      "file": "firefox-44100-220-aristoxenian-2.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 2
+    },
+    {
+      "file": "firefox-44100-220-aristoxenian-3.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 3
+    },
+    {
+      "file": "firefox-44100-220-aristoxenian-4.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 4
+    },
+    {
+      "file": "firefox-44100-220-aristoxenian-5.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 5
+    },
+    {
+      "file": "firefox-44100-220-aristoxenian-6.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 6
+    },
+    {
+      "file": "firefox-44100-220-aristoxenian-7.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 7
+    },
+    {
+      "file": "firefox-44100-220-aristoxenian-8.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 8
+    },
+    {
+      "file": "firefox-44100-220-aristoxenian-9.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 9
+    },
+    {
+      "file": "firefox-44100-220-aristoxenian-10.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 10
+    },
+    {
+      "file": "firefox-44100-220-aristoxenian-11.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 11
+    },
+    {
+      "file": "firefox-44100-220-aristoxenian-12.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 12
+    },
+    {
+      "file": "firefox-44100-220-aristoxenian-13.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 13
+    },
+    {
+      "file": "firefox-44100-220-aristoxenian-14.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 14
+    },
+    {
+      "file": "firefox-44100-330-pythagorean-0.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 0
+    },
+    {
+      "file": "firefox-44100-330-pythagorean-1.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 1
+    },
+    {
+      "file": "firefox-44100-330-pythagorean-2.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 2
+    },
+    {
+      "file": "firefox-44100-330-pythagorean-3.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 3
+    },
+    {
+      "file": "firefox-44100-330-pythagorean-4.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 4
+    },
+    {
+      "file": "firefox-44100-330-pythagorean-5.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 5
+    },
+    {
+      "file": "firefox-44100-330-pythagorean-6.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 6
+    },
+    {
+      "file": "firefox-44100-330-pythagorean-7.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 7
+    },
+    {
+      "file": "firefox-44100-330-pythagorean-8.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 8
+    },
+    {
+      "file": "firefox-44100-330-pythagorean-9.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 9
+    },
+    {
+      "file": "firefox-44100-330-pythagorean-10.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 10
+    },
+    {
+      "file": "firefox-44100-330-pythagorean-11.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 11
+    },
+    {
+      "file": "firefox-44100-330-pythagorean-12.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 12
+    },
+    {
+      "file": "firefox-44100-330-pythagorean-13.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 13
+    },
+    {
+      "file": "firefox-44100-330-pythagorean-14.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 14
+    },
+    {
+      "file": "firefox-44100-330-aristoxenian-0.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 0
+    },
+    {
+      "file": "firefox-44100-330-aristoxenian-1.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 1
+    },
+    {
+      "file": "firefox-44100-330-aristoxenian-2.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 2
+    },
+    {
+      "file": "firefox-44100-330-aristoxenian-3.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 3
+    },
+    {
+      "file": "firefox-44100-330-aristoxenian-4.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 4
+    },
+    {
+      "file": "firefox-44100-330-aristoxenian-5.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 5
+    },
+    {
+      "file": "firefox-44100-330-aristoxenian-6.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 6
+    },
+    {
+      "file": "firefox-44100-330-aristoxenian-7.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 7
+    },
+    {
+      "file": "firefox-44100-330-aristoxenian-8.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 8
+    },
+    {
+      "file": "firefox-44100-330-aristoxenian-9.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 9
+    },
+    {
+      "file": "firefox-44100-330-aristoxenian-10.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 10
+    },
+    {
+      "file": "firefox-44100-330-aristoxenian-11.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 11
+    },
+    {
+      "file": "firefox-44100-330-aristoxenian-12.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 12
+    },
+    {
+      "file": "firefox-44100-330-aristoxenian-13.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 13
+    },
+    {
+      "file": "firefox-44100-330-aristoxenian-14.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 14
+    },
+    {
+      "file": "firefox-48000-110-pythagorean-0.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 0
+    },
+    {
+      "file": "firefox-48000-110-pythagorean-1.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 1
+    },
+    {
+      "file": "firefox-48000-110-pythagorean-2.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 2
+    },
+    {
+      "file": "firefox-48000-110-pythagorean-3.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 3
+    },
+    {
+      "file": "firefox-48000-110-pythagorean-4.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 4
+    },
+    {
+      "file": "firefox-48000-110-pythagorean-5.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 5
+    },
+    {
+      "file": "firefox-48000-110-pythagorean-6.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 6
+    },
+    {
+      "file": "firefox-48000-110-pythagorean-7.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 7
+    },
+    {
+      "file": "firefox-48000-110-pythagorean-8.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 8
+    },
+    {
+      "file": "firefox-48000-110-pythagorean-9.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 9
+    },
+    {
+      "file": "firefox-48000-110-pythagorean-10.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 10
+    },
+    {
+      "file": "firefox-48000-110-pythagorean-11.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 11
+    },
+    {
+      "file": "firefox-48000-110-pythagorean-12.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 12
+    },
+    {
+      "file": "firefox-48000-110-pythagorean-13.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 13
+    },
+    {
+      "file": "firefox-48000-110-pythagorean-14.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 14
+    },
+    {
+      "file": "firefox-48000-110-aristoxenian-0.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 0
+    },
+    {
+      "file": "firefox-48000-110-aristoxenian-1.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 1
+    },
+    {
+      "file": "firefox-48000-110-aristoxenian-2.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 2
+    },
+    {
+      "file": "firefox-48000-110-aristoxenian-3.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 3
+    },
+    {
+      "file": "firefox-48000-110-aristoxenian-4.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 4
+    },
+    {
+      "file": "firefox-48000-110-aristoxenian-5.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 5
+    },
+    {
+      "file": "firefox-48000-110-aristoxenian-6.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 6
+    },
+    {
+      "file": "firefox-48000-110-aristoxenian-7.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 7
+    },
+    {
+      "file": "firefox-48000-110-aristoxenian-8.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 8
+    },
+    {
+      "file": "firefox-48000-110-aristoxenian-9.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 9
+    },
+    {
+      "file": "firefox-48000-110-aristoxenian-10.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 10
+    },
+    {
+      "file": "firefox-48000-110-aristoxenian-11.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 11
+    },
+    {
+      "file": "firefox-48000-110-aristoxenian-12.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 12
+    },
+    {
+      "file": "firefox-48000-110-aristoxenian-13.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 13
+    },
+    {
+      "file": "firefox-48000-110-aristoxenian-14.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 14
+    },
+    {
+      "file": "firefox-48000-220-pythagorean-0.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 0
+    },
+    {
+      "file": "firefox-48000-220-pythagorean-1.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 1
+    },
+    {
+      "file": "firefox-48000-220-pythagorean-2.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 2
+    },
+    {
+      "file": "firefox-48000-220-pythagorean-3.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 3
+    },
+    {
+      "file": "firefox-48000-220-pythagorean-4.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 4
+    },
+    {
+      "file": "firefox-48000-220-pythagorean-5.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 5
+    },
+    {
+      "file": "firefox-48000-220-pythagorean-6.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 6
+    },
+    {
+      "file": "firefox-48000-220-pythagorean-7.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 7
+    },
+    {
+      "file": "firefox-48000-220-pythagorean-8.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 8
+    },
+    {
+      "file": "firefox-48000-220-pythagorean-9.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 9
+    },
+    {
+      "file": "firefox-48000-220-pythagorean-10.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 10
+    },
+    {
+      "file": "firefox-48000-220-pythagorean-11.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 11
+    },
+    {
+      "file": "firefox-48000-220-pythagorean-12.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 12
+    },
+    {
+      "file": "firefox-48000-220-pythagorean-13.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 13
+    },
+    {
+      "file": "firefox-48000-220-pythagorean-14.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 14
+    },
+    {
+      "file": "firefox-48000-220-aristoxenian-0.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 0
+    },
+    {
+      "file": "firefox-48000-220-aristoxenian-1.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 1
+    },
+    {
+      "file": "firefox-48000-220-aristoxenian-2.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 2
+    },
+    {
+      "file": "firefox-48000-220-aristoxenian-3.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 3
+    },
+    {
+      "file": "firefox-48000-220-aristoxenian-4.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 4
+    },
+    {
+      "file": "firefox-48000-220-aristoxenian-5.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 5
+    },
+    {
+      "file": "firefox-48000-220-aristoxenian-6.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 6
+    },
+    {
+      "file": "firefox-48000-220-aristoxenian-7.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 7
+    },
+    {
+      "file": "firefox-48000-220-aristoxenian-8.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 8
+    },
+    {
+      "file": "firefox-48000-220-aristoxenian-9.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 9
+    },
+    {
+      "file": "firefox-48000-220-aristoxenian-10.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 10
+    },
+    {
+      "file": "firefox-48000-220-aristoxenian-11.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 11
+    },
+    {
+      "file": "firefox-48000-220-aristoxenian-12.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 12
+    },
+    {
+      "file": "firefox-48000-220-aristoxenian-13.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 13
+    },
+    {
+      "file": "firefox-48000-220-aristoxenian-14.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 14
+    },
+    {
+      "file": "firefox-48000-330-pythagorean-0.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 0
+    },
+    {
+      "file": "firefox-48000-330-pythagorean-1.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 1
+    },
+    {
+      "file": "firefox-48000-330-pythagorean-2.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 2
+    },
+    {
+      "file": "firefox-48000-330-pythagorean-3.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 3
+    },
+    {
+      "file": "firefox-48000-330-pythagorean-4.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 4
+    },
+    {
+      "file": "firefox-48000-330-pythagorean-5.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 5
+    },
+    {
+      "file": "firefox-48000-330-pythagorean-6.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 6
+    },
+    {
+      "file": "firefox-48000-330-pythagorean-7.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 7
+    },
+    {
+      "file": "firefox-48000-330-pythagorean-8.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 8
+    },
+    {
+      "file": "firefox-48000-330-pythagorean-9.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 9
+    },
+    {
+      "file": "firefox-48000-330-pythagorean-10.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 10
+    },
+    {
+      "file": "firefox-48000-330-pythagorean-11.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 11
+    },
+    {
+      "file": "firefox-48000-330-pythagorean-12.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 12
+    },
+    {
+      "file": "firefox-48000-330-pythagorean-13.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 13
+    },
+    {
+      "file": "firefox-48000-330-pythagorean-14.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 14
+    },
+    {
+      "file": "firefox-48000-330-aristoxenian-0.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 0
+    },
+    {
+      "file": "firefox-48000-330-aristoxenian-1.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 1
+    },
+    {
+      "file": "firefox-48000-330-aristoxenian-2.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 2
+    },
+    {
+      "file": "firefox-48000-330-aristoxenian-3.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 3
+    },
+    {
+      "file": "firefox-48000-330-aristoxenian-4.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 4
+    },
+    {
+      "file": "firefox-48000-330-aristoxenian-5.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 5
+    },
+    {
+      "file": "firefox-48000-330-aristoxenian-6.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 6
+    },
+    {
+      "file": "firefox-48000-330-aristoxenian-7.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 7
+    },
+    {
+      "file": "firefox-48000-330-aristoxenian-8.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 8
+    },
+    {
+      "file": "firefox-48000-330-aristoxenian-9.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 9
+    },
+    {
+      "file": "firefox-48000-330-aristoxenian-10.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 10
+    },
+    {
+      "file": "firefox-48000-330-aristoxenian-11.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 11
+    },
+    {
+      "file": "firefox-48000-330-aristoxenian-12.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 12
+    },
+    {
+      "file": "firefox-48000-330-aristoxenian-13.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 13
+    },
+    {
+      "file": "firefox-48000-330-aristoxenian-14.f32",
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 14
+    },
+    {
+      "file": "firefox-1440-comparison-last.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 12
+    },
+    {
+      "file": "firefox-375-comparison-last.f32",
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 12
+    }
+  ],
+  "downloads": [
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "mese": 330,
+      "tuning": "pythagorean",
+      "species": 6,
+      "index": 12,
+      "csv": "review-output/octave-phone/chromium-1440-pitches.csv",
+      "note": "review-output/octave-phone/chromium-1440-string.wav",
+      "wav": "review-output/octave-phone/chromium-1440-octave.wav",
+      "html": "review-output/octave-phone/chromium-1440-octave.html",
+      "htmlSha256": "f29f9e86f36fe1c723a7aeb4ee876354126e5a6a2c82883fdf81657ac84f012c",
+      "offlineSameBytes": true,
+      "standaloneExternalRequests": [],
+      "axeViolations": 0
+    },
+    {
+      "engine": "chromium",
+      "width": 375,
+      "mese": 330,
+      "tuning": "pythagorean",
+      "species": 6,
+      "index": 12,
+      "csv": "review-output/octave-phone/chromium-375-pitches.csv",
+      "note": "review-output/octave-phone/chromium-375-string.wav",
+      "wav": "review-output/octave-phone/chromium-375-octave.wav",
+      "html": "review-output/octave-phone/chromium-375-octave.html",
+      "htmlSha256": "f29f9e86f36fe1c723a7aeb4ee876354126e5a6a2c82883fdf81657ac84f012c",
+      "offlineSameBytes": true,
+      "standaloneExternalRequests": [],
+      "axeViolations": 0
+    },
+    {
+      "engine": "firefox",
+      "width": 1440,
+      "mese": 330,
+      "tuning": "pythagorean",
+      "species": 6,
+      "index": 12,
+      "csv": "review-output/octave-phone/firefox-1440-pitches.csv",
+      "note": "review-output/octave-phone/firefox-1440-string.wav",
+      "wav": "review-output/octave-phone/firefox-1440-octave.wav",
+      "html": "review-output/octave-phone/firefox-1440-octave.html",
+      "htmlSha256": "f29f9e86f36fe1c723a7aeb4ee876354126e5a6a2c82883fdf81657ac84f012c",
+      "offlineSameBytes": true,
+      "standaloneExternalRequests": [],
+      "axeViolations": 0
+    },
+    {
+      "engine": "firefox",
+      "width": 375,
+      "mese": 330,
+      "tuning": "pythagorean",
+      "species": 6,
+      "index": 12,
+      "csv": "review-output/octave-phone/firefox-375-pitches.csv",
+      "note": "review-output/octave-phone/firefox-375-string.wav",
+      "wav": "review-output/octave-phone/firefox-375-octave.wav",
+      "html": "review-output/octave-phone/firefox-375-octave.html",
+      "htmlSha256": "f29f9e86f36fe1c723a7aeb4ee876354126e5a6a2c82883fdf81657ac84f012c",
+      "offlineSameBytes": true,
+      "standaloneExternalRequests": [],
+      "axeViolations": 0
+    }
+  ],
+  "faults": [
+    {
+      "engine": "chromium",
+      "corruptSourceRefused": true,
+      "cancelledExport": true,
+      "snapshotSurvivesEdits": true,
+      "invalidLinkAtomic": true
+    },
+    {
+      "engine": "firefox",
+      "corruptSourceRefused": true,
+      "cancelledExport": true,
+      "snapshotSurvivesEdits": true,
+      "invalidLinkAtomic": true
+    }
+  ]
+}

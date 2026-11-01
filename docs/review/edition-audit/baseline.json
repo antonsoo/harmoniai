@@ -1,0 +1,26 @@
+{
+  "fixture": "A genuine rebuild changes only license whitespace and its expected hash.",
+  "results": [
+    {
+      "engine": "chromium",
+      "poisonedWorkerComplete": true,
+      "poisonStatus": "Ready offline: pages, diagrams and fonts saved. External source links need a connection.",
+      "sourceError": "A source or font differs from the reviewed edition. Reload online before saving.",
+      "missingWorkerComplete": false,
+      "repairButtons": 0,
+      "updateOldCacheDeleted": true,
+      "updateExportError": "Saved Hypophrygian at mes\u0113 330 Hz with its sound and complete printed sources. Later changes are not in that file."
+    },
+    {
+      "engine": "firefox",
+      "poisonedWorkerComplete": true,
+      "poisonStatus": "Ready offline: pages, diagrams and fonts saved. External source links need a connection.",
+      "sourceError": "A source or font differs from the reviewed edition. Reload online before saving.",
+      "missingWorkerComplete": false,
+      "repairButtons": 0,
+      "updateOldCacheDeleted": true,
+      "updateExportError": "A source or font differs from the reviewed edition. Reload online before saving. Your settings are still here; try saving again."
+    }
+  ],
+  "source": "1704b81a3daf5882d3e79ea650b87cb1f74dcd4c"
+}
