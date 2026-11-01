@@ -59,7 +59,7 @@ for (const [engine, launcher] of Object.entries({ chromium, firefox })) {
         );
         await page.evaluate(() => window.audioObserver.disconnect());
         await page.locator('.species-picker [data-species="3"]').click();
-        assert.match(await page.locator("#card").innerText(), /Dorian/);
+        assert.match(await page.locator("#card").textContent(), /Dorian/);
         await page.locator("#tuning").selectOption("aristoxenian");
         await page.locator('[data-note="3"]').focus();
         await page.keyboard.press("Enter");
@@ -86,12 +86,14 @@ for (const [engine, launcher] of Object.entries({ chromium, firefox })) {
         await context.setOffline(true);
         await page.goto(new URL("vina.html", base).href);
         await page.locator("#equal-fifth").click();
+        await page.waitForFunction(() => window.sineStarts.length === 2);
         await page.locator("#pure-fifth").click();
+        await page.waitForFunction(() => window.sineStarts.length === 4);
         const sineStarts = await page.evaluate(() => window.sineStarts);
         assert.equal(sineStarts.length, 4);
         assert.deepEqual(sineStarts.slice(2), [220, 330]);
         assert.ok(Math.abs(sineStarts[1] - 220 * 2 ** (13 / 22)) < 0.001);
-        assert.match(await page.locator("#lowering-comparison").innerText(), /182.404/);
+        assert.match(await page.locator("#lowering-comparison").textContent(), /182.404/);
         await page.locator("#comparison-stop").click();
         await page.locator("#hear").click();
         await page.locator("#vina-stop").click();
@@ -101,7 +103,7 @@ for (const [engine, launcher] of Object.entries({ chromium, firefox })) {
           [5, /pañcama on madhyama/],
         ]) {
           await page.locator(`[data-stage="${stage}"]`).click();
-          assert.match(await page.locator("#stage-card").innerText(), pattern);
+          assert.match(await page.locator("#stage-card").textContent(), pattern);
         }
         await page.locator('[data-moving="pa"]').focus();
         await page.keyboard.press("Enter");
@@ -138,7 +140,7 @@ for (const [engine, launcher] of Object.entries({ chromium, firefox })) {
         );
         await writeFile(
           `${output}/browser.json`,
-          JSON.stringify({ base, receipts }, null, 2) + "\n",
+          `${JSON.stringify({ base, receipts }, null, 2)}\n`,
         );
       }
   } finally {

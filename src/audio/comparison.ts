@@ -39,6 +39,12 @@ export function wave(events: readonly ToneEvent[]): Uint8Array<ArrayBuffer> {
           0.24 * envelope * Math.sin((2 * Math.PI * event.hz * i) / SAMPLE_RATE);
     }
   }
+  return pcmWave(samples, SAMPLE_RATE);
+}
+
+/** Shared finite PCM encoder for the comparison and instrument downloads. */
+export function pcmWave(samples: Float64Array, sampleRate: number): Uint8Array<ArrayBuffer> {
+  const count = samples.length;
   const bytes = new Uint8Array(44 + count * 2);
   const data = new DataView(bytes.buffer);
   const text = (offset: number, value: string) => {
@@ -51,8 +57,8 @@ export function wave(events: readonly ToneEvent[]): Uint8Array<ArrayBuffer> {
   data.setUint32(16, 16, true);
   data.setUint16(20, 1, true);
   data.setUint16(22, 1, true);
-  data.setUint32(24, SAMPLE_RATE, true);
-  data.setUint32(28, SAMPLE_RATE * 2, true);
+  data.setUint32(24, sampleRate, true);
+  data.setUint32(28, sampleRate * 2, true);
   data.setUint16(32, 2, true);
   data.setUint16(34, 16, true);
   text(36, "data");

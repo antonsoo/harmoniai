@@ -1,31 +1,54 @@
-/**
- * A plucked string by the Karplus–Strong method: a burst of noise circulating in a delay
- * line one period long, averaged on each pass so the high partials die first. It is a
- * synthetic sound, not a model of any ancient instrument.
+/** A finite, synthetic harmonic pluck. No ancient instrument timbre is inferred.
+ * Each partial is placed at an exact multiple of the requested frequency; an
+ * integer delay line would quantize the pitch this workshop asks people to hear.
  */
+export const PLUCK_SECONDS = 1.6;
+export const PLUCK_GAP = 0.42;
+export const PLUCK_GAIN = 0.32;
+
 export function pluckSamples(
   frequency: number,
   sampleRate: number,
   seconds: number,
-  random: () => number = Math.random,
 ): Float32Array<ArrayBuffer> {
-  const period = Math.max(2, Math.round(sampleRate / frequency));
-  const ring = new Float32Array(period);
-  for (let i = 0; i < period; i++) ring[i] = random() * 2 - 1;
+  if (
+    !Number.isFinite(frequency) ||
+    frequency < 20 ||
+    frequency >= sampleRate * 0.45 ||
+    !Number.isInteger(sampleRate) ||
+    sampleRate < 8000 ||
+    sampleRate > 192000 ||
+    !Number.isFinite(seconds) ||
+    seconds <= 0 ||
+    seconds > 30
+  )
+    throw new Error("Choose an audible pitch, a supported sample rate and a finite duration.");
   const out = new Float32Array(Math.round(sampleRate * seconds));
-  const decay = 0.996;
-  let j = 0;
-  for (let i = 0; i < out.length; i++) {
-    const next = (j + 1) % period;
-    const value = ring[j] ?? 0;
-    out[i] = value;
-    ring[j] = decay * 0.5 * (value + (ring[next] ?? 0));
-    j = next;
+  const partials = Math.min(24, Math.ceil((sampleRate * 0.45) / frequency) - 1);
+  // A fixed virtual pluck position shapes the harmonics. Upper partials die
+  // faster. These are teaching-signal choices, not fitted material parameters.
+  let bound = 0;
+  for (let h = 1; h <= partials; h++) {
+    const amplitude = Math.sin(Math.PI * h * 0.23) / (h * h);
+    bound += Math.abs(amplitude);
+    const omega = (2 * Math.PI * h * frequency) / sampleRate;
+    const decay = Math.exp(-(2.8 + 0.35 * h * h) / sampleRate);
+    // Complex rotation avoids a transcendental call for every output sample.
+    const real = decay * Math.cos(omega);
+    const imaginary = decay * Math.sin(omega);
+    let cosine = amplitude;
+    let sine = 0;
+    for (let i = 0; i < out.length; i++) {
+      out[i] = (out[i] ?? 0) + sine;
+      const next = cosine * real - sine * imaginary;
+      sine = sine * real + cosine * imaginary;
+      cosine = next;
+    }
   }
-  // A short fade so the note ends without a click.
-  const fade = Math.min(out.length, Math.round(sampleRate * 0.05));
-  for (let i = 0; i < fade; i++)
-    out[out.length - 1 - i] = (out[out.length - 1 - i] ?? 0) * (i / fade);
+  const attack = Math.max(1, Math.round(sampleRate * 0.003));
+  const release = Math.max(1, Math.round(sampleRate * 0.05));
+  for (let i = 0; i < out.length; i++)
+    out[i] = ((out[i] ?? 0) / bound) * Math.min(1, i / attack, (out.length - 1 - i) / release);
   return out;
 }
 
@@ -34,102 +57,138 @@ export class Lyre {
   private voices: (AudioBufferSourceNode | OscillatorNode)[] = [];
   private callbacks = new Set<number>();
   private gain: GainNode | null = null;
+  private generation = 0;
+
+  constructor(private readonly onError: (message: string) => void = () => {}) {
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) this.stop();
+    });
+    window.addEventListener("pagehide", () => this.stop());
+  }
 
   private ctx(): AudioContext {
     this.context ??= new AudioContext();
     return this.context;
   }
 
-  /**
-   * Play notes one after another, `gap` seconds apart; a step given as several frequencies
-   * sounds them together. Returns the start offset of each step.
-   */
-  play(frequencies: (number | number[])[], gap = 0.42, onNote?: (index: number) => void): number[] {
+  /** The newest action owns playback, even when audio permission resolves later. */
+  private start(run: (ctx: AudioContext, gain: GainNode) => void): void {
     this.stop();
-    const ctx = this.ctx();
-    void ctx.resume();
-    const t0 = ctx.currentTime + 0.05;
-    const gain = ctx.createGain();
-    gain.gain.value = 0.32;
-    gain.connect(ctx.destination);
-    this.gain = gain;
-    return frequencies.map((step, i) => {
-      for (const f of Array.isArray(step) ? step : [step]) {
-        const samples = pluckSamples(f, ctx.sampleRate, 1.6);
-        const buffer = ctx.createBuffer(1, samples.length, ctx.sampleRate);
-        buffer.copyToChannel(samples, 0);
-        const source = ctx.createBufferSource();
-        source.buffer = buffer;
-        source.connect(gain);
-        source.start(t0 + i * gap);
-        this.voices.push(source);
-        source.onended = () => {
-          source.disconnect();
-          this.voices = this.voices.filter((voice) => voice !== source);
-          if (this.voices.length === 0 && this.gain === gain) {
-            gain.disconnect();
-            this.gain = null;
-          }
-        };
-      }
-      if (onNote) {
-        const timer = window.setTimeout(
-          () => {
-            this.callbacks.delete(timer);
-            onNote(i);
-          },
-          (0.05 + i * gap) * 1000,
-        );
-        this.callbacks.add(timer);
-      }
-      return i * gap;
+    const request = this.generation;
+    const begin = async () => {
+      const ctx = this.ctx();
+      await ctx.resume();
+      if (request !== this.generation || document.hidden) return;
+      if (ctx.state !== "running") throw new Error("Audio is paused by the browser.");
+      const gain = ctx.createGain();
+      gain.gain.value = PLUCK_GAIN;
+      gain.connect(ctx.destination);
+      this.gain = gain;
+      run(ctx, gain);
+    };
+    void begin().catch(() => {
+      if (request !== this.generation) return;
+      this.stop();
+      this.onError("Sound could not start. Check the browser’s sound permission, then play again.");
     });
   }
 
-  /** Exact oscillator frequencies for the small fifth difference; the integer-delay
-   * plucked-string synthesis can round two nearby targets to the same delay. */
-  playSines(frequencies: number[]): void {
-    this.stop();
-    const ctx = this.ctx();
-    void ctx.resume();
-    const gain = ctx.createGain();
-    this.gain = gain;
-    gain.connect(ctx.destination);
-    const start = ctx.currentTime + 0.03;
-    gain.gain.setValueAtTime(0, start);
-    gain.gain.linearRampToValueAtTime(0.15, start + 0.05);
-    gain.gain.setValueAtTime(0.15, start + 1.8);
-    gain.gain.linearRampToValueAtTime(0, start + 2);
-    for (const hz of frequencies) {
-      const source = ctx.createOscillator();
-      source.type = "sine";
-      source.frequency.value = hz;
-      source.connect(gain);
-      source.start(start);
-      source.stop(start + 2.02);
-      this.voices.push(source);
-      source.onended = () => {
-        source.disconnect();
-        this.voices = this.voices.filter((v) => v !== source);
-        if (this.voices.length === 0 && this.gain === gain) {
-          gain.disconnect();
-          this.gain = null;
+  private track(source: AudioBufferSourceNode | OscillatorNode, gain: GainNode): void {
+    this.voices.push(source);
+    source.onended = () => {
+      source.disconnect();
+      this.voices = this.voices.filter((voice) => voice !== source);
+      if (this.voices.length === 0 && this.gain === gain) {
+        gain.disconnect();
+        this.gain = null;
+      }
+    };
+  }
+
+  /** Schedule the visual cue on the audio clock, including browser suspension. */
+  private cue(ctx: AudioContext, at: number, callback: () => void): void {
+    const request = this.generation;
+    const tick = () => {
+      if (request !== this.generation) return;
+      const remaining = at - ctx.currentTime;
+      if (remaining <= 0) callback();
+      else {
+        const timer = window.setTimeout(
+          () => {
+            this.callbacks.delete(timer);
+            tick();
+          },
+          Math.min(50, Math.max(5, remaining * 1000)),
+        );
+        this.callbacks.add(timer);
+      }
+    };
+    tick();
+  }
+
+  play(
+    frequencies: (number | number[])[],
+    gap = PLUCK_GAP,
+    onNote?: (index: number) => void,
+  ): void {
+    this.start((ctx, gain) => {
+      // Render before choosing the start time; slow devices must not receive
+      // already-past start times while the remaining notes are being prepared.
+      const buffers = frequencies.map((step) =>
+        (Array.isArray(step) ? step : [step]).map((f) => {
+          const samples = pluckSamples(f, ctx.sampleRate, PLUCK_SECONDS);
+          const buffer = ctx.createBuffer(1, samples.length, ctx.sampleRate);
+          buffer.copyToChannel(samples, 0);
+          return buffer;
+        }),
+      );
+      const start = ctx.currentTime + 0.05;
+      buffers.forEach((chord, i) => {
+        for (const buffer of chord) {
+          const source = ctx.createBufferSource();
+          source.buffer = buffer;
+          source.connect(gain);
+          this.track(source, gain);
+          source.start(start + i * gap);
         }
-      };
-    }
+        if (onNote) this.cue(ctx, start + i * gap, () => onNote(i));
+      });
+    });
+  }
+
+  /** A pure-sine reference deliberately removes the pluck’s harmonics. */
+  playSines(frequencies: number[]): void {
+    this.start((ctx, gain) => {
+      const start = ctx.currentTime + 0.03;
+      gain.gain.setValueAtTime(0, start);
+      gain.gain.linearRampToValueAtTime(0.15, start + 0.05);
+      gain.gain.setValueAtTime(0.15, start + 1.8);
+      gain.gain.linearRampToValueAtTime(0, start + 2);
+      for (const hz of frequencies) {
+        const source = ctx.createOscillator();
+        source.type = "sine";
+        source.frequency.value = hz;
+        source.connect(gain);
+        this.track(source, gain);
+        source.start(start);
+        source.stop(start + 2.02);
+      }
+    });
   }
 
   stop(): void {
+    this.generation++;
     for (const timer of this.callbacks) window.clearTimeout(timer);
     this.callbacks.clear();
     this.gain?.disconnect();
     this.gain = null;
-    for (const v of this.voices) {
+    for (const voice of this.voices) {
       try {
-        v.stop();
+        voice.stop();
       } catch {
-        // Already finished.
+        /* Already finished. */
       }
+      voice.disconnect();
     }
     this.voices = [];
   }
