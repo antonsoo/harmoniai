@@ -1010,3 +1010,120 @@ h1 {
   font-family: "Tiro Devanagari Sanskrit", var(--display);
   line-height: 1.3;
 }
+
+/* The pitch readout belongs to the instrument: a steady reference while names move. */
+.string-readout {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: baseline;
+  gap: 0.15rem 1rem;
+  border-block: 1px solid var(--rule);
+  padding: 0.6rem 0.8rem;
+  margin-top: 0.8rem;
+  background: var(--leaf);
+  font-variant-numeric: tabular-nums;
+}
+.string-readout > span:first-child {
+  font-size: 1.25rem;
+}
+.string-readout > span:last-child {
+  grid-column: 1 / -1;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+.string-readout strong {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--murex);
+}
+.string-readout small {
+  font-size: 0.85rem;
+}
+.string.selected-string .wire {
+  stroke: var(--gold);
+  stroke-width: 3px !important;
+}
+.string.selected-string .peg {
+  fill: var(--gold);
+}
+.octave-inspector > p {
+  max-width: 52rem;
+}
+.octave-inspector details {
+  margin: 1.2rem 0;
+}
+.octave-inspector summary {
+  cursor: pointer;
+  color: var(--murex);
+}
+.octave-table-scroll {
+  overflow-x: auto;
+}
+.octave-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+.octave-table caption {
+  text-align: left;
+  margin: 0.8rem 0;
+  color: var(--ink-soft);
+}
+.octave-table th,
+.octave-table td {
+  border-bottom: 1px solid var(--rule);
+  padding: 0.4rem 0.7rem;
+  text-align: right;
+  white-space: nowrap;
+}
+.octave-table th:first-child {
+  text-align: left;
+  font-weight: 400;
+}
+.octave-table .in-octave {
+  background: var(--murex-wash);
+}
+.octave-table .selected-pitch th {
+  box-shadow: inset 3px 0 var(--gold);
+}
+.octave-table button {
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+  padding: 0.2rem;
+  text-align: left;
+}
+.octave-table small {
+  display: block;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+.octave-downloads {
+  margin-top: 1.5rem;
+}
+#octave-link-box {
+  display: block;
+  overflow-wrap: anywhere;
+}
+#octave-link {
+  display: block;
+  width: 100%;
+  color: var(--ink);
+  background: var(--leaf);
+  border: 1px solid var(--rule);
+  padding: 0.5rem;
+  font: inherit;
+}
+[hidden] {
+  display: none !important;
+}
+@media (max-width: 600px) {
+  .string-readout {
+    grid-template-columns: 1fr;
+  }
+  .string-readout > span:last-child {
+    grid-column: 1;
+  }
+}

@@ -78,7 +78,7 @@ try {
       mode = "404";
       response = await page.goto(base + destination);
       assert.equal(response.status(), 404);
-      assert.equal(await page.locator("h1").innerText(), "HTTP 404");
+      assert.equal(await page.locator("h1").textContent(), "HTTP 404");
       mode = "normal";
       await page.goto(base + entry);
       mode = "body-stall";
@@ -92,7 +92,7 @@ try {
       await page.goto(base + entry);
       const removed = await page.evaluate(
         async ({ name, destination }) => {
-          const key = (await caches.keys()).find((k) => k.startsWith(name + "-"));
+          const key = (await caches.keys()).find((k) => k.startsWith(`${name}-`));
           return (await caches.open(key)).delete(`/${name}/${destination}`);
         },
         { name, destination },
@@ -101,7 +101,7 @@ try {
       mode = "503";
       response = await page.goto(base + destination);
       assert.equal(response.status(), 503);
-      assert.equal(await page.locator("h1").innerText(), "HTTP 503");
+      assert.equal(await page.locator("h1").textContent(), "HTTP 503");
       mode = "normal";
       await page.goto(base + entry);
       await page.waitForFunction(() =>
@@ -121,7 +121,7 @@ try {
         { timeout: 16000 },
       );
       assert.equal(await bp.evaluate(() => !!navigator.serviceWorker.controller), false);
-      const badStatus = await bp.locator("#offline-status").innerText();
+      const badStatus = await bp.locator("#offline-status").textContent();
       await broken.close();
       receipts.push({
         engine,
@@ -139,7 +139,7 @@ try {
     }
   }
   await mkdir(resolve(output, ".."), { recursive: true });
-  await writeFile(output, JSON.stringify({ project: name, receipts }, null, 2) + "\n");
+  await writeFile(output, `${JSON.stringify({ project: name, receipts }, null, 2)}\n`);
 } finally {
   server.closeAllConnections();
   await new Promise((r) => server.close(r));

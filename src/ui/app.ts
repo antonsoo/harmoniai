@@ -1,3 +1,4 @@
+import { pluckedWave } from "../audio/octave";
 import { Lyre } from "../audio/pluck";
 import { AEGEAN, project } from "../content/aegean";
 import {
@@ -10,6 +11,16 @@ import {
 import { WORDS } from "../content/words";
 import { type Boxes, grade, pickNext } from "../core/leitner";
 import {
+  DEFAULT_OCTAVE,
+  type OctaveState,
+  octaveOrder,
+  octaveQuery,
+  octaveRows,
+  readOctave,
+  selectedSpecies,
+  tuningName,
+} from "../core/octave";
+import {
   frequencies,
   NOTES,
   SPECIES,
@@ -17,6 +28,7 @@ import {
   speciesSteps,
   type Tuning,
 } from "../core/system";
+import { octaveCsv, octaveReading, octaveTable } from "../octave-export";
 import { instrumentSvg, type Orientation, vibrate } from "./instrument";
 
 const esc = (s: string) =>
@@ -95,10 +107,29 @@ function mapSvg(): string {
 }
 
 export function mount(root: HTMLElement): void {
-  const lyre = new Lyre();
-  let species: Species = SPECIES[3] as Species;
-  let orientation: Orientation = "named";
-  let tuning: Tuning = "pythagorean";
+  const lyre = new Lyre((message) => {
+    const status = root.querySelector<HTMLElement>("#octave-status");
+    if (status) status.textContent = message;
+  });
+  let incoming = { ...DEFAULT_OCTAVE };
+  let linkError = "";
+  try {
+    incoming = readOctave(location.search);
+  } catch (error) {
+    linkError = `${(error as Error).message} Showing the starting octave.`;
+  }
+  let species: Species = selectedSpecies(incoming);
+  let orientation: Orientation = incoming.orientation;
+  let tuning: Tuning = incoming.tuning;
+  let mese: OctaveState["mese"] = incoming.mese;
+  let selected = incoming.selected;
+  const snapshot = (): OctaveState => ({
+    species: species.ordinal,
+    orientation,
+    tuning,
+    mese,
+    selected,
+  });
   let drill = false;
   let target: number | null = null;
   let answered = false;
@@ -113,7 +144,7 @@ export function mount(root: HTMLElement): void {
     <p>Greek theorists cut the two-octave scale into seven octaves and named them after the Dorians, Phrygians, Lydians and their neighbours. Medieval theory kept the names and moved them. Pluck the strings, choose an octave, and read Cleonides' Greek for it.</p>
   </div>
   <div class="bench">
-    <div class="instrument-wrap" id="instrument"></div>
+    <div><div class="instrument-wrap" id="instrument"></div><div id="string-readout" class="string-readout" aria-live="polite" aria-atomic="true"></div></div>
     <div class="panel">
       <div class="species-picker" role="radiogroup" aria-label="Octave species">${SPECIES.map(
         (s) =>
@@ -122,13 +153,29 @@ export function mount(root: HTMLElement): void {
       <div class="controls">
         <button type="button" class="primary" id="play">Play the octave</button>
         <button type="button" id="stop">Stop</button>
-        <label>Tuning <select id="tuning"><option value="pythagorean">Pythagorean (9:8, 256:243)</option><option value="aristoxenian">Aristoxenian (tones and half-tones)</option></select></label>
+        <label>Tuning <select id="tuning"><option value="pythagorean">Ratio model (9:8, 256:243)</option><option value="aristoxenian">Equal-step model (200, 100 cents)</option></select></label>
+        <label>Reference mesē <select id="mese"><option value="110">110 Hz</option><option value="220" selected>220 Hz</option><option value="330">330 Hz</option></select></label>
         <label class="check"><input type="checkbox" id="orient"> Highest pitch on top</label>
         <label class="check"><input type="checkbox" id="drill"> Find the string</label>
       </div>
       <div class="card" id="card" aria-live="polite"></div>
     </div>
   </div>
+</section>
+<section class="section octave-inspector" id="pitches">
+  <h2>Keep the name. Inspect the pitch.</h2>
+  <p>Mesē stays at your chosen reference while the tuning model changes. A letter beside a string identifies a white-key position; it does not promise an equal-tempered frequency. Pluck a string to inspect it, or open the pitch table and play its name.</p>
+  <div id="pitch-work">
+    <div class="controls"><button type="button" id="compare-string">Hear this string in both models</button><button type="button" id="save-note">Save this string WAV</button></div>
+    <p id="string-comparison" class="small"></p>
+    <details id="pitch-details"><summary>Read and play all fifteen named pitches</summary><div id="pitch-table"></div></details>
+    <div class="controls octave-downloads"><button type="button" id="save-octave" class="primary">Save illustrated octave</button><button type="button" id="save-octave-wav">Save octave WAV</button><button type="button" id="save-pitches">Save pitch CSV</button><button type="button" id="copy-octave">Copy octave link</button></div>
+    <p class="small">The illustrated file keeps your selected octave, Greek reading, all fifteen measurements, sound, three complete source pages and fonts. It opens offline and prints. The WAV follows the octave up and down, using the same synthetic plucks as this instrument.</p>
+    <p class="small">Both numerical tunings and the reference pitch are teaching choices. Equal 200/100-cent steps illustrate tones and half-tones; this is not a claim that Aristoxenus prescribed modern equal temperament. Neither model reconstructs an ancient instrument or performance.</p>
+  </div>
+  <p id="drill-pitch-note" hidden>Leave “Find the string” to inspect names and save an octave.</p>
+  <p id="octave-status" role="status" aria-live="polite"></p>
+  <label id="octave-link-box" hidden>Octave link<input id="octave-link" type="url" readonly></label>
 </section>
 <section class="section" id="places">
   <h2>Where the names come from</h2>
@@ -187,9 +234,43 @@ export function mount(root: HTMLElement): void {
 
   const svg = () => instrument.querySelector<SVGSVGElement>("svg");
 
+  function showSelection(): void {
+    const row = octaveRows(snapshot())[selected];
+    const readout = root.querySelector<HTMLElement>("#string-readout");
+    if (readout) {
+      readout.hidden = drill;
+      if (row)
+        readout.innerHTML = `<span lang="grc">${esc(row.greek)}</span><strong>${row.hz.toFixed(4)} <small>Hz</small></strong><span>${esc(row.romanized)} · ${row.centsFromMese.toFixed(3)} cents from mesē</span>`;
+    }
+    for (const button of root.querySelectorAll<HTMLElement>(
+      "#instrument [data-note], [data-play-note]",
+    )) {
+      const active = Number(button.dataset.note ?? button.dataset.playNote) === selected;
+      button.classList.toggle("selected-string", active && !drill);
+      button.setAttribute("aria-pressed", String(active && !drill));
+    }
+    for (const row of root.querySelectorAll<HTMLElement>("[data-pitch-row]"))
+      row.classList.toggle("selected-pitch", Number(row.dataset.pitchRow) === selected);
+    const a = frequencies("pythagorean", mese)[selected] ?? 0;
+    const b = frequencies("aristoxenian", mese)[selected] ?? 0;
+    const comparison = root.querySelector<HTMLElement>("#string-comparison");
+    if (comparison)
+      comparison.textContent = `First: ratio model, ${a.toFixed(4)} Hz. Then: equal-step model, ${b.toFixed(4)} Hz. Difference: ${(1200 * Math.log2(b / a)).toFixed(3)} cents. Mesē stays at ${mese} Hz in both.`;
+  }
+  function refreshPitches(): void {
+    const table = root.querySelector<HTMLElement>("#pitch-table");
+    if (table) table.innerHTML = octaveTable(snapshot(), true);
+    const work = root.querySelector<HTMLElement>("#pitch-work");
+    if (work) work.hidden = drill;
+    const note = root.querySelector<HTMLElement>("#drill-pitch-note");
+    if (note) note.hidden = !drill;
+    showSelection();
+  }
+
   function drawInstrument(): void {
     if (!instrument) return;
     instrument.innerHTML = instrumentSvg(drill ? null : species, orientation, !drill);
+    showSelection();
   }
 
   function speciesCard(): string {
@@ -228,11 +309,14 @@ ${quote ? passage(quote) : ""}
     if (names) names.innerHTML = namesDiagram(species);
     if (drill) ask();
     else if (card) card.innerHTML = speciesCard();
+    refreshPitches();
   }
 
   function pluck(index: number): void {
-    const f = frequencies(tuning)[index];
+    const f = frequencies(tuning, mese)[index];
     if (f === undefined) return;
+    selected = index;
+    showSelection();
     lyre.play([f]);
     const s = svg();
     if (s) vibrate(s, index, orientation);
@@ -251,6 +335,14 @@ ${quote ? passage(quote) : ""}
     }
   }
 
+  const tuningControl = root.querySelector<HTMLSelectElement>("#tuning");
+  const meseControl = root.querySelector<HTMLSelectElement>("#mese");
+  const orientControl = root.querySelector<HTMLInputElement>("#orient");
+  if (tuningControl) tuningControl.value = tuning;
+  if (meseControl) meseControl.value = String(mese);
+  if (orientControl) orientControl.checked = orientation === "pitch";
+  const status = root.querySelector<HTMLElement>("#octave-status");
+  if (status) status.textContent = linkError;
   render();
 
   root.addEventListener("click", (e) => {
@@ -265,8 +357,8 @@ ${quote ? passage(quote) : ""}
       }
       return;
     }
-    const string = el.closest("[data-note]");
-    if (string) pluck(Number(string.getAttribute("data-note")));
+    const string = el.closest<HTMLElement>("[data-note], [data-play-note]");
+    if (string) pluck(Number(string.dataset.note ?? string.dataset.playNote));
   });
   root.addEventListener("keydown", (e) => {
     const picker = (e.target as Element).closest<HTMLButtonElement>(
@@ -299,16 +391,19 @@ ${quote ? passage(quote) : ""}
     }
   });
   root.querySelector("#play")?.addEventListener("click", () => {
-    const f = frequencies(tuning);
-    const up = Array.from({ length: 8 }, (_, k) => species.from + k);
-    const order = [...up, ...up.slice(0, -1).reverse()];
+    const f = frequencies(tuning, mese);
+    const order = octaveOrder(snapshot());
     lyre.play(
       order.map((i) => f[i] ?? 0),
       0.42,
       (k) => {
         const s = svg();
         const idx = order[k];
-        if (s && idx !== undefined) vibrate(s, idx, orientation);
+        if (s && idx !== undefined) {
+          selected = idx;
+          showSelection();
+          vibrate(s, idx, orientation);
+        }
       },
     );
   });
@@ -321,6 +416,12 @@ ${quote ? passage(quote) : ""}
     drawInstrument();
     tuning =
       (e.target as HTMLSelectElement).value === "aristoxenian" ? "aristoxenian" : "pythagorean";
+    refreshPitches();
+  });
+  meseControl?.addEventListener("change", () => {
+    lyre.stop();
+    mese = Number(meseControl.value) as OctaveState["mese"];
+    refreshPitches();
   });
   root.querySelector<HTMLInputElement>("#orient")?.addEventListener("change", (e) => {
     lyre.stop();
@@ -331,5 +432,99 @@ ${quote ? passage(quote) : ""}
     lyre.stop();
     drill = (e.target as HTMLInputElement).checked;
     render();
+  });
+
+  function save(filename: string, data: BlobPart, type: string): void {
+    const url = URL.createObjectURL(new Blob([data], { type }));
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = filename;
+    link.click();
+    setTimeout(() => URL.revokeObjectURL(url), 30000);
+  }
+  root.querySelector("#compare-string")?.addEventListener("click", () => {
+    lyre.play(
+      [
+        frequencies("pythagorean", mese)[selected] ?? 0,
+        frequencies("aristoxenian", mese)[selected] ?? 0,
+      ],
+      1.8,
+    );
+    if (status)
+      status.textContent =
+        "Ratio model first, then equal-step model. The same named string and mesē reference are kept.";
+  });
+  root.querySelector("#save-note")?.addEventListener("click", () => {
+    save(
+      "harmoniai-string.wav",
+      pluckedWave([frequencies(tuning, mese)[selected] ?? 0]),
+      "audio/wav",
+    );
+  });
+  root.querySelector("#save-octave-wav")?.addEventListener("click", () => {
+    const state = snapshot();
+    const rows = octaveRows(state);
+    save(
+      "harmoniai-octave.wav",
+      pluckedWave(octaveOrder(state).map((i) => rows[i]?.hz ?? 0)),
+      "audio/wav",
+    );
+  });
+  root
+    .querySelector("#save-pitches")
+    ?.addEventListener("click", () =>
+      save("harmoniai-pitches.csv", octaveCsv(snapshot()), "text/csv;charset=utf-8"),
+    );
+  let saving: AbortController | null = null;
+  root
+    .querySelector<HTMLButtonElement>("#save-octave")
+    ?.addEventListener("click", async (event) => {
+      if (saving) {
+        saving.abort();
+        return;
+      }
+      const state = snapshot();
+      const button = event.currentTarget as HTMLButtonElement;
+      const controller = new AbortController();
+      saving = controller;
+      button.textContent = "Cancel saving";
+      if (status)
+        status.textContent = `Saving ${selectedSpecies(state).name}, ${tuningName(state.tuning)}, mesē ${state.mese} Hz. Checking sources and fonts…`;
+      try {
+        const html = await octaveReading(state, controller.signal);
+        save("harmoniai-octave.html", html, "text/html;charset=utf-8");
+        if (status)
+          status.textContent = `Saved ${selectedSpecies(state).name} at mesē ${state.mese} Hz with its sound and complete printed sources. Later changes are not in that file.`;
+      } catch (error) {
+        if (status)
+          status.textContent = controller.signal.aborted
+            ? "Saving cancelled. Your settings are still here."
+            : `${(error as Error).message} Your settings are still here; try saving again.`;
+      } finally {
+        saving = null;
+        button.textContent = "Save illustrated octave";
+      }
+    });
+  root.querySelector("#copy-octave")?.addEventListener("click", async () => {
+    const url = new URL(location.href);
+    url.search = octaveQuery(snapshot());
+    url.hash = "strings";
+    const value = url.href;
+    const box = root.querySelector<HTMLElement>("#octave-link-box");
+    const field = root.querySelector<HTMLInputElement>("#octave-link");
+    if (box && field) {
+      box.hidden = false;
+      field.value = value;
+    }
+    try {
+      await navigator.clipboard.writeText(value);
+      if (status)
+        status.textContent =
+          "Octave link copied. It keeps the species, model, mesē, orientation and selected string.";
+    } catch {
+      if (status) status.textContent = "Select and copy the octave link below.";
+      field?.focus();
+      field?.select();
+    }
   });
 }

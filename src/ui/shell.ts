@@ -6,7 +6,7 @@ export type Page = "greek" | "india" | "comparison";
 
 const NAV: Record<Page, string> = {
   comparison: `<a href="#listen">Listen</a><a href="#degrees">Compare degrees</a><a href="#reading">Read Cleonides</a><a href="#save">Save</a>`,
-  greek: `<a href="#strings">Strings</a><a href="#places">Places</a><a href="#names">Names</a><a href="./compare.html">Which Dorian?</a><a href="#highest">Highest, lowest</a><a href="#ethos">Ethos</a><a href="#words">Words</a>`,
+  greek: `<a href="#strings">Strings</a><a href="#pitches">Pitches &amp; files</a><a href="#places">Places</a><a href="#names">Names</a><a href="./compare.html">Which Dorian?</a><a href="#highest">Highest, lowest</a><a href="#ethos">Ethos</a><a href="#words">Words</a>`,
   india: `<a href="#demo">Two vīṇās</a><a href="#count">The count</a><a href="#murcchanas">Mūrcchanās</a><a href="#sa-words">Words</a><a href="#reading">Whose text</a>`,
 };
 

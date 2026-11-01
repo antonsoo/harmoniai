@@ -35,7 +35,9 @@
     "typecheck": "tsc --noEmit",
     "test": "node --import tsx --test tests/*.test.ts",
     "check": "npm run lint && npm run typecheck && npm test && npm run build",
-    "test:comparison": "node scripts/comparison-review.mjs"
+    "test:comparison": "node scripts/comparison-review.mjs",
+    "test:octave": "node scripts/octave-review.mjs",
+    "verify:octave-audio": "python3 scripts/octave-oracle.py"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.13.0",
