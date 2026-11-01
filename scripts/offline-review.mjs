@@ -4,12 +4,14 @@ import { createServer } from "node:http";
 import { extname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { chromium, firefox } from "playwright";
+import { snapshotBuild } from "./review-server.mjs";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const name = JSON.parse(await readFile(resolve(root, "package.json"), "utf8")).name;
 const output = resolve(process.argv[2] ?? `docs/review/offline.json`);
 const destination = name === "embater" ? "world.html" : "vina.html";
 const entry = name === "embater" ? "compare.html" : "index.html";
+const snapshot = await snapshotBuild(resolve(root, "dist"));
 let mode = "normal";
 const assets = await readdir(resolve(root, "dist/assets"));
 const nonEntry = assets.find(
@@ -36,7 +38,8 @@ const server = createServer(async (req, res) => {
     return;
   }
   try {
-    const bytes = await readFile(resolve(root, "dist", file));
+    const bytes = snapshot.bodies.get(file);
+    if (!bytes) throw new Error("Missing");
     res.writeHead(200, {
       "Content-Type": types[extname(file)] ?? "application/octet-stream",
       "Cache-Control": "no-store",
@@ -77,8 +80,11 @@ try {
       await page.locator("main h1").waitFor();
       mode = "404";
       response = await page.goto(base + destination);
+      assert.equal(response.status(), 200);
+      await page.locator("main h1").waitFor();
+      response = await page.goto(base + "not-in-this-edition.html");
       assert.equal(response.status(), 404);
-      assert.equal(await page.locator("h1").textContent(), "HTTP 404");
+      assert.equal(await page.locator("body").textContent(), "Missing");
       mode = "normal";
       await page.goto(base + entry);
       mode = "body-stall";
@@ -101,11 +107,17 @@ try {
       mode = "503";
       response = await page.goto(base + destination);
       assert.equal(response.status(), 503);
-      assert.equal(await page.locator("h1").textContent(), "HTTP 503");
+      assert.match(await page.locator("body").textContent(), /saved edition is incomplete/);
       mode = "normal";
       await page.goto(base + entry);
       await page.waitForFunction(() =>
-        document.getElementById("offline-status")?.textContent.includes("not fully saved"),
+        document.getElementById("offline-status")?.textContent.includes("incomplete or damaged"),
+      );
+      await page
+        .getByRole("button", { name: "Check and repair offline copy", exact: true })
+        .click();
+      await page.waitForFunction(() =>
+        document.getElementById("offline-status")?.textContent.startsWith("Ready offline"),
       );
       await context.close();
       mode = "corrupt";
@@ -126,9 +138,10 @@ try {
       receipts.push({
         engine,
         cached503: true,
-        network404Preserved: true,
+        knownPageRemainsCoherentDespiteOrigin404: true,
+        unlisted404Preserved: true,
         partialBodyFallbackMs: elapsed,
-        evictedPageNotRestored: true,
+        evictedPage503ThenExplicitlyRepaired: true,
         missingFileReadiness: false,
         corruptInstallActivated: false,
         badStatus,

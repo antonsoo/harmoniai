@@ -1127,3 +1127,20 @@ h1 {
     grid-column: 1;
   }
 }
+
+.offline-actions button {
+  padding: 0.35rem 0.65rem;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: var(--leaf);
+  color: var(--murex);
+  font: inherit;
+  cursor: pointer;
+}
+.offline-actions button:disabled {
+  opacity: 0.65;
+  cursor: progress;
+}
+#offline-update {
+  max-width: 52rem;
+}
