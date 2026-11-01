@@ -82,7 +82,7 @@ try {
       response = await page.goto(base + destination);
       assert.equal(response.status(), 200);
       await page.locator("main h1").waitFor();
-      response = await page.goto(base + "not-in-this-edition.html");
+      response = await page.goto(`${base}not-in-this-edition.html`);
       assert.equal(response.status(), 404);
       assert.equal(await page.locator("body").textContent(), "Missing");
       mode = "normal";
