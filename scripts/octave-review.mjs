@@ -263,6 +263,7 @@ for (const [engine, launcher] of Object.entries({ chromium, firefox })) {
         });
         await file.goto(pathToFileURL(study.path).href);
         assert.equal(await file.locator("script").count(), 0);
+        assert.equal(await file.locator("details[open]").count(), 2);
         assert.equal(await file.locator("img").count(), 3);
         assert.equal(await file.locator("tbody tr").count(), 15);
         assert.equal(await file.locator(".instrument").count(), 1);
