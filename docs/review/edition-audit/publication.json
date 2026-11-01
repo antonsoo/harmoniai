@@ -1,0 +1,22 @@
+{
+  "observedAt": "2026-11-01T23:53:40.233403+00:00",
+  "releaseSource": "4d80c748deb4783b0f37d895096d611c2ac1a657",
+  "buildSource": "ceac9cc0d762085433ab52b3753b2b585812408d",
+  "pagesCommit": "88c0616ce459fd17bf4589432b61d1baa49289ec",
+  "canonicalFilesMatched": 37,
+  "legacyFilesMatched": 36,
+  "pinnedRawArtifactsMatched": 8,
+  "pagesBuild": "built",
+  "deploymentRun": {
+    "url": "https://github.com/antonsoo/harmoniai/actions/runs/41364001075",
+    "conclusion": "success"
+  },
+  "sourceCI": {
+    "url": "https://github.com/antonsoo/harmoniai/actions/runs/41363945357",
+    "conclusion": "failure",
+    "job": "check",
+    "steps": []
+  },
+  "sourceTreeCleanBeforeReceipt": true,
+  "boundary": "Verified source, exact clean build, canonical hosted bytes and actual public browser journeys. Remote source CI executed no checks. No registry release or physical audio claim."
+}

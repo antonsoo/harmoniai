@@ -1,0 +1,61 @@
+{
+  "source": "4d80c748deb4783b0f37d895096d611c2ac1a657",
+  "artifacts": [
+    {
+      "path": "docs/edition-audit.md",
+      "url": "https://raw.githubusercontent.com/antonsoo/harmoniai/4d80c748deb4783b0f37d895096d611c2ac1a657/docs/edition-audit.md",
+      "bytes": 10176,
+      "sha256": "24537d2f0653da59b39aff5bd4a41fa35d8e4fc4faccdbd60b65e20197e455c1",
+      "matches": true
+    },
+    {
+      "path": "docs/review/edition-audit/clean-build.json",
+      "url": "https://raw.githubusercontent.com/antonsoo/harmoniai/4d80c748deb4783b0f37d895096d611c2ac1a657/docs/review/edition-audit/clean-build.json",
+      "bytes": 6465,
+      "sha256": "057745785fa28af6ede30c580102e749257a80e4cb59155e15ad448594b26837",
+      "matches": true
+    },
+    {
+      "path": "docs/review/edition-audit/live-output-oracle.json",
+      "url": "https://raw.githubusercontent.com/antonsoo/harmoniai/4d80c748deb4783b0f37d895096d611c2ac1a657/docs/review/edition-audit/live-output-oracle.json",
+      "bytes": 8243,
+      "sha256": "6ca411724e5d42790f3b3329c7fc75026d74595856a63006e88570482c0d61a9",
+      "matches": true
+    },
+    {
+      "path": "examples/octave-reading.html.gz",
+      "url": "https://raw.githubusercontent.com/antonsoo/harmoniai/4d80c748deb4783b0f37d895096d611c2ac1a657/examples/octave-reading.html.gz",
+      "bytes": 3797357,
+      "sha256": "ac077ce22b98d76530b20478df6e1c8530d8eed948629a42c88dfcc10969eed7",
+      "matches": true
+    },
+    {
+      "path": "examples/octave-reading.pdf",
+      "url": "https://raw.githubusercontent.com/antonsoo/harmoniai/4d80c748deb4783b0f37d895096d611c2ac1a657/examples/octave-reading.pdf",
+      "bytes": 2574600,
+      "sha256": "6c365244e91bd293c4bbacad5a0a45501540ece8ae52ed6139f3c3ef9b6895d3",
+      "matches": true
+    },
+    {
+      "path": "examples/dorian-reading.html.gz",
+      "url": "https://raw.githubusercontent.com/antonsoo/harmoniai/4d80c748deb4783b0f37d895096d611c2ac1a657/examples/dorian-reading.html.gz",
+      "bytes": 2990540,
+      "sha256": "c5e84f18a2230e18b028f12337d2bd596a7dc6518a571a10278f879f9f2e90f4",
+      "matches": true
+    },
+    {
+      "path": "examples/dorian-reading.pdf",
+      "url": "https://raw.githubusercontent.com/antonsoo/harmoniai/4d80c748deb4783b0f37d895096d611c2ac1a657/examples/dorian-reading.pdf",
+      "bytes": 2608565,
+      "sha256": "cfe590696db9c3b7b101bac56a07a637b0b14bcb440c751d2839727f6cbab375",
+      "matches": true
+    },
+    {
+      "path": "public/fonts/gentium-book-plus-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/antonsoo/harmoniai/4d80c748deb4783b0f37d895096d611c2ac1a657/public/fonts/gentium-book-plus-LICENSE.txt",
+      "bytes": 4574,
+      "sha256": "92ec730eb44ab2b0a1d16651d019cebe7107db39ab487933030fcd2fb96b409a",
+      "matches": true
+    }
+  ]
+}

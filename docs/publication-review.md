@@ -1,5 +1,9 @@
 # Publication review
 
+This is the retained October review. The [November edition audit](edition-audit.md)
+checks damaged cache bodies, repair, waiting updates and actual audio output,
+and records the newer public build separately.
+
 The initial two-vīṇā explanation overstated the equal-step dial: the named meetings
 do not establish that successive lowerings have the same size. The revised page
 labels that assumption explicitly and gives a counterexample, with a link to the

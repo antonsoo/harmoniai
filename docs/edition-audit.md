@@ -169,6 +169,32 @@ and updates the expected source hash before making a genuine second build.
 Never publish that fixture. The migration review accepts a built legacy edition,
 current build and external output directory as its three arguments.
 
-Build output, public file identity, browser operation, remote source and CI are
-separate boundaries. The historical reports remain dated records; this audit's
-publication receipts will identify the exact final source and hosted build.
+## Public edition: 1 November 2026
+
+The reviewed application is published from source `4d80c74`; its build inputs
+are unchanged from the clean source `ceac9cc`. A fresh Node 24.22.1 installation
+passed `npm ci` and `npm run check`, including 27 tests. All **37 canonical hosted
+files** match that clean build byte for byte. The previous source's 36 build
+files were also compared with the actual prior published branch, supporting
+the legacy migration review's starting point.
+
+Chromium and Firefox at 1440 and 375 pixels operated the **real public site**:
+model changes, keyboard plucks, phone scrolling, actual illustrated downloads,
+embedded source-image identities, standalone opening without external requests,
+and all three rooms after going offline. Each online/offline study pair was
+byte-identical. The canonical public entry was rechecked after every context.
+Eight pinned anonymous GitHub raw artifacts, including both new PDF and HTML
+studies, matched their local files.
+
+[Hosted files and public journeys](review/edition-audit/public-browser.json) ·
+[Clean build](review/edition-audit/clean-build.json) ·
+[Pinned raw artifacts](review/edition-audit/source-publication.json) ·
+[Publication boundary](review/edition-audit/publication.json).
+
+The normal-history Pages commit `88c0616` deployed successfully
+([deployment](https://github.com/antonsoo/harmoniai/actions/runs/41364001075)).
+The source [CI run](https://github.com/antonsoo/harmoniai/actions/runs/41363945357)
+returned failure with an empty steps list; it ran no checks. The local checks,
+public bytes and browser observations above are separate evidence. Build command:
+`npm run build`; complete output: `dist/`, base `/harmoniai/`. No package release,
+tag or physical audio measurement is claimed.

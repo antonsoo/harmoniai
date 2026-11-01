@@ -29,6 +29,9 @@ then switch to the same interval order: Greek Dorian and modern Phrygian agree.
 The experiment also covers Phrygian, Lydian and Mixolydian, with the starting pitch
 and tuning held constant across both lanes.
 
+[Complete Dorian study, gzip](examples/dorian-reading.html.gz) ·
+[Printable Dorian study](examples/dorian-reading.pdf).
+
 ![The two Dorians from the same starting pitch](docs/review/name-audit/local/chromium-1440-light-compare.png)
 
 The Greek named span, the separate diatonic half-step description and the printed
@@ -121,6 +124,9 @@ more than the difference between the two tuning models. The revised sound is
 checked from actual scheduled browser buffers and native WAV downloads, with
 an independent frequency measurement and closed-form waveform oracle.
 [Sound, source and browser review](docs/octave-review.md).
+The [subsequent output and edition audit](docs/edition-audit.md) measures the
+actual browser audio-thread mix, fixes first-note timing, and verifies repair
+and updates against the public edition.
 
 [Example complete study, gzip](examples/octave-reading.html.gz) ·
 [Printable study](examples/octave-reading.pdf) ·
