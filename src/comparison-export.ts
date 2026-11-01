@@ -1,10 +1,10 @@
 import { sequence, wave } from "./audio/comparison";
 import { PLATES } from "./content/plates";
 import { type ComparisonState, compare, comparisonQuery } from "./core/comparison";
-import { dataUrl, FONTS, verified } from "./study-assets";
+import { dataUrl, FONT_NOTICE, FONTS, verified } from "./study-assets";
 import { degreeTable, esc, finding, lanes, reading, tuningText } from "./ui/comparison-view";
 
-export { dataUrl, FONTS, verified } from "./study-assets";
+export { dataUrl, FONT_NOTICE, FONTS, verified } from "./study-assets";
 
 export function comparisonWave(state: ComparisonState) {
   const c = compare(state);
@@ -48,14 +48,17 @@ export function csv(state: ComparisonState): string {
     .join("\r\n")}\r\n`;
 }
 
-export async function illustratedReading(state: ComparisonState): Promise<string> {
+export async function illustratedReading(
+  state: ComparisonState,
+  signal?: AbortSignal,
+): Promise<string> {
   // The caller passes a snapshot. Loading sources must not change what gets saved.
   const [plates, fonts, license, codeLicense] = await Promise.all([
     Promise.all(
       PLATES.map(async (p) => ({
         ...p,
         data: dataUrl(
-          await verified(`${import.meta.env.BASE_URL}${p.path}`, p.sha256),
+          await verified(`${import.meta.env.BASE_URL}${p.path}`, p.sha256, signal),
           "image/jpeg",
         ),
       })),
@@ -63,18 +66,17 @@ export async function illustratedReading(state: ComparisonState): Promise<string
     Promise.all(
       FONTS.map(async (f) => ({
         ...f,
-        data: dataUrl(await verified(f.url, f.hash), "font/woff2"),
+        data: dataUrl(await verified(f.url, f.hash, signal), "font/woff2"),
       })),
     ),
-    verified(
-      `${import.meta.env.BASE_URL}FONT-LICENSE.txt`,
-      "21675d953c0ac998c715f200b106198ec59952b6a05d06988c72524020be1c86",
-    ),
+    verified(`${import.meta.env.BASE_URL}${FONT_NOTICE.path}`, FONT_NOTICE.sha256, signal),
     verified(
       `${import.meta.env.BASE_URL}LICENSE.txt`,
       "f4cec46403514e2601f3b917ad36bfc8cd9a6d97359ac2f9bb554d2062a251eb",
+      signal,
     ),
   ]);
+  signal?.throwIfAborted();
   const c = compare(state);
   return `<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Which ${state.name}? Harmoniai listening edition</title>
   <style>${fonts.map((f) => `@font-face{font-family:Reading;src:url(${f.data}) format('woff2');unicode-range:${f.range}}`).join("")}
@@ -84,5 +86,5 @@ export async function illustratedReading(state: ComparisonState): Promise<string
   ${degreeTable(state, false)}<h2>Read Cleonides</h2>${reading(state).replace("<details>", "<details open>")}
   <p class="download-note">This file includes the sound, all three complete source pages and four font subsets. It opens offline without scripts. External links need a connection. <a href="https://antonsoo.github.io/harmoniai/compare.html?${esc(comparisonQuery(state))}#listen">Reopen this comparison in Harmoniai</a>.</p>
   ${plates.map((p) => `<figure class="source"><figcaption>Cleonides, Jan 1895, printed p. ${p.page}. Complete page, public domain. <a href="${p.url}">Internet Archive image</a>.</figcaption><img src="${p.data}" alt="Complete printed page ${p.page} of Jan's 1895 edition of Cleonides"></figure>`).join("")}
-  <h2>Credits and license</h2><p>Greek from K. von Jan, <i>Musici scriptores Graeci</i> (Leipzig: Teubner, 1895), pp. 197–199, public domain. Initial capitalization, apostrophes and punctuation normalized; omissions marked. English and diagrams are new, MIT licensed, © 2026 Anthony Mercer. Translations have not had independent philological review. Modern interval orders referenced to <i>Steps to Music Theory</i>, §11.1; no scores or recordings copied.</p><details><summary>MIT license</summary><pre>${esc(new TextDecoder().decode(codeLicense))}</pre></details><details><summary>Included font licenses</summary><pre>${esc(new TextDecoder().decode(license))}</pre></details></html>`;
+  <h2>Credits and license</h2><p>Greek from K. von Jan, <i>Musici scriptores Graeci</i> (Leipzig: Teubner, 1895), pp. 197–199, public domain. Initial capitalization, apostrophes and punctuation normalized; omissions marked. English and diagrams are new, MIT licensed, © 2026 Anthony Mercer. Translations have not had independent philological review. Modern interval orders referenced to <i>Steps to Music Theory</i>, §11.1; no scores or recordings copied.</p><details open><summary>MIT license</summary><pre>${esc(new TextDecoder().decode(codeLicense))}</pre></details><details open><summary>Included font licenses</summary><pre>${esc(new TextDecoder().decode(license))}</pre></details></html>`;
 }

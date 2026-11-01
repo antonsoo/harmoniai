@@ -26,24 +26,76 @@ export const FONTS = [
   },
 ] as const;
 
+export const FONT_NOTICE = {
+  path: "fonts/gentium-book-plus-LICENSE.txt",
+  sha256: "92ec730eb44ab2b0a1d16651d019cebe7107db39ab487933030fcd2fb96b409a",
+};
+
+/** Verify a streamed source while distinguishing slow progress from a stalled body. */
 export async function verified(
   url: string,
   hash: string,
   signal?: AbortSignal,
 ): Promise<Uint8Array<ArrayBuffer>> {
-  const bounded = AbortSignal.any([AbortSignal.timeout(60000), ...(signal ? [signal] : [])]);
-  const response = await fetch(url, { signal: bounded });
-  if (!response.ok)
-    throw new Error("A source or font could not be loaded. Reconnect and try again.");
-  const bytes = new Uint8Array(await response.arrayBuffer());
-  bounded.throwIfAborted();
-  const digest = new Uint8Array(await crypto.subtle.digest("SHA-256", bytes));
-  const actual = Array.from(digest, (b) => b.toString(16).padStart(2, "0")).join("");
-  if (actual !== hash)
-    throw new Error(
-      "A source or font differs from the reviewed edition. Reload online before saving.",
-    );
-  return bytes;
+  const controller = new AbortController();
+  const bounded = AbortSignal.any([controller.signal, ...(signal ? [signal] : [])]);
+  let reason = "";
+  const total = setTimeout(() => {
+    reason = "The source download exceeded three minutes.";
+    controller.abort();
+  }, 180000);
+  let idle = setTimeout(() => {
+    reason = "The source download stopped making progress.";
+    controller.abort();
+  }, 15000);
+  const touch = () => {
+    clearTimeout(idle);
+    idle = setTimeout(() => {
+      reason = "The source download stopped making progress.";
+      controller.abort();
+    }, 15000);
+  };
+  try {
+    const response = await fetch(url, { signal: bounded });
+    if (!response.ok || !response.body)
+      throw new Error("A source or font could not be loaded. Reconnect and try again.");
+    touch();
+    const reader = response.body.getReader();
+    const chunks: Uint8Array<ArrayBufferLike>[] = [];
+    let length = 0;
+    for (;;) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      touch();
+      length += value.length;
+      if (length > 8 * 1024 * 1024) {
+        controller.abort();
+        throw new Error("The source is larger than the retained edition allows.");
+      }
+      chunks.push(value);
+    }
+    bounded.throwIfAborted();
+    const bytes = new Uint8Array(length);
+    let position = 0;
+    for (const chunk of chunks) {
+      bytes.set(chunk, position);
+      position += chunk.length;
+    }
+    const digest = new Uint8Array(await crypto.subtle.digest("SHA-256", bytes));
+    const actual = Array.from(digest, (b) => b.toString(16).padStart(2, "0")).join("");
+    if (actual !== hash)
+      throw new Error(
+        "A source or font differs from the reviewed edition. Reload online before saving.",
+      );
+    return bytes;
+  } catch (error) {
+    if (reason && !signal?.aborted)
+      throw new Error(`${reason} Reconnect and try again; your selection is still here.`);
+    throw error;
+  } finally {
+    clearTimeout(total);
+    clearTimeout(idle);
+  }
 }
 
 export function dataUrl(bytes: Uint8Array, type: string): string {

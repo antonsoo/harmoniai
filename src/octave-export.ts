@@ -9,7 +9,8 @@ import {
   selectedSpecies,
   tuningName,
 } from "./core/octave";
-import { dataUrl, FONTS, verified } from "./study-assets";
+import { stepCents } from "./core/system";
+import { dataUrl, FONT_NOTICE, FONTS, verified } from "./study-assets";
 import { esc } from "./ui/comparison-view";
 import { instrumentSvg } from "./ui/instrument";
 
@@ -79,11 +80,7 @@ export async function octaveReading(state: OctaveState, signal?: AbortSignal): P
         data: dataUrl(await verified(f.url, f.hash, signal), "font/woff2"),
       })),
     ),
-    verified(
-      `${import.meta.env.BASE_URL}FONT-LICENSE.txt`,
-      "21675d953c0ac998c715f200b106198ec59952b6a05d06988c72524020be1c86",
-      signal,
-    ),
+    verified(`${import.meta.env.BASE_URL}${FONT_NOTICE.path}`, FONT_NOTICE.sha256, signal),
     verified(
       `${import.meta.env.BASE_URL}LICENSE.txt`,
       "f4cec46403514e2601f3b917ad36bfc8cd9a6d97359ac2f9bb554d2062a251eb",
@@ -105,7 +102,7 @@ ${fonts.map((f) => `@font-face{font-family:Reading;src:url(${f.data}) format('wo
 .instrument{width:100%;height:auto}.instrument .hit{fill:transparent}.instrument .band{fill:#eee3ed;stroke:#6b2a62}.instrument .wire{fill:none;stroke:#8a6418}.instrument .in .wire{stroke:#6b2a62}.instrument .peg{fill:#5b4d61}.instrument .bracket{fill:none;stroke:#5b4d61}.gname,.rname,.letter{text-anchor:end}.gname{font-size:20px}.rname,.tetra-rom{font-size:13px;fill:#5b4d61}.letter,.step{font-size:15px}.step{text-anchor:middle}.tetra{font-size:18px}
 body{font:20px/1.6 Reading,Georgia,serif;background:#fbfafc;color:#24182b;max-width:55rem;margin:2rem auto;padding:0 1rem}h1,h2{font-weight:400;line-height:1.2}h1,a{color:#6b2a62}audio{width:100%}blockquote{margin:1rem 0;padding:0 1rem;border-left:3px solid #6b2a62}.octave-table-scroll{overflow:auto}table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}th,td{padding:.35rem .5rem;border-bottom:1px solid #d8cfdc;text-align:right;white-space:nowrap}th{text-align:left;font-weight:400}caption{text-align:left;white-space:normal}small{display:block;color:#5b4d61}tr.in-octave{background:#eee3ed}.selected-pitch th{box-shadow:inset 3px 0 #6b2a62}figure{margin:2rem 0;break-before:page}img{max-width:100%;height:auto}pre{white-space:pre-wrap;overflow-wrap:anywhere}details{margin:1rem 0}@media(max-width:600px){body{font-size:18px}th,td{padding:.35rem}}@media print{.octave-table-scroll{overflow:visible}tr{break-inside:avoid}body{font-size:11pt;margin:0;background:white}audio,.downloads{display:none}img{max-height:240mm;width:auto;display:block;margin:auto}details>*{display:block}summary{display:none}a{color:inherit}@page{size:A4;margin:15mm}}</style>
 <h1><span lang="grc">${species.greek}</span> ${species.name}</h1><p>${tuningName(state.tuning)}. Mesē is held at ${state.mese} Hz. Selected string: <span lang="grc">${esc(rows[state.selected]?.greek ?? "")}</span>, ${(rows[state.selected]?.hz ?? 0).toFixed(4)} Hz.</p>
-${diagram}<p>The highlighted span marks the selected octave. Equal row spacing orders notes; it does not measure pitch distance or physical string lengths.</p><h2>Hear the octave, then return</h2><audio controls preload="metadata" src="${sound}"></audio><p>Eight ascending notes followed by seven descending notes. Synthetic harmonic plucks, 44,100 Hz mono PCM. Each note lasts 1.6 seconds; onsets are 0.42 seconds apart. Tails overlap as in the workshop.</p>
+${diagram}<p>T = tone, ${stepCents("T", state.tuning).toFixed(3)} cents. S = small step, ${stepCents("S", state.tuning).toFixed(3)} cents. ${state.tuning === "pythagorean" ? `Two S steps are ${(stepCents("T", state.tuning) - 2 * stepCents("S", state.tuning)).toFixed(3)} cents smaller than T; “semitone” does not mean half of T in this ratio model.` : "Two S steps equal T in this equal-step model."}</p><p>The highlighted span marks the selected octave. Equal row spacing orders notes; it does not measure pitch distance or physical string lengths.</p><h2>Hear the octave, then return</h2><audio controls preload="metadata" src="${sound}"></audio><p>Eight ascending notes followed by seven descending notes. Synthetic harmonic plucks, 44,100 Hz mono PCM. Each note lasts 1.6 seconds; onsets are 0.42 seconds apart. Tails overlap as in the workshop.</p>
 ${octaveTable(state, false)}
 <h2>Read the named span</h2>${passage ? `<blockquote><p lang="grc">${esc(passage.greek)}</p><p>${esc(passage.english)}</p><cite>${esc(passage.cite)}</cite></blockquote>` : ""}
 <p>The half-step positions and named endpoints follow Cleonides. The numerical pitches, reference mesē and synthetic timbre are separate modern teaching choices. The equal-step option realizes tones as 200 cents and half-tones as 100; it does not establish that Aristoxenus prescribed modern equal temperament. The ratio option uses 9:8 and 256:243. White-key letters identify positions, not equal-tempered frequencies. No ancient instrument, absolute pitch, melody or performance is reconstructed.</p>

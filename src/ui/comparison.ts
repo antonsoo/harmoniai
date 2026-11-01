@@ -19,6 +19,8 @@ export function mountComparison(root: HTMLElement): void {
   let plateUrl = "";
   let plateRequest = 0;
   let saveRequest = 0;
+  let sourceController: AbortController | null = null;
+  let saveController: AbortController | null = null;
   root.innerHTML = `<section class="hero-text"><p class="eyebrow">An experiment in musical names</p><h1>Which Dorian?</h1><p>The word survived. The intervals moved. Keep the starting pitch fixed, listen to both meanings, then find the notes that changed.</p></section>
   <section id="listen" class="comparison-bench" aria-label="Compare octave names">
   <div class="comparison-controls"><label>Cleonides’ name <select id="compare-name">${SHARED_NAMES.map((name) => `<option>${name}</option>`).join("")}</select></label>
@@ -125,6 +127,8 @@ export function mountComparison(root: HTMLElement): void {
   const zoom = $<HTMLButtonElement>("source-zoom");
   const sourceStatus = $("source-status");
   function clearSource() {
+    sourceController?.abort();
+    sourceController = null;
     plateRequest++;
     source.hidden = true;
     source.removeAttribute("src");
@@ -145,9 +149,15 @@ export function mountComparison(root: HTMLElement): void {
     const request = plateRequest;
     const p = PLATES.find((p) => p.page === Number($<HTMLSelectElement>("source-page").value));
     if (!p) return;
+    const controller = new AbortController();
+    sourceController = controller;
     sourceStatus.textContent = `Loading printed page ${p.page}…`;
     try {
-      const bytes = await verified(`${import.meta.env.BASE_URL}${p.path}`, p.sha256);
+      const bytes = await verified(
+        `${import.meta.env.BASE_URL}${p.path}`,
+        p.sha256,
+        controller.signal,
+      );
       if (request !== plateRequest) return;
       plateUrl = URL.createObjectURL(new Blob([bytes], { type: "image/jpeg" }));
       source.src = plateUrl;
@@ -182,12 +192,14 @@ export function mountComparison(root: HTMLElement): void {
   const cancel = $("cancel-reading");
   saveReading.addEventListener("click", async () => {
     const snapshot = { ...state };
+    const controller = new AbortController();
+    saveController = controller;
     const request = ++saveRequest;
     saveReading.disabled = true;
     cancel.hidden = false;
     status.textContent = `Preparing the ${snapshot.name} reading with all three source pages…`;
     try {
-      const html = await illustratedReading(snapshot);
+      const html = await illustratedReading(snapshot, controller.signal);
       if (request !== saveRequest) return;
       save(
         new Blob([html], { type: "text/html;charset=utf-8" }),
@@ -200,12 +212,15 @@ export function mountComparison(root: HTMLElement): void {
           error instanceof Error ? error.message : "The reading could not be saved.";
     } finally {
       if (request === saveRequest) {
+        saveController = null;
         saveReading.disabled = false;
         cancel.hidden = true;
       }
     }
   });
   cancel.addEventListener("click", () => {
+    saveController?.abort();
+    saveController = null;
     saveRequest++;
     saveReading.disabled = false;
     cancel.hidden = true;
