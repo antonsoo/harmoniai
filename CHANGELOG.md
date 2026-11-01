@@ -1,5 +1,20 @@
 # Changelog
 
+## Inspect a named pitch (2026-11-01)
+
+- Replace the integer-delay pluck with explicitly pitched harmonic synthesis.
+  Both the Greek instrument and the two-vīṇā room use the corrected sound.
+- Inspect and play fifteen Greek names with frequencies and a fixed mesē
+  reference; compare each named position across two stated tuning models.
+- Keep single-note and octave WAVs, pitch CSVs, explicit links or an illustrated
+  offline study with complete printed sources, diagram, audio, fonts and licenses.
+- Cancel a pending study; keep its initial settings when later edits occur.
+  Source identities are verified, and source requests have a finite deadline.
+  The saved reading keeps complete license notices visible when printed.
+- Stop and newer playback actions invalidate pending audio permission requests.
+  Visual note cues follow the audio clock; hiding or leaving a page stops playback.
+
+
 ## Names and listening audit (2026-10-29)
 
 - Compare Greek and modern names from one starting pitch; isolate changed degrees

@@ -1,0 +1,547 @@
+{
+  "source_commit": "c00cc4d",
+  "seed": 1,
+  "measurements": [
+    {
+      "rate": 44100,
+      "tuning": "aristoxenian",
+      "index": 7,
+      "mese": 220,
+      "expected_hz": 220.0,
+      "measured_hz": 221.05262586927162,
+      "error_cents": 8.263617985402517
+    },
+    {
+      "rate": 48000,
+      "tuning": "aristoxenian",
+      "index": 12,
+      "mese": 220,
+      "expected_hz": 349.2282314330039,
+      "measured_hz": 351.6483309154129,
+      "error_cents": 11.955815054135886
+    },
+    {
+      "rate": 44100,
+      "tuning": "pythagorean",
+      "index": 4,
+      "mese": 220,
+      "expected_hz": 165.0,
+      "measured_hz": 165.47842126417956,
+      "error_cents": 5.0124892135427315
+    },
+    {
+      "rate": 44100,
+      "tuning": "aristoxenian",
+      "index": 8,
+      "mese": 220,
+      "expected_hz": 246.94165062806206,
+      "measured_hz": 247.05881610561357,
+      "error_cents": 0.8212173128376228
+    },
+    {
+      "rate": 44100,
+      "tuning": "aristoxenian",
+      "index": 14,
+      "mese": 220,
+      "expected_hz": 440.0,
+      "measured_hz": 443.21603029202294,
+      "error_cents": 12.607845783481098
+    },
+    {
+      "rate": 48000,
+      "tuning": "aristoxenian",
+      "index": 7,
+      "mese": 220,
+      "expected_hz": 220.0,
+      "measured_hz": 220.68965053428474,
+      "error_cents": 5.418540962472201
+    },
+    {
+      "rate": 48000,
+      "tuning": "aristoxenian",
+      "index": 4,
+      "mese": 220,
+      "expected_hz": 164.81377845643496,
+      "measured_hz": 165.23235511850862,
+      "error_cents": 4.3912319177625685
+    },
+    {
+      "rate": 48000,
+      "tuning": "pythagorean",
+      "index": 7,
+      "mese": 220,
+      "expected_hz": 220.0,
+      "measured_hz": 220.68965053428474,
+      "error_cents": 5.418540962472201
+    },
+    {
+      "rate": 48000,
+      "tuning": "aristoxenian",
+      "index": 10,
+      "mese": 220,
+      "expected_hz": 293.6647679174076,
+      "measured_hz": 295.38460271151865,
+      "error_cents": 10.109322454949998
+    },
+    {
+      "rate": 44100,
+      "tuning": "pythagorean",
+      "index": 6,
+      "mese": 220,
+      "expected_hz": 195.55555555555554,
+      "measured_hz": 195.56540638707162,
+      "error_cents": 0.08720624356790556
+    },
+    {
+      "rate": 44100,
+      "tuning": "aristoxenian",
+      "index": 10,
+      "mese": 220,
+      "expected_hz": 293.6647679174076,
+      "measured_hz": 294.9832632308498,
+      "error_cents": 7.755492847051477
+    },
+    {
+      "rate": 48000,
+      "tuning": "pythagorean",
+      "index": 4,
+      "mese": 220,
+      "expected_hz": 165.0,
+      "measured_hz": 165.23235511850862,
+      "error_cents": 2.436231052375067
+    },
+    {
+      "rate": 48000,
+      "tuning": "aristoxenian",
+      "index": 6,
+      "mese": 220,
+      "expected_hz": 195.99771799087463,
+      "measured_hz": 196.31901398488634,
+      "error_cents": 2.8356613097763312
+    },
+    {
+      "rate": 44100,
+      "tuning": "aristoxenian",
+      "index": 13,
+      "mese": 220,
+      "expected_hz": 391.99543598174927,
+      "measured_hz": 391.9999652915659,
+      "error_cents": 0.020003421858656455
+    },
+    {
+      "rate": 48000,
+      "tuning": "pythagorean",
+      "index": 9,
+      "mese": 220,
+      "expected_hz": 260.7407407407407,
+      "measured_hz": 261.5803743957929,
+      "error_cents": 5.565938585735732
+    },
+    {
+      "rate": 44100,
+      "tuning": "pythagorean",
+      "index": 9,
+      "mese": 220,
+      "expected_hz": 260.7407407407407,
+      "measured_hz": 261.72105862196906,
+      "error_cents": 6.4967876643857965
+    },
+    {
+      "rate": 48000,
+      "tuning": "aristoxenian",
+      "index": 9,
+      "mese": 220,
+      "expected_hz": 261.6255653005986,
+      "measured_hz": 263.01368954433036,
+      "error_cents": 9.161241903974306
+    },
+    {
+      "rate": 44100,
+      "tuning": "pythagorean",
+      "index": 8,
+      "mese": 220,
+      "expected_hz": 247.5,
+      "measured_hz": 248.45069625658948,
+      "error_cents": 6.637271640588422
+    },
+    {
+      "rate": 44100,
+      "tuning": "pythagorean",
+      "index": 14,
+      "mese": 220,
+      "expected_hz": 440.0,
+      "measured_hz": 443.21603029202294,
+      "error_cents": 12.607845783481098
+    },
+    {
+      "rate": 44100,
+      "tuning": "aristoxenian",
+      "index": 6,
+      "mese": 220,
+      "expected_hz": 195.99771799087463,
+      "measured_hz": 196.43652073967968,
+      "error_cents": 3.871581534839653
+    },
+    {
+      "rate": 48000,
+      "tuning": "aristoxenian",
+      "index": 0,
+      "mese": 220,
+      "expected_hz": 110.0,
+      "measured_hz": 110.2181385177919,
+      "error_cents": 3.429771548091411
+    },
+    {
+      "rate": 48000,
+      "tuning": "pythagorean",
+      "index": 6,
+      "mese": 220,
+      "expected_hz": 195.55555555555554,
+      "measured_hz": 196.31901398488634,
+      "error_cents": 6.745663040550949
+    },
+    {
+      "rate": 48000,
+      "tuning": "pythagorean",
+      "index": 0,
+      "mese": 220,
+      "expected_hz": 110.0,
+      "measured_hz": 110.2181385177919,
+      "error_cents": 3.429771548091411
+    },
+    {
+      "rate": 44100,
+      "tuning": "pythagorean",
+      "index": 10,
+      "mese": 220,
+      "expected_hz": 293.3333333333333,
+      "measured_hz": 294.9832632308498,
+      "error_cents": 9.710493712439181
+    },
+    {
+      "rate": 44100,
+      "tuning": "aristoxenian",
+      "index": 0,
+      "mese": 220,
+      "expected_hz": 110.0,
+      "measured_hz": 110.11235953126265,
+      "error_cents": 1.7674669752210457
+    },
+    {
+      "rate": 48000,
+      "tuning": "pythagorean",
+      "index": 1,
+      "mese": 220,
+      "expected_hz": 123.75,
+      "measured_hz": 123.8709677417305,
+      "error_cents": 1.6914843027407158
+    },
+    {
+      "rate": 48000,
+      "tuning": "aristoxenian",
+      "index": 11,
+      "mese": 220,
+      "expected_hz": 329.6275569128699,
+      "measured_hz": 329.8968896879151,
+      "error_cents": 1.4139827538201972
+    },
+    {
+      "rate": 48000,
+      "tuning": "aristoxenian",
+      "index": 14,
+      "mese": 220,
+      "expected_hz": 440.0,
+      "measured_hz": 442.39627267194237,
+      "error_cents": 9.402848056053216
+    },
+    {
+      "rate": 48000,
+      "tuning": "pythagorean",
+      "index": 11,
+      "mese": 220,
+      "expected_hz": 330.0,
+      "measured_hz": 332.17991328815646,
+      "error_cents": 11.398575118633891
+    },
+    {
+      "rate": 44100,
+      "tuning": "pythagorean",
+      "index": 13,
+      "mese": 220,
+      "expected_hz": 391.1111111111111,
+      "measured_hz": 391.9999652915659,
+      "error_cents": 3.930005152633316
+    },
+    {
+      "rate": 44100,
+      "tuning": "pythagorean",
+      "index": 1,
+      "mese": 220,
+      "expected_hz": 123.75,
+      "measured_hz": 124.05063199250328,
+      "error_cents": 4.200672071135719
+    },
+    {
+      "rate": 48000,
+      "tuning": "aristoxenian",
+      "index": 2,
+      "mese": 220,
+      "expected_hz": 130.8127826502993,
+      "measured_hz": 130.96862194543147,
+      "error_cents": 2.061218413908485
+    },
+    {
+      "rate": 48000,
+      "tuning": "pythagorean",
+      "index": 13,
+      "mese": 220,
+      "expected_hz": 391.1111111111111,
+      "measured_hz": 391.83670558152056,
+      "error_cents": 3.2088325322109004
+    },
+    {
+      "rate": 44100,
+      "tuning": "pythagorean",
+      "index": 5,
+      "mese": 220,
+      "expected_hz": 173.82716049382714,
+      "measured_hz": 173.96449524462204,
+      "error_cents": 1.3672473455356555
+    },
+    {
+      "rate": 44100,
+      "tuning": "aristoxenian",
+      "index": 2,
+      "mese": 220,
+      "expected_hz": 130.8127826502993,
+      "measured_hz": 131.05497734738734,
+      "error_cents": 3.2023478236497454
+    },
+    {
+      "rate": 48000,
+      "tuning": "aristoxenian",
+      "index": 1,
+      "mese": 220,
+      "expected_hz": 123.47082531403103,
+      "measured_hz": 123.55212261854804,
+      "error_cents": 1.13952705962414
+    },
+    {
+      "rate": 44100,
+      "tuning": "pythagorean",
+      "index": 11,
+      "mese": 220,
+      "expected_hz": 330.0,
+      "measured_hz": 330.3370587701092,
+      "error_cents": 1.767363083073035
+    },
+    {
+      "rate": 48000,
+      "tuning": "aristoxenian",
+      "index": 3,
+      "mese": 220,
+      "expected_hz": 146.8323839587038,
+      "measured_hz": 147.01378099609187,
+      "error_cents": 2.137450168637243
+    },
+    {
+      "rate": 48000,
+      "tuning": "pythagorean",
+      "index": 8,
+      "mese": 220,
+      "expected_hz": 247.5,
+      "measured_hz": 248.0620086223251,
+      "error_cents": 3.926729099632618
+    },
+    {
+      "rate": 44100,
+      "tuning": "pythagorean",
+      "index": 3,
+      "mese": 220,
+      "expected_hz": 146.66666666666666,
+      "measured_hz": 146.75540673519308,
+      "error_cents": 1.0471593432096724
+    },
+    {
+      "rate": 48000,
+      "tuning": "aristoxenian",
+      "index": 5,
+      "mese": 220,
+      "expected_hz": 174.61411571650194,
+      "measured_hz": 174.86338558749122,
+      "error_cents": 2.4696557554355305
+    },
+    {
+      "rate": 48000,
+      "tuning": "aristoxenian",
+      "index": 8,
+      "mese": 220,
+      "expected_hz": 246.94165062806206,
+      "measured_hz": 248.0620086223251,
+      "error_cents": 7.836730830407283
+    },
+    {
+      "rate": 48000,
+      "tuning": "pythagorean",
+      "index": 2,
+      "mese": 220,
+      "expected_hz": 130.37037037037035,
+      "measured_hz": 130.61224688652942,
+      "error_cents": 3.208987516013067
+    },
+    {
+      "rate": 44100,
+      "tuning": "pythagorean",
+      "index": 0,
+      "mese": 220,
+      "expected_hz": 110.0,
+      "measured_hz": 110.11235953126265,
+      "error_cents": 1.7674669752210457
+    },
+    {
+      "rate": 44100,
+      "tuning": "aristoxenian",
+      "index": 5,
+      "mese": 220,
+      "expected_hz": 174.61411571650194,
+      "measured_hz": 174.65346229353503,
+      "error_cents": 0.3900627395771852
+    },
+    {
+      "rate": 44100,
+      "tuning": "pythagorean",
+      "index": 12,
+      "mese": 220,
+      "expected_hz": 347.6543209876543,
+      "measured_hz": 348.61657779852663,
+      "error_cents": 4.7851858190040515
+    },
+    {
+      "rate": 48000,
+      "tuning": "pythagorean",
+      "index": 14,
+      "mese": 220,
+      "expected_hz": 440.0,
+      "measured_hz": 442.39627267194237,
+      "error_cents": 9.402848056053216
+    },
+    {
+      "rate": 44100,
+      "tuning": "aristoxenian",
+      "index": 11,
+      "mese": 220,
+      "expected_hz": 329.6275569128699,
+      "measured_hz": 330.3370587701092,
+      "error_cents": 3.7223639484604116
+    },
+    {
+      "rate": 48000,
+      "tuning": "aristoxenian",
+      "index": 13,
+      "mese": 220,
+      "expected_hz": 391.99543598174927,
+      "measured_hz": 395.0617002821576,
+      "error_cents": 13.489358707378699
+    },
+    {
+      "rate": 44100,
+      "tuning": "aristoxenian",
+      "index": 1,
+      "mese": 220,
+      "expected_hz": 123.47082531403103,
+      "measured_hz": 123.70266476103524,
+      "error_cents": 3.247665938228872
+    },
+    {
+      "rate": 48000,
+      "tuning": "pythagorean",
+      "index": 5,
+      "mese": 220,
+      "expected_hz": 173.82716049382714,
+      "measured_hz": 174.2286734072304,
+      "error_cents": 3.994262227280177
+    },
+    {
+      "rate": 44100,
+      "tuning": "aristoxenian",
+      "index": 9,
+      "mese": 220,
+      "expected_hz": 261.6255653005986,
+      "measured_hz": 261.72105862196906,
+      "error_cents": 0.6317850682234634
+    },
+    {
+      "rate": 48000,
+      "tuning": "pythagorean",
+      "index": 3,
+      "mese": 220,
+      "expected_hz": 146.66666666666666,
+      "measured_hz": 147.01378099609187,
+      "error_cents": 4.092451034024855
+    },
+    {
+      "rate": 44100,
+      "tuning": "aristoxenian",
+      "index": 4,
+      "mese": 220,
+      "expected_hz": 164.81377845643496,
+      "measured_hz": 164.8598101307806,
+      "error_cents": 0.483457609219754
+    },
+    {
+      "rate": 48000,
+      "tuning": "pythagorean",
+      "index": 12,
+      "mese": 220,
+      "expected_hz": 347.6543209876543,
+      "measured_hz": 349.0908894085337,
+      "error_cents": 7.1390219873215335
+    },
+    {
+      "rate": 48000,
+      "tuning": "pythagorean",
+      "index": 10,
+      "mese": 220,
+      "expected_hz": 293.3333333333333,
+      "measured_hz": 293.57797112386976,
+      "error_cents": 1.4432344171142752
+    },
+    {
+      "rate": 44100,
+      "tuning": "pythagorean",
+      "index": 7,
+      "mese": 220,
+      "expected_hz": 220.0,
+      "measured_hz": 221.05262586927162,
+      "error_cents": 8.263617985402517
+    },
+    {
+      "rate": 44100,
+      "tuning": "aristoxenian",
+      "index": 12,
+      "mese": 220,
+      "expected_hz": 349.2282314330039,
+      "measured_hz": 351.3943988426946,
+      "error_cents": 10.705205806790817
+    },
+    {
+      "rate": 44100,
+      "tuning": "pythagorean",
+      "index": 2,
+      "mese": 220,
+      "expected_hz": 130.37037037037035,
+      "measured_hz": 130.66666607287044,
+      "error_cents": 3.9301505720844125
+    },
+    {
+      "rate": 44100,
+      "tuning": "aristoxenian",
+      "index": 3,
+      "mese": 220,
+      "expected_hz": 146.8323839587038,
+      "measured_hz": 147.24540860571204,
+      "error_cents": 4.862950010073165
+    }
+  ],
+  "worst_absolute_cents": 13.489358707378699
+}

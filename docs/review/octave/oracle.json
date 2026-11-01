@@ -1,0 +1,3704 @@
+{
+  "signals_measured": 364,
+  "worst_absolute_cents": 5.69747344578844e-5,
+  "native_wavs": [
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "kind": "note",
+      "samples": 70560,
+      "worst_lsb": 1.0
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "kind": "wav",
+      "samples": 329868,
+      "worst_lsb": 1.0
+    },
+    {
+      "engine": "chromium",
+      "width": 375,
+      "kind": "note",
+      "samples": 70560,
+      "worst_lsb": 1.0
+    },
+    {
+      "engine": "chromium",
+      "width": 375,
+      "kind": "wav",
+      "samples": 329868,
+      "worst_lsb": 1.0
+    },
+    {
+      "engine": "firefox",
+      "width": 1440,
+      "kind": "note",
+      "samples": 70560,
+      "worst_lsb": 1.0
+    },
+    {
+      "engine": "firefox",
+      "width": 1440,
+      "kind": "wav",
+      "samples": 329868,
+      "worst_lsb": 1.0
+    },
+    {
+      "engine": "firefox",
+      "width": 375,
+      "kind": "note",
+      "samples": 70560,
+      "worst_lsb": 1.0
+    },
+    {
+      "engine": "firefox",
+      "width": 375,
+      "kind": "wav",
+      "samples": 329868,
+      "worst_lsb": 1.0
+    }
+  ],
+  "measurements": [
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 0,
+      "expected_hz": 55.0,
+      "measured_hz": 54.99999818995569,
+      "error_cents": -5.69747344578844e-5
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 1,
+      "expected_hz": 61.875,
+      "measured_hz": 61.87499929842382,
+      "error_cents": -1.9629778866782065e-5
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 2,
+      "expected_hz": 65.18518518518518,
+      "measured_hz": 65.18518391946505,
+      "error_cents": -3.361588678945808e-5
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 3,
+      "expected_hz": 73.33333333333333,
+      "measured_hz": 73.3333321022306,
+      "error_cents": -2.9063549774604005e-5
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 4,
+      "expected_hz": 82.5,
+      "measured_hz": 82.49999901196297,
+      "error_cents": -2.0733616545362442e-5
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 5,
+      "expected_hz": 86.91358024691357,
+      "measured_hz": 86.9135795030525,
+      "error_cents": -1.481698947289357e-5
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 6,
+      "expected_hz": 97.77777777777777,
+      "measured_hz": 97.7777771616405,
+      "error_cents": -1.090920511678887e-5
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 7,
+      "expected_hz": 110.0,
+      "measured_hz": 109.99999984465462,
+      "error_cents": -2.4449018153963534e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 8,
+      "expected_hz": 123.75,
+      "measured_hz": 123.75000061371401,
+      "error_cents": 8.585717981160518e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 9,
+      "expected_hz": 130.37037037037035,
+      "measured_hz": 130.3703698427363,
+      "error_cents": -7.006638382478381e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 10,
+      "expected_hz": 146.66666666666666,
+      "measured_hz": 146.66666709349082,
+      "error_cents": 5.0381763409749955e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 11,
+      "expected_hz": 165.0,
+      "measured_hz": 165.00000047996286,
+      "error_cents": 5.0359275355758596e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 12,
+      "expected_hz": 173.82716049382714,
+      "measured_hz": 173.82716077794996,
+      "error_cents": 2.82972527280619e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 13,
+      "expected_hz": 195.55555555555554,
+      "measured_hz": 195.55555509666033,
+      "error_cents": -4.0625540392564525e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 14,
+      "expected_hz": 220.0,
+      "measured_hz": 220.0000000443851,
+      "error_cents": 3.492771517622561e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 0,
+      "expected_hz": 55.0,
+      "measured_hz": 54.99999818995578,
+      "error_cents": -5.697473157480045e-5
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 1,
+      "expected_hz": 61.735412657015516,
+      "measured_hz": 61.73541127234762,
+      "error_cents": -3.882997018744792e-5
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 2,
+      "expected_hz": 65.40639132514966,
+      "measured_hz": 65.40639066249867,
+      "error_cents": -1.7539630888559936e-5
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 3,
+      "expected_hz": 73.4161919793519,
+      "measured_hz": 73.41619075254839,
+      "error_cents": -2.8929367782322765e-5
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 4,
+      "expected_hz": 82.40688922821748,
+      "measured_hz": 82.40688906741457,
+      "error_cents": -3.3782064181870057e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 5,
+      "expected_hz": 87.30705785825097,
+      "measured_hz": 87.3070577060771,
+      "error_cents": -3.0174947629549206e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 6,
+      "expected_hz": 97.99885899543732,
+      "measured_hz": 97.99885907138834,
+      "error_cents": 1.341739942292783e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 7,
+      "expected_hz": 110.0,
+      "measured_hz": 109.99999984465462,
+      "error_cents": -2.4449018153963534e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 8,
+      "expected_hz": 123.47082531403103,
+      "measured_hz": 123.47082497831137,
+      "error_cents": -4.707260218531421e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 9,
+      "expected_hz": 130.8127826502993,
+      "measured_hz": 130.8127829988046,
+      "error_cents": 4.612272587708013e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 10,
+      "expected_hz": 146.8323839587038,
+      "measured_hz": 146.83238439467308,
+      "error_cents": 5.140316313378275e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 11,
+      "expected_hz": 164.81377845643496,
+      "measured_hz": 164.81377799724348,
+      "error_cents": -4.8234311996414365e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 12,
+      "expected_hz": 174.61411571650194,
+      "measured_hz": 174.61411525389465,
+      "error_cents": -4.586579325448116e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 13,
+      "expected_hz": 195.99771799087463,
+      "measured_hz": 195.99771862163306,
+      "error_cents": 5.571444598852148e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 14,
+      "expected_hz": 220.0,
+      "measured_hz": 220.0000000443851,
+      "error_cents": 3.492771517622561e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 0,
+      "expected_hz": 110.0,
+      "measured_hz": 109.99999984465455,
+      "error_cents": -2.4449029686298963e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 1,
+      "expected_hz": 123.75,
+      "measured_hz": 123.75000061371401,
+      "error_cents": 8.585717981160518e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 2,
+      "expected_hz": 130.37037037037035,
+      "measured_hz": 130.37036984273746,
+      "error_cents": -7.0066230060311e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 3,
+      "expected_hz": 146.66666666666666,
+      "measured_hz": 146.66666709349082,
+      "error_cents": 5.0381763409749955e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 4,
+      "expected_hz": 165.0,
+      "measured_hz": 165.00000047996286,
+      "error_cents": 5.0359275355758596e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 5,
+      "expected_hz": 173.82716049382714,
+      "measured_hz": 173.82716077794996,
+      "error_cents": 2.82972527280619e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 6,
+      "expected_hz": 195.55555555555554,
+      "measured_hz": 195.55555509666033,
+      "error_cents": -4.0625540392564525e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 7,
+      "expected_hz": 220.0,
+      "measured_hz": 220.0000000443851,
+      "error_cents": 3.492771517622561e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 8,
+      "expected_hz": 247.5,
+      "measured_hz": 247.49999967280357,
+      "error_cents": -2.2887015215547224e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 9,
+      "expected_hz": 260.7407407407407,
+      "measured_hz": 260.7407402071975,
+      "error_cents": -3.542553922702212e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 10,
+      "expected_hz": 293.3333333333333,
+      "measured_hz": 293.3333328153367,
+      "error_cents": -3.0571819499117825e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 11,
+      "expected_hz": 330.0,
+      "measured_hz": 330.00000006302605,
+      "error_cents": 3.306451262603062e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 12,
+      "expected_hz": 347.6543209876543,
+      "measured_hz": 347.65432152976473,
+      "error_cents": 2.699578254935875e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 13,
+      "expected_hz": 391.1111111111111,
+      "measured_hz": 391.1111109097596,
+      "error_cents": -8.912725063624366e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 14,
+      "expected_hz": 440.0,
+      "measured_hz": 439.9999999605189,
+      "error_cents": -1.5534324890822567e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 0,
+      "expected_hz": 110.0,
+      "measured_hz": 109.99999984465462,
+      "error_cents": -2.4449018153963534e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 1,
+      "expected_hz": 123.47082531403103,
+      "measured_hz": 123.47082497831137,
+      "error_cents": -4.707260218531421e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 2,
+      "expected_hz": 130.8127826502993,
+      "measured_hz": 130.8127829988046,
+      "error_cents": 4.612272587708013e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 3,
+      "expected_hz": 146.8323839587038,
+      "measured_hz": 146.83238439467308,
+      "error_cents": 5.140316313378275e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 4,
+      "expected_hz": 164.81377845643496,
+      "measured_hz": 164.81377799724348,
+      "error_cents": -4.8234311996414365e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 5,
+      "expected_hz": 174.61411571650194,
+      "measured_hz": 174.61411525389465,
+      "error_cents": -4.586579325448116e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 6,
+      "expected_hz": 195.99771799087463,
+      "measured_hz": 195.99771862163306,
+      "error_cents": 5.571444598852148e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 7,
+      "expected_hz": 220.0,
+      "measured_hz": 220.0000000443851,
+      "error_cents": 3.492771517622561e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 8,
+      "expected_hz": 246.94165062806206,
+      "measured_hz": 246.9416502368983,
+      "error_cents": -2.742332086291959e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 9,
+      "expected_hz": 261.6255653005986,
+      "measured_hz": 261.6255647507045,
+      "error_cents": -3.6387706959312237e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 10,
+      "expected_hz": 293.6647679174076,
+      "measured_hz": 293.66476772580785,
+      "error_cents": -1.1295326704107234e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 11,
+      "expected_hz": 329.6275569128699,
+      "measured_hz": 329.62755643359554,
+      "error_cents": -2.517192836657715e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 12,
+      "expected_hz": 349.2282314330039,
+      "measured_hz": 349.2282308967403,
+      "error_cents": -2.6584270422137427e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 13,
+      "expected_hz": 391.99543598174927,
+      "measured_hz": 391.9954356901421,
+      "error_cents": -1.2878729811909681e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 14,
+      "expected_hz": 440.0,
+      "measured_hz": 439.9999999605189,
+      "error_cents": -1.5534324890822567e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 0,
+      "expected_hz": 165.0,
+      "measured_hz": 165.00000047996096,
+      "error_cents": 5.035907546194534e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 1,
+      "expected_hz": 185.625,
+      "measured_hz": 185.62499945261163,
+      "error_cents": -5.105224969517607e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 2,
+      "expected_hz": 195.55555555555554,
+      "measured_hz": 195.5555550966586,
+      "error_cents": -4.062569415703708e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 3,
+      "expected_hz": 220.0,
+      "measured_hz": 220.0000000443851,
+      "error_cents": 3.492771517622561e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 4,
+      "expected_hz": 247.5,
+      "measured_hz": 247.49999967280357,
+      "error_cents": -2.2887015215547224e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 5,
+      "expected_hz": 260.7407407407407,
+      "measured_hz": 260.7407402071982,
+      "error_cents": -3.542549309768037e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 6,
+      "expected_hz": 293.3333333333333,
+      "measured_hz": 293.3333328153367,
+      "error_cents": -3.0571819499117825e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 7,
+      "expected_hz": 330.0,
+      "measured_hz": 330.0000000630259,
+      "error_cents": 3.3064397302676504e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 8,
+      "expected_hz": 371.25,
+      "measured_hz": 371.2500005377519,
+      "error_cents": 2.5076751965946052e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 9,
+      "expected_hz": 391.1111111111111,
+      "measured_hz": 391.1111109097596,
+      "error_cents": -8.912725063624366e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 10,
+      "expected_hz": 440.0,
+      "measured_hz": 439.9999999605189,
+      "error_cents": -1.5534324890822567e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 11,
+      "expected_hz": 495.0,
+      "measured_hz": 494.9999994633352,
+      "error_cents": -1.8769542849424395e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 12,
+      "expected_hz": 521.4814814814814,
+      "measured_hz": 521.4814819135019,
+      "error_cents": 1.4342377292827387e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 13,
+      "expected_hz": 586.6666666666666,
+      "measured_hz": 586.6666671991205,
+      "error_cents": 1.5712537906255565e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 14,
+      "expected_hz": 660.0,
+      "measured_hz": 659.9999999300808,
+      "error_cents": -1.8340391964525802e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 0,
+      "expected_hz": 165.0,
+      "measured_hz": 165.00000047996286,
+      "error_cents": 5.0359275355758596e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 1,
+      "expected_hz": 185.20623797104656,
+      "measured_hz": 185.20623738655348,
+      "error_cents": -5.463608246657299e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 2,
+      "expected_hz": 196.21917397544897,
+      "measured_hz": 196.219173821729,
+      "error_cents": -1.3562653042087536e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 3,
+      "expected_hz": 220.24857593805567,
+      "measured_hz": 220.24857572813568,
+      "error_cents": -1.6500475128113035e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 4,
+      "expected_hz": 247.22066768465245,
+      "measured_hz": 247.22066818264756,
+      "error_cents": 3.4873543921074643e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 5,
+      "expected_hz": 261.9211735747529,
+      "measured_hz": 261.92117304240037,
+      "error_cents": -3.518718315203727e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 6,
+      "expected_hz": 293.99657698631194,
+      "measured_hz": 293.9965773041342,
+      "error_cents": 1.8715342774745027e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 7,
+      "expected_hz": 330.0,
+      "measured_hz": 330.0000000630259,
+      "error_cents": 3.3064397302676504e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 8,
+      "expected_hz": 370.4124759420931,
+      "measured_hz": 370.4124763765033,
+      "error_cents": 2.0303464526892432e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 9,
+      "expected_hz": 392.43834795089793,
+      "measured_hz": 392.43834822185016,
+      "error_cents": 1.19530042526059e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 10,
+      "expected_hz": 440.49715187611133,
+      "measured_hz": 440.49715141534597,
+      "error_cents": -1.8108918780712743e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 11,
+      "expected_hz": 494.4413353693049,
+      "measured_hz": 494.4413356173362,
+      "error_cents": 8.684555880935263e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 12,
+      "expected_hz": 523.8423471495058,
+      "measured_hz": 523.8423470401051,
+      "error_cents": -3.6155582155583615e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 13,
+      "expected_hz": 587.9931539726239,
+      "measured_hz": 587.9931535948921,
+      "error_cents": -1.112159399304276e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 14,
+      "expected_hz": 660.0,
+      "measured_hz": 659.9999999300808,
+      "error_cents": -1.8340391964525802e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 0,
+      "expected_hz": 55.0,
+      "measured_hz": 54.99999876294052,
+      "error_cents": -3.89389002094841e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 1,
+      "expected_hz": 61.875,
+      "measured_hz": 61.87499812446638,
+      "error_cents": -5.2476568991209946e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 2,
+      "expected_hz": 65.18518518518518,
+      "measured_hz": 65.18518410062653,
+      "error_cents": -2.8804472587709503e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 3,
+      "expected_hz": 73.33333333333333,
+      "measured_hz": 73.3333325858186,
+      "error_cents": -1.7647131284061824e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 4,
+      "expected_hz": 82.5,
+      "measured_hz": 82.50000013183893,
+      "error_cents": 2.7665945779751853e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 5,
+      "expected_hz": 86.91358024691357,
+      "measured_hz": 86.91357914389341,
+      "error_cents": -2.197108958367265e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 6,
+      "expected_hz": 97.77777777777777,
+      "measured_hz": 97.77777742344679,
+      "error_cents": -6.2737144490443e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 7,
+      "expected_hz": 110.0,
+      "measured_hz": 109.99999977298602,
+      "error_cents": -3.5728576327367448e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 8,
+      "expected_hz": 123.75,
+      "measured_hz": 123.75000093456813,
+      "error_cents": 1.3074393126547182e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 9,
+      "expected_hz": 130.37037037037035,
+      "measured_hz": 130.370370174673,
+      "error_cents": -2.598733944171311e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 10,
+      "expected_hz": 146.66666666666666,
+      "measured_hz": 146.66666650626155,
+      "error_cents": -1.8934007406994644e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 11,
+      "expected_hz": 165.0,
+      "measured_hz": 165.0000000959345,
+      "error_cents": 1.0065760628019357e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 12,
+      "expected_hz": 173.82716049382714,
+      "measured_hz": 173.82716112824218,
+      "error_cents": 6.31846546151402e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 13,
+      "expected_hz": 195.55555555555554,
+      "measured_hz": 195.55555551924013,
+      "error_cents": -3.214967168436077e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 14,
+      "expected_hz": 220.0,
+      "measured_hz": 219.99999997245163,
+      "error_cents": -2.1678484112093904e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 0,
+      "expected_hz": 55.0,
+      "measured_hz": 54.99999876294052,
+      "error_cents": -3.89389002094841e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 1,
+      "expected_hz": 61.735412657015516,
+      "measured_hz": 61.73541094161106,
+      "error_cents": -4.810475084549386e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 2,
+      "expected_hz": 65.40639132514966,
+      "measured_hz": 65.406389663711,
+      "error_cents": -4.397642433264983e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 3,
+      "expected_hz": 73.4161919793519,
+      "measured_hz": 73.41619062431792,
+      "error_cents": -3.1953182315624156e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 4,
+      "expected_hz": 82.40688922821748,
+      "measured_hz": 82.40688930266104,
+      "error_cents": 1.5639376770457084e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 5,
+      "expected_hz": 87.30705785825097,
+      "measured_hz": 87.30705860170792,
+      "error_cents": 1.474219869186026e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 6,
+      "expected_hz": 97.99885899543732,
+      "measured_hz": 97.99885813656627,
+      "error_cents": -1.517269513594275e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 7,
+      "expected_hz": 110.0,
+      "measured_hz": 109.99999977298602,
+      "error_cents": -3.5728576327367448e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 8,
+      "expected_hz": 123.47082531403103,
+      "measured_hz": 123.47082614097255,
+      "error_cents": 1.159487907396604e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 9,
+      "expected_hz": 130.8127826502993,
+      "measured_hz": 130.8127818815562,
+      "error_cents": -1.0173885531211932e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 10,
+      "expected_hz": 146.8323839587038,
+      "measured_hz": 146.83238333247547,
+      "error_cents": -7.383574112481964e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 11,
+      "expected_hz": 164.81377845643496,
+      "measured_hz": 164.81377892029175,
+      "error_cents": 4.872436692172654e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 12,
+      "expected_hz": 174.61411571650194,
+      "measured_hz": 174.6141156285767,
+      "error_cents": -8.717459560299602e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 13,
+      "expected_hz": 195.99771799087463,
+      "measured_hz": 195.99771746669637,
+      "error_cents": -4.630029705702099e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 14,
+      "expected_hz": 220.0,
+      "measured_hz": 219.99999997245163,
+      "error_cents": -2.1678484112093904e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 0,
+      "expected_hz": 110.0,
+      "measured_hz": 109.99999977298602,
+      "error_cents": -3.5728576327367448e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 1,
+      "expected_hz": 123.75,
+      "measured_hz": 123.75000093456813,
+      "error_cents": 1.3074393126547182e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 2,
+      "expected_hz": 130.37037037037035,
+      "measured_hz": 130.370370174673,
+      "error_cents": -2.598733944171311e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 3,
+      "expected_hz": 146.66666666666666,
+      "measured_hz": 146.6666665062615,
+      "error_cents": -1.8934015095218263e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 4,
+      "expected_hz": 165.0,
+      "measured_hz": 165.0000000959345,
+      "error_cents": 1.0065760628019357e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 5,
+      "expected_hz": 173.82716049382714,
+      "measured_hz": 173.82716112824085,
+      "error_cents": 6.318452391533932e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 6,
+      "expected_hz": 195.55555555555554,
+      "measured_hz": 195.5555555192401,
+      "error_cents": -3.2149710125478823e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 7,
+      "expected_hz": 220.0,
+      "measured_hz": 219.99999997245163,
+      "error_cents": -2.1678484112093904e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 8,
+      "expected_hz": 247.5,
+      "measured_hz": 247.49999932846464,
+      "error_cents": -4.697312618182106e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 9,
+      "expected_hz": 260.7407407407407,
+      "measured_hz": 260.7407406292963,
+      "error_cents": -7.39954811271646e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 10,
+      "expected_hz": 293.3333333333333,
+      "measured_hz": 293.3333331942406,
+      "error_cents": -8.209160344355388e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 11,
+      "expected_hz": 330.0,
+      "measured_hz": 329.9999998498338,
+      "error_cents": -7.877965125510393e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 12,
+      "expected_hz": 347.6543209876543,
+      "measured_hz": 347.6543204081109,
+      "error_cents": -2.885985199223415e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 13,
+      "expected_hz": 391.1111111111111,
+      "measured_hz": 391.11111093898444,
+      "error_cents": -7.619100714418355e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 14,
+      "expected_hz": 440.0,
+      "measured_hz": 439.99999981785356,
+      "error_cents": -7.16677561051593e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 0,
+      "expected_hz": 110.0,
+      "measured_hz": 109.99999977298602,
+      "error_cents": -3.5728576327367448e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 1,
+      "expected_hz": 123.47082531403103,
+      "measured_hz": 123.47082614097255,
+      "error_cents": 1.159487907396604e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 2,
+      "expected_hz": 130.8127826502993,
+      "measured_hz": 130.8127818815562,
+      "error_cents": -1.0173885531211932e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 3,
+      "expected_hz": 146.8323839587038,
+      "measured_hz": 146.83238333247547,
+      "error_cents": -7.383574112481964e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 4,
+      "expected_hz": 164.81377845643496,
+      "measured_hz": 164.81377892029175,
+      "error_cents": 4.872436692172654e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 5,
+      "expected_hz": 174.61411571650194,
+      "measured_hz": 174.6141156285767,
+      "error_cents": -8.717459560299602e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 6,
+      "expected_hz": 195.99771799087463,
+      "measured_hz": 195.99771746669637,
+      "error_cents": -4.630029705702099e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 7,
+      "expected_hz": 220.0,
+      "measured_hz": 219.99999997245163,
+      "error_cents": -2.1678484112093904e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 8,
+      "expected_hz": 246.94165062806206,
+      "measured_hz": 246.94165045769847,
+      "error_cents": -1.194368228972611e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 9,
+      "expected_hz": 261.6255653005986,
+      "measured_hz": 261.6255659785044,
+      "error_cents": 4.4858520519454086e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 10,
+      "expected_hz": 293.6647679174076,
+      "measured_hz": 293.6647685206726,
+      "error_cents": 3.5564123228914983e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 11,
+      "expected_hz": 329.6275569128699,
+      "measured_hz": 329.6275563472057,
+      "error_cents": -2.9709200808668736e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 12,
+      "expected_hz": 349.2282314330039,
+      "measured_hz": 349.2282314518368,
+      "error_cents": 9.336079016172477e-8
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 13,
+      "expected_hz": 391.99543598174927,
+      "measured_hz": 391.9954366843186,
+      "error_cents": 3.102872480724266e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 14,
+      "expected_hz": 440.0,
+      "measured_hz": 439.99999981785356,
+      "error_cents": -7.16677561051593e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 0,
+      "expected_hz": 165.0,
+      "measured_hz": 165.0000000959345,
+      "error_cents": 1.0065760628019357e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 1,
+      "expected_hz": 185.625,
+      "measured_hz": 185.62500009392937,
+      "error_cents": 8.760334856900726e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 2,
+      "expected_hz": 195.55555555555554,
+      "measured_hz": 195.5555555192401,
+      "error_cents": -3.2149710125478823e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 3,
+      "expected_hz": 220.0,
+      "measured_hz": 219.99999997245158,
+      "error_cents": -2.1678522553211956e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 4,
+      "expected_hz": 247.5,
+      "measured_hz": 247.49999932846447,
+      "error_cents": -4.697313771415649e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 5,
+      "expected_hz": 260.7407407407407,
+      "measured_hz": 260.740740629296,
+      "error_cents": -7.399567333275492e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 6,
+      "expected_hz": 293.3333333333333,
+      "measured_hz": 293.3333331942406,
+      "error_cents": -8.209160344355388e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 7,
+      "expected_hz": 330.0,
+      "measured_hz": 329.99999984983714,
+      "error_cents": -7.877790218423205e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 8,
+      "expected_hz": 371.25,
+      "measured_hz": 371.2500002813072,
+      "error_cents": 1.3118077657493764e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 9,
+      "expected_hz": 391.1111111111111,
+      "measured_hz": 391.11111093898444,
+      "error_cents": -7.619100714418355e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 10,
+      "expected_hz": 440.0,
+      "measured_hz": 439.99999981785356,
+      "error_cents": -7.16677561051593e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 11,
+      "expected_hz": 495.0,
+      "measured_hz": 495.00000035699054,
+      "error_cents": 1.2485540592853621e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 12,
+      "expected_hz": 521.4814814814814,
+      "measured_hz": 521.4814812549499,
+      "error_cents": -7.520478103972884e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 13,
+      "expected_hz": 586.6666666666666,
+      "measured_hz": 586.6666664136186,
+      "error_cents": -7.46736401114604e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 14,
+      "expected_hz": 660.0,
+      "measured_hz": 659.9999997216095,
+      "error_cents": -7.302411251485336e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 0,
+      "expected_hz": 165.0,
+      "measured_hz": 165.0000000959345,
+      "error_cents": 1.0065760628019357e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 1,
+      "expected_hz": 185.20623797104656,
+      "measured_hz": 185.20623754992468,
+      "error_cents": -3.936479472932813e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 2,
+      "expected_hz": 196.21917397544897,
+      "measured_hz": 196.2191742353329,
+      "error_cents": 2.2929458023668635e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 3,
+      "expected_hz": 220.24857593805567,
+      "measured_hz": 220.24857649986157,
+      "error_cents": 4.415999158879291e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 4,
+      "expected_hz": 247.22066768465245,
+      "measured_hz": 247.2206671077632,
+      "error_cents": -4.039833416382328e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 5,
+      "expected_hz": 261.9211735747529,
+      "measured_hz": 261.921172886962,
+      "error_cents": -4.546127544616256e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 6,
+      "expected_hz": 293.99657698631194,
+      "measured_hz": 293.99657726673803,
+      "error_cents": 1.6513227953285882e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 7,
+      "expected_hz": 330.0,
+      "measured_hz": 329.99999984983714,
+      "error_cents": -7.877790218423205e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 8,
+      "expected_hz": 370.4124759420931,
+      "measured_hz": 370.4124753019577,
+      "error_cents": -2.9918651084813664e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 9,
+      "expected_hz": 392.43834795089793,
+      "measured_hz": 392.4383477672315,
+      "error_cents": -8.10240935949197e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 10,
+      "expected_hz": 440.49715187611133,
+      "measured_hz": 440.49715128742554,
+      "error_cents": -2.3136423111815654e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 11,
+      "expected_hz": 494.4413353693049,
+      "measured_hz": 494.44133602806505,
+      "error_cents": 2.306578944863689e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 12,
+      "expected_hz": 523.8423471495058,
+      "measured_hz": 523.8423470793143,
+      "error_cents": -2.3197427230192658e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 13,
+      "expected_hz": 587.9931539726239,
+      "measured_hz": 587.9931536502197,
+      "error_cents": -9.492576654702833e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 14,
+      "expected_hz": 660.0,
+      "measured_hz": 659.9999997216095,
+      "error_cents": -7.302411251485336e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 12,
+      "expected_hz": 523.8423471495058,
+      "measured_hz": 523.8423470401051,
+      "error_cents": -3.6155582155583615e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "chromium",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 12,
+      "expected_hz": 523.8423471495058,
+      "measured_hz": 523.8423470401051,
+      "error_cents": -3.6155582155583615e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 0,
+      "expected_hz": 55.0,
+      "measured_hz": 54.99999818995569,
+      "error_cents": -5.69747344578844e-5
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 1,
+      "expected_hz": 61.875,
+      "measured_hz": 61.87499929842382,
+      "error_cents": -1.9629778866782065e-5
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 2,
+      "expected_hz": 65.18518518518518,
+      "measured_hz": 65.18518391946505,
+      "error_cents": -3.361588678945808e-5
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 3,
+      "expected_hz": 73.33333333333333,
+      "measured_hz": 73.3333321022306,
+      "error_cents": -2.9063549774604005e-5
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 4,
+      "expected_hz": 82.5,
+      "measured_hz": 82.49999901196297,
+      "error_cents": -2.0733616545362442e-5
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 5,
+      "expected_hz": 86.91358024691357,
+      "measured_hz": 86.9135795030525,
+      "error_cents": -1.481698947289357e-5
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 6,
+      "expected_hz": 97.77777777777777,
+      "measured_hz": 97.7777771616405,
+      "error_cents": -1.090920511678887e-5
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 7,
+      "expected_hz": 110.0,
+      "measured_hz": 109.99999984465462,
+      "error_cents": -2.4449018153963534e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 8,
+      "expected_hz": 123.75,
+      "measured_hz": 123.75000061371401,
+      "error_cents": 8.585717981160518e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 9,
+      "expected_hz": 130.37037037037035,
+      "measured_hz": 130.3703698427363,
+      "error_cents": -7.006638382478381e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 10,
+      "expected_hz": 146.66666666666666,
+      "measured_hz": 146.66666709349082,
+      "error_cents": 5.0381763409749955e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 11,
+      "expected_hz": 165.0,
+      "measured_hz": 165.00000047996286,
+      "error_cents": 5.0359275355758596e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 12,
+      "expected_hz": 173.82716049382714,
+      "measured_hz": 173.82716077794996,
+      "error_cents": 2.82972527280619e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 13,
+      "expected_hz": 195.55555555555554,
+      "measured_hz": 195.55555509666033,
+      "error_cents": -4.0625540392564525e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 14,
+      "expected_hz": 220.0,
+      "measured_hz": 220.0000000443851,
+      "error_cents": 3.492771517622561e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 0,
+      "expected_hz": 55.0,
+      "measured_hz": 54.99999818995578,
+      "error_cents": -5.697473157480045e-5
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 1,
+      "expected_hz": 61.735412657015516,
+      "measured_hz": 61.73541127234762,
+      "error_cents": -3.882997018744792e-5
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 2,
+      "expected_hz": 65.40639132514966,
+      "measured_hz": 65.40639066249867,
+      "error_cents": -1.7539630888559936e-5
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 3,
+      "expected_hz": 73.4161919793519,
+      "measured_hz": 73.41619075254839,
+      "error_cents": -2.8929367782322765e-5
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 4,
+      "expected_hz": 82.40688922821748,
+      "measured_hz": 82.40688906741457,
+      "error_cents": -3.3782064181870057e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 5,
+      "expected_hz": 87.30705785825097,
+      "measured_hz": 87.3070577060771,
+      "error_cents": -3.0174947629549206e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 6,
+      "expected_hz": 97.99885899543732,
+      "measured_hz": 97.99885907138834,
+      "error_cents": 1.341739942292783e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 7,
+      "expected_hz": 110.0,
+      "measured_hz": 109.99999984465462,
+      "error_cents": -2.4449018153963534e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 8,
+      "expected_hz": 123.47082531403103,
+      "measured_hz": 123.47082497831137,
+      "error_cents": -4.707260218531421e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 9,
+      "expected_hz": 130.8127826502993,
+      "measured_hz": 130.8127829988046,
+      "error_cents": 4.612272587708013e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 10,
+      "expected_hz": 146.8323839587038,
+      "measured_hz": 146.83238439467308,
+      "error_cents": 5.140316313378275e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 11,
+      "expected_hz": 164.81377845643496,
+      "measured_hz": 164.81377799724348,
+      "error_cents": -4.8234311996414365e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 12,
+      "expected_hz": 174.61411571650194,
+      "measured_hz": 174.61411525389465,
+      "error_cents": -4.586579325448116e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 13,
+      "expected_hz": 195.99771799087463,
+      "measured_hz": 195.99771862163306,
+      "error_cents": 5.571444598852148e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 14,
+      "expected_hz": 220.0,
+      "measured_hz": 220.0000000443851,
+      "error_cents": 3.492771517622561e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 0,
+      "expected_hz": 110.0,
+      "measured_hz": 109.99999984465455,
+      "error_cents": -2.4449029686298963e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 1,
+      "expected_hz": 123.75,
+      "measured_hz": 123.75000061371401,
+      "error_cents": 8.585717981160518e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 2,
+      "expected_hz": 130.37037037037035,
+      "measured_hz": 130.37036984273746,
+      "error_cents": -7.0066230060311e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 3,
+      "expected_hz": 146.66666666666666,
+      "measured_hz": 146.66666709349082,
+      "error_cents": 5.0381763409749955e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 4,
+      "expected_hz": 165.0,
+      "measured_hz": 165.00000047996286,
+      "error_cents": 5.0359275355758596e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 5,
+      "expected_hz": 173.82716049382714,
+      "measured_hz": 173.82716077794996,
+      "error_cents": 2.82972527280619e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 6,
+      "expected_hz": 195.55555555555554,
+      "measured_hz": 195.55555509666033,
+      "error_cents": -4.0625540392564525e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 7,
+      "expected_hz": 220.0,
+      "measured_hz": 220.0000000443851,
+      "error_cents": 3.492771517622561e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 8,
+      "expected_hz": 247.5,
+      "measured_hz": 247.49999967280357,
+      "error_cents": -2.2887015215547224e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 9,
+      "expected_hz": 260.7407407407407,
+      "measured_hz": 260.7407402071975,
+      "error_cents": -3.542553922702212e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 10,
+      "expected_hz": 293.3333333333333,
+      "measured_hz": 293.3333328153367,
+      "error_cents": -3.0571819499117825e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 11,
+      "expected_hz": 330.0,
+      "measured_hz": 330.00000006302605,
+      "error_cents": 3.306451262603062e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 12,
+      "expected_hz": 347.6543209876543,
+      "measured_hz": 347.65432152976473,
+      "error_cents": 2.699578254935875e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 13,
+      "expected_hz": 391.1111111111111,
+      "measured_hz": 391.1111109097596,
+      "error_cents": -8.912725063624366e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 14,
+      "expected_hz": 440.0,
+      "measured_hz": 439.9999999605189,
+      "error_cents": -1.5534324890822567e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 0,
+      "expected_hz": 110.0,
+      "measured_hz": 109.99999984465462,
+      "error_cents": -2.4449018153963534e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 1,
+      "expected_hz": 123.47082531403103,
+      "measured_hz": 123.47082497831137,
+      "error_cents": -4.707260218531421e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 2,
+      "expected_hz": 130.8127826502993,
+      "measured_hz": 130.8127829988046,
+      "error_cents": 4.612272587708013e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 3,
+      "expected_hz": 146.8323839587038,
+      "measured_hz": 146.83238439467308,
+      "error_cents": 5.140316313378275e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 4,
+      "expected_hz": 164.81377845643496,
+      "measured_hz": 164.81377799724348,
+      "error_cents": -4.8234311996414365e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 5,
+      "expected_hz": 174.61411571650194,
+      "measured_hz": 174.61411525389465,
+      "error_cents": -4.586579325448116e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 6,
+      "expected_hz": 195.99771799087463,
+      "measured_hz": 195.99771862163306,
+      "error_cents": 5.571444598852148e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 7,
+      "expected_hz": 220.0,
+      "measured_hz": 220.0000000443851,
+      "error_cents": 3.492771517622561e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 8,
+      "expected_hz": 246.94165062806206,
+      "measured_hz": 246.9416502368983,
+      "error_cents": -2.742332086291959e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 9,
+      "expected_hz": 261.6255653005986,
+      "measured_hz": 261.6255647507045,
+      "error_cents": -3.6387706959312237e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 10,
+      "expected_hz": 293.6647679174076,
+      "measured_hz": 293.66476772580785,
+      "error_cents": -1.1295326704107234e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 11,
+      "expected_hz": 329.6275569128699,
+      "measured_hz": 329.62755643359554,
+      "error_cents": -2.517192836657715e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 12,
+      "expected_hz": 349.2282314330039,
+      "measured_hz": 349.2282308967403,
+      "error_cents": -2.6584270422137427e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 13,
+      "expected_hz": 391.99543598174927,
+      "measured_hz": 391.9954356901421,
+      "error_cents": -1.2878729811909681e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 14,
+      "expected_hz": 440.0,
+      "measured_hz": 439.9999999605189,
+      "error_cents": -1.5534324890822567e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 0,
+      "expected_hz": 165.0,
+      "measured_hz": 165.00000047996096,
+      "error_cents": 5.035907546194534e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 1,
+      "expected_hz": 185.625,
+      "measured_hz": 185.62499945261163,
+      "error_cents": -5.105224969517607e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 2,
+      "expected_hz": 195.55555555555554,
+      "measured_hz": 195.5555550966586,
+      "error_cents": -4.062569415703708e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 3,
+      "expected_hz": 220.0,
+      "measured_hz": 220.0000000443851,
+      "error_cents": 3.492771517622561e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 4,
+      "expected_hz": 247.5,
+      "measured_hz": 247.49999967280357,
+      "error_cents": -2.2887015215547224e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 5,
+      "expected_hz": 260.7407407407407,
+      "measured_hz": 260.7407402071982,
+      "error_cents": -3.542549309768037e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 6,
+      "expected_hz": 293.3333333333333,
+      "measured_hz": 293.3333328153367,
+      "error_cents": -3.0571819499117825e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 7,
+      "expected_hz": 330.0,
+      "measured_hz": 330.0000000630259,
+      "error_cents": 3.3064397302676504e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 8,
+      "expected_hz": 371.25,
+      "measured_hz": 371.2500005377519,
+      "error_cents": 2.5076751965946052e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 9,
+      "expected_hz": 391.1111111111111,
+      "measured_hz": 391.1111109097596,
+      "error_cents": -8.912725063624366e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 10,
+      "expected_hz": 440.0,
+      "measured_hz": 439.9999999605189,
+      "error_cents": -1.5534324890822567e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 11,
+      "expected_hz": 495.0,
+      "measured_hz": 494.9999994633352,
+      "error_cents": -1.8769542849424395e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 12,
+      "expected_hz": 521.4814814814814,
+      "measured_hz": 521.4814819135019,
+      "error_cents": 1.4342377292827387e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 13,
+      "expected_hz": 586.6666666666666,
+      "measured_hz": 586.6666671991205,
+      "error_cents": 1.5712537906255565e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 14,
+      "expected_hz": 660.0,
+      "measured_hz": 659.9999999300808,
+      "error_cents": -1.8340391964525802e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 0,
+      "expected_hz": 165.0,
+      "measured_hz": 165.00000047996286,
+      "error_cents": 5.0359275355758596e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 1,
+      "expected_hz": 185.20623797104656,
+      "measured_hz": 185.20623738655348,
+      "error_cents": -5.463608246657299e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 2,
+      "expected_hz": 196.21917397544897,
+      "measured_hz": 196.219173821729,
+      "error_cents": -1.3562653042087536e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 3,
+      "expected_hz": 220.24857593805567,
+      "measured_hz": 220.24857572813568,
+      "error_cents": -1.6500475128113035e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 4,
+      "expected_hz": 247.22066768465245,
+      "measured_hz": 247.22066818264756,
+      "error_cents": 3.4873543921074643e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 5,
+      "expected_hz": 261.9211735747529,
+      "measured_hz": 261.92117304240037,
+      "error_cents": -3.518718315203727e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 6,
+      "expected_hz": 293.99657698631194,
+      "measured_hz": 293.9965773041342,
+      "error_cents": 1.8715342774745027e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 7,
+      "expected_hz": 330.0,
+      "measured_hz": 330.0000000630259,
+      "error_cents": 3.3064397302676504e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 8,
+      "expected_hz": 370.4124759420931,
+      "measured_hz": 370.4124763765033,
+      "error_cents": 2.0303464526892432e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 9,
+      "expected_hz": 392.43834795089793,
+      "measured_hz": 392.43834822185016,
+      "error_cents": 1.19530042526059e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 10,
+      "expected_hz": 440.49715187611133,
+      "measured_hz": 440.49715141534597,
+      "error_cents": -1.8108918780712743e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 11,
+      "expected_hz": 494.4413353693049,
+      "measured_hz": 494.4413356173361,
+      "error_cents": 8.68455203682346e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 12,
+      "expected_hz": 523.8423471495058,
+      "measured_hz": 523.8423470401051,
+      "error_cents": -3.6155582155583615e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 13,
+      "expected_hz": 587.9931539726239,
+      "measured_hz": 587.9931535948921,
+      "error_cents": -1.112159399304276e-6
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 14,
+      "expected_hz": 660.0,
+      "measured_hz": 659.9999999300808,
+      "error_cents": -1.8340391964525802e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 0,
+      "expected_hz": 55.0,
+      "measured_hz": 54.99999876294052,
+      "error_cents": -3.89389002094841e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 1,
+      "expected_hz": 61.875,
+      "measured_hz": 61.87499812446638,
+      "error_cents": -5.2476568991209946e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 2,
+      "expected_hz": 65.18518518518518,
+      "measured_hz": 65.18518410062653,
+      "error_cents": -2.8804472587709503e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 3,
+      "expected_hz": 73.33333333333333,
+      "measured_hz": 73.3333325858186,
+      "error_cents": -1.7647131284061824e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 4,
+      "expected_hz": 82.5,
+      "measured_hz": 82.50000013183893,
+      "error_cents": 2.7665945779751853e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 5,
+      "expected_hz": 86.91358024691357,
+      "measured_hz": 86.91357914389341,
+      "error_cents": -2.197108958367265e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 6,
+      "expected_hz": 97.77777777777777,
+      "measured_hz": 97.77777742344679,
+      "error_cents": -6.2737144490443e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 7,
+      "expected_hz": 110.0,
+      "measured_hz": 109.99999977298602,
+      "error_cents": -3.5728576327367448e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 8,
+      "expected_hz": 123.75,
+      "measured_hz": 123.75000093456813,
+      "error_cents": 1.3074393126547182e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 9,
+      "expected_hz": 130.37037037037035,
+      "measured_hz": 130.370370174673,
+      "error_cents": -2.598733944171311e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 10,
+      "expected_hz": 146.66666666666666,
+      "measured_hz": 146.66666650626155,
+      "error_cents": -1.8934007406994644e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 11,
+      "expected_hz": 165.0,
+      "measured_hz": 165.0000000959345,
+      "error_cents": 1.0065760628019357e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 12,
+      "expected_hz": 173.82716049382714,
+      "measured_hz": 173.82716112824218,
+      "error_cents": 6.31846546151402e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 13,
+      "expected_hz": 195.55555555555554,
+      "measured_hz": 195.55555551924013,
+      "error_cents": -3.214967168436077e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "pythagorean",
+      "index": 14,
+      "expected_hz": 220.0,
+      "measured_hz": 219.99999997245163,
+      "error_cents": -2.1678484112093904e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 0,
+      "expected_hz": 55.0,
+      "measured_hz": 54.99999876294052,
+      "error_cents": -3.89389002094841e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 1,
+      "expected_hz": 61.735412657015516,
+      "measured_hz": 61.73541094161106,
+      "error_cents": -4.810475084549386e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 2,
+      "expected_hz": 65.40639132514966,
+      "measured_hz": 65.406389663711,
+      "error_cents": -4.397642433264983e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 3,
+      "expected_hz": 73.4161919793519,
+      "measured_hz": 73.41619062431792,
+      "error_cents": -3.1953182315624156e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 4,
+      "expected_hz": 82.40688922821748,
+      "measured_hz": 82.40688930266104,
+      "error_cents": 1.5639376770457084e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 5,
+      "expected_hz": 87.30705785825097,
+      "measured_hz": 87.30705860170792,
+      "error_cents": 1.474219869186026e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 6,
+      "expected_hz": 97.99885899543732,
+      "measured_hz": 97.99885813656627,
+      "error_cents": -1.517269513594275e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 7,
+      "expected_hz": 110.0,
+      "measured_hz": 109.99999977298602,
+      "error_cents": -3.5728576327367448e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 8,
+      "expected_hz": 123.47082531403103,
+      "measured_hz": 123.47082614097255,
+      "error_cents": 1.159487907396604e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 9,
+      "expected_hz": 130.8127826502993,
+      "measured_hz": 130.8127818815562,
+      "error_cents": -1.0173885531211932e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 10,
+      "expected_hz": 146.8323839587038,
+      "measured_hz": 146.83238333247547,
+      "error_cents": -7.383574112481964e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 11,
+      "expected_hz": 164.81377845643496,
+      "measured_hz": 164.81377892029175,
+      "error_cents": 4.872436692172654e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 12,
+      "expected_hz": 174.61411571650194,
+      "measured_hz": 174.6141156285767,
+      "error_cents": -8.717459560299602e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 13,
+      "expected_hz": 195.99771799087463,
+      "measured_hz": 195.99771746669637,
+      "error_cents": -4.630029705702099e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 110,
+      "tuning": "aristoxenian",
+      "index": 14,
+      "expected_hz": 220.0,
+      "measured_hz": 219.99999997245163,
+      "error_cents": -2.1678484112093904e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 0,
+      "expected_hz": 110.0,
+      "measured_hz": 109.99999977298602,
+      "error_cents": -3.5728576327367448e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 1,
+      "expected_hz": 123.75,
+      "measured_hz": 123.75000093456813,
+      "error_cents": 1.3074393126547182e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 2,
+      "expected_hz": 130.37037037037035,
+      "measured_hz": 130.370370174673,
+      "error_cents": -2.598733944171311e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 3,
+      "expected_hz": 146.66666666666666,
+      "measured_hz": 146.6666665062615,
+      "error_cents": -1.8934015095218263e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 4,
+      "expected_hz": 165.0,
+      "measured_hz": 165.0000000959345,
+      "error_cents": 1.0065760628019357e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 5,
+      "expected_hz": 173.82716049382714,
+      "measured_hz": 173.82716112824085,
+      "error_cents": 6.318452391533932e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 6,
+      "expected_hz": 195.55555555555554,
+      "measured_hz": 195.5555555192401,
+      "error_cents": -3.2149710125478823e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 7,
+      "expected_hz": 220.0,
+      "measured_hz": 219.99999997245163,
+      "error_cents": -2.1678484112093904e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 8,
+      "expected_hz": 247.5,
+      "measured_hz": 247.49999932846464,
+      "error_cents": -4.697312618182106e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 9,
+      "expected_hz": 260.7407407407407,
+      "measured_hz": 260.7407406292963,
+      "error_cents": -7.39954811271646e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 10,
+      "expected_hz": 293.3333333333333,
+      "measured_hz": 293.3333331942406,
+      "error_cents": -8.209160344355388e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 11,
+      "expected_hz": 330.0,
+      "measured_hz": 329.9999998498338,
+      "error_cents": -7.877965125510393e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 12,
+      "expected_hz": 347.6543209876543,
+      "measured_hz": 347.6543204081109,
+      "error_cents": -2.885985199223415e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 13,
+      "expected_hz": 391.1111111111111,
+      "measured_hz": 391.11111093898444,
+      "error_cents": -7.619100714418355e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "pythagorean",
+      "index": 14,
+      "expected_hz": 440.0,
+      "measured_hz": 439.99999981785356,
+      "error_cents": -7.16677561051593e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 0,
+      "expected_hz": 110.0,
+      "measured_hz": 109.99999977298602,
+      "error_cents": -3.5728576327367448e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 1,
+      "expected_hz": 123.47082531403103,
+      "measured_hz": 123.47082614097255,
+      "error_cents": 1.159487907396604e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 2,
+      "expected_hz": 130.8127826502993,
+      "measured_hz": 130.8127818815562,
+      "error_cents": -1.0173885531211932e-5
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 3,
+      "expected_hz": 146.8323839587038,
+      "measured_hz": 146.83238333247547,
+      "error_cents": -7.383574112481964e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 4,
+      "expected_hz": 164.81377845643496,
+      "measured_hz": 164.81377892029175,
+      "error_cents": 4.872436692172654e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 5,
+      "expected_hz": 174.61411571650194,
+      "measured_hz": 174.6141156285767,
+      "error_cents": -8.717459560299602e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 6,
+      "expected_hz": 195.99771799087463,
+      "measured_hz": 195.99771746669637,
+      "error_cents": -4.630029705702099e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 7,
+      "expected_hz": 220.0,
+      "measured_hz": 219.99999997245163,
+      "error_cents": -2.1678484112093904e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 8,
+      "expected_hz": 246.94165062806206,
+      "measured_hz": 246.94165045769847,
+      "error_cents": -1.194368228972611e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 9,
+      "expected_hz": 261.6255653005986,
+      "measured_hz": 261.6255659785044,
+      "error_cents": 4.4858520519454086e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 10,
+      "expected_hz": 293.6647679174076,
+      "measured_hz": 293.6647685206726,
+      "error_cents": 3.5564123228914983e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 11,
+      "expected_hz": 329.6275569128699,
+      "measured_hz": 329.6275563472057,
+      "error_cents": -2.9709200808668736e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 12,
+      "expected_hz": 349.2282314330039,
+      "measured_hz": 349.2282314518368,
+      "error_cents": 9.336079016172477e-8
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 13,
+      "expected_hz": 391.99543598174927,
+      "measured_hz": 391.9954366843186,
+      "error_cents": 3.102872480724266e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 220,
+      "tuning": "aristoxenian",
+      "index": 14,
+      "expected_hz": 440.0,
+      "measured_hz": 439.99999981785356,
+      "error_cents": -7.16677561051593e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 0,
+      "expected_hz": 165.0,
+      "measured_hz": 165.0000000959345,
+      "error_cents": 1.0065760628019357e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 1,
+      "expected_hz": 185.625,
+      "measured_hz": 185.62500009392937,
+      "error_cents": 8.760334856900726e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 2,
+      "expected_hz": 195.55555555555554,
+      "measured_hz": 195.5555555192401,
+      "error_cents": -3.2149710125478823e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 3,
+      "expected_hz": 220.0,
+      "measured_hz": 219.99999997245158,
+      "error_cents": -2.1678522553211956e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 4,
+      "expected_hz": 247.5,
+      "measured_hz": 247.49999932846447,
+      "error_cents": -4.697313771415649e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 5,
+      "expected_hz": 260.7407407407407,
+      "measured_hz": 260.740740629296,
+      "error_cents": -7.399567333275492e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 6,
+      "expected_hz": 293.3333333333333,
+      "measured_hz": 293.3333331942406,
+      "error_cents": -8.209160344355388e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 7,
+      "expected_hz": 330.0,
+      "measured_hz": 329.99999984983714,
+      "error_cents": -7.877790218423205e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 8,
+      "expected_hz": 371.25,
+      "measured_hz": 371.2500002813072,
+      "error_cents": 1.3118077657493764e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 9,
+      "expected_hz": 391.1111111111111,
+      "measured_hz": 391.11111093898444,
+      "error_cents": -7.619100714418355e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 10,
+      "expected_hz": 440.0,
+      "measured_hz": 439.99999981785356,
+      "error_cents": -7.16677561051593e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 11,
+      "expected_hz": 495.0,
+      "measured_hz": 495.00000035699054,
+      "error_cents": 1.2485540592853621e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 12,
+      "expected_hz": 521.4814814814814,
+      "measured_hz": 521.4814812549499,
+      "error_cents": -7.520478103972884e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 13,
+      "expected_hz": 586.6666666666666,
+      "measured_hz": 586.6666664136186,
+      "error_cents": -7.46736401114604e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "pythagorean",
+      "index": 14,
+      "expected_hz": 660.0,
+      "measured_hz": 659.9999997216095,
+      "error_cents": -7.302411251485336e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 0,
+      "expected_hz": 165.0,
+      "measured_hz": 165.0000000959345,
+      "error_cents": 1.0065760628019357e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 1,
+      "expected_hz": 185.20623797104656,
+      "measured_hz": 185.20623754992468,
+      "error_cents": -3.936479472932813e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 2,
+      "expected_hz": 196.21917397544897,
+      "measured_hz": 196.2191742353329,
+      "error_cents": 2.2929458023668635e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 3,
+      "expected_hz": 220.24857593805567,
+      "measured_hz": 220.24857649986157,
+      "error_cents": 4.415999158879291e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 4,
+      "expected_hz": 247.22066768465245,
+      "measured_hz": 247.2206671077632,
+      "error_cents": -4.039833416382328e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 5,
+      "expected_hz": 261.9211735747529,
+      "measured_hz": 261.921172886962,
+      "error_cents": -4.546127544616256e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 6,
+      "expected_hz": 293.99657698631194,
+      "measured_hz": 293.99657726673803,
+      "error_cents": 1.6513227953285882e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 7,
+      "expected_hz": 330.0,
+      "measured_hz": 329.99999984983714,
+      "error_cents": -7.877790218423205e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 8,
+      "expected_hz": 370.4124759420931,
+      "measured_hz": 370.4124753019577,
+      "error_cents": -2.9918651084813664e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 9,
+      "expected_hz": 392.43834795089793,
+      "measured_hz": 392.4383477672315,
+      "error_cents": -8.10240935949197e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 10,
+      "expected_hz": 440.49715187611133,
+      "measured_hz": 440.49715128742554,
+      "error_cents": -2.3136423111815654e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 11,
+      "expected_hz": 494.4413353693049,
+      "measured_hz": 494.44133602806505,
+      "error_cents": 2.306578944863689e-6
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 12,
+      "expected_hz": 523.8423471495058,
+      "measured_hz": 523.8423470793143,
+      "error_cents": -2.3197427230192658e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 13,
+      "expected_hz": 587.9931539726239,
+      "measured_hz": 587.9931536502197,
+      "error_cents": -9.492576654702833e-7
+    },
+    {
+      "rate": 48000,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 14,
+      "expected_hz": 660.0,
+      "measured_hz": 659.9999997216095,
+      "error_cents": -7.302411251485336e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 12,
+      "expected_hz": 523.8423471495058,
+      "measured_hz": 523.8423470401051,
+      "error_cents": -3.6155582155583615e-7
+    },
+    {
+      "rate": 44100,
+      "engine": "firefox",
+      "mese": 330,
+      "tuning": "aristoxenian",
+      "index": 12,
+      "expected_hz": 523.8423471495058,
+      "measured_hz": 523.8423470401051,
+      "error_cents": -3.6155582155583615e-7
+    }
+  ]
+}

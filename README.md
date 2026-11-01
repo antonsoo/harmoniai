@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-6b2a62)](LICENSE)
 [![Live site](https://img.shields.io/badge/live-antonsoo.github.io%2Fharmoniai-8a6418)](https://antonsoo.github.io/harmoniai/)
 
-![Fifteen strings of the Greater Perfect System with the Phrygian octave selected and Cleonides' Greek for it](docs/assets/hero-codex.png)
+![A named Greek string, its inspected frequency and Cleonides’ Hypophrygian span](docs/assets/inspect-pitch-desktop.png)
 
 Dorian, Phrygian and Lydian are the names of peoples: the Dorians of the Peloponnese,
 the Phrygians and Lydians of Anatolia. Greek theorists named musical scales after
@@ -93,6 +93,42 @@ of them now carry a different octave's name.
 | Hypophrygian, ὑποφρύγιον | lichanos mesōn – paranētē hyperbolaiōn | G–g | Mixolydian |
 | Hypodorian, ὑποδώριον (also "common" and Locrian) | mesē – nētē hyperbolaiōn | A–a | Aeolian (natural minor) |
 
+## Keep the name. Inspect the pitch.
+
+In the main Greek instrument, choose **Pitches & files**. Select a string, hold
+mesē at 110, 220 or 330 Hz, and hear that same named position in both models.
+The ratio realization and equal-step realization keep their reference fixed;
+the numbers explain precisely what changes. The fifteen-row pitch table is
+also a playable, full-size alternative to the small string diagram on a phone.
+
+- Save a single pluck or the selected octave ascending and descending as WAV.
+- Keep every Greek name, transliteration, frequency and reference in CSV.
+- Save an illustrated HTML study with the selected span, Greek and new English,
+  full measurements, embedded sound, three complete printed pages, fonts and
+  licenses. It opens without scripts or automatic network requests and prints.
+- Copy a link retaining the octave, model, reference, orientation and string.
+  A malformed link leaves the complete starting configuration in place.
+- Cancel a source-dependent save or keep changing the instrument while it
+  finishes: the file retains the configuration captured when saving began.
+  Changed source bytes block the illustrated file; measurements remain available.
+
+The instrument now uses a finite harmonic pluck rather than an integer-delay
+string loop. The older synthesis shifted some of its own requested pitches by
+more than the difference between the two tuning models. The revised sound is
+checked from actual scheduled browser buffers and native WAV downloads, with
+an independent frequency measurement and closed-form waveform oracle.
+[Sound, source and browser review](docs/octave-review.md).
+
+[Example complete study, gzip](examples/octave-reading.html.gz) ·
+[Printable study](examples/octave-reading.pdf) ·
+[Pitch CSV](examples/octave-pitches.csv) ·
+[Octave WAV](examples/octave.wav).
+Extract the HTML before opening it:
+
+```sh
+gzip -dc examples/octave-reading.html.gz > /tmp/harmoniai-octave.html
+```
+
 ## Bharata's two vīṇās
 
 ![Two rings of strings on a 22-śruti dial, the inner one lowered three śrutis, with the Sanskrit sentence for that step](docs/assets/vina-dial.png)
@@ -177,21 +213,24 @@ madhyama is "middle", like μέση.
 
 Vite and TypeScript, no framework. `src/core/system.ts` holds the fifteen strings, the
 step pattern and Cleonides' species with both of his descriptions. The instrument is
-hand-written SVG. Sound is a Karplus–Strong plucked string synthesized in the browser:
-a burst of noise in a delay line one period long, smoothed on each pass. It sounds like a
-plucked string, not like any particular ancient instrument. The comparison loads retained source pages on request; all three pages work offline
+hand-written SVG. Sound is a synthetic harmonic pluck: up to 24 sinusoidal
+partials at integer multiples of the target frequency, with faster decay for
+upper harmonics. Recursive complex oscillators generate the samples without
+rounding the period to a whole delay length. This is a teaching timbre, not a
+reconstruction of any ancient instrument. The comparison loads retained source pages on request; all three pages work offline
 after a complete edition is saved. There is no tracking. Coastlines are cut from Natural Earth (public domain) by
 `scripts/aegean.py`. The fonts (GFS Neohellenic, Gentium Book Plus, Tiro Devanagari
 Sanskrit) are self-hosted. `src/core/sruti.ts` holds the two grāmas, the stages of the
 demonstration and the fourteen mūrcchanās; `src/content/natya.ts` the Sanskrit.
 
-Tests (`npm test`, 23):
+Tests (`npm test`, 27):
 
 - Cleonides' two descriptions agree;
 - the system spans exactly two octaves, with a 4:3 fourth under the mesē, a 3:2 fifth
   above it and a 9:8 tone of disjunction;
 - the four shared names land on different octaves;
-- the synthesized string sounds within 15 cents of its target and dies away;
+- harmonic plucks remain bounded, retain nearby distinct pitches, end in silence,
+  and supply the same samples and overlapping tails to live buffers and WAVs;
 - the Leitner schedule weights missed strings sixteen times over known ones;
 - both grāmas hold 22 śrutis, and the two-vīṇā model meets exactly the strings the
   Sanskrit names at each lowering; without the three-śruti stage it measures only 16;
@@ -224,7 +263,9 @@ connection; external Sanskrit scans and scholarly links remain online resources.
   not modelled. Pyknon, a sibling project, works with the enharmonic.
 - **Neither tuning is a recovered performance.** Pythagorean ratios are one ancient
   theory of tuning, and Aristoxenus measured intervals in tones and parts. Absolute
-  pitch (mesē at 220 Hz) is a modern choice.
+  pitch (a selectable mesē at 110, 220 or 330 Hz) is a modern choice. The
+  equal-step realization does not establish that Aristoxenus prescribed modern
+  equal temperament.
 - **Equal śrutis are a modern model.** The text gives a count of śrutis, not their sizes.
   The page chooses twenty-two equal ones to illustrate the count. Unequal successive
   lowerings can give the same named meetings; equality is not forced by the passage.
