@@ -7,8 +7,13 @@ export function pluckedWave(pitches: readonly number[], sampleRate = SAMPLE_RATE
   const out = new Float64Array(
     Math.round(((pitches.length - 1) * PLUCK_GAP + PLUCK_SECONDS) * sampleRate),
   );
+  const prepared = new Map<number, ReturnType<typeof pluckSamples>>();
   pitches.forEach((hz, i) => {
-    const note = pluckSamples(hz, sampleRate, PLUCK_SECONDS);
+    let note = prepared.get(hz);
+    if (!note) {
+      note = pluckSamples(hz, sampleRate, PLUCK_SECONDS);
+      prepared.set(hz, note);
+    }
     const start = Math.round(i * PLUCK_GAP * sampleRate);
     note.forEach((value, j) => {
       if (start + j < out.length) out[start + j] = (out[start + j] ?? 0) + value * PLUCK_GAIN;

@@ -52,6 +52,21 @@ export function pluckSamples(
   return out;
 }
 
+/** Publish the running audio clock and allow queued controls between renders.
+ * MessageChannel yields a task without nested setTimeout's minimum delay.
+ */
+function yieldPreparation(): Promise<void> {
+  return new Promise((resolve) => {
+    const channel = new MessageChannel();
+    channel.port1.onmessage = () => {
+      channel.port1.close();
+      channel.port2.close();
+      resolve();
+    };
+    channel.port2.postMessage(null);
+  });
+}
+
 export class Lyre {
   private context: AudioContext | null = null;
   private voices: (AudioBufferSourceNode | OscillatorNode)[] = [];
@@ -132,20 +147,30 @@ export class Lyre {
     onNote?: (index: number) => void,
   ): void {
     this.start(async (ctx, gain) => {
-      // Render before choosing the start time; slow devices must not receive
-      // already-past start times while the remaining notes are being prepared.
-      const buffers = frequencies.map((step) =>
-        (Array.isArray(step) ? step : [step]).map((f) => {
-          const samples = pluckSamples(f, ctx.sampleRate, PLUCK_SECONDS);
-          const buffer = ctx.createBuffer(1, samples.length, ctx.sampleRate);
-          buffer.copyToChannel(samples, 0);
-          return buffer;
-        }),
-      );
-      // currentTime may remain the main thread’s old snapshot throughout the
-      // synchronous render. Let the browser publish the running audio clock
-      // before scheduling; otherwise Firefox can receive a past first onset.
-      await new Promise<void>((resolve) => window.setTimeout(resolve, 0));
+      // A descending octave revisits seven pitches. The deterministic signal
+      // can share one immutable AudioBuffer per pitch while each onset still
+      // gets its own one-shot source. Keep this bank local to the action.
+      const prepared = new Map<number, AudioBuffer>();
+      const buffers: AudioBuffer[][] = [];
+      for (const step of frequencies) {
+        const chord: AudioBuffer[] = [];
+        for (const frequency of Array.isArray(step) ? step : [step]) {
+          if (this.gain !== gain || document.hidden || ctx.state !== "running") return;
+          let buffer = prepared.get(frequency);
+          if (!buffer) {
+            const samples = pluckSamples(frequency, ctx.sampleRate, PLUCK_SECONDS);
+            buffer = ctx.createBuffer(1, samples.length, ctx.sampleRate);
+            buffer.copyToChannel(samples, 0);
+            prepared.set(frequency, buffer);
+            // A queued Stop can cancel the remaining work, not merely wait
+            // for the whole sequence to finish rendering. This also refreshes
+            // currentTime before we choose any audio-clock start time.
+            await yieldPreparation();
+          }
+          chord.push(buffer);
+        }
+        buffers.push(chord);
+      }
       if (this.gain !== gain || document.hidden || ctx.state !== "running") return;
       const start = ctx.currentTime + 0.05;
       buffers.forEach((chord, i) => {
