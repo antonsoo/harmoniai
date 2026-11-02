@@ -1,0 +1,54 @@
+{
+  "current": "reviewed-dist",
+  "next": "review-output/next-responsive/dist",
+  "receipts": [
+    {
+      "engine": "chromium",
+      "test": "damage-and-repair",
+      "twoTabsInvalidated": true,
+      "closedOriginRefused": true,
+      "onlineRepair": true,
+      "controlsPreserved": true,
+      "readingSha256": "eb372c8dc2afbfa624c0f386003314824eb34d22b06580d5cde8b35e8c40999f"
+    },
+    {
+      "engine": "chromium",
+      "test": "failed-first-install",
+      "noFalseReady": true,
+      "retryWithoutReload": true
+    },
+    {
+      "engine": "chromium",
+      "test": "waiting-update",
+      "oldCacheRetained": true,
+      "twoOldStudiesIdentical": true,
+      "newTabsStayCoherent": true,
+      "activationAfterClosingTabs": true,
+      "newReadingSha256": "a19904d8e6592ec95e5c7dc6a4bcaab276522dc62e2860292595f59edc5aee26"
+    },
+    {
+      "engine": "firefox",
+      "test": "damage-and-repair",
+      "twoTabsInvalidated": true,
+      "closedOriginRefused": true,
+      "onlineRepair": true,
+      "controlsPreserved": true,
+      "readingSha256": "eb372c8dc2afbfa624c0f386003314824eb34d22b06580d5cde8b35e8c40999f"
+    },
+    {
+      "engine": "firefox",
+      "test": "failed-first-install",
+      "noFalseReady": true,
+      "retryWithoutReload": true
+    },
+    {
+      "engine": "firefox",
+      "test": "waiting-update",
+      "oldCacheRetained": true,
+      "twoOldStudiesIdentical": true,
+      "newTabsStayCoherent": true,
+      "activationAfterClosingTabs": true,
+      "newReadingSha256": "a19904d8e6592ec95e5c7dc6a4bcaab276522dc62e2860292595f59edc5aee26"
+    }
+  ]
+}

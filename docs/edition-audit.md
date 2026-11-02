@@ -55,9 +55,9 @@ The transfer review imposes one 128,000-byte/s budget across **all** HTTP reques
 including cold installation and a simultaneous source reading. Source transfers
 lasted roughly 21–26 seconds in both engines and completed. A body that sent
 1,024 bytes and stopped failed after about fifteen seconds; restoring the server
-allowed a retry. Selecting a different source page closed the held old body.
-Cancelling an illustrated reading also closed its held source request and
-produced no download. The current selection remained available.
+allowed a retry. Direct source requests were tested without worker interception: selecting a
+different source page closed the held old body. Cancelling an illustrated
+reading also closed its held source request and produced no download. The current selection remained available.
 
 The source reader checks each retained scan before display and every source/font
 before embedding. The three original Internet Archive JPEGs were downloaded
@@ -100,6 +100,9 @@ reading instead of being stranded at the foot of the preceding page.
 ![Readable named strings at phone width](review/edition-audit/phone-strings.png)
 
 ![A waiting update preserves the current edition](review/edition-audit/waiting-update.png)
+
+A [subsequent responsiveness audit](preparation-review.md) lets Stop interrupt
+live preparation, reuses repeated pitches, and repeats the rendered-output check.
 
 ## Audio at the browser's render thread
 

@@ -1,0 +1,97 @@
+{
+  "method": "Medians of three live runs per rate/slowdown; six WAV runs per slowdown, all files fixed at 44100 Hz. Chromium 153.0.8010.12, WSL2 Linux, 14 logical CPUs. CPU slowdown is DevTools emulation, not a measured phone.",
+  "live": [
+    {
+      "rate": 44100,
+      "slowdown": 1,
+      "before": {
+        "medianPreparationMs": 50.900000005960464,
+        "maxHeartbeatGapMs": 52.19999998807907,
+        "createdBuffers": 15,
+        "channelSampleBytes": 4233600,
+        "scheduledSources": 15
+      },
+      "after": {
+        "medianPreparationMs": 37,
+        "maxHeartbeatGapMs": 19.400000005960464,
+        "createdBuffers": 8,
+        "channelSampleBytes": 2257920,
+        "scheduledSources": 15
+      }
+    },
+    {
+      "rate": 44100,
+      "slowdown": 6,
+      "before": {
+        "medianPreparationMs": 329.59999999403954,
+        "maxHeartbeatGapMs": 333.59999999403954,
+        "createdBuffers": 15,
+        "channelSampleBytes": 4233600,
+        "scheduledSources": 15
+      },
+      "after": {
+        "medianPreparationMs": 192.69999998807907,
+        "maxHeartbeatGapMs": 54.19999998807907,
+        "createdBuffers": 8,
+        "channelSampleBytes": 2257920,
+        "scheduledSources": 15
+      }
+    },
+    {
+      "rate": 48000,
+      "slowdown": 1,
+      "before": {
+        "medianPreparationMs": 54,
+        "maxHeartbeatGapMs": 56.79999998211861,
+        "createdBuffers": 15,
+        "channelSampleBytes": 4608000,
+        "scheduledSources": 15
+      },
+      "after": {
+        "medianPreparationMs": 44.19999998807907,
+        "maxHeartbeatGapMs": 17.899999976158142,
+        "createdBuffers": 8,
+        "channelSampleBytes": 2457600,
+        "scheduledSources": 15
+      }
+    },
+    {
+      "rate": 48000,
+      "slowdown": 6,
+      "before": {
+        "medianPreparationMs": 347.7999999821186,
+        "maxHeartbeatGapMs": 359.2999999821186,
+        "createdBuffers": 15,
+        "channelSampleBytes": 4608000,
+        "scheduledSources": 15
+      },
+      "after": {
+        "medianPreparationMs": 217.7000000178814,
+        "maxHeartbeatGapMs": 62.70000001788139,
+        "createdBuffers": 8,
+        "channelSampleBytes": 2457600,
+        "scheduledSources": 15
+      }
+    }
+  ],
+  "cancellation": {
+    "before": {
+      "requestedAfterMs": 30,
+      "observedMinMs": 314.69999998807907,
+      "observedMaxMs": 362.2999999821186,
+      "sourceCounts": [15],
+      "noLaterStartsOrRendersAfter600ms": true
+    },
+    "after": {
+      "requestedAfterMs": 30,
+      "observedMinMs": 70,
+      "observedMaxMs": 80.59999999403954,
+      "sourceCounts": [0],
+      "noLaterStartsOrRendersAfter600ms": true
+    }
+  },
+  "wav": {
+    "beforeAndAfterHashes": ["a65179446e613c9502d74e26128cf95176c2eb922cc7a2ab469ff5f4e2d9b8e2"],
+    "nativeDownloads": 24
+  }
+}

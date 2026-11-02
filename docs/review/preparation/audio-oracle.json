@@ -1,0 +1,268 @@
+{
+  "captures": 26,
+  "results": [
+    {
+      "engine": "chromium",
+      "rate": 44100,
+      "kind": "octave",
+      "samples": 356352,
+      "rms": 0.07541599731050436,
+      "tuning": "pythagorean",
+      "worst_absolute_error": 9.573200510093471e-8
+    },
+    {
+      "engine": "chromium",
+      "rate": 44100,
+      "kind": "octave",
+      "samples": 354816,
+      "rms": 0.07565735090238099,
+      "tuning": "aristoxenian",
+      "worst_absolute_error": 1.0760445981472522e-7
+    },
+    {
+      "engine": "chromium",
+      "rate": 44100,
+      "kind": "stop",
+      "samples": 92160,
+      "rms": 0.06330009345947755,
+      "post_stop_peak": 0.0,
+      "remaining_frames": 39424
+    },
+    {
+      "engine": "chromium",
+      "rate": 44100,
+      "kind": "stop",
+      "samples": 61440,
+      "rms": 0.044520399220187266,
+      "post_stop_peak": 0.0,
+      "remaining_frames": 39424
+    },
+    {
+      "engine": "chromium",
+      "rate": 44100,
+      "kind": "pure-fifth",
+      "samples": 115200,
+      "rms": 0.12566005858791968,
+      "steady_waveform_rms_error": 1.6100767367007454e-7,
+      "amplitudes": [0.14999997160913248, 0.14999997144230454],
+      "measured_frequencies": [219.99999275036063, 329.99998912009414],
+      "worst_pitch_error_cents": 5.707776895879878e-5,
+      "boundary": "Independent two-frequency fit with free oscillator phase; no phase precision claim."
+    },
+    {
+      "engine": "chromium",
+      "rate": 44100,
+      "kind": "equal-fifth",
+      "samples": 116736,
+      "rms": 0.1248296518284735,
+      "steady_waveform_rms_error": 1.8193194442264816e-7,
+      "amplitudes": [0.14999997172760243, 0.1499999728865485],
+      "measured_frequencies": [219.99999275036063, 331.3630026463568],
+      "worst_pitch_error_cents": 9.953448771036797e-5,
+      "boundary": "Independent two-frequency fit with free oscillator phase; no phase precision claim."
+    },
+    {
+      "engine": "chromium",
+      "rate": 48000,
+      "kind": "octave",
+      "samples": 386176,
+      "rms": 0.07557953613436354,
+      "tuning": "pythagorean",
+      "worst_absolute_error": 9.572722833861569e-8
+    },
+    {
+      "engine": "chromium",
+      "rate": 48000,
+      "kind": "octave",
+      "samples": 387840,
+      "rms": 0.07549543809908259,
+      "tuning": "aristoxenian",
+      "worst_absolute_error": 1.0828829838382958e-7
+    },
+    {
+      "engine": "chromium",
+      "rate": 48000,
+      "kind": "stop",
+      "samples": 100992,
+      "rms": 0.06349943114505553,
+      "post_stop_peak": 0.0,
+      "remaining_frames": 43008
+    },
+    {
+      "engine": "chromium",
+      "rate": 48000,
+      "kind": "stop",
+      "samples": 65792,
+      "rms": 0.04473503877301576,
+      "post_stop_peak": 0.0,
+      "remaining_frames": 42368
+    },
+    {
+      "engine": "chromium",
+      "rate": 48000,
+      "kind": "pure-fifth",
+      "samples": 126080,
+      "rms": 0.12531461104471361,
+      "steady_waveform_rms_error": 1.813520684919492e-7,
+      "amplitudes": [0.14999997122659134, 0.14999997153652272],
+      "measured_frequencies": [219.99999133050343, 329.999998255854],
+      "worst_pitch_error_cents": 6.822239976817803e-5,
+      "boundary": "Independent two-frequency fit with free oscillator phase; no phase precision claim."
+    },
+    {
+      "engine": "chromium",
+      "rate": 48000,
+      "kind": "equal-fifth",
+      "samples": 126080,
+      "rms": 0.12531365043272397,
+      "steady_waveform_rms_error": 1.230816297618191e-7,
+      "amplitudes": [0.14999997232382378, 0.1499999747411789],
+      "measured_frequencies": [219.99999133050343, 331.36300741504704],
+      "worst_pitch_error_cents": 7.462006208875826e-5,
+      "boundary": "Independent two-frequency fit with free oscillator phase; no phase precision claim."
+    },
+    {
+      "engine": "chromium",
+      "rate": 44100,
+      "kind": "media",
+      "samples": 386048,
+      "rms": 0.136373130881172,
+      "alignment_frames": 6399.999999997057,
+      "waveform_rms_error": 2.942746627910549e-6,
+      "worst_pitch_error_cents": 0.00035719157423011054,
+      "measured_tones": 16
+    },
+    {
+      "engine": "firefox",
+      "rate": 44100,
+      "kind": "octave",
+      "samples": 355200,
+      "rms": 0.07553819451300423,
+      "tuning": "pythagorean",
+      "worst_absolute_error": 9.985353652264273e-8
+    },
+    {
+      "engine": "firefox",
+      "rate": 44100,
+      "kind": "octave",
+      "samples": 355200,
+      "rms": 0.0756164439801211,
+      "tuning": "aristoxenian",
+      "worst_absolute_error": 1.0760445981472522e-7
+    },
+    {
+      "engine": "firefox",
+      "rate": 44100,
+      "kind": "stop",
+      "samples": 93696,
+      "rms": 0.06345364859977763,
+      "post_stop_peak": 0.0,
+      "remaining_frames": 39424
+    },
+    {
+      "engine": "firefox",
+      "rate": 44100,
+      "kind": "stop",
+      "samples": 61952,
+      "rms": 0.04461315469973729,
+      "post_stop_peak": 0.0,
+      "remaining_frames": 39424
+    },
+    {
+      "engine": "firefox",
+      "rate": 44100,
+      "kind": "pure-fifth",
+      "samples": 114304,
+      "rms": 0.12615162240666838,
+      "steady_waveform_rms_error": 4.398359246901796e-7,
+      "amplitudes": [0.14999996661466045, 0.150000022767167],
+      "measured_frequencies": [220.0003996651204, 330.0002435872014],
+      "worst_pitch_error_cents": 0.0031450601645980985,
+      "boundary": "Independent two-frequency fit with free oscillator phase; no phase precision claim."
+    },
+    {
+      "engine": "firefox",
+      "rate": 44100,
+      "kind": "equal-fifth",
+      "samples": 117120,
+      "rms": 0.12462485773209511,
+      "steady_waveform_rms_error": 3.658923313417289e-7,
+      "amplitudes": [0.14999996669573565, 0.1500000103902193],
+      "measured_frequencies": [220.0003996651204, 331.3626639939763],
+      "worst_pitch_error_cents": 0.0031450601645980985,
+      "boundary": "Independent two-frequency fit with free oscillator phase; no phase precision claim."
+    },
+    {
+      "engine": "firefox",
+      "rate": 48000,
+      "kind": "octave",
+      "samples": 387072,
+      "rms": 0.07549200912351471,
+      "tuning": "pythagorean",
+      "worst_absolute_error": 9.920340721114584e-8
+    },
+    {
+      "engine": "firefox",
+      "rate": 48000,
+      "kind": "octave",
+      "samples": 387072,
+      "rms": 0.07557029723838096,
+      "tuning": "aristoxenian",
+      "worst_absolute_error": 9.859665778266802e-8
+    },
+    {
+      "engine": "firefox",
+      "rate": 48000,
+      "kind": "stop",
+      "samples": 102016,
+      "rms": 0.06293716257696408,
+      "post_stop_peak": 0.0,
+      "remaining_frames": 43008
+    },
+    {
+      "engine": "firefox",
+      "rate": 48000,
+      "kind": "stop",
+      "samples": 67456,
+      "rms": 0.044593296730311094,
+      "post_stop_peak": 0.0,
+      "remaining_frames": 43008
+    },
+    {
+      "engine": "firefox",
+      "rate": 48000,
+      "kind": "pure-fifth",
+      "samples": 124544,
+      "rms": 0.12608500253445648,
+      "steady_waveform_rms_error": 3.0384186022150083e-7,
+      "amplitudes": [0.1499999265366388, 0.1500000333803621],
+      "measured_frequencies": [220.00036275368225, 329.9994346990767],
+      "worst_pitch_error_cents": 0.002965663771640922,
+      "boundary": "Independent two-frequency fit with free oscillator phase; no phase precision claim."
+    },
+    {
+      "engine": "firefox",
+      "rate": 48000,
+      "kind": "equal-fifth",
+      "samples": 127488,
+      "rms": 0.12461970884733878,
+      "steady_waveform_rms_error": 4.4784972785815554e-7,
+      "amplitudes": [0.1499999271236787, 0.14999995314885367],
+      "measured_frequencies": [220.00036275368225, 331.36340842269306],
+      "worst_pitch_error_cents": 0.0028545954925085814,
+      "boundary": "Independent two-frequency fit with free oscillator phase; no phase precision claim."
+    },
+    {
+      "engine": "firefox",
+      "rate": 44100,
+      "kind": "media",
+      "samples": 389632,
+      "rms": 0.13574447315876875,
+      "alignment_frames": 8191.9999999981055,
+      "waveform_rms_error": 2.929411833761851e-6,
+      "worst_pitch_error_cents": 0.00035719157423011054,
+      "measured_tones": 16
+    }
+  ],
+  "boundary": "Digital audio-thread output before the physical device. No speaker, microphone or listening claim."
+}

@@ -127,6 +127,9 @@ an independent frequency measurement and closed-form waveform oracle.
 The [subsequent output and edition audit](docs/edition-audit.md) measures the
 actual browser audio-thread mix, fixes first-note timing, and verifies repair
 and updates against the public edition.
+The [responsiveness follow-up](docs/preparation-review.md) reuses descending
+pitches and lets Stop interrupt preparation between renders, with paired real
+button timings and an unchanged-WAV check.
 
 [Example complete study, gzip](examples/octave-reading.html.gz) ·
 [Printable study](examples/octave-reading.pdf) ·

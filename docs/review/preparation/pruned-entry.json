@@ -1,0 +1,46 @@
+[
+  {
+    "engine": "chromium",
+    "prunedPreviousEntryHasNoInstrument": true,
+    "missing": [
+      {
+        "url": "http://127.0.0.1:43745/harmoniai/assets/index-Dc1uJ4_E.js",
+        "status": 404
+      },
+      {
+        "url": "http://127.0.0.1:43745/harmoniai/assets/shell-DzN182Hj.js",
+        "status": 404
+      },
+      {
+        "url": "http://127.0.0.1:43745/harmoniai/assets/comparison-view-raHDvhXF.js",
+        "status": 404
+      },
+      {
+        "url": "http://127.0.0.1:43745/harmoniai/assets/pluck-BFkuXnRH.js",
+        "status": 404
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "prunedPreviousEntryHasNoInstrument": true,
+    "missing": [
+      {
+        "url": "http://127.0.0.1:43745/harmoniai/assets/index-Dc1uJ4_E.js",
+        "status": 404
+      },
+      {
+        "url": "http://127.0.0.1:43745/harmoniai/assets/shell-DzN182Hj.js",
+        "status": 404
+      },
+      {
+        "url": "http://127.0.0.1:43745/harmoniai/assets/comparison-view-raHDvhXF.js",
+        "status": 404
+      },
+      {
+        "url": "http://127.0.0.1:43745/harmoniai/assets/pluck-BFkuXnRH.js",
+        "status": 404
+      }
+    ]
+  }
+]
