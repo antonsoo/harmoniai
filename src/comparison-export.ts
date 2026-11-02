@@ -72,7 +72,7 @@ export async function illustratedReading(
     verified(`${import.meta.env.BASE_URL}${FONT_NOTICE.path}`, FONT_NOTICE.sha256, signal),
     verified(
       `${import.meta.env.BASE_URL}LICENSE.txt`,
-      "f4cec46403514e2601f3b917ad36bfc8cd9a6d97359ac2f9bb554d2062a251eb",
+      "5cf6bbfcc5bb6d102fc82c4ee16aece1666b246847761514a49561db110f3d92",
       signal,
     ),
   ]);
@@ -86,5 +86,5 @@ export async function illustratedReading(
   ${degreeTable(state, false)}<h2>Read Cleonides</h2>${reading(state).replace("<details>", "<details open>")}
   <p class="download-note">This file includes the sound, all three complete source pages and four font subsets. It opens offline without scripts. External links need a connection. <a href="https://antonsoo.github.io/harmoniai/compare.html?${esc(comparisonQuery(state))}#listen">Reopen this comparison in Harmoniai</a>.</p>
   ${plates.map((p) => `<figure class="source"><figcaption>Cleonides, Jan 1895, printed p. ${p.page}. Complete page, public domain. <a href="${p.url}">Internet Archive image</a>.</figcaption><img src="${p.data}" alt="Complete printed page ${p.page} of Jan's 1895 edition of Cleonides"></figure>`).join("")}
-  <h2>Credits and license</h2><p>Greek from K. von Jan, <i>Musici scriptores Graeci</i> (Leipzig: Teubner, 1895), pp. 197–199, public domain. Initial capitalization, apostrophes and punctuation normalized; omissions marked. English and diagrams are new, MIT licensed, © 2026 Anthony Mercer. Translations have not had independent philological review. Modern interval orders referenced to <i>Steps to Music Theory</i>, §11.1; no scores or recordings copied.</p><details open><summary>MIT license</summary><pre>${esc(new TextDecoder().decode(codeLicense))}</pre></details><details open><summary>Included font licenses</summary><pre>${esc(new TextDecoder().decode(license))}</pre></details></html>`;
+  <h2>Credits and license</h2><p>Greek from K. von Jan, <i>Musici scriptores Graeci</i> (Leipzig: Teubner, 1895), pp. 197–199, public domain. Initial capitalization, apostrophes and punctuation normalized; omissions marked. English and diagrams are new, licensed under PolyForm Noncommercial, © 2026 Anthony Mercer. Translations have not had independent philological review. Modern interval orders referenced to <i>Steps to Music Theory</i>, §11.1; no scores or recordings copied.</p><details open><summary>PolyForm Noncommercial license</summary><pre>${esc(new TextDecoder().decode(codeLicense))}</pre></details><details open><summary>Included font licenses</summary><pre>${esc(new TextDecoder().decode(license))}</pre></details></html>`;
 }

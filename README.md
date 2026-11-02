@@ -2,7 +2,7 @@
 
 **Hear the seven Greek octave species, read Cleonides' Greek for each, and see how their regional names moved. A second page runs Bharata's two-vīṇā demonstration of the twenty-two śrutis from the Sanskrit.**
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-6b2a62)](LICENSE)
+[![License: PolyForm Noncommercial](https://img.shields.io/badge/license-PolyForm%20Noncommercial-6b2a62)](LICENSE)
 [![Live site](https://img.shields.io/badge/live-antonsoo.github.io%2Fharmoniai-8a6418)](https://antonsoo.github.io/harmoniai/)
 
 ![A named Greek string, its inspected frequency and Cleonides’ Hypophrygian span](docs/review/edition-audit/model-steps.png)
@@ -303,6 +303,8 @@ buildings what this does for scales.
 
 ## License
 
-Code: [MIT](LICENSE). Fonts: SIL Open Font License (`src/fonts/LICENSE.txt`). Quoted
+New versions are released under the [PolyForm Noncommercial License 1.0.0](LICENSE). It is free for any noncommercial purpose, including personal study, teaching and research, and for use by charities, schools, universities, research organizations and government institutions. Commercial use needs written permission from Anthony Mercer (anthony@praviel.com). Versions up to commit [`58192e5`](https://github.com/antonsoo/harmoniai/tree/58192e5) (2026-11-01) were released under the MIT License, and copies of those versions keep it.
+
+Code: [PolyForm Noncommercial 1.0.0](LICENSE). Fonts: SIL Open Font License (`src/fonts/LICENSE.txt`). Quoted
 Greek and Sanskrit texts are from public-domain editions or Perseus (CC BY-SA 3.0 US); see
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

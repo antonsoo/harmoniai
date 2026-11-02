@@ -5,7 +5,7 @@
   "description": "Hear the seven Greek octave species with Cleonides' Greek, and run Bharata's two-vīṇā demonstration of the twenty-two śrutis from the Sanskrit.",
   "type": "module",
   "author": "Anthony Mercer <anthony@praviel.com>",
-  "license": "MIT",
+  "license": "PolyForm-Noncommercial-1.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/antonsoo/harmoniai.git"

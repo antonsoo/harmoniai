@@ -83,7 +83,7 @@ export async function octaveReading(state: OctaveState, signal?: AbortSignal): P
     verified(`${import.meta.env.BASE_URL}${FONT_NOTICE.path}`, FONT_NOTICE.sha256, signal),
     verified(
       `${import.meta.env.BASE_URL}LICENSE.txt`,
-      "f4cec46403514e2601f3b917ad36bfc8cd9a6d97359ac2f9bb554d2062a251eb",
+      "5cf6bbfcc5bb6d102fc82c4ee16aece1666b246847761514a49561db110f3d92",
       signal,
     ),
   ]);
@@ -108,5 +108,5 @@ ${octaveTable(state, false)}
 <p>The half-step positions and named endpoints follow Cleonides. The numerical pitches, reference mesē and synthetic timbre are separate modern teaching choices. The equal-step option realizes tones as 200 cents and half-tones as 100; it does not establish that Aristoxenus prescribed modern equal temperament. The ratio option uses 9:8 and 256:243. White-key letters identify positions, not equal-tempered frequencies. No ancient instrument, absolute pitch, melody or performance is reconstructed.</p>
 <p class="downloads"><a download="harmoniai-octave.csv" href="${dataUrl(new TextEncoder().encode(octaveCsv(state)), "text/csv")}">Keep all measurements as CSV</a>. <a download="harmoniai-octave.wav" href="${sound}">Keep the octave WAV</a>. <a href="https://antonsoo.github.io/harmoniai/?${esc(octaveQuery(state))}#strings">Reopen these settings</a>. This file embeds all three printed pages, sound, fonts and licenses. It opens without scripts or a connection; external links need a connection.</p>
 ${plates.map((p) => `<figure><figcaption>Cleonides in Jan (1895), complete printed p. ${p.page}. Public domain. <a href="${p.url}">Source image</a>.</figcaption><img src="${p.data}" alt="Complete printed page ${p.page} of Jan's edition"></figure>`).join("")}
-<h2>Credits and licenses</h2><p>Greek excerpt from Karl von Jan, <i>Musici scriptores Graeci</i> (Leipzig: Teubner, 1895), pp. 197–199. Initial capitalization and punctuation normalized, omissions marked. New English and teaching content, © 2026 Anthony Mercer, MIT. The translation has not had independent philological review. Gentium Book Plus, SIL Open Font License.</p><details open><summary>Code and new content license</summary><pre>${esc(new TextDecoder().decode(code))}</pre></details><details open><summary>Complete font licenses</summary><pre>${esc(new TextDecoder().decode(license))}</pre></details></html>`;
+<h2>Credits and licenses</h2><p>Greek excerpt from Karl von Jan, <i>Musici scriptores Graeci</i> (Leipzig: Teubner, 1895), pp. 197–199. Initial capitalization and punctuation normalized, omissions marked. New English and teaching content, © 2026 Anthony Mercer, PolyForm Noncommercial. The translation has not had independent philological review. Gentium Book Plus, SIL Open Font License.</p><details open><summary>Code and new content license</summary><pre>${esc(new TextDecoder().decode(code))}</pre></details><details open><summary>Complete font licenses</summary><pre>${esc(new TextDecoder().decode(license))}</pre></details></html>`;
 }
