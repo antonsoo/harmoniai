@@ -97,7 +97,7 @@ or page errors. Each context ends by checking the unchanged canonical entry.
 
 [Pruned-entry failure](review/preparation/pruned-entry.json) ·
 [Complete retained-entry preflight](review/preparation/retained-entry-local.json).
-The public replay is a separate receipt after publication. This is an explicit
+The public replay is recorded below. This is an explicit
 previous-entry simulation, rather than a claim to have observed every visitor's
 browser cache.
 
@@ -136,3 +136,38 @@ node scripts/preparation-review.mjs /tmp/baseline-review /path/to/baseline/dist 
 
 Keep browser performance reviews sequential so another audit does not compete
 with its measured main thread.
+
+
+## Public responsive edition: 1 November 2026
+
+Source `e77cbf7` publishes the unchanged application inputs checked at `73d8562`.
+All 37 canonical hosted files match the fresh Node 24.22.1 build. All six retained
+prior assets also match their preceding published identities. The normal-history
+Pages commit `90ad8f6` [deployed successfully](https://github.com/antonsoo/harmoniai/actions/runs/41370173671).
+
+The real public site passed current-edition journeys in Chromium and Firefox at
+1440 and 375 pixels: model changes, keyboard plucks, actual native studies, source
+hashes, standalone opening, and all three rooms offline. Four additional contexts
+replayed the exact preceding HTML with workers blocked, fetched their actual
+modules from the public origin, operated the old instrument and downloaded WAVs.
+All four prior-entry WAVs retain the baseline hash. The current canonical entry
+was rechecked after every journey. Six pinned anonymous raw source/evidence files
+also matched their local bytes.
+
+[Public current and previous-entry journeys](review/preparation/public-browser.json) ·
+[Pinned source/evidence](review/preparation/source-publication.json) ·
+[Publication boundary](review/preparation/publication.json).
+
+The source [CI run](https://github.com/antonsoo/harmoniai/actions/runs/41370042155)
+returned failure with no executed steps. Local checks, public bytes, browser
+operation and the successful Pages deployment are separate observations.
+Build command: `npm run build`; complete output: `dist/`, base `/harmoniai/`.
+
+To replay the previous-entry check against this release, obtain its HTML from
+the prior Pages commit, then supply the recorded build inventory:
+
+```sh
+git fetch origin gh-pages
+git show 88c0616ce459fd17bf4589432b61d1baa49289ec:index.html > /tmp/harmoniai-previous-index.html
+node scripts/public-edition-review.mjs https://antonsoo.github.io/harmoniai/ /tmp/harmoniai-public-review dist /tmp/harmoniai-previous-index.html docs/review/preparation/before.json
+```

@@ -1,0 +1,20 @@
+{
+  "observedAt": "2026-11-02T01:09:14.779972+00:00",
+  "releaseSource": "e77cbf77416212bd3be8f5008258cd642b903810",
+  "buildSource": "73d8562fe9e7f195bb8922056785277f2862bb6c",
+  "pagesCommit": "90ad8f6042cb7e47e00b6d5f942b08c344fc2621",
+  "canonicalFilesMatched": 37,
+  "previousAssetsMatched": 6,
+  "currentBrowserJourneys": 4,
+  "previousEntryWithoutWorkerJourneys": 4,
+  "pinnedRawArtifactsMatched": 6,
+  "pagesBuild": "built",
+  "deploymentRun": "https://github.com/antonsoo/harmoniai/actions/runs/41370173671",
+  "sourceCI": {
+    "url": "https://github.com/antonsoo/harmoniai/actions/runs/41370042155",
+    "conclusion": "failure",
+    "job": "check",
+    "steps": []
+  },
+  "boundary": "Exact clean build and hosted identities, current controls and offline studies, plus replayed previous HTML with actual retained origin modules. Previous-entry replay is an explicit cache simulation. No remote source-CI execution or physical audio claim."
+}

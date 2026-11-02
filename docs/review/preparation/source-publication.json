@@ -1,0 +1,47 @@
+{
+  "source": "e77cbf77416212bd3be8f5008258cd642b903810",
+  "artifacts": [
+    {
+      "path": "docs/preparation-review.md",
+      "url": "https://raw.githubusercontent.com/antonsoo/harmoniai/e77cbf77416212bd3be8f5008258cd642b903810/docs/preparation-review.md",
+      "bytes": 7488,
+      "sha256": "b7997bbfe1d1b1139cb68930a63814e59f37f8b0566f0b78a4c49cd8be615094",
+      "matches": true
+    },
+    {
+      "path": "docs/review/preparation/summary.json",
+      "url": "https://raw.githubusercontent.com/antonsoo/harmoniai/e77cbf77416212bd3be8f5008258cd642b903810/docs/review/preparation/summary.json",
+      "bytes": 2803,
+      "sha256": "fa899e4f054385ed332c8801ca84dc2f7a743ada7c37e5d80b01003a245c2cbd",
+      "matches": true
+    },
+    {
+      "path": "docs/review/preparation/build.json",
+      "url": "https://raw.githubusercontent.com/antonsoo/harmoniai/e77cbf77416212bd3be8f5008258cd642b903810/docs/review/preparation/build.json",
+      "bytes": 6437,
+      "sha256": "12ccdf47d30a2bba9d8eb20212110633e62386be00433ac9ea95404cd8611f8b",
+      "matches": true
+    },
+    {
+      "path": "docs/review/preparation/audio-oracle.json",
+      "url": "https://raw.githubusercontent.com/antonsoo/harmoniai/e77cbf77416212bd3be8f5008258cd642b903810/docs/review/preparation/audio-oracle.json",
+      "bytes": 8240,
+      "sha256": "7f2d8341ce3ba98d2b07d0aad5e5b406b5be7a18414c72c57db2b086287e7171",
+      "matches": true
+    },
+    {
+      "path": "scripts/preparation-review.mjs",
+      "url": "https://raw.githubusercontent.com/antonsoo/harmoniai/e77cbf77416212bd3be8f5008258cd642b903810/scripts/preparation-review.mjs",
+      "bytes": 9818,
+      "sha256": "df5ba7875c09ed534c171c4687fb6b8d8a736baa3787a67a1fb635722c17e8ff",
+      "matches": true
+    },
+    {
+      "path": ".github/workflows/pages.yml",
+      "url": "https://raw.githubusercontent.com/antonsoo/harmoniai/e77cbf77416212bd3be8f5008258cd642b903810/.github/workflows/pages.yml",
+      "bytes": 1620,
+      "sha256": "9cdf012efef54d94c79e2e4ca11238a6748b1e4e4f02f4b7dc082e93a83e61bf",
+      "matches": true
+    }
+  ]
+}
