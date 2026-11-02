@@ -11,6 +11,30 @@ const output = resolve(process.argv[3] ?? "/tmp/harmoniai-public-edition");
 await mkdir(output, { recursive: true });
 const build = await snapshotBuild(process.argv[4] ?? "dist");
 const hash = (bytes) => createHash("sha256").update(bytes).digest("hex");
+assert.equal(
+  Boolean(process.argv[5]),
+  Boolean(process.argv[6]),
+  "Supply the previous HTML entry and its build inventory together",
+);
+const previousEntry = process.argv[5] ? await readFile(process.argv[5]) : null;
+const previousBuild = process.argv[6] ? JSON.parse(await readFile(process.argv[6], "utf8")) : null;
+const retainedAssets = [];
+if (previousEntry) {
+  assert.equal(
+    hash(previousEntry),
+    previousBuild.files.find((f) => f.path === "index.html").sha256,
+  );
+  for (const file of previousBuild.files.filter(
+    (f) => f.path.startsWith("assets/") && !build.bodies.has(f.path),
+  )) {
+    const response = await fetch(new URL(file.path, base), {
+      headers: { "cache-control": "no-cache" },
+    });
+    assert.equal(response.status, 200, `A previous entry still needs ${file.path}`);
+    assert.equal(hash(Buffer.from(await response.arrayBuffer())), file.sha256, file.path);
+    retainedAssets.push({ ...file, matches: true });
+  }
+}
 const expectedEdition = build.bodies
   .get("sw.js")
   .toString()
@@ -156,6 +180,54 @@ for (const [engine, launcher] of Object.entries({ chromium, firefox })) {
       } finally {
         await context.close();
       }
+      if (previousEntry) {
+        const previous = await browser.newContext({
+          viewport: { width, height: 1100 },
+          serviceWorkers: "block",
+        });
+        try {
+          const cached = await previous.newPage();
+          const errors = [],
+            failed = [];
+          cached.on("pageerror", (e) => errors.push(e.message));
+          cached.on("response", (r) => {
+            if (r.status() >= 400) failed.push(r.url());
+          });
+          // Replay the prior HTTP-cache entry; all modules still come from the
+          // actual origin. This context has no worker to rescue missing files.
+          const entryUrl = new URL(base);
+          await cached.route(
+            (url) => url.origin === entryUrl.origin && url.pathname === entryUrl.pathname,
+            (route) =>
+              route.fulfill({ status: 200, contentType: "text/html", body: previousEntry }),
+          );
+          await cached.goto(`${base}?species=6&mese=330&selected=12&orientation=pitch`);
+          await cached.locator("#play").waitFor();
+          assert.equal(await cached.locator("#mese").inputValue(), "330");
+          assert.match(await cached.locator("#string-readout").textContent(), /521\.4815/);
+          await cached.locator('[data-note="12"]').focus();
+          await cached.keyboard.press("Enter");
+          await cached.locator("#stop").click();
+          const pending = cached.waitForEvent("download");
+          await cached.locator("#save-octave-wav").click();
+          const download = await pending;
+          assert.equal(await download.failure(), null);
+          const path = `${output}/${name}-previous-entry.wav`;
+          await download.saveAs(path);
+          const bytes = await readFile(path);
+          assert.equal(bytes.readUInt32LE(24), 44100);
+          assert.deepEqual(errors, []);
+          assert.deepEqual(failed, []);
+          receipts.at(-1).previousEntryWithoutWorker = {
+            htmlSha256: hash(previousEntry),
+            nativeWavSha256: hash(bytes),
+            missingResponses: failed,
+            errors,
+          };
+        } finally {
+          await previous.close();
+        }
+      }
       const canonical = await fetch(base, { headers: { "cache-control": "no-cache" } });
       assert.equal(canonical.status, 200);
       assert.equal(
@@ -172,5 +244,5 @@ for (const [engine, launcher] of Object.entries({ chromium, firefox })) {
 }
 await writeFile(
   `${output}/review.json`,
-  `${JSON.stringify({ base, expectedEdition, hosted: hosted.sort((a, b) => a.path.localeCompare(b.path)), receipts }, null, 2)}\n`,
+  `${JSON.stringify({ base, expectedEdition, retainedAssets, hosted: hosted.sort((a, b) => a.path.localeCompare(b.path)), receipts }, null, 2)}\n`,
 );

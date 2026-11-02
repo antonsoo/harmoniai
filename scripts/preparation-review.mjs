@@ -36,7 +36,7 @@ function instrument({ rate }) {
   Original.prototype.createBuffer = function (...args) {
     const buffer = createBuffer.apply(this, args);
     ids.set(buffer, ++next);
-    if (window.preparation && !window.preparation.done) {
+    if (window.preparation) {
       window.preparation.createdBuffers++;
       window.preparation.channelSamples += args[0] * args[1];
     }
@@ -160,7 +160,7 @@ try {
             const record = await page.evaluate(() => window.preparation);
             assert(record.resumedAt !== null);
             if (cancelAfter === null) assert.equal(record.sourceBufferIds.length, 15);
-            receipts.push({
+            const receipt = {
               kind: "live",
               rate,
               slowdown,
@@ -172,7 +172,23 @@ try {
                 cancelAfter === null ? null : record.finishedAt - record.clickAt,
               channelSampleBytes: record.channelSamples * 4,
               uniqueSourceBuffers: new Set(record.sourceBufferIds).size,
-            });
+            };
+            if (cancelAfter !== null) {
+              await page.waitForTimeout(600);
+              const later = await page.evaluate(() => window.preparation);
+              assert.deepEqual(
+                later.sourceBufferIds,
+                record.sourceBufferIds,
+                "A stopped preparation later scheduled a source",
+              );
+              assert.equal(
+                later.createdBuffers,
+                record.createdBuffers,
+                "A stopped preparation kept allocating buffers",
+              );
+              receipt.noLateStartsOrRendersAfterStop = true;
+            }
+            receipts.push(receipt);
             await page.locator("#stop").click();
             await page.waitForTimeout(100);
           }
@@ -214,7 +230,12 @@ try {
     `${output}/review.json`,
     `${JSON.stringify(
       {
-        source: execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim(),
+        source:
+          process.argv[4] ??
+          execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim(),
+        harnessSha256: createHash("sha256")
+          .update(await readFile(new URL(import.meta.url)))
+          .digest("hex"),
         browser: browser.version(),
         machine: {
           platform: os.platform(),
